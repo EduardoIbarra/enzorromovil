@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="lib/angular-carousel/dist/angular-carousel.css" rel="stylesheet" type="text/css">
+    <link href="lib/angular-jk-carousel/dist/jk-carousel.css" rel="stylesheet" type="text/css">
+    <!--<link href="lib/angular-bootstrap/ui-bootstrap-csp.css" rel="stylesheet" type="text/css">-->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="lib/ion-autocomplete/dist/ion-autocomplete.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script type="text/javascript" src="lib/ngCordova/dist/ng-cordova.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="cordova.js"></script>
+    <script type="text/javascript" src="lib/ngstorage/ngStorage.min.js"></script>
+    <script type="text/javascript" src="lib/angular-touch/angular-touch.min.js"></script>
+    <script type="text/javascript" src="lib/angular-carousel/dist/angular-carousel.min.js"></script>
+    <script type="text/javascript" src="lib/angular-jk-carousel/dist/jk-carousel.min.js"></script>
+    <script type="text/javascript" src="lib/angular-jk-carousel/dist/jk-carousel.min.js"></script>
+    <script type="text/javascript" src="lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script type="text/javascript" src="lib/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="lib/ion-autocomplete/dist/ion-autocomplete.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.2.0.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/controllers/place.js"></script>
+    <script src="js/controllers/general.js"></script>
+    <script src="js/controllers/home.js"></script>
+    <script src="js/controllers/nearby.js"></script>
+    <script src="js/controllers/search.js"></script>
+    <script src="js/filters/capitalize-first.js"></script>
+    <script src="js/filters/new-line.js"></script>
+    <script src="js/services/place-clasification.js"></script>
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyCfcyRlkRfE8EjBdq2C3IPxeuh7y1aiTos&sensor=true"></script>
+    <script type="text/javascript" src="http://cdn.sobekrepository.org/includes/gmaps-markerwithlabel/1.9.1/gmaps-markerwithlabel-1.9.1.min.js"></script>
+
+</head>
+<body ng-app="infox-app" ng-controller="GeneralCtrl">
+
+<div id="fb-root"></div>
+
+
+<div class="mask" ng-if="showLoadingMask">
+    <div class="loader circle"></div>
+</div>
+
+<ion-side-menus>
+    <ion-side-menu-content drag-content="false">
+        <ion-nav-bar class="bar-positive bar-downheader">
+            <ion-nav-back-button></ion-nav-back-button>
+        </ion-nav-bar>
+
+        <ion-nav-view>
+            <div id="tutorial-nearby" ng-if="showTut === true" class="animate-if">
+                Ubica los Negocios Más Cercanos a Ti
+                <i class="icon ion-arrow-down-b" id="tut-down-arrow"></i>
+            </div>
+        </ion-nav-view>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="right">
+        <header class="bar bar-header bar-dark">
+            <a menu-close="" href="#/home" class="button button-dark">Cerrar</a>
+            <h1 class="title">Menú</h1>
+        </header>
+
+        <ion-content class="has-header">
+            <ion-list>
+                <ion-item class="item item-icon-left" menu-close="" href="#/app/ladas">
+                    <i class="icon ion-ios-telephone"></i>
+                    Ladas
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+
+</ion-side-menus>
+
+<script>
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "http://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.8&appId=805201646226832";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+</body>
+</html>

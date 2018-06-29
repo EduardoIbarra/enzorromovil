@@ -1,0 +1,135 @@
+page-speech-modal {
+  .modal_content {
+    top: calc(50% - (50% / 3));
+    width: 70%;
+    border-radius: 6px;
+    padding: 16px 16px 0 16px;
+
+    .mic {
+      width: 200px;
+      height: 100%;
+      margin: 0 auto 0;
+      position: relative;
+      top: 22px;
+      right: 17px;
+      padding-top: 10px;
+    }
+
+    .mic-button {
+      position: relative;
+      left: 50%;
+      margin-left: -25px;
+      margin-top: -38px;
+      display: block;
+      width: 80px;
+      height: 80px;
+      line-height: 80px;
+      color: white;
+      border-radius: 50%;
+      background: map_get($colors, primary);
+      cursor: none;
+    }
+
+    .record-mic {
+      font-size: 45px;
+      position: relative;
+      bottom: 84px;
+      padding-left: 26px;
+      padding-top: 17px;
+    }
+    .record-stop {
+      font-size: 45px;
+      position: relative;
+      bottom: 84px;
+      padding-left: 23px;
+      padding-top: 17px;
+    }
+
+    .ring {
+
+      height: 85px;
+      width: 85px;
+      position: relative;
+      right: 2px;
+      bottom: 2px;
+
+      border-radius: 50%;
+    }
+
+    .ringAnimation {
+      border: 4px solid rgba(255, 96, 0, 0.77);
+      animation: pulsate 1.5s cubic-bezier(0.39, 0.58, 0.57, 1);
+      animation-iteration-count: infinite;
+    }
+
+    @-webkit-keyframes pulsate {
+      0% {
+        -webkit-transform: scale(0.1, 0.1);
+        opacity: 0.0;
+      }
+      50% {
+        opacity: 1.0;
+      }
+      100% {
+        -webkit-transform: scale(1.2, 1.2);
+        opacity: 0.0;
+      }
+    }
+
+    .cancelButton {
+      color: black;
+    }
+    .transcript-text {
+      padding-top: 35px;
+      padding-bottom: 5px;
+      font-weight: 500;
+      font-size: larger;
+      letter-spacing: 1px;
+    }
+
+    .speechTitle {
+      text-align: center;
+      font-size: larger;
+      padding-bottom: 15px;
+      .subtitle {
+        font-size: smaller;
+        color: gray;
+      }
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    .buttonGroup {
+      border-top: 1px solid map_get($colors, primary);
+      display: flex;
+      button {
+        border-radius: unset;
+      }
+    }
+
+    .progress, progress[value] {
+      width: 100%;
+      border: none;
+      margin: 5px 0;
+      height: 8px;
+      display: block;
+      appearance: none;
+      -webkit-appearance: none;
+      &::-webkit-progress-bar {
+        background-color: lighten(map-get($colors, primary), 100%);
+      }
+      &::-webkit-progress-value {
+        background-color: map-get($colors, primary);
+      }
+    }
+
+    .progress {
+      position: absolute;
+      top: -5px;
+      left: 0;
+    }
+
+  }
+}

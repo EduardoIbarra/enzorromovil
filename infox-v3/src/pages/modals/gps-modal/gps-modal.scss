@@ -1,0 +1,109 @@
+page-gps-modal {
+  h3 {
+    padding-top: 5px;
+    color: gray;
+    font-weight: 500;
+  }
+
+  ion-item {
+    padding-left: 0 !important;
+  }
+
+  .gpsTitle {
+    font-size: 20px;
+  }
+
+  .simple-message {
+    width: 70%;
+    color: gray;
+    font-size: 1.2em;
+    margin: 15px auto 30px auto;
+  }
+
+  .almostThere {
+    color: map_get($colors, primary);
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+
+  .gotNearby {
+    color: map_get($colors, danger);
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+
+  .directions-item {
+    h3 {
+      b {
+        text-transform: capitalize !important;
+      }
+    }
+  }
+
+  .fab {
+    contain: layout !important;
+  }
+
+  ion-fab {
+    bottom: 20%;
+    right: 15px !important;
+    position: fixed !important;
+  }
+
+  .fab-list-text {
+    position: absolute;
+    right: -10px;
+    button {
+      right: 10%;
+      height: 50px;
+      width: 50px;
+      overflow: visible;
+      position: relative;
+      opacity: 1 !important;
+
+      ion-label {
+        position: absolute;
+        top: -3px;
+        right: 50px;
+        color: map_get($colors, primary);
+        background-color: white;
+        line-height: 24px;
+        padding: 4px 8px;
+        border-radius: 4px;
+        border: 1px solid #ff6000;
+        font-weight: 900;
+      }
+    }
+  }
+
+  .direction-animation {
+    ion-icon {
+      animation: tada 4s infinite;
+      font-size: 3.5rem;
+    }
+    @-webkit-keyframes tada {
+      0% {
+        transform: scale3d(1, 1, 1);
+      }
+      10%, 20% {
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -10deg);
+      }
+      30%, 50%, 70%, 90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 10deg);
+      }
+      40%, 60%, 80% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -10deg);
+      }
+      100% {
+        transform: scale3d(1, 1, 1);
+      }
+    }
+  }
+
+}
+
+.ios .show, .md .show {
+  opacity: 1 !important;
+}

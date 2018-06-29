@@ -1,0 +1,17 @@
+<ion-toolbar color="primary">
+    <ion-title>
+        <div text-center>
+            <img src="assets/img/logo_infox_white.png" class="mainLogo"/>
+        </div>
+    </ion-title>
+</ion-toolbar>
+<ion-navbar color="primary">
+    <ion-input mode="ios" placeholder="Buscar..." (focus)="openSearchModal()" readonly>
+        <ion-icon name="md-mic"></ion-icon>
+    </ion-input>
+    <ion-buttons end>
+        <button item-right ion-button color="light" class="mic-button">
+            <ion-icon name="md-mic"></ion-icon>
+        </button>
+    </ion-buttons>
+</ion-navbar>

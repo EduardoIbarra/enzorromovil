@@ -1,0 +1,85 @@
+<ion-view>
+    <ion-nav-title>
+        <img src="img/logo_infox_white.png" id="mainLogo" ng-if="!isBigSearchActive()" class="animate-if"/>
+    </ion-nav-title>
+    <div class="bar bar-header bar-positive bar-subheader" ng-if="!isBigSearchActive()" class="animate-if">
+        <label class="item item-input header-holder">
+            <i class="icon ion-search placeholder-icon"></i>
+            <form ng-submit="doSearchOutside()">
+                <input ng-model="form.searchQueryOutside" type="text" placeholder="Buscar..." class="nav-search-box ion-autocomplete" max-selected-items="1" ng-model="searchQuery" items-method="callbackMethod(query)" item-view-value-key="cadena" items-method-value-key="data" items-clicked-method="clickedMethod(callback)" ion-autocomplete clear-on-select="true" />
+                <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;"/>
+            </form>
+        </label>
+        <!--<div class="header-mic center">-->
+            <!--<i class="icon ion-mic-a"></i>-->
+        <!--</div>-->
+    </div>
+    <ion-content class=" logo-padding">
+        <div class="big-search-container animate-if" ng-if="!parent.show_categories">
+            <img src="img/logo_infox_big.png" id="big_logo" />
+            <form ng-submit="doSearchOutside()">
+                <input id="homeSearchBox" type="search" ng-model="form.searchQueryOutside" class="search-box-big" placeholder="Ingresa el Negocio que buscas" max-selected-items="1" ng-model="searchQuery" items-method="callbackMethod(query)" item-view-value-key="cadena" items-method-value-key="data" items-clicked-method="clickedMethod(callback)" ion-autocomplete clear-on-select="true" />
+                <!--<button type="submit" class="button button-positive" ng-click="doSearchOutside()">-->
+                    <!--<i class="icon ion-mic-a search-mic-big"></i>-->
+                <!--</button>-->
+            </form>
+            <br />
+            <!--<button class="button button-stable">
+                <i class="icon ion-search"></i> Buscar
+            </button>-->
+        </div>
+        <div ng-show="advertising.img != ''" class="advertisement">
+            <a href="#/app/search_place/{{advertising.idnegocio}}" ng-if="advertising.enlace == '1'" >
+                <img src="{{advertising.url + advertising.img}}" >
+            </a>
+            <a ng-if="advertising.enlace == '2'" href="{{advertising.url}}" onclick="window.open(this.href, '_blank'); return false;">
+                <img src="{{advertising.url + advertising.img}}" >
+            </a>
+        </div>
+
+
+        <!--<span class="subtle-title" ng-click="alert('hello');parent.show_categories = !parent.show_categories" ng-class="!isBigSearchActive() ? '' : 'center nomar'"><i-->
+        <!--ng-if="!parent.show_categories"><i class="icon ion-ios-arrow-down"></i> MOSTRAR CATEGORÍAS</i><i ng-if="parent.show_categories"><i class="icon ion-ios-arrow-up"></i> OCULTAR CATEGORÍAS</i></span>-->
+        <!--<div ng-if="parent.show_categories == true" class="list list-inset nomarto animate-if">-->
+            <!--<a class="item item-icon-left item-icon-right" href="#">-->
+                <!--<i class="icon ion-fork"></i>-->
+                <!--<i class="icon ion-ios-arrow-right"></i>-->
+                <!--Restaurantes-->
+            <!--</a>-->
+            <!--<a class="item item-icon-left item-icon-right" href="#">-->
+                <!--<i class="icon ion-beer"></i>-->
+                <!--<i class="icon ion-ios-arrow-right"></i>-->
+                <!--Bares-->
+            <!--</a>-->
+            <!--<a class="item item-icon-left item-icon-right" href="#">-->
+                <!--<i class="icon ion-pizza"></i>-->
+                <!--<i class="icon ion-ios-arrow-right"></i>-->
+                <!--Comida Rápida-->
+            <!--</a>-->
+            <!--<a class="item item-icon-left item-icon-right" href="#">-->
+                <!--<i class="icon ion-coffee"></i>-->
+                <!--<i class="icon ion-ios-arrow-right"></i>-->
+                <!--Café-->
+            <!--</a>-->
+            <!--<a class="item item-icon-left item-icon-right" href="#">-->
+                <!--<i class="icon ion-ios-nutrition"></i>-->
+                <!--<i class="icon ion-ios-arrow-right"></i>-->
+                <!--Ensaladas-->
+            <!--</a>-->
+        <!--</div>-->
+        <!--
+        <div ng-if="parent.show_ft">
+            <span class="subtle-title">DESTACADO</span>
+            <div class="list card nomarto">
+                <div class="item item-image">
+                    <img src="https://scontent-lax3-1.xx.fbcdn.net/t31.0-0/p180x540/14890437_959959404129637_978657116345447412_o.jpg">
+                </div>
+                <div class="item">
+                    <h2>Tortas Bernal</h2>
+                    <p>10 y 11 Hidalgo, Zona Centro. Cd. Victoria</p>
+                </div>
+            </div>
+        </div>
+        <span ng-click="parent.show_ft = !parent.show_ft">Ocultar/Mostrar Destacado</span>-->
+    </ion-content>
+</ion-view>

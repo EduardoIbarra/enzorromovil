@@ -1,0 +1,38 @@
+<ion-header>
+
+    <ion-navbar color="primary">
+        <ion-title>Reportar</ion-title>
+        <ion-buttons start>
+            <button ion-button (click)="closeModal(false)">
+                Regresar
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <ion-card>
+
+        <ion-card-header text-wrap>
+            <b>¿Encontraste datos incorrectos?</b>
+        </ion-card-header>
+
+        <ion-card-content text-wrap>
+            Si encontraste algún dato incorrecto que quieras reportarnos, por favor escríbenos los detalles aquí abajo y presiona el botón <b>Enviar</b>
+
+
+            <div class="inputField">
+                <ion-textarea rows="4" type="text" placeholder="Comentarios" [(ngModel)]="comments"></ion-textarea>
+                <p *ngIf="showError" text-wrap>Por favor ingresa tus comentarios</p>
+            </div>
+
+            <button ion-button full icon-right (click)="sendComments()">
+                Enviar
+                <ion-icon name="md-paper-plane"></ion-icon>
+            </button>
+        </ion-card-content>
+
+    </ion-card>
+</ion-content>

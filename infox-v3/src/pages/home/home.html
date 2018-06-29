@@ -1,0 +1,56 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title *ngIf="advertisement.img || !globalVariables.isConnected">
+            <div text-center>
+                <img src="assets/img/logo_infox_white.png" class="mainLogo"/>
+            </div>
+        </ion-title>
+    </ion-toolbar>
+    <ion-navbar color="primary" *ngIf="advertisement.img">
+        <ion-input mode="ios" placeholder="Buscar..." (focus)="openSearchModal()" readonly>
+            <ion-icon name="md-mic"></ion-icon>
+        </ion-input>
+        <ion-buttons end>
+            <button item-right ion-button color="light" class="mic-button" (click)="openSpeechModal()">
+                <ion-icon name="md-mic"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <offline *ngIf="!globalVariables.isConnected"></offline>
+
+    <div *ngIf="globalVariables.isConnected">
+
+        <div class="big-search-container animate-fade" *ngIf="!advertisement.img">
+            <img src="assets/img/logo_infox_big.png"/>
+            <form class="searchInput">
+                <ion-item no-lines>
+                    <ion-input type="text" placeholder="Ingresa el Negocio que buscas" (ionFocus)="openSearchModal()" readonly></ion-input>
+                    <button item-right ion-button color="primary" class="mic-button" (click)="openSpeechModal()">
+                        <ion-icon name="md-mic"></ion-icon>
+                    </button>
+                </ion-item>
+            </form>
+        </div>
+
+        <div *ngIf="advertisement.img" class="advertisement animate-fade">
+            <a (click)="goToPlaceDetails(advertisement.idnegocio)" *ngIf="advertisement.enlace == '1'">
+                <!--<a (click)="goToPlaceDetails('55760')" *ngIf="advertisement.enlace == '1'">-->
+                <img src="{{advertisement.url + advertisement.img}}">
+            </a>
+            <a href="{{advertisement.url}}" onclick="window.open(this.href, '_blank'); return false;" *ngIf="advertisement.enlace == '2'">
+                <img src="{{advertisement.url + advertisement.img}}">
+            </a>
+            <a *ngIf="advertisement.enlace != '1' && advertisement.enlace != '2'">
+                <img src="{{advertisement.url + advertisement.img}}">
+            </a>
+        </div>
+
+    </div>
+
+    <!--<button ion-button (click)="goToPlaceDetails('55760')"> Negocio</button>-->
+    <!--<button ion-button (click)="get()"> PERMISOSSSS</button>-->
+    <!--<button ion-button (click)="go()"> MAP</button>-->
+</ion-content>

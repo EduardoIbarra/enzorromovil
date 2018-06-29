@@ -1,0 +1,37 @@
+page-home {
+
+  .big-search-container {
+    margin: auto auto -5px auto;
+    padding-top: 15vh;
+    text-align: center;
+    img {
+      width: 60%;
+      margin-bottom: 15px;
+    }
+  }
+
+  .searchInput {
+    padding: 0 20px 0 20px !important;
+    .item-md {
+      .input-wrapper {
+        padding-right: 5px;
+      }
+    }
+    ion-input {
+      border: 1px solid map_get($colors, primary);
+      border-radius: 5px;
+      input {
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .advertisement {
+    padding-top: 25%;
+    text-align: center;
+    img {
+      width: 80%;
+    }
+  }
+
+}

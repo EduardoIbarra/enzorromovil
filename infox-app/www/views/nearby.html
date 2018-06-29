@@ -1,0 +1,118 @@
+<ion-view>
+    <ion-nav-title>
+        <div class="center">
+            <img src="img/logo_infox_white.png" id="mainLogo" />
+        </div>
+    </ion-nav-title>
+    <div class="bar bar-header bar-positive bar-subheader">
+        <label class="item item-input header-holder">
+            <i class="icon ion-search placeholder-icon"></i>
+            <form ng-submit="clickedMethod()">
+                <input ion-autocomplete type="search" placeholder="Buscar..." class="nav-search-box ion-autocomplete"
+                       max-selected-items="1" ng-model="searchQuery" items-method="callbackMethod(query)"
+                       item-view-value-key="cadena" items-method-value-key="data"
+                       items-clicked-method="clickedMethod(callback)" clear-on-select="true"
+                       component-id="component10"/>
+                <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;"/>
+            </form>
+        </label>
+        <!--<div class="header-mic center">-->
+            <!--<i class="icon ion-mic-a"></i>-->
+        <!--</div>-->
+    </div>
+    <ion-content class="has-subheader">
+        <ion-refresher
+                pulling-text="Estira Para Actualizar..."
+                on-refresh="refresh()">
+        </ion-refresher>
+
+        <div class="padding center" ng-if="notAvailableLocationMessage">
+            <div class="simple-message"><i class="icon ion-android-alert"></i> <br>{{notAvailableLocationMessage}}</div>
+        </div>
+
+        <div class="padding">
+            <div id="map" data-tap-disabled="true"></div>
+        </div>
+
+        <div class="padding center" ng-if="emptyMessage">
+            <div class="simple-message"><i class="icon ion-android-alert"></i> <br>{{emptyMessage}}</div>
+        </div>
+
+        <ion-list>
+            <ion-item ng-class="place.plan ==4 ? 'item item-avatar item-featured' : 'item item-avatar'"
+                      href="#/app/search_place/{{place.id}}"
+                      ng-repeat="place in places | limitTo: limitLastPageItems">
+                <!--<img src="http://infox.mx/{{place.banner}}">-->
+                <img ng-if="place.imagen" class="list-place-img" style="background-image:url(http://infox.mx/{{place.imagen}})" />
+                <img ng-if="!place.imagen" class="list-place-img" style="background-image: url(img/logo_infox_big.png);
+                background-size: contain;" />
+                <h2>
+                    <span class="fw500 textcap search-list-place-name">
+                        {{place.itemPosition + ". " + place.nombre | lowercase}}
+                    </span>
+                    <span class="small-font category textcap">
+                        <i class="icon" ng-class="place.iconStyle" ></i>
+                        {{place.clasificacion | lowercase}}
+                    </span>
+                </h2>
+                <p>{{place.casa || place.otrosdatos}}</p>
+                <p>
+                    <b>
+                        <i class="icon ion-android-car" ng-if="place.distancia"></i>
+                        A {{place.distancia}} Km aprox.
+                    </b>
+                </p>
+                <p ng-if="place.horarios" class="textcap hours-text">
+                    <i class="icon ion-clock"></i>
+                    {{place.horarios}}
+                </p>
+                <br ng-if="place.promos.length > 0" />
+                <div ng-if="place.promos.length > 0" class="promo-ribbon">
+                    <i class="icon ion-ios-pricetags"></i>
+                    {{place.promos[0].descripcion}}
+                </div>
+
+            </ion-item>
+
+
+        </ion-list>
+
+        <div ng-if="records > 20" class="center padding">
+            <span ng-if="calculatePages() > 0">
+                Página
+                <strong>{{form.page}}</strong> de
+                <strong>{{calculatePages()}}</strong> |
+                <strong>{{records}}</strong>
+                <span ng-if="records > 1"> Resultados </span>
+                <span ng-if="records == 1"> Resultado </span>
+            </span>
+        </div>
+
+        <div class="button-bar" ng-if="places.length > 0 && (records > 20) ">
+            <a class="button icon-left ion-ios-home"
+               ng-click="changeFirstPage()">Primera
+            </a>
+            <a class="button icon-left ion-chevron-left"
+               ng-click="changePreviousPage()">Atrás
+            </a>
+            <a class="button button-positive icon-right ion-chevron-right"
+               ng-click="changeNextPage()">Siguiente
+            </a>
+        </div>
+
+        <div ng-if="searchQuery != null">
+            <div class="center padding" ng-if="records > 0">
+                <span ng-if="records >= 1 && records <= 20">
+                    <strong>{{records}}</strong>
+                    <span ng-if="records > 1"> Resultados </span>
+                    <span ng-if="records == 1"> Resultado </span>
+                </span>
+            </div>
+            <div class=" center padding">
+                <a class="button icon-left ion-ios-home button-positive"
+                   ng-click="backToNearBy()">Lugares Cercanos
+                </a>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

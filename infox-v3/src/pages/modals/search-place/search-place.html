@@ -1,0 +1,33 @@
+<ion-header>
+
+    <ion-navbar color="primary">
+        <ion-searchbar #searchbar mode="md" (keypress)="searchOnEnter($event.keyCode, searchbar.value)" (ionInput)="searchResult($event)" placeholder="{{placeholder}}"></ion-searchbar>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="closeModal()">
+                <ion-icon name="md-close-circle"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+    <ion-list>
+        <ion-item *ngIf="items.length > 0 && recentSearch" class="itemColor">
+            <b>Búsqueda reciente...</b>
+        </ion-item>
+        <ion-item *ngIf="items.length > 0 && !recentSearch" class="itemColor">
+            <b>Hacer búsqueda...</b>
+        </ion-item>
+        <ion-item *ngIf="items.length == 0 && didSearch" class="itemColor">
+            <b>No hay resultados</b>
+        </ion-item>
+        <ion-item *ngIf="errorMessage" class="itemColor" text-center text-wrap>
+            <b>Ha ocurrido un error, intenta de nuevo más tarde.</b>
+        </ion-item>
+
+        <button ion-item detail-none *ngFor="let item of items" (click)="viewPlacesList(item.cadena)">
+            {{ item.cadena }}
+        </button>
+    </ion-list>
+</ion-content>

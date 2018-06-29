@@ -1,0 +1,28 @@
+<ion-content class="main-view" no-bounce>
+    <div class="overlay"></div>
+    <div class="modal_content">
+        <progress-bar class="progress" [ngClass]="{'animate-fade': hasResults && doneRecording, 'fadeOutProgress': hideProgress}" *ngIf="timer !== 0" [progress]="timer"></progress-bar>
+
+        <div class="speechTitle">
+            <p>Busca negocios</p>
+            <div class="subtitle">
+                <p *ngIf="doneRecording">Presiona el microfono para empezar</p>
+                <p *ngIf="isRecording">Escuchando...</p>
+            </div>
+        </div>
+
+        <div class="mic" (tap)="isRecording? stopListening(): startListening()">
+            <span class="mic-button">
+                <div class="ring" [class.ringAnimation]="isRecording"></div>
+                <ion-icon *ngIf="!isRecording" name="md-mic" class="record-mic"></ion-icon>
+                <ion-icon *ngIf="isRecording" name="md-square" class="record-stop"></ion-icon>
+            </span>
+        </div>
+        <div text-center text-wrap class="transcript-text">&nbsp;{{ match }}&nbsp;</div>
+
+        <div class="buttonGroupSpeech">
+            <button ion-button block clear color="primary" class="cancelButton" (click)="cancel()">Cancelar</button>
+            <button ion-button block clear color="primary" (click)="hasResults ? searchPlace(): ''" [disabled]="(!doneRecording && !hasResults) || !hasResults">Buscar</button>
+        </div>
+    </div>
+</ion-content>

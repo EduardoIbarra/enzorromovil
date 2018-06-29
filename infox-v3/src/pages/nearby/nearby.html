@@ -1,0 +1,110 @@
+<ion-header>
+
+    <ion-toolbar color="primary">
+        <ion-title>
+            <div text-center>
+                <img src="assets/img/logo_infox_white.png" class="mainLogo"/>
+            </div>
+        </ion-title>
+    </ion-toolbar>
+    <ion-navbar color="primary">
+        <ion-input mode="ios" placeholder="Busca cerca de ti..." value="{{recentSearch}}" (ionFocus)="openSearchModal()" readonly>
+            <ion-icon name="md-mic"></ion-icon>
+        </ion-input>
+        <ion-buttons end>
+            <button item-right ion-button color="light" class="mic-button" (click)="openSpeechModal()">
+                <ion-icon name="md-mic"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+    <ion-refresher (ionRefresh)="refresh($event)" [enabled]="enableRefresh && globalVariables.isConnected">
+        <ion-refresher-content
+                pullingIcon="md-arrow-down"
+                pullingText="Estira Para Actualizar...">
+        </ion-refresher-content>
+    </ion-refresher>
+
+    <offline *ngIf="!globalVariables.isConnected && places.length <= 0"></offline>
+
+    <div no-lines text-center text-wrap padding class="simple-message" *ngIf="showReloadMessage">Busca de lugares cercanos. <br> tirando hacia abajo</div>
+    <div no-lines text-center text-wrap padding class="simple-message" *ngIf="dataError && globalVariables.isConnected">Ha ocurrido un error. <br> Intenta de nuevo tirando hacia abajo</div>
+
+    <div [ngClass]="{'animate-fade-item': showData, 'fadeOut': !showData}" *ngIf="globalVariables.isConnected || places.length > 0">
+        <div padding>
+            <div id="map" class="nearbyMap"></div>
+        </div>
+        <div no-lines text-center text-wrap padding class="simple-message" *ngIf="places.length <= 0 && showData && searchQuery">No se han encontrado <b>{{searchQuery}}</b> cercanos a ti. <br> Intenta de nuevo</div>
+
+        <ion-list *ngIf="showData">
+
+            <button ion-item detail-none *ngFor="let place of places" [ngClass]="(place.plan == 4) ? 'item-featured' : ''" (click)="getPlaceDetails(place.id)">
+                <ion-avatar item-start *ngIf="place.imagen && place.plan !== ''" class="list-place-img">
+                    <img [src]="'http://infox.mx/' + place.imagen">
+                </ion-avatar>
+                <ion-avatar item-start *ngIf="!place.imagen || place.plan === ''" class="list-place-img">
+                    <img src="assets/img/logo_infox_big.png">
+                </ion-avatar>
+                <div class="itemPadding">
+                    <h2 class="search-list-place-name">{{place.itemPosition + '. '+ place.nombre | lowercase}}</h2>
+                    <span class="category">
+                    <ion-icon name="{{place.iconStyle}}"></ion-icon>
+                    {{place.clasificacion | lowercase}}
+                 </span>
+                    <p *ngIf="place.otrosdatos">
+                        <ion-icon name="md-information-circle"></ion-icon>
+                        {{place.otrosdatos}}
+                    </p>
+                    <p *ngIf="place.distancia" class="textCapitalize">
+                        <ion-icon name="md-car"></ion-icon>
+                        <b> A {{place.distancia}} Km aprox.</b>
+                    </p>
+                </div>
+            </button>
+        </ion-list>
+
+        <div *ngIf="records > 20" text-center padding>
+            <span *ngIf="calculatePages() > 0">Página
+                <strong>{{form.page}}</strong> de
+                <strong> {{calculatePages()}}</strong> |
+            </span>
+            <span>
+                <strong>{{records}}</strong>
+                <span *ngIf="records == 1"> Resultado</span>
+                <span *ngIf="records > 1">Resultados</span>
+            </span>
+        </div>
+        <div text-center *ngIf="places.length > 0 && records > 20 " class="buttonGroupNearby" no-padding>
+            <button ion-button full icon-left (click)="changePage('home')" [disabled]="form.page == 1" color="light" class="homeButton">
+                <ion-icon name="home"></ion-icon>
+                Inicio
+            </button>
+            <button ion-button full icon-left (click)="changePage('prev')" [disabled]="form.page <= 1" color="light">
+                <ion-icon name="ios-arrow-back"></ion-icon>
+                Atrás
+            </button>
+            <button ion-button full icon-right (click)="changePage('next')" [disabled]="places.length < 14" color="primary">
+                Siguiente
+                <ion-icon name="ios-arrow-forward"></ion-icon>
+            </button>
+        </div>
+
+        <div text-center *ngIf="searchQuery">
+            <div padding *ngIf="records >= 1 && records <= 20">
+                <strong>{{records}}</strong>
+                <span *ngIf="records == 1"> Resultado</span>
+                <span *ngIf="records > 1">Resultados</span>
+            </div>
+            <button ion-button icon-left color="primary" (click)="backToNearby()">
+                <ion-icon name="ios-home"></ion-icon>
+                Lugares Cercanos
+            </button>
+        </div>
+    </div>
+
+</ion-content>

@@ -1,0 +1,20 @@
+offline {
+  z-index: -10 !important;
+  position: relative;
+  ion-grid, ion-row {
+    height: 100%
+  }
+
+  .offline-content{
+    display: inline-grid;
+    width: 60%;
+    letter-spacing: 2px;
+    color: map_get($colors, primary);
+    font-weight: 500;
+    img{
+      padding-bottom: 10px;
+      margin: 0 auto;
+      width: 40%;
+    }
+  }
+}

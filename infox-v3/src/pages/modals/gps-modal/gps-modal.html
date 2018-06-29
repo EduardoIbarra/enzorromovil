@@ -1,0 +1,89 @@
+<ion-header>
+
+    <ion-navbar color="primary">
+        <ion-title>Llévame Ahí</ion-title>
+        <ion-buttons start>
+            <button ion-button (click)="closeModal()">
+                Regresar
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+    <div no-lines text-center text-wrap padding-top class="simple-message" *ngIf="dataError"> Ha ocurrido al mostrar la informacion, por favor intenta mas tarde.</div>
+
+    <div [ngClass]="{'animate-fade': showData, 'hide': !showData}">
+        <p text-center text-wrap class="textCapitalize gpsTitle">Llévame a {{place.nombre | lowercase}}</p>
+    </div>
+    <div id="gpsMap" #gpsMap></div>
+
+    <div [ngClass]="{'animate-fade': showData, 'hide': !showData}">
+        <ion-list>
+            <ion-item text-wrap>
+                <ion-icon name="ios-pin" item-start color="primary"></ion-icon>
+                Ubicación del negocio
+                <h3 [innerHtml]="placeAddress"></h3>
+            </ion-item>
+            <ion-item text-wrap>
+                <ion-icon name="ios-navigate" item-start color="danger"></ion-icon>
+                Tu ubicación actual
+                <h3 [ngClass]="{'animate-fade': showUserAddress, 'hide': !showUserAddress}">{{userAddress}} &nbsp;</h3>
+            </ion-item>
+            <ion-item text-wrap class="directions-item" [ngClass]="{'animate-fade': startDirection, 'hide': !startDirection}">
+                <ion-icon name="md-compass" item-start></ion-icon>
+                Direcciones
+                <h3 [innerHtml]="directions"></h3>
+            </ion-item>
+            <ion-item text-wrap>
+                <ion-icon name="{{selectedTransportation.icon}}" item-start color="sec"></ion-icon>
+                <ion-label floating>Medio de Transporte</ion-label>
+                <ion-select interface="popover" [(ngModel)]="selectedTransportation">
+                    <ion-option *ngFor="let t of transportation" [value]="t" (ionSelect)="changeTransportation($event)">{{t.name}}</ion-option>
+                </ion-select>
+            </ion-item>
+            <ion-item text-wrap>
+                <ion-icon name="md-map" item-start></ion-icon>
+                Distancia
+                <h3>Aprox. {{distance}}</h3>
+            </ion-item>
+            <ion-item text-wrap>
+                <ion-icon name="md-time" item-start color="secondary"></ion-icon>
+                Duración
+                <h3>Aprox. {{duration}}</h3>
+            </ion-item>
+            <ion-item text-center no-lines>
+                <button ion-button large color="primary" (tap)="openNavigator()">
+                    <ion-icon name="md-navigate"></ion-icon>
+                    &nbsp;Ir Ahí
+                </button>
+            </ion-item>
+        </ion-list>
+    </div>
+
+    <ion-fab right bottom #fab [ngClass]="{'animate-fade': showData, 'hide': !showData}">
+        <div id="tutorial-take-me-there" [ngClass]="{'animate-fade': globalVariables.showTakeMeThereTut, 'fadeOut': !globalVariables.showTakeMeThereTut}">
+            ¡Llega más rapido!
+            <div id="take-me-there-arrow"></div>
+        </div>
+        <button ion-fab color="infox" (click)="directionsInfoAlert()" [class.direction-animation]="!startDirection">
+            <ion-icon name="md-navigate"></ion-icon>
+        </button>
+        <ion-fab-list side="top" class="fab-list-text">
+            <button ion-fab color="infox" (click)="stopDirections(fab)" *ngIf="startDirection">
+                <ion-icon name="ios-hand"></ion-icon>
+                <ion-label>He llegado</ion-label>
+            </button>
+            <button ion-fab color="infox" (click)="startMutedDirections(fab)" *ngIf="mutedDirections === false || showOptions">
+                <ion-icon name="md-volume-off"></ion-icon>
+                <ion-label>Solo texto</ion-label>
+            </button>
+            <button ion-fab color="infox" (click)="startSoundDirections(fab)" *ngIf="mutedDirections  || showOptions">
+                <ion-icon name="md-volume-up"></ion-icon>
+                <ion-label>Navegación por voz</ion-label>
+            </button>
+        </ion-fab-list>
+    </ion-fab>
+</ion-content>

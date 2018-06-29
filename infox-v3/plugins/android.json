@@ -1,0 +1,84 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "com-sarriaroman-photoviewer": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "cordova-open-native-settings": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "cordova-plugin-facebook4": {
+      "APP_ID": "361034541018618",
+      "APP_NAME": "Infox",
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "cordova-plugin-nativegeocoder": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "cordova-plugin-networkinterface": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "cordova-plugin-speechrecognition": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "cordova-plugin-tts": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "cordova.plugins.diagnostic": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "com.googlemaps.ios": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "uk.co.workingedge.phonegap.plugin.launchnavigator": {
+      "PACKAGE_NAME": "infox.buscador"
+    }
+  },
+  "dependent_plugins": {
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "cordova-plugin-actionsheet": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "infox.buscador"
+    }
+  }
+}

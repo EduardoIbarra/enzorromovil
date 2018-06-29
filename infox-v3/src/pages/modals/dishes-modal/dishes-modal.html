@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>Menú de Platillos</ion-title>
+        <ion-buttons start>
+            <button ion-button (click)="closeModal()">
+                Regresar
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div *ngIf="dishes">
+        <ion-card *ngFor="let dish of dishes">
+            <ion-card-header class="titleSize">
+                {{dish.titulo}}
+            </ion-card-header>
+            <ion-card-content (tap)="viewImage(dish.nombreimg, dish.titulo)">
+                <img src="http://www.infox.mx/menuplatillos/{{dish.nombreimg}}">
+            </ion-card-content>
+        </ion-card>
+    </div>
+</ion-content>

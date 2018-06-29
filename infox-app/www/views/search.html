@@ -1,0 +1,55 @@
+<ion-view>
+    <ion-nav-bar class="bar-positive bar-downheader" align-title="center">
+        <ion-nav-back-button class="button">
+            <i class="ion-arrow-left-c"></i> Regresar
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-nav-title>
+        <div class="center">
+            <img src="img/logo_infox_white.png" id="mainLogo" />
+        </div>
+    </ion-nav-title>
+    <div class="bar bar-header bar-positive bar-subheader">
+        <label class="item item-input header-holder">
+            <i class="icon ion-search placeholder-icon"></i>
+            <form ng-submit="doSearch()">
+                <input ion-autocomplete  type="search" placeholder="Buscar..." class="nav-search-box ion-autocomplete" max-selected-items="1" ng-model="searchQuery" items-method="callbackMethod(query)" item-view-value-key="cadena" items-method-value-key="data" items-clicked-method="clickedMethod(callback)" clear-on-select="true" component-id="component1"/>
+                <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;"/>
+            </form>
+        </label>
+        <!--<div class="header-mic center">-->
+            <!--<i class="icon ion-mic-a"></i>-->
+        <!--</div>-->
+    </div>
+    <ion-content class="has-subheader">
+        <div class="padding center" ng-if="places.length <= 0 || !places">
+            <div class="simple-message"><i class="icon ion-android-alert"></i> {{emptyMessage}}</div>
+        </div>
+        <ion-refresher
+                pulling-text="Estira Para Actualizar..."
+                on-refresh="doSearch()">
+        </ion-refresher>
+        <ion-list>
+            <ion-item ng-class="(place.plan == 4) ? 'item item-avatar item-featured' : 'item item-avatar'" href="#/app/search_place/{{place.idnum}}" ng-repeat="place in places | orderBy:place.plan">
+                <!--<img src="http://infox.mx/{{place.banner}}">-->
+                <img ng-if="place.banner && place.plan !== ''" class="list-place-img" style="background-image: url(http://infox.mx/{{place.banner}})" />
+                <img ng-if="!place.banner || place.plan === ''" class="list-place-img" style="background-image: url(img/logo_infox_big.png); background-size: contain;" />
+                <h2><span class="fw500 textcap search-list-place-name">{{place.nombre | lowercase}}</span><span class="small-font category textcap"><i <i class="icon" ng-class="place.iconStyle" ></i></i> {{place.clasificacion | lowercase}}</span></h2>
+                <p>{{place.casa || place.otrosdatos}}</p>
+                <p class="textcap"><b><i class="icon ion-location" ng-if="place.latitud && place.longitud"></i> {{place.ciudad}}, {{place.estado}}</b></p>
+                <p ng-if="place.horarios" class="textcap hours-text"><i class="icon ion-clock"></i> {{place.horarios}}</p>
+                <br ng-if="place.promos.length > 0" />
+                <div ng-if="place.promos.length > 0" class="promo-ribbon"> <i class="icon ion-ios-pricetags"></i> {{place.promos[0].descripcion}}</div>
+            </ion-item>
+        </ion-list>
+        <div ng-if="places.length > 0" class="center padding">
+            <span ng-if="calculatePages() > 0">Página <strong>{{form.page}}</strong> de <strong>{{calculatePages()
+                }}</strong> |</span> <span> <strong>{{records}}</strong> Resultados</span>
+        </div>
+        <div class="button-bar" ng-if="places.length > 0 && (places.length > 14 || form.page !== 1) ">
+            <a class="button icon-left ion-ios-home" ng-click="form.page = 1 ; doSearch()" ng-disabled="form.page === 1">Primera</a>
+            <a class="button icon-left ion-chevron-left" ng-click="form.page = form.page - 1 ; doSearch()" ng-disabled="form.page <= 1">Atrás</a>
+            <a class="button button-positive icon-right ion-chevron-right" ng-click="form.page = form.page + 1 ; doSearch()" ng-disabled="places.length < 14">Siguiente</a>
+        </div>
+    </ion-content>
+</ion-view>

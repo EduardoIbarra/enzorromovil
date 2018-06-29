@@ -1,0 +1,393 @@
+// http://ionicframework.com/docs/v2/theming/
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+* {
+  text-decoration: none !important;
+}
+
+
+div#tutorial-nearby {
+  position: absolute;
+  z-index: 99;
+  //bottom: 110px;
+  display: inline-block;
+  background-color: map_get($colors, primary);
+  border: 1px solid map_get($colors, primary);
+  color: white;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+div#tutorial-take-me-there{
+  position: fixed;
+  z-index: 99;
+  display: inline-block;
+  background-color: #ff6000;
+  border: 1px solid #ff6000;
+  color: white;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 15%;
+  right: 0;
+  bottom: 85px;
+}
+
+
+#take-me-there-arrow {
+  border: 15px solid map_get($colors, primary);
+  border-top-color: rgba(255, 0, 0, 0);
+  border-bottom-width: 13px;
+  border-left-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  right: -7px;
+  transform: rotate(-111deg);
+}
+#tut-down-arrow {
+  position: absolute;
+  bottom: -38px;
+  color: map_get($colors, primary);
+  font-size: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 50%;
+}
+
+.ios, .md {
+  .nearbyMap {
+    //display: block;
+    width: 100%;
+    height: 300px;
+  }
+
+  .placeMap {
+    display: block;
+    width: 100%;
+    height: 180px;
+  }
+
+  #gpsMap {
+    display: block;
+    width: 100%;
+    height: 40%;
+  }
+
+  .central-icon {
+    z-index: 999999 !important;
+    a {
+      overflow: visible;
+    }
+    ion-icon.ion-md-pin.icon-md {
+      margin-top: -47px;
+      z-index: 9999999;
+    }
+    ion-icon.ion-md-pin {
+      font-size: 100px;
+      margin-top: -120px;
+      color: map_get($colors, primary);
+      margin-left: 5px;
+      overflow: visible;
+      position: static;
+
+    }
+    :nth-child(2) {
+      .tab-button-text {
+        display: none !important;
+      }
+    }
+
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: .5;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .animate-fade {
+    animation: fadeIn ease-in 1;
+    animation-duration: 400ms;
+  }
+  .fadeOut {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+  }
+
+  .fadeOutProgress {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s ease-in 400ms, opacity 400ms;
+  }
+
+  .animate-fade-item {
+    animation: fadeIn ease-in 1;
+    animation-duration: 300ms;
+  }
+
+  .hide{
+    opacity: 0;
+  }
+
+  .show{
+    opacity: 0 !important;
+  }
+
+  .mainLogo {
+    height: 40px;
+    padding-top: 10px;
+  }
+
+  .mic-button {
+    width: 44px;
+    height: 44px;
+    ion-icon {
+      font-size: 2em;
+    }
+  }
+
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    opacity: 0.9;
+    -webkit-transform: scale(0.9);
+    -webkit-animation: pulse 3s ease-in-out infinite;
+    animation: pulse 3s ease-in-out infinite;
+  }
+
+  .circle {
+    width: 90px;
+    height: 90px;
+    margin: -45px 0 0 -45px;
+    border-radius: 90px;
+    background: map_get($colors, infox);
+  }
+
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale(0.7);
+      opacity: 0.5;
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(0.7);
+      opacity: 0.5;
+    }
+  }
+
+  .loading-wrapper {
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .toolbar-md {
+    height: 42px !important;
+    min-height: auto;
+  }
+
+  .toolbar-ios {
+    margin-bottom: -6px;
+  }
+
+  ion-navbar {
+    ion-input {
+      border-radius: 30px;
+      box-shadow: none;
+      padding-top: 0;
+      padding-bottom: 0;
+      background: white;
+      height: 30px;
+      margin-left: 5px;
+      .text-input {
+        padding-left: 20px;
+        margin-top: 8px;
+      }
+    }
+  }
+
+  //Custom modals alert type
+  page-speech-modal {
+    .main-view {
+      background: transparent;
+    }
+    .overlay {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: .3;
+      background-color: #000;
+    }
+    .modal_content {
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      margin: 0 auto;
+      color: #333;
+      background-color: white;
+      box-shadow: 0 2px 3px rgba(51, 51, 51, .35);
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+  }
+
+  //Disable fake backdrop to custom modals on tablets
+  @media (min-width: 641px) {
+    page-speech-modal{
+      .overlay {
+        background-color: transparent !important;
+      }
+    }
+  }
+
+  .textCapitalize{
+    text-transform: capitalize !important;
+  }
+
+  h1 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: 300;
+    color: #464646;
+  }
+
+  h4 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: normal;
+    color: #464646;
+  }
+
+  .modal-wrapper{
+    box-shadow: none  !important;
+  }
+
+
+  //List styles
+
+  .simple-message {
+    width: 70%;
+    color: gray;
+    font-size: 1.2em;
+    margin: 15px auto 30px auto;
+  }
+
+  .item-featured {
+    background-color: #fff1e8 !important;
+    border-right: 5px solid #ff6000;
+    font-size: 1.1em;
+  }
+
+  .textCapitalize {
+    text-transform: capitalize;
+  }
+
+  .search-list-place-name {
+    width: 150px !important;
+    overflow: hidden;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: inline;
+  }
+
+  .hours-text {
+    color: #00B16A !important;
+    font-weight: bold;
+  }
+
+  .category {
+    color: gray;
+    display: block;
+    font-size: small;
+    text-transform: capitalize;
+    padding-bottom: 4px;
+    padding-top: 4px;
+  }
+
+  .promo-ribbon {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #ff6000;
+    color: white;
+    font-size: .9em;
+    padding: 3px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .list-place-img {
+    img {
+      width: 45px !important;
+      height: 45px !important;
+      background-size: cover;
+      background: no-repeat center center;
+      border: 2px solid map_get($colors, primary);
+    }
+
+  }
+
+  .buttonGroup {
+    padding-bottom: 55px !important;
+    display: flex;
+  }
+
+  .buttonGroupSpeech {
+    display: flex !important;
+  }
+
+  .bigIcon {
+    ion-icon {
+      font-size: 21px;
+    }
+
+  }
+
+}
+
+ion-refresher {
+  top: 85px !important;
+  //padding-top: 40px !important;
+  //padding-bottom: 50px !important;
+  //ion-refresher-content{
+  //  padding-bottom: 30px !important;
+  //}
+}
