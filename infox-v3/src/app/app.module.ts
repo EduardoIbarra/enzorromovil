@@ -40,7 +40,7 @@ import {NetworkInterface} from '@ionic-native/network-interface';
             tabsHideOnSubPages: false,
             statusbarPadding: false
         }),
-        IonicStorageModule.forRoot(),
+        IonicStorageModule.forRoot()
     ],
     bootstrap: [IonicApp],
     entryComponents: [

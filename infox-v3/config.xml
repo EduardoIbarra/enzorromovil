@@ -79,8 +79,6 @@
         <splash height="480" src="resources/ios/splash/Default~iphone.png" width="320" />
         <splash height="2732" src="resources/ios/splash/Default@2x~universal~anyany.png" width="2732" />
     </platform>
-    <engine name="android" spec="6.3.0" />
-    <engine name="ios" spec="4.5.4" />
     <plugin name="cordova-plugin-console" spec="^1.1.0" />
     <plugin name="cordova-plugin-device" spec="^1.1.7" />
     <plugin name="cordova-plugin-splashscreen" spec="^4.1.0" />
@@ -91,10 +89,6 @@
         <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="Infox necesita tu ubicación" />
     </plugin>
     <plugin name="cordova-open-native-settings" spec="^1.5.0" />
-    <plugin name="cordova-plugin-facebook4" spec="^1.9.1">
-        <variable name="APP_ID" value="361034541018618" />
-        <variable name="APP_NAME" value="Infox" />
-    </plugin>
     <plugin name="cordova-plugin-inappbrowser" spec="^1.7.2" />
     <plugin name="cordova-plugin-nativegeocoder" spec="^2.0.5">
         <variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="Use geocoder service" />
@@ -118,4 +112,10 @@
         <variable name="NSLOCATIONALWAYSUSAGEDESCRIPTION" value="Dibujar una ruta en el mapa" />
     </plugin>
     <plugin name="com.googlemaps.ios" spec="https://github.com/mapsplugin/cordova-plugin-googlemaps-sdk" />
+    <plugin name="cordova-plugin-facebook4" spec="^1.10.1">
+        <variable name="APP_ID" value="805201646226832" />
+        <variable name="APP_NAME" value="InfoxLogin" />
+    </plugin>
+    <engine name="android" spec="6.3.0" />
+    <engine name="ios" spec="~4.5.4" />
 </widget>

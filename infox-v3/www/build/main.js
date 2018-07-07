@@ -1,1 +1,1877 @@
-webpackJsonp([9],{127:function(e,a,o){"use strict";o.d(a,"a",function(){return c});o(2);var n=o(205),c=(o.n(n),function(){return function(e,a){var o=this;this.http=e,this.jsonp=a,this.getAdvertisement=function(){return o.jsonp.get("http://www.infox.mx/apps/consulta_anunciopor.php?&jsoncallback=JSONP_CALLBACK")},this.autocompleteSearch=function(e){return o.jsonp.get("http://www.infox.mx/apps/autocomplete.php?jsoncallback=JSONP_CALLBACK&termino="+e)},this.getPlaces=function(e,a,n){return o.jsonp.get("http://infox.mx/apps/consulta_datos.php?termino="+e+"&page="+a+"&ciudad=0&dia="+n+"&jsoncallback=JSONP_CALLBACK")},this.getPlaceDetails=function(e){return o.jsonp.get("http://infox.mx/apps/consulta_info.php?idnum="+e+"&jsoncallback=JSONP_CALLBACK")},this.sendComments=function(e,a){return o.jsonp.get("http://infox.mx/apps/datos_incorrectos.php?idnum="+e+"&comentarios="+a+"&jsoncallback=JSONP_CALLBACK")},this.getNearbyPlaces=function(e,a,n,c){return o.jsonp.get("http://infox.mx/apps/georapp_json.php?callback=JSONP_CALLBACK&lat="+e+"&lng="+a+"&np="+n+"&b="+c).map(function(e){return e.json()})},this.getGpsData=function(e,a,n,c,t){return o.http.get("https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&origins="+e+","+a+"&destinations="+n+","+c+"&mode="+t+"&language=es&key=AIzaSyDhHyggzzMjFmbrFXj-edhwN-xOJmuaT6g")}}}())},140:function(e,a,o){"use strict";o.d(a,"a",function(){return c});o(2);var n=o(205),c=(o.n(n),function(){return function(){this.sortClasification=function(e){for(var a=0;a<e.length;a++)switch(e[a].icon="infox.png",e[a].clasificacion){case"ESCUELAS":e[a].iconStyle="ios-school",e[a].icon="school.png";break;case"COMIDAS RAPIDAS":e[a].iconStyle="md-pizza",e[a].icon="restaurant.png";break;case"RESTAURANTES":e[a].iconStyle="md-restaurant",e[a].icon="restaurant.png";break;case"REFACCIONARIAS":e[a].iconStyle="ios-hammer";break;case"SALONES":e[a].iconStyle="ios-musical-notes";break;case"VENTA DE MATERIALES":e[a].iconStyle="ios-build";break;case"AGENCIAS AUTOMOTRICES":e[a].iconStyle="md-car";break;case"FERRETERIAS":e[a].iconStyle="ios-construct";break;case"BANCOS":e[a].iconStyle="logo-usd",e[a].icon="banks.png";break;case"TELEVISION SATELITAL":e[a].iconStyle="md-desktop";break;case"IGLESIAS":e[a].iconStyle="ios-flower",e[a].icon="church.png";break;case"GASES INDUSTRIALES":e[a].iconStyle="ios-flame",e[a].icon="gas-station.png";break;case"GASOLINERAS":e[a].iconStyle="ios-water",e[a].icon="gas-station.png";break;case"HOSPITALES":case"CENTROS MEDICOS":e[a].iconStyle="md-medkit",e[a].icon="hospital.png";break;case"HOTELES":e[a].iconStyle="ios-briefcase",e[a].icon="hotel.png";break;case"MUSEOS":e[a].iconStyle="md-color-palette",e[a].icon="museum.png";break;case"CAJEROS AUTOMATICOS":e[a].iconStyle="ios-card",e[a].icon="atm.png";break;case"COMPUTADORAS":e[a].iconStyle="md-desktop";break;case"PASTELERIAS":e[a].iconStyle="ios-restaurant",e[a].icon="restaurant.png";break;case"TIENDAS DEPARTAMENTALES":e[a].iconStyle="md-cart";break;case"OPTICAS":e[a].iconStyle="md-glasses";break;case"CONSTRUCTORAS":e[a].iconStyle="ios-construct";break;case"VIDRIERIAS":e[a].iconStyle="logo-windows";break;case"DOCTORES":e[a].iconStyle="md-medkit",e[a].icon="hospital.png";break;case"GOBIERNO":e[a].iconStyle="ios-globe",e[a].icon="museum.png";break;case"TAXIS":e[a].iconStyle="md-car";break;case"MENSAJERIAS":e[a].iconStyle="logo-dropbox";break;case"PERIODICOS":e[a].iconStyle="md-paper";break;case"FOTOGRAFIA Y VIDEO":e[a].iconStyle="ios-camera";break;case"VETERINARIAS":e[a].iconStyle="md-paw";break;case"PAPELERIAS":e[a].iconStyle="md-print";break;case"GIMNASIOS":e[a].iconStyle="md-bicycle";break;case"EQUIPOS DE SONIDO":e[a].iconStyle="md-mic";break;case"GRUAS":e[a].iconStyle="md-car";break;case"FLORERIAS":e[a].iconStyle="ios-rose";break;case"GRUPOS MUSICALES":e[a].iconStyle="ios-musical-notes";break;case"TELEVISORAS":e[a].iconStyle="ios-desktop-outline";break;case"ARTICULOS DE LIMPIEZA":e[a].iconStyle="ios-flask-outline";break;case"COMERCIALIZADORA":e[a].iconStyle="logo-usd";break;case"ACADEMIAS DE BELLEZA":e[a].iconStyle="ios-color-wand";break;case"AGENTES DE SEGUROS":e[a].iconStyle="md-lock";break;case"VIDRIERAS":e[a].iconStyle="logo-windows";break;case"ABOGADOS":e[a].iconStyle="ios-briefcase";break;case"ATENCION CIUDADANA":e[a].iconStyle="ios-people";break;case"NOTARIAS PUBLICAS":e[a].iconStyle="ios-briefcase";break;case"GOBIERNO MUNICIPAL":e[a].iconStyle="ios-home",e[a].icon="museum.png";break;case"CARNICERIAS":e[a].iconStyle="md-restaurant";break;case"AIRES ACONDICIONADOS":e[a].iconStyle="md-sunny";break;case"ENTRENAMIENTO DE PERROS":e[a].iconStyle="md-paw";break;case"CERVECERIAS":e[a].iconStyle="md-beer";break;case"CASAS DE CAMBIO":e[a].iconStyle="md-cash";break;case"TINTORERIAS":e[a].iconStyle="md-shirt";break;case"IMPRENTAS":case"REMANUFACTURA DE CARTUCHOS":e[a].iconStyle="md-print";break;case"GASERAS":e[a].iconStyle="ios-flame",e[a].icon="gas-station";break;case"FUNERARIAS":e[a].iconStyle="ios-leaf";break;case"FARMACIAS":e[a].iconStyle="md-medkit",e[a].icon="hospital.png";break;case"ELECTRONICAS":e[a].iconStyle="ios-outlet";break;case"COMPAÑIAS DE TELEFONOS":e[a].iconStyle="call";break;case"TAQUERIAS":e[a].iconStyle="ios-restaurant";break;case"LAVANDERIAS":e[a].iconStyle="md-shirt";break;case"COMERCIALIZADORAS":e[a].iconStyle="logo-usd";break;case"ABARROTES":e[a].iconStyle="ios-cart";break;case"ARQUITECTOS":e[a].iconStyle="ios-home";break;case"CARPINTERIAS":e[a].iconStyle="ios-hammer";break;case"CINES":e[a].iconStyle="ios-film";break;case"CONTADORES":e[a].iconStyle="ios-briefcase";break;case"ACADEMIAS DE BAILE":e[a].iconStyle="ios-musical-notes";break;case"LABORATORIOS":e[a].iconStyle="ios-flask";break;case"AGENCIAS DE VIAJES":e[a].iconStyle="ios-plane";break;case"PRODUCTOS DE BELLEZA":e[a].iconStyle="ios-bowtie";break;case"AUTOTRANSPORTES":case"CENTRAL DE AUTOBUSES":e[a].iconStyle="md-bus";break;case"GOBIERNO ESTATAL":e[a].iconStyle="ios-globe-outline",e[a].icon="museum.png";break;case"SONIDOS":e[a].iconStyle="md-volume-up";break;case"RADIODIFUSORAS":e[a].iconStyle="ios-radio-outline";break;case"AEROLINEAS":case"AEROPUERTOS":e[a].iconStyle="ios-plane";break;case"AUTOMOVILES":e[a].iconStyle="md-car",e[a].icon="";break;case"CENTROS CULTURALES":e[a].iconStyle="md-color-palette",e[a].icon="museum.png";break;case"FIESTAS":e[a].iconStyle="ios-musical-notes";break;case"CENTROS COMERCIALES":e[a].iconStyle="md-cart";break;case"ESTETICAS":e[a].iconStyle="ios-cut";break;case"TALLER MECANICO":e[a].iconStyle="ios-build";break;case"ESCUELAS DE MUSICA":e[a].iconStyle="ios-musical-notes";break;case"CLUB DEPORTIVO":e[a].iconStyle="ios-football";break;case"GOBIERNO FEDERAL":e[a].iconStyle="ios-globe-outline",e[a].icon="museum.png";break;case"TIENDAS DE ACCESORIOS PARA DAMA":e[a].iconStyle="ios-bowtie";break;case"TALLERES":e[a].iconStyle="ios-build";break;case"TALLER ELECTRICO":e[a].iconStyle="ios-outlet";break;case"TABLAROCA":e[a].iconStyle="ios-hammer";break;case"FABRICA DE ALIMENTOS":e[a].iconStyle="ios-nutrition";break;case"FORRAJERAS":e[a].iconStyle="ios-key";break;case"CASAS DE EMPEÑO":e[a].iconStyle="md-cash";break;case"AUTOPARTES":e[a].iconStyle="md-car";break;case"MATERIALES PARA CONSTRUCCION":e[a].iconStyle="ios-construct",e[a].icon="";break;case"VIDEOCENTRO":e[a].iconStyle="ios-videocam",e[a].icon="";break;case"TRANSPORTES DE VALORES":e[a].iconStyle="md-cash";break;case"CLINICAS DE BELLEZA":e[a].iconStyle="ios-color-wand";break;case"MAQUINARIA PARA CONSTRUCCION":e[a].iconStyle="ios-construct";break;case"INSTALACIONES ELECTRICAS":e[a].iconStyle="ios-outlet";break;case"TELEFONIA":e[a].iconStyle="call";break;case"INMOBILIARIAS":case"BIENES RAICES":e[a].iconStyle="ios-home";break;case"RADIOCOMUNICACIONES":e[a].iconStyle="ios-radio-outline",e[a].icon="";break;case"PLOMERIA":e[a].iconStyle="ios-construct",e[a].icon="";break;case"CERRAJERIAS":e[a].iconStyle="ios-key";break;case"BOUTIQUES":e[a].iconStyle="ios-bowtie";break;case"INSTRUMENTOS MUSICALES":e[a].iconStyle="ios-musical-notes";break;case"HOJALATERIA Y PINTURA":e[a].iconStyle="md-color-fill";break;case"ELECTRICISTAS":e[a].iconStyle="ios-outlet";break;case"MOTOCICLETAS":e[a].iconStyle="md-bicycle";break;case"LLANTERAS":e[a].iconStyle="ios-disc";break;case"BANQUETES":e[a].iconStyle="ios-restaurant",e[a].icon="restaurant.png";break;case"DISCOS-BAR":e[a].iconStyle="md-beer";break;case"CIRUJANOS PLASTICOS":e[a].iconStyle="ios-pulse",e[a].icon="hospital.png";break;case"creditos":e[a].iconStyle="md-cash",e[a].icon="banks.png";break;case"CELULARES":e[a].iconStyle="ios-phone-portrait";break;case"SISTEMAS DE ALARMAS":e[a].iconStyle="ios-radio-outline";break;case"AMBULANCIAS":e[a].iconStyle="md-medkit",e[a].icon="hospital.png";break;case"BICICLETAS":e[a].iconStyle="md-bicycle";break;case"CAFE Y MOLINOS":e[a].iconStyle="ios-cafe";break;case"TIENDAS DE REGALOS":e[a].iconStyle="ios-bowtie";break;case"COPIADORAS":e[a].iconStyle="md-print",e[a].icon="school.png";break;case"PINTURAS":e[a].iconStyle="md-color-fill";break;case"TIENDAS DEPORTIVAS":e[a].iconStyle="ios-football";break;case"CLINICAS":e[a].iconStyle="ios-pulse",e[a].icon="hospital.png";break;case"FOTOGRAFIA":e[a].iconStyle="ios-camera";break;case"TURISMO":e[a].iconStyle="ios-plane";break;case"MOTEL":e[a].iconStyle="ios-briefcase",e[a].icon="hotel.png";break;case"PRODUCTOS NUTRICIONALES":e[a].iconStyle="ios-leaf";break;case"INGENIERIA AMBIENTAL":e[a].iconStyle="ios-globe";break;case"CHATS":e[a].iconStyle="md-chatbubbles";break;case"LIBRERIAS":e[a].iconStyle="ios-book-outline";break;case"MADERERIAS":e[a].iconStyle="ios-construct";break;case"MATERIALES ELECTRICOS":e[a].iconStyle="ios-outlet";break;case"AGENCIAS DE MOTOCICLETAS":e[a].iconStyle="md-bicycle";break;case"MATERIAL DIDACTICO":e[a].iconStyle="ios-book-outline";break;case"MATERIAL PARA CURACIONES":case"EQUIPO MEDICO Y QUIRURGICO":e[a].iconStyle="md-medkit",e[a].icon="hospital.png";break;case"PORTALES DE INTERNET":e[a].iconStyle="ios-wifi";break;case"MATERIAL QUIRURGICO":e[a].iconStyle="md-medkit",e[a].icon="hospital.png";break;case"TALLER":e[a].iconStyle="ios-construct";break;case"CLUBES DEPORTIVOS":e[a].iconStyle="ios-football";break;case"SISTEMAS CONTRA INCENDIO":e[a].iconStyle="ios-flame";break;case"COMIDA RAPIDA":case"SNACKS":e[a].iconStyle="md-pizza",e[a].icon="restaurant.png";break;case"LAVADO DE AUTOS":e[a].iconStyle="md-car";break;case"REFACCIONARIA":e[a].iconStyle="ios-construct";break;case"DESCARGAS":e[a].iconStyle="md-arrow-down";break;case"INFORMACION":e[a].iconStyle="ios-information-circle";break;case"POLLOS":e[a].iconStyle="md-restaurant",e[a].icon="restaurant.png";break;case"ARTICULOS DE BELLEZA":e[a].iconStyle="ios-color-wand";break;case"ESTETICAS INFANTILES":e[a].iconStyle="ios-cut";break;case"COMUNICACIONES":e[a].iconStyle="ios-megaphone";break;case"PROFESORES":e[a].iconStyle="ios-book-outline",e[a].icon="school.png";break;case"EXTINGUIDORES":e[a].iconStyle="ios-flame";break;case"PORTALS DE INTERNET":e[a].iconStyle="ios-globe";break;case"TALLERES MECANICOS INDUSTRIALES":e[a].iconStyle="ios-construct";break;case"CAFETERIAS":e[a].iconStyle="ios-cafe",e[a].icon="restaurant.png";break;case"TELEVISION":e[a].iconStyle="ios-desktop-outline";break;case"TIENDA NATURISTA":e[a].iconStyle="ios-leaf";break;case"PLOMERIAS, FERRETERIAS Y ELECTRICIDAD":e[a].iconStyle="ios-construct";break;case"RESTAURANTES COCINA CHINA":e[a].iconStyle="md-restaurant",e[a].icon="restaurant.png";break;case"CLINICA":e[a].iconStyle="ios-pulse",e[a].icon="hospital.png";break;case"RENTA DE AUTOS":e[a].iconStyle="md-car";break;case"INSTITUCIONES DE CREDITO":e[a].iconStyle="md-cash",e[a].icon="banks.png";break;case"CLINICAS DENTALES":e[a].iconStyle="ios-pulse",e[a].icon="hospital.png";break;case"VINOS Y LICORES":e[a].iconStyle="ios-wine";break;case"VIDEOFILMACIONES":case"CAMARAS NACIONALES":e[a].iconStyle="ios-videocam";break;case"COMIDAS":e[a].iconStyle="md-restaurant",e[a].icon="restaurant.png";break;case"DESARROLLO DE SOFTWARE":e[a].iconStyle="ios-wifi";break;case"CLINICAS NATURISTAS":e[a].iconStyle="ios-leaf",e[a].icon="hospital.png";break;case"TALLERE MECANICO":e[a].iconStyle="ios-build";break;case"PARQUES":e[a].iconStyle="ios-leaf";break;case"ZOOLOGICOS":e[a].iconStyle="md-paw";break;case"PERIODICOS ELECTRONICOS":e[a].iconStyle="md-wifi";break;case"TIENDAS NATURISTAS":e[a].iconStyle="ios-leaf";break;case"COPIAS":e[a].iconStyle="md-print";break;case"ENERGIA SOLAR":e[a].iconStyle="md-sunny";break;case"EXTINTORES":e[a].iconStyle="ios-flame";break;case"GOBIERNO FEDRAL":e[a].iconStyle="ios-globe",e[a].icon="museum.png";break;case"NEVERIAS":e[a].iconStyle="md-ice-cream",e[a].icon="restaurant.png";break;case"HIERBERIAS":e[a].iconStyle="ios-leaf";break;case"PRODUCTOS ALIMENTICIOS":e[a].iconStyle="md-pint";break;case"PRODUCTOS QUIMICOS":e[a].iconStyle="ios-beaker-outline";break;case"TALLER DE ELECTRONICA":e[a].iconStyle="ios-outlet";break;case"BARES Y DISCOS":e[a].iconStyle="ios-radio-outline";break;case"BIBLIOTECAS":e[a].iconStyle="ios-book-outline",e[a].icon="school.png";break;case"TIENDAS DE ACCESORIOS PARA DAMAS":e[a].iconStyle="ios-bowtie";break;case"ANIMALES":e[a].iconStyle="md-paw";break;case"CAFETERIA":e[a].iconStyle="ios-cafe",e[a].icon="restaurant.png";break;case"VIDEO JUEGOS-PS3":e[a].iconStyle="logo-playstation";break;case"EQUIPOS DE SONIDOS":case"SONIDO":e[a].iconStyle="md-mic";break;case"COSMETICOS":e[a].iconStyle="ios-color-wand";break;case"GASOLINERA":e[a].iconStyle="ios-water",e[a].icon="gas-station.png";break;case"ELECTRONICOS":e[a].iconStyle="ios-phone-portrait";break;case"FINANCIERAS":e[a].iconStyle="logo-usd",e[a].icon="banks.png";break;case"ACCESORIOS":e[a].iconStyle="ios-bowtie";break;case"DONADORES DE SANGRE":e[a].iconStyle="md-medkit",e[a].icon="hospital.png";break;case"PRODUCTOS NATURALES":e[a].iconStyle="ios-leaf";break;case"PALAPAS":e[a].iconStyle="ios-partly-sunny";break;case"Ebanisteria y/o Carpinteria":e[a].iconStyle="ios-construct";break;case"AUTOS":e[a].iconStyle="md-car";break;case"SALONES DE BELLEZA":e[a].iconStyle="ios-color-wand";break;case"VINOS":e[a].iconStyle="ios-wine";break;case"UNIVERSIDADES":e[a].iconStyle="ios-school",e[a].icon="school.png";break;case"SALONES DE EVENTOS":e[a].iconStyle="ios-musical-notes";break;case"REGALOS":e[a].iconStyle="logo-dropbox";break;case"KARAOKE":e[a].iconStyle="md-microphone";break;case"PRODUCTOS DE LIMPIEZA":e[a].iconStyle="ios-flask-outline";break;case"TIENDAS DE ROPA":e[a].iconStyle="md-shirt";break;case"DISTRIBUIDORA DE REFRESCOS":e[a].iconStyle="ios-pint";break;case"ACCESORIOS PARA AUTOMOVILES":e[a].iconStyle="md-car";break;case"NOTARIAS":e[a].iconStyle="ios-briefcase";break;case"AUTOLAVADOS":e[a].iconStyle="md-car";break;case"PINTACARITAS":e[a].iconStyle="ios-brush";break;case"EQUIPO DE SONIDO, KARAOKE Y SHOW DE LUCES.":e[a].iconStyle="md-mic";break;case"FIESTAS  INFANTILES":e[a].iconStyle="ios-musical-notes";break;case"acuario":case"AGUA PURIFICADA":e[a].iconStyle="ios-water";break;case"Computo":e[a].iconStyle="ios-desktop-outline";break;case"MEDICINA Y PSICOLOGIA":e[a].iconStyle="ios-pulse",e[a].icon="hospital.png";break;case"RENTA DE SONIDOS":e[a].iconStyle="md-mic";break;case"REPARACION DE COMPUTADORAS":e[a].iconStyle="md-settings";break;case"AGENCIAS DE PUBLICIDAD":e[a].iconStyle="",e[a].icon="";break;case"RADIOLOGIAS":e[a].iconStyle="ios-pulse",e[a].icon="hospital.png";break;case"EQUIPOS Y MATERIALES CLINICOS":e[a].iconStyle="md-medkit",e[a].icon="hospital.png";break;case"MATERIAL DIDACTICO  EDUCATIVO":e[a].iconStyle="ios-bookmarks-outline",e[a].icon="school.png";break;case"JARDINEROS":e[a].iconStyle="ios-leaf";break;case"FOTOGRAFIAS":e[a].iconStyle="ios-camera";break;case"VENTA Y RENTA DE EQUIPO MEDICO":e[a].iconStyle="md-medkit",e[a].icon="hospital.png";break;case"AGENCIA DE VIAJES":e[a].iconStyle="ios-plane";break;case"VIDEOS FILMACIONES":case"VENTA DE PLANTAS":case"BARES":e[a].iconStyle="ios-videocam";break;case"SUPERMERCADOS":e[a].iconStyle="md-cart";break;case"ENDODONCISTAS":e[a].iconStyle="ios-pulse",e[a].icon="hospital.png";break;case"PAPELERIA":e[a].iconStyle="md-paper";break;case"AAA":e[a].iconStyle="ios-help-buoy";break;case"TRANSPORTES":e[a].iconStyle="md-bus";break;case"CONTABILIDAD, DEFENSA FISCAL, ADMINISTRACION Y FINANZAS":e[a].iconStyle="ios-briefcase";break;case"HAMBURGUESAS":e[a].iconStyle="md-restaurant",e[a].icon="restaurant.png";break;case"CONSULTORIOS NUTRIOLOGO":e[a].iconStyle="ios-pulse",e[a].icon="hospital.png";break;case"TELEFONOS DE EMERGENCIA ADMINISTRACION POSTAL":case"TELEFONOS DE EMERGENCIA POLICIA MINISTERIAL":case"TELEFONOS DE EMERGENCIA CENTRO DE EMERGENCIAS":case"TELEFONOS DE EMERGENCIA CENTRO ESTATAL DE TRANSFUSION SANGUINEA":case"TELEFONOS DE EMERGENCIA COMISION FEDERAL DE ELECTRICIDAD":e[a].iconStyle="md-help";break;case"CORREOS":e[a].iconStyle="md-mail";break;case"ESTACION DE BOMBEROS":e[a].iconStyle="md-flame";break;case"TELEFONOS DE EMERGENCIA":case"TELEFONOS DE EMERGENCIA CENTROS DE INTEGRACION":case"TELEFONOS DE EMERGENCIA NEUROTICOS ANONIMOS":case"TELEFONOS DE EMERGENCIA INCENDIOS FORESTALES":case"TELEFONOS EMERGENCIAS LOCATEL":case"TELEFONOS EMERGENCIAS IMSS ORIENTACION":case"TELEFONOS EMERGENCIAS IMSS":case"TELEFONOS EMERGENCIAS POLICIA FEDERAL":e[a].iconStyle="md-help";break;case"PROCURADURIA FEDERAL DEL CONSUMIDOR":e[a].iconStyle="ios-globe-outline";break;case"TELEFONOS DE EMERGENCIA SECRETARIA DE MARINA ARMADA DE MEXICO":case"TELEFONOS DE EMERGENCIA SECRETARIA DE SEGURIDAD Y VIALIDAD":e[a].iconStyle="md-help";break;case"PREPARATORIA":e[a].iconStyle="ios-school",e[a].icon="school.png";break;case"RETA DE KARAOKE":e[a].iconStyle="md-mic";break;case"DEPARTAMENTOS":e[a].iconStyle="ios-home";break;case"PREPARATORIAS":e[a].iconStyle="ios-school",e[a].icon="school.png";break;case"SECRETARIAS":e[a].iconStyle="ios-briefcase",e[a].icon="museum.png";break;case"MANTENIMIENTO":e[a].iconStyle="ios-construct";break;case"ESCUELAS DE INGLES":e[a].iconStyle="ios-school",e[a].icon="school.png";break;case"MEDICOS ALERGOLOGOS":case"CENTRO MEDICO":case"DOCTORES HOMEOPATAS":case"DOCTORES INTERNISTAS":case"DOCTORES ESPECIALISTAS NEUMOLOGOS":e[a].iconStyle="ios-pulse",e[a].icon="hospital.png";break;case"MEDICOS VETERINARIOS":e[a].iconStyle="md-paw",e[a].icon="hospital.png";break;case"CENTROS DE SALUD":e[a].iconStyle="ios-pulse",e[a].icon="hospital.png";break;case"LENTES":e[a].iconStyle="md-glasses";break;case"Radio por internet y Paginas Web":e[a].iconStyle="md-wifi";break;case"MEDICOS VETERINARIOS ZOOTERNISTAS":e[a].iconStyle="md-paw",e[a].icon="hospital.png";break;case"COMEDIANTES":e[a].iconStyle="md-happy";break;case"HOSPITALES SANATORIOS Y CLINICAS":e[a].iconStyle="ios-pulse",e[a].icon="hospital.png";break;case"COMIDA":e[a].iconStyle="md-restaurant",e[a].icon="restaurant.png";break;case"telefonia celular":e[a].iconStyle="call";break;case"SERVICIOS PARA HOSPITALES":e[a].iconStyle="md-medkit",e[a].icon="hospital.png";break;case"Restaurante":case"Pasteleria":e[a].iconStyle="md-restaurant",e[a].icon="restaurant.png";break;case"CRUZ ROJA":e[a].iconStyle="md-medkit",e[a].icon="hospital.png";break;case"regalos y novedades":e[a].iconStyle="ios-bowtie";break;case"fiestas y eventos":e[a].iconStyle="ios-musical-notes";break;case"RENTA DE CUBOS":e[a].iconStyle="md-cube";break;case"informatica":e[a].iconStyle="ios-globe-outline";break;case"ALQUILER DE AUTOS":case"VEHICULOS Y ACCESORIOS":e[a].iconStyle="md-car";break;case"ROPA INFANTIL":e[a].iconStyle="md-shirt";break;case"cubos":e[a].iconStyle="md-cube";break;case"SALONES DE FIESTAS":e[a].iconStyle="ios-musical-notes";break;case"TIENDAS":e[a].iconStyle="md-cart",e[a].icon="";break;case"SONIDO Y AUDIO":e[a].iconStyle="md-mic";break;case"financiera prestamos dinero":e[a].iconStyle="md-cash",e[a].icon="banks.png";break;case"TELEGRAFOS":e[a].iconStyle="md-mail";break;case"comida fresca":e[a].iconStyle="md-restaurant",e[a].icon="restaurant.png";break;case"Naturista":e[a].iconStyle="ios-leaf";break;case"COMUNIDADES RELIGIOSAS":e[a].iconStyle="ios-flower",e[a].icon="church.png";break;case"AUTOFINANCIAMIENTOS":e[a].iconStyle="md-cash";break;case"CLIMA":e[a].iconStyle="ios-partly-sunny";break;case"CONSULADOS":e[a].iconStyle="ios-globe",e[a].icon="museum.png";break;case"GUIAS TURISTICOS":e[a].iconStyle="ios-plane";break;case"ROPA":case"FABRICAS DE CAMISAS":case"COSTURERIAS":e[a].iconStyle="md-shirt";break;case"DESPACHOS CONTABLES":e[a].iconStyle="ios-briefcase";break;case"TERAPIAS":e[a].iconStyle="ios-pulse";break;case"SERVICIOS DE LIMPIEZA":e[a].iconStyle="ios-flask-outline";break;case"VIDEOCLUBS":e[a].iconStyle="ios-film";break;case"EQUIPO DE SEGURIDAD":e[a].iconStyle="md-lock";break;case"DENTISTAS":e[a].iconStyle="ios-pulse",e[a].icon="hospital.png";break;case"PELUQUERIAS":e[a].iconStyle="ios-cut";break;case"MOTELES":e[a].iconStyle="ios-briefcase",e[a].icon="hotel.png";break;default:e[a].iconStyle="ios-information-circle"}return e}}}())},143:function(e,a,o){"use strict";o.d(a,"a",function(){return n});o(2);var n=function(){function e(){}return e.prototype.transform=function(e,a,o){var n=this;return void 0===o&&(o=!0),a&&""!=a.trim()?o?Array.from(e).sort(function(e,o){return n.orderByComparator(e[a],o[a])}):Array.from(e).sort(function(e,o){return n.orderByComparator(o[a],e[a])}):e},e.prototype.orderByComparator=function(e,a){if(isNaN(parseFloat(e))||!isFinite(e)||isNaN(parseFloat(a))||!isFinite(a)){if(e.toLowerCase()<a.toLowerCase())return-1;if(e.toLowerCase()>a.toLowerCase())return 1}else{if(parseFloat(e)<parseFloat(a))return-1;if(parseFloat(e)>parseFloat(a))return 1}return 0},e}()},162:function(e,a){function o(e){return Promise.resolve().then(function(){throw new Error("Cannot find module '"+e+"'.")})}o.keys=function(){return[]},o.resolve=o,e.exports=o,o.id=162},187:function(e,a,o){function n(e){var a=c[e];return a?o.e(a[1]).then(function(){return o(a[0])}):Promise.reject(new Error("Cannot find module '"+e+"'."))}var c={"../pages/home/home.module.ngfactory":[259,4],"../pages/modals/dishes-modal/dishes-modal.module.ngfactory":[258,0],"../pages/modals/gps-modal/gps-modal.module.ngfactory":[262,5],"../pages/modals/incorrect-modal/incorrect-modal.module.ngfactory":[260,6],"../pages/modals/search-place/search-place.module.ngfactory":[261,7],"../pages/modals/speech-modal/speech-modal.module.ngfactory":[264,8],"../pages/nearby/nearby.module.ngfactory":[263,2],"../pages/place/place.module.ngfactory":[266,3],"../pages/search/search.module.ngfactory":[265,1]};n.keys=function(){return Object.keys(c)},n.id=187,e.exports=n},237:function(e,a,o){"use strict";function n(e){return i._22(0,[(e()(),i.Z(0,0,null,null,6,"div",[["id","tutorial-nearby"]],[[4,"bottom",null]],null,null,null,null)),i.Y(1,278528,null,0,x.h,[i.p,i.q,i.j,i.A],{ngClass:[0,"ngClass"]},null),i._14(2,{"animate-fade":0,fadeOut:1}),(e()(),i._20(-1,null,["\n    Ubica los Negocios Más Cercanos a Ti\n    "])),(e()(),i.Z(4,0,null,null,1,"ion-icon",[["id","tut-down-arrow"],["name","md-arrow-dropdown"],["role","img"]],[[2,"hide",null]],null,null,null,null)),i.Y(5,147456,null,0,H.a,[Y.a,i.j,i.z],{name:[0,"name"]},null),(e()(),i._20(-1,null,["\n"])),(e()(),i._20(-1,null,["\n"])),(e()(),i.Z(8,0,null,null,2,"ion-nav",[],null,null,null,Z.b,Z.a)),i._16(6144,null,J.a,null,[Q.a]),i.Y(10,4374528,null,0,Q.a,[[2,z.a],[2,K.a],X.a,Y.a,q.a,i.j,i.u,i.z,i.i,W.l,$.a,[2,ee.a],ae.a,i.k],{root:[0,"root"]},null)],function(e,a){var o=a.component;e(a,1,0,e(a,2,0,o.globalVariables.showNearbyTut,!o.globalVariables.showNearbyTut));e(a,5,0,"md-arrow-dropdown");e(a,10,0,o.rootPage)},function(e,a){e(a,0,0,a.component.globalVariables.nearbyTabActive?"110px":"62px");e(a,4,0,i._11(a,5)._hidden)})}function c(e){return i._22(0,[i._18(402653184,1,{tabRef:0}),(e()(),i.Z(1,0,null,null,14,"ion-tabs",[],null,[[null,"ionChange"]],function(e,a,o){var n=!0;if("ionChange"===a){n=!1!==e.component.getCurrentPage()&&n}return n},te.b,te.a)),i._16(6144,null,J.a,null,[ie.a]),i.Y(3,278528,null,0,x.h,[i.p,i.q,i.j,i.A],{ngClass:[0,"ngClass"]},null),i._14(4,{"central-icon":0}),i.Y(5,4374528,[[1,4],["tabs",4]],0,ie.a,[[2,K.a],[2,z.a],X.a,Y.a,i.j,q.a,i.z,ee.a,se.a],{selectedIndex:[0,"selectedIndex"]},{ionChange:"ionChange"}),(e()(),i._20(-1,0,["\n    "])),(e()(),i.Z(7,0,null,0,1,"ion-tab",[["role","tabpanel"],["tabIcon","home"],["tabTitle","Inicio"]],[[1,"id",0],[1,"aria-labelledby",0]],[[null,"click"]],function(e,a,o){var n=!0;if("click"===a){n=!1!==e.component.selectHome()&&n}return n},le.b,le.a)),i.Y(8,245760,null,0,re.a,[ie.a,X.a,Y.a,q.a,i.j,i.u,i.z,i.i,i.g,W.l,$.a,[2,ee.a],ae.a,i.k],{root:[0,"root"],tabTitle:[1,"tabTitle"],tabIcon:[2,"tabIcon"]},null),(e()(),i._20(-1,0,["\n    "])),(e()(),i.Z(10,0,null,0,1,"ion-tab",[["role","tabpanel"],["tabIcon","md-pin"],["tabTitle","Cercano"]],[[1,"id",0],[1,"aria-labelledby",0]],null,null,le.b,le.a)),i.Y(11,245760,null,0,re.a,[ie.a,X.a,Y.a,q.a,i.j,i.u,i.z,i.i,i.g,W.l,$.a,[2,ee.a],ae.a,i.k],{root:[0,"root"],tabTitle:[1,"tabTitle"],tabIcon:[2,"tabIcon"]},null),(e()(),i._20(-1,0,["\n    "])),(e()(),i.Z(13,0,null,0,1,"ion-tab",[["role","tabpanel"],["tabIcon","search"],["tabTitle","Buscar"]],[[1,"id",0],[1,"aria-labelledby",0]],null,null,le.b,le.a)),i.Y(14,245760,null,0,re.a,[ie.a,X.a,Y.a,q.a,i.j,i.u,i.z,i.i,i.g,W.l,$.a,[2,ee.a],ae.a,i.k],{root:[0,"root"],tabTitle:[1,"tabTitle"],tabIcon:[2,"tabIcon"]},null),(e()(),i._20(-1,0,["\n"]))],function(e,a){var o=a.component;e(a,3,0,e(a,4,0,!0===o.tabNearbyInactive));e(a,5,0,o.tabIndex);e(a,8,0,o.tab1Root,"Inicio","home");e(a,11,0,o.tab2Root,"Cercano","md-pin");e(a,14,0,o.tab3Root,"Buscar","search")},function(e,a){e(a,7,0,i._11(a,8)._tabId,i._11(a,8)._btnId);e(a,10,0,i._11(a,11)._tabId,i._11(a,11)._btnId);e(a,13,0,i._11(a,14)._tabId,i._11(a,14)._btnId)})}Object.defineProperty(a,"__esModule",{value:!0});var t=o(28),i=o(0),s=(o(2),o(99)),l=(o(55),o(94)),r=o(77),S=o(78),E=o(139),A=o(155),b=o(154),I=o(88),u=o(36),y=o(79),O=o(53),d=o(57),k=o(80),p=function(){return function(e,a,o,n,c,t,i,s,l,r){var S=this;this.globalVariables=c,this.network=t,this.general=i,this.networkInterface=s,this.storage=l,this.keyboard=r,e.ready().then(function(){a.overlaysWebView(!1),a.backgroundColorByHexString("#ff6000"),n.set("ios","backButtonText","Atrás"),S.keyboard.hideKeyboardAccessoryBar(!1),l.get("hasSeenTut").then(function(e){e||(c.showNearbyTut=!0,setTimeout(function(){c.showNearbyTut=!1,l.set("hasSeenTut",!0)},15e3))}),S.networkInterface.getIPAddress().then(function(e){S.globalVariables.isConnected=!0},function(e){S.globalVariables.isConnected=!1}),S.network.onConnect().subscribe(function(e){console.log(e),S.general.displayNetworkUpdate(e.type),S.globalVariables.isConnected=!0},function(e){return console.error(e)}),S.network.onDisconnect().subscribe(function(e){console.log(e),S.general.displayNetworkUpdate(e.type),S.globalVariables.isConnected=!1},function(e){return console.error(e)}),S.rootPage=I.a,o.hide()})}}(),R=o(127),m=o(140),C=o(143),N=o(156),T=o(207),g=o(152),h=o(90),L=o(111),D=o(153),f=o(148),P=function(){return function(){}}(),M=o(48),_=o(208),U=o(209),w=o(210),F=o(211),G=o(212),B=o(213),V=o(214),v=o(215),j=o(216),x=o(13),H=o(35),Y=o(1),Z=o(255),J=o(26),Q=o(52),z=o(5),K=o(20),X=o(8),q=o(4),W=o(6),$=o(22),ee=o(12),ae=o(9),oe=o(95),ne=i.X({encapsulation:2,styles:[],data:{}}),ce=i.V("ng-component",p,function(e){return i._22(0,[(e()(),i.Z(0,0,null,null,1,"ng-component",[],null,null,null,n,ne)),i.Y(1,49152,null,0,p,[q.a,S.a,r.a,Y.a,u.a,O.a,d.a,k.a,oe.a,y.a],null,null)],null,null)},{},{},[]),te=o(256),ie=o(42),se=o(27),le=o(257),re=o(74),Se=o(11),Ee=i.X({encapsulation:2,styles:[],data:{}}),Ae=i.V("ng-component",I.a,function(e){return i._22(0,[(e()(),i.Z(0,0,null,null,1,"ng-component",[],null,null,null,c,Ee)),i.Y(1,49152,null,0,I.a,[Se.a,K.a,X.a,u.a],null,null)],null,null)},{},{},[]),be=o(113),Ie=o(18),ue=o(103),ye=o(89),Oe=o(112),de=o(16),ke=o(33),pe=o(109),Re=o(131),me=o(50),Ce=o(38),Ne=o(85),Te=o(65),ge=o(119),he=o(115),Le=o(93),De=o(206),fe=o(114),Pe=o(30),Me=o(110),_e=o(116),Ue=i.W(P,[M.b],function(e){return i._7([i._8(512,i.i,i.S,[[8,[_.a,U.a,w.a,F.a,G.a,B.a,V.a,v.a,j.a,ce,Ae]],[3,i.i],i.s]),i._8(5120,i.r,i._17,[[3,i.r]]),i._8(4608,x.l,x.k,[i.r,[2,x.t]]),i._8(5120,i.b,i._1,[]),i._8(5120,i.p,i._9,[]),i._8(5120,i.q,i._12,[]),i._8(4608,t.c,t.q,[x.c]),i._8(6144,i.D,null,[t.c]),i._8(4608,t.f,be.a,[]),i._8(5120,t.d,function(e,a,o,n,c){return[new t.k(e,a),new t.o(o),new t.n(n,c)]},[x.c,i.u,x.c,x.c,t.f]),i._8(4608,t.e,t.e,[t.d,i.u]),i._8(135680,t.m,t.m,[x.c]),i._8(4608,t.l,t.l,[t.e,t.m]),i._8(6144,i.B,null,[t.l]),i._8(6144,t.p,null,[t.m]),i._8(4608,i.G,i.G,[i.u]),i._8(4608,t.h,t.h,[x.c]),i._8(4608,t.i,t.i,[x.c]),i._8(4608,s.c,s.c,[]),i._8(4608,s.j,s.b,[]),i._8(5120,s.l,s.m,[]),i._8(4608,s.k,s.k,[s.c,s.j,s.l]),i._8(4608,s.i,s.a,[]),i._8(5120,s.d,s.n,[s.k,s.i]),i._8(4608,s.p,s.p,[]),i._8(4608,s.f,s.f,[s.p,s.j]),i._8(5120,s.g,s.o,[s.f,s.i]),i._8(4608,Ie.o,Ie.o,[]),i._8(4608,Ie.d,Ie.d,[]),i._8(4608,ue.a,ue.a,[X.a,Y.a]),i._8(4608,ye.a,ye.a,[X.a,Y.a]),i._8(4608,Oe.a,Oe.a,[]),i._8(4608,de.a,de.a,[]),i._8(4608,ke.a,ke.a,[q.a]),i._8(4608,se.a,se.a,[Y.a,q.a,i.u,ae.a]),i._8(4608,pe.a,pe.a,[X.a,Y.a]),i._8(5120,x.f,Re.c,[x.r,[2,x.a],Y.a]),i._8(4608,x.e,x.e,[x.f]),i._8(5120,me.b,me.d,[X.a,me.a]),i._8(5120,ee.a,ee.b,[X.a,me.b,x.e,Ce.b,i.i]),i._8(4608,Ne.a,Ne.a,[X.a,Y.a,ee.a]),i._8(4608,Te.a,Te.a,[X.a,Y.a]),i._8(4608,ge.a,ge.a,[X.a,Y.a,ee.a]),i._8(4608,he.a,he.a,[Y.a,q.a,ae.a,X.a,W.l]),i._8(4608,Le.a,Le.a,[X.a,Y.a]),i._8(4608,$.a,$.a,[q.a,Y.a]),i._8(5120,oe.a,oe.c,[oe.b]),i._8(4608,S.a,S.a,[]),i._8(4608,r.a,r.a,[]),i._8(4608,E.a,E.a,[]),i._8(4608,R.a,R.a,[s.d,s.g]),i._8(4608,m.a,m.a,[]),i._8(4608,u.a,u.a,[]),i._8(4608,O.a,O.a,[]),i._8(4608,h.a,h.a,[]),i._8(4608,L.a,L.a,[]),i._8(4608,d.a,d.a,[pe.a,u.a,O.a,Le.a,ye.a,h.a,L.a]),i._8(4608,A.a,A.a,[]),i._8(4608,N.a,N.a,[]),i._8(4608,T.a,T.a,[]),i._8(4608,g.a,g.a,[]),i._8(4608,C.a,C.a,[]),i._8(4608,y.a,y.a,[]),i._8(4608,D.a,D.a,[]),i._8(4608,b.a,b.a,[]),i._8(4608,f.a,f.a,[]),i._8(4608,k.a,k.a,[]),i._8(512,x.b,x.b,[]),i._8(512,i.k,De.a,[]),i._8(256,Y.b,{tabsHideOnSubPages:!1,statusbarPadding:!1},[]),i._8(1024,fe.a,fe.b,[]),i._8(1024,q.a,q.b,[t.b,fe.a,i.u]),i._8(1024,Y.a,Y.c,[Y.b,q.a]),i._8(512,ae.a,ae.a,[q.a]),i._8(512,Pe.a,Pe.a,[]),i._8(512,X.a,X.a,[Y.a,q.a,[2,Pe.a]]),i._8(512,W.l,W.l,[X.a]),i._8(256,me.a,{links:[{loadChildren:"../pages/modals/dishes-modal/dishes-modal.module.ngfactory#DishesModalPageModuleNgFactory",name:"DishesModalPage",segment:"dishes-modal",priority:"low",defaultHistory:[]},{loadChildren:"../pages/home/home.module.ngfactory#HomeModuleNgFactory",name:"HomePage",segment:"home",priority:"low",defaultHistory:[]},{loadChildren:"../pages/modals/incorrect-modal/incorrect-modal.module.ngfactory#IncorrectModalPageModuleNgFactory",name:"IncorrectModalPage",segment:"incorrect-modal",priority:"low",defaultHistory:[]},{loadChildren:"../pages/modals/search-place/search-place.module.ngfactory#SearchPlacePageModuleNgFactory",name:"SearchPlacePage",segment:"search-place",priority:"low",defaultHistory:[]},{loadChildren:"../pages/modals/gps-modal/gps-modal.module.ngfactory#GpsModalPageModuleNgFactory",name:"GpsModalPage",segment:"gps-modal",priority:"low",defaultHistory:[]},{loadChildren:"../pages/nearby/nearby.module.ngfactory#NearbyPageModuleNgFactory",name:"NearbyPage",segment:"nearby",priority:"low",defaultHistory:[]},{loadChildren:"../pages/modals/speech-modal/speech-modal.module.ngfactory#SpeechModalPageModuleNgFactory",name:"SpeechModalPage",segment:"speech-modal",priority:"low",defaultHistory:[]},{loadChildren:"../pages/search/search.module.ngfactory#SearchPageModuleNgFactory",name:"SearchPage",segment:"search",priority:"low",defaultHistory:[]},{loadChildren:"../pages/place/place.module.ngfactory#PlacePageModuleNgFactory",name:"PlacePage",segment:"place",priority:"low",defaultHistory:[]}]},[]),i._8(512,i.h,i.h,[]),i._8(512,Me.a,Me.a,[i.h]),i._8(1024,Ce.b,Ce.c,[Me.a,i.o]),i._8(1024,i.c,function(e,a,o,n,c,i,s,l,r,S,E,A,b){return[t.s(e),_e.a(a),Oe.b(o,n),he.b(c,i,s,l,r),Ce.d(S,E,A,b)]},[[2,i.t],Y.a,q.a,ae.a,Y.a,q.a,ae.a,X.a,W.l,Y.a,me.a,Ce.b,i.u]),i._8(512,i.d,i.d,[[2,i.c]]),i._8(131584,i.f,i.f,[i.u,i.T,i.o,i.k,i.i,i.d]),i._8(512,i.e,i.e,[i.f]),i._8(512,t.a,t.a,[[3,t.a]]),i._8(512,s.e,s.e,[]),i._8(512,s.h,s.h,[]),i._8(512,Ie.m,Ie.m,[]),i._8(512,Ie.e,Ie.e,[]),i._8(512,Ie.l,Ie.l,[]),i._8(512,Re.a,Re.a,[]),i._8(512,l.a,l.a,[]),i._8(512,P,P,[]),i._8(256,M.a,p,[]),i._8(256,x.a,"/",[]),i._8(256,oe.b,null,[])])});Object(i.M)(),Object(t.j)().bootstrapModuleFactory(Ue)},36:function(e,a,o){"use strict";o.d(a,"a",function(){return n});o(2);var n=function(){function e(){this.recentSearchResults=[],this.recentNearbySearchResults=[],this.nearbyTabActive=!1,this.showNearbyTut=!1,this.showTakeMeThereTut=!1,this.goBackToNearby=!1,this.searchParams="",this.placeId=null}return e.prototype.getDay=function(){switch((new Date).getDay()){case 0:this.day="Domingo";break;case 1:this.day="Lunes";break;case 2:this.day="Martes";break;case 3:this.day="Miercoles";break;case 4:this.day="Jueves";break;case 5:this.day="Viernes";break;case 6:this.day="Sabado"}return this.day},e}()},57:function(e,a,o){"use strict";o.d(a,"a",function(){return n});o(2),o(55),o(36),o(90),o(111),o(53);var n=function(){function e(e,a,o,n,c,t,i){this.loadingCtrl=e,this.globalVariables=a,this.network=o,this.toastCtrl=n,this.alertCtrl=c,this.diagnostic=t,this.openNativeSettings=i}return e.prototype.removeAccents=function(e){if(void 0!==e){var a,o,n=(e=e.split("")).length;for(a=0;a<n;a++)-1!=(o="ÁáÉéÍíÓóÚú".indexOf(e[a]))&&(e[a]="AaEeIiOoUu"[o]);return e.join("")}},e.prototype.presentLoadingMask=function(){this.loadingMask=this.loadingCtrl.create({spinner:"hide",content:'<div class="loader circle"></div>'}),this.loadingMask.present()},e.prototype.dismissLoadingMask=function(){this.loadingMask.dismiss()},e.prototype.getLastSearch=function(){return this.globalVariables.recentSearch},e.prototype.getLastNearbySearch=function(){return this.globalVariables.recentNearbySearch},e.prototype.getLocationPermission=function(){var e=this;this.diagnostic.isLocationAuthorized().then(function(a){console.log(a),a?e.openNativeSettings.open("location").then(function(e){console.log("Settings opened"),console.log(e)}):e.diagnostic.requestLocationAuthorization().then(function(e){console.log(e),e?console.log("Proceed get places - location - etc"):console.log("show aleertsssssss")})}).catch(function(e){console.log(e)})},e.prototype.displayNetworkUpdate=function(e){this.toastCtrl.create({message:"offline"===e?"Conexión a internet perdida":"Conexión a internet restablecida",duration:5e3,position:"top"}).present()},e.prototype.showNetworkConnectionAlert=function(){this.alertCtrl.create({title:"No se ha detectado conexión a internet",message:"No es posible realizar esta acción, verifica tu conexión a la red",buttons:["Cerrar"]}).present()},e}()},88:function(e,a,o){"use strict";o.d(a,"a",function(){return n});o(2),o(55);var n=function(){function e(e,a,o,n){this.navParams=e,this.navCtrl=a,this.app=o,this.globalVariables=n,this.tabNearbyInactive=!0,this.tabIndex=this.navParams.get("tabIndex"),this.searchParam=this.navParams.get("search"),this.goToPlace=this.navParams.get("goToPlace"),this.tab1Root="HomePage",this.tab2Root="NearbyPage",this.tab3Root="SearchPage",n.searchParams=this.searchParam,n.goToPlace=this.goToPlace}return e.prototype.getCurrentPage=function(){this.tabNearbyInactive=1!=this.tabRef.getSelected().index,this.globalVariables.nearbyTabActive=1!=this.tabRef.getSelected().index},e.prototype.selectHome=function(){this.tabRef.select(0)},e}()}},[237]);
+webpackJsonp([10],{
+
+/***/ 104:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return General; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__global_variables__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_diagnostic__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_open_native_settings__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_network__ = __webpack_require__(55);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var General = /** @class */ (function () {
+    function General(loadingCtrl, globalVariables, network, toastCtrl, alertCtrl, diagnostic, openNativeSettings) {
+        this.loadingCtrl = loadingCtrl;
+        this.globalVariables = globalVariables;
+        this.network = network;
+        this.toastCtrl = toastCtrl;
+        this.alertCtrl = alertCtrl;
+        this.diagnostic = diagnostic;
+        this.openNativeSettings = openNativeSettings;
+    }
+    General.prototype.removeAccents = function (str) {
+        var accents = 'ÁáÉéÍíÓóÚú';
+        var accentsOut = "AaEeIiOoUu";
+        if (str === undefined)
+            return;
+        str = str.split('');
+        var strLen = str.length;
+        var i, x;
+        for (i = 0; i < strLen; i++) {
+            if ((x = accents.indexOf(str[i])) != -1) {
+                str[i] = accentsOut[x];
+            }
+        }
+        return str.join('');
+    };
+    General.prototype.presentLoadingMask = function () {
+        this.loadingMask = this.loadingCtrl.create({
+            spinner: 'hide',
+            content: "<div class=\"loader circle\"></div>",
+        });
+        this.loadingMask.present();
+    };
+    General.prototype.dismissLoadingMask = function () {
+        this.loadingMask.dismiss();
+    };
+    General.prototype.getLastSearch = function () {
+        return this.globalVariables.recentSearch;
+    };
+    General.prototype.getLastNearbySearch = function () {
+        return this.globalVariables.recentNearbySearch;
+    };
+    General.prototype.getLocationPermission = function () {
+        var _this = this;
+        this.diagnostic.isLocationAuthorized().then(function (authorized) {
+            console.log(authorized);
+            if (authorized) {
+                _this.openNativeSettings.open('location').then(function (data) {
+                    console.log('Settings opened');
+                    console.log(data);
+                });
+            }
+            else {
+                _this.diagnostic.requestLocationAuthorization().then(function (authorized) {
+                    console.log(authorized);
+                    if (authorized) {
+                        console.log('Proceed get places - location - etc');
+                    }
+                    else {
+                        console.log('show aleertsssssss');
+                    }
+                });
+            }
+        }).catch(function (error) {
+            console.log(error);
+        });
+    };
+    General.prototype.displayNetworkUpdate = function (connectionState) {
+        // let networkType = this.network.type;
+        var message;
+        message = connectionState === 'offline' ? 'Conexión a internet perdida' : 'Conexión a internet restablecida';
+        this.toastCtrl.create({
+            message: message,
+            duration: 5000,
+            position: 'top'
+        }).present();
+    };
+    General.prototype.showNetworkConnectionAlert = function () {
+        var alert = this.alertCtrl.create({
+            title: 'No se ha detectado conexión a internet',
+            message: 'No es posible realizar esta acción, verifica tu conexión a la red',
+            buttons: ['Cerrar']
+        });
+        alert.present();
+    };
+    General = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_2__global_variables__["a" /* GlobalVariables */],
+            __WEBPACK_IMPORTED_MODULE_5__ionic_native_network__["a" /* Network */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["y" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
+            __WEBPACK_IMPORTED_MODULE_3__ionic_native_diagnostic__["a" /* Diagnostic */],
+            __WEBPACK_IMPORTED_MODULE_4__ionic_native_open_native_settings__["a" /* OpenNativeSettings */]])
+    ], General);
+    return General;
+}());
+
+//# sourceMappingURL=general.js.map
+
+/***/ }),
+
+/***/ 108:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__general_global_variables__ = __webpack_require__(41);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var TabsPage = /** @class */ (function () {
+    function TabsPage(navParams, navCtrl, app, globalVariables) {
+        this.navParams = navParams;
+        this.navCtrl = navCtrl;
+        this.app = app;
+        this.globalVariables = globalVariables;
+        this.tabNearbyInactive = true;
+        this.tabIndex = this.navParams.get('tabIndex');
+        this.searchParam = this.navParams.get('search');
+        this.goToPlace = this.navParams.get('goToPlace');
+        this.tab1Root = 'HomePage';
+        this.tab2Root = 'NearbyPage';
+        this.tab3Root = 'SearchPage';
+        this.tab4Root = 'LoginPage';
+        globalVariables.searchParams = this.searchParam;
+        globalVariables.goToPlace = this.goToPlace;
+    }
+    TabsPage.prototype.getCurrentPage = function () {
+        this.tabNearbyInactive = this.tabRef.getSelected().index != 1;
+        this.globalVariables.nearbyTabActive = this.tabRef.getSelected().index != 1;
+    };
+    TabsPage.prototype.selectHome = function () {
+        this.tabRef.select(0);
+        // let nav = this.app.getRootNav();
+        // nav.setRoot(TabsPage, {tabIndex: 0})
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])('tabs'),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["x" /* Tabs */])
+    ], TabsPage.prototype, "tabRef", void 0);
+    TabsPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/ed/Projects/enzorromovil/infox-v3/src/pages/tabs/tabs.html"*/'<ion-tabs #tabs [ngClass]="{\'central-icon\' : tabNearbyInactive === true}" (ionChange)="getCurrentPage()" [selectedIndex]="tabIndex">\n    <ion-tab [root]="tab1Root" (click)="selectHome()" tabTitle="Inicio" tabIcon="home"></ion-tab>\n    <ion-tab [root]="tab2Root"  tabTitle="Cercano" tabIcon="md-pin"></ion-tab>\n    <ion-tab [root]="tab3Root"  tabTitle="Buscar" tabIcon="search"></ion-tab>\n    <ion-tab [root]="tab4Root"  tabTitle="Login" tabIcon="search"></ion-tab>\n</ion-tabs>'/*ion-inline-end:"/Users/ed/Projects/enzorromovil/infox-v3/src/pages/tabs/tabs.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* App */],
+            __WEBPACK_IMPORTED_MODULE_2__general_global_variables__["a" /* GlobalVariables */]])
+    ], TabsPage);
+    return TabsPage;
+}());
+
+//# sourceMappingURL=tabs.js.map
+
+/***/ }),
+
+/***/ 118:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 118;
+
+/***/ }),
+
+/***/ 160:
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"../pages/home/home.module": [
+		294,
+		6
+	],
+	"../pages/login/login.module": [
+		295,
+		9
+	],
+	"../pages/modals/dishes-modal/dishes-modal.module": [
+		296,
+		0
+	],
+	"../pages/modals/gps-modal/gps-modal.module": [
+		303,
+		2
+	],
+	"../pages/modals/incorrect-modal/incorrect-modal.module": [
+		297,
+		8
+	],
+	"../pages/modals/search-place/search-place.module": [
+		298,
+		7
+	],
+	"../pages/modals/speech-modal/speech-modal.module": [
+		299,
+		3
+	],
+	"../pages/nearby/nearby.module": [
+		301,
+		5
+	],
+	"../pages/place/place.module": [
+		302,
+		1
+	],
+	"../pages/search/search.module": [
+		300,
+		4
+	]
+};
+function webpackAsyncContext(req) {
+	var ids = map[req];
+	if(!ids)
+		return Promise.reject(new Error("Cannot find module '" + req + "'."));
+	return __webpack_require__.e(ids[1]).then(function() {
+		return __webpack_require__(ids[0]);
+	});
+};
+webpackAsyncContext.keys = function webpackAsyncContextKeys() {
+	return Object.keys(map);
+};
+webpackAsyncContext.id = 160;
+module.exports = webpackAsyncContext;
+
+/***/ }),
+
+/***/ 206:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var AppService = /** @class */ (function () {
+    function AppService(http, jsonp) {
+        var _this = this;
+        this.http = http;
+        this.jsonp = jsonp;
+        this.getAdvertisement = function () {
+            return _this.jsonp.get('http://www.infox.mx/apps/consulta_anunciopor.php?&jsoncallback=JSONP_CALLBACK');
+        };
+        this.autocompleteSearch = function (query) {
+            return _this.jsonp.get('http://www.infox.mx/apps/autocomplete.php?jsoncallback=JSONP_CALLBACK&termino=' + query);
+        };
+        this.getPlaces = function (query, page, day) {
+            return _this.jsonp.get('http://infox.mx/apps/consulta_datos.php?termino=' + query + '&page=' + page + '&ciudad=0&dia=' + day + '&jsoncallback=JSONP_CALLBACK');
+        };
+        this.getPlaceDetails = function (placeId) {
+            return _this.jsonp.get('http://infox.mx/apps/consulta_info.php?idnum=' + placeId + '&jsoncallback=JSONP_CALLBACK');
+        };
+        this.sendComments = function (placeId, comments) {
+            return _this.jsonp.get('http://infox.mx/apps/datos_incorrectos.php?idnum=' + placeId + '&comentarios=' + comments + '&jsoncallback=JSONP_CALLBACK');
+        };
+        this.getNearbyPlaces = function (lat, lng, page, search) {
+            return _this.jsonp.get('http://infox.mx/apps/georapp_json.php?callback=JSONP_CALLBACK&lat=' + lat + '&lng=' + lng + '&np=' + page + '&b=' + search).map(function (response) {
+                return response.json();
+            });
+        };
+        this.getGpsData = function (userLat, userLng, placeLat, placeLng, mode) {
+            return _this.http.get('https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&origins=' + userLat + ',' + userLng + '&destinations=' + placeLat + ',' + placeLng + '&mode=' + mode + '&language=es&key=AIzaSyDhHyggzzMjFmbrFXj-edhwN-xOJmuaT6g');
+        };
+    }
+    AppService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */], __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Jsonp */]])
+    ], AppService);
+    return AppService;
+}());
+
+//# sourceMappingURL=services.js.map
+
+/***/ }),
+
+/***/ 215:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PlaceClasification; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var PlaceClasification = /** @class */ (function () {
+    function PlaceClasification() {
+        this.sortClasification = function (clasifications) {
+            for (var i = 0; i < clasifications.length; i++) {
+                //Default icon
+                clasifications[i].icon = 'infox.png';
+                switch (clasifications[i].clasificacion) {
+                    case 'ESCUELAS':
+                        clasifications[i].iconStyle = 'ios-school';
+                        clasifications[i].icon = 'school.png';
+                        break;
+                    case 'COMIDAS RAPIDAS':
+                        clasifications[i].iconStyle = 'md-pizza';
+                        clasifications[i].icon = 'restaurant.png';
+                        break;
+                    case 'RESTAURANTES':
+                        clasifications[i].iconStyle = 'md-restaurant';
+                        clasifications[i].icon = 'restaurant.png';
+                        break;
+                    case 'REFACCIONARIAS':
+                        clasifications[i].iconStyle = 'ios-hammer';
+                        break;
+                    case 'SALONES':
+                        clasifications[i].iconStyle = 'ios-musical-notes';
+                        break;
+                    case 'VENTA DE MATERIALES':
+                        clasifications[i].iconStyle = 'ios-build';
+                        break;
+                    case 'AGENCIAS AUTOMOTRICES':
+                        clasifications[i].iconStyle = 'md-car';
+                        break;
+                    case 'FERRETERIAS':
+                        clasifications[i].iconStyle = 'ios-construct';
+                        break;
+                    case 'BANCOS':
+                        clasifications[i].iconStyle = 'logo-usd';
+                        clasifications[i].icon = 'banks.png';
+                        break;
+                    case 'TELEVISION SATELITAL':
+                        clasifications[i].iconStyle = 'md-desktop';
+                        break;
+                    case 'IGLESIAS':
+                        clasifications[i].iconStyle = 'ios-flower';
+                        clasifications[i].icon = 'church.png';
+                        break;
+                    case 'GASES INDUSTRIALES':
+                        clasifications[i].iconStyle = 'ios-flame';
+                        clasifications[i].icon = 'gas-station.png';
+                        break;
+                    case 'GASOLINERAS':
+                        clasifications[i].iconStyle = 'ios-water';
+                        clasifications[i].icon = 'gas-station.png';
+                        break;
+                    case 'HOSPITALES':
+                        clasifications[i].iconStyle = 'md-medkit';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'CENTROS MEDICOS':
+                        clasifications[i].iconStyle = 'md-medkit';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'HOTELES':
+                        clasifications[i].iconStyle = 'ios-briefcase';
+                        clasifications[i].icon = 'hotel.png';
+                        break;
+                    case 'MUSEOS':
+                        clasifications[i].iconStyle = 'md-color-palette';
+                        clasifications[i].icon = 'museum.png';
+                        break;
+                    case 'CAJEROS AUTOMATICOS':
+                        clasifications[i].iconStyle = 'ios-card';
+                        clasifications[i].icon = 'atm.png';
+                        break;
+                    case 'COMPUTADORAS':
+                        clasifications[i].iconStyle = 'md-desktop';
+                        break;
+                    case 'PASTELERIAS':
+                        clasifications[i].iconStyle = 'ios-restaurant';
+                        clasifications[i].icon = 'restaurant.png';
+                        break;
+                    case 'TIENDAS DEPARTAMENTALES':
+                        clasifications[i].iconStyle = 'md-cart';
+                        break;
+                    case 'OPTICAS':
+                        clasifications[i].iconStyle = 'md-glasses';
+                        break;
+                    case 'CONSTRUCTORAS':
+                        clasifications[i].iconStyle = 'ios-construct';
+                        break;
+                    case 'VIDRIERIAS':
+                        clasifications[i].iconStyle = 'logo-windows';
+                        break;
+                    case 'DOCTORES':
+                        clasifications[i].iconStyle = 'md-medkit';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'GOBIERNO':
+                        clasifications[i].iconStyle = 'ios-globe';
+                        clasifications[i].icon = 'museum.png';
+                        break;
+                    case 'TAXIS':
+                        clasifications[i].iconStyle = 'md-car';
+                        break;
+                    case 'MENSAJERIAS':
+                        clasifications[i].iconStyle = 'logo-dropbox';
+                        break;
+                    case 'PERIODICOS':
+                        clasifications[i].iconStyle = 'md-paper';
+                        break;
+                    case 'FOTOGRAFIA Y VIDEO':
+                        clasifications[i].iconStyle = 'ios-camera';
+                        break;
+                    case 'VETERINARIAS':
+                        clasifications[i].iconStyle = 'md-paw';
+                        break;
+                    case 'PAPELERIAS':
+                        clasifications[i].iconStyle = 'md-print';
+                        break;
+                    case 'GIMNASIOS':
+                        clasifications[i].iconStyle = 'md-bicycle';
+                        break;
+                    case 'EQUIPOS DE SONIDO':
+                        clasifications[i].iconStyle = 'md-mic';
+                        break;
+                    case 'GRUAS':
+                        clasifications[i].iconStyle = 'md-car';
+                        break;
+                    case 'FLORERIAS':
+                        clasifications[i].iconStyle = 'ios-rose';
+                        break;
+                    case 'GRUPOS MUSICALES':
+                        clasifications[i].iconStyle = 'ios-musical-notes';
+                        break;
+                    case 'TELEVISORAS':
+                        clasifications[i].iconStyle = 'ios-desktop-outline';
+                        break;
+                    case 'ARTICULOS DE LIMPIEZA':
+                        clasifications[i].iconStyle = 'ios-flask-outline';
+                        break;
+                    case 'COMERCIALIZADORA':
+                        clasifications[i].iconStyle = 'logo-usd';
+                        break;
+                    case 'ACADEMIAS DE BELLEZA':
+                        clasifications[i].iconStyle = 'ios-color-wand';
+                        break;
+                    case 'AGENTES DE SEGUROS':
+                        clasifications[i].iconStyle = 'md-lock';
+                        break;
+                    case 'VIDRIERAS':
+                        clasifications[i].iconStyle = 'logo-windows';
+                        break;
+                    case 'ABOGADOS':
+                        clasifications[i].iconStyle = 'ios-briefcase';
+                        break;
+                    case 'ATENCION CIUDADANA':
+                        clasifications[i].iconStyle = 'ios-people';
+                        break;
+                    case 'NOTARIAS PUBLICAS':
+                        clasifications[i].iconStyle = 'ios-briefcase';
+                        break;
+                    case 'GOBIERNO MUNICIPAL':
+                        clasifications[i].iconStyle = 'ios-home';
+                        clasifications[i].icon = 'museum.png';
+                        break;
+                    case 'CARNICERIAS':
+                        clasifications[i].iconStyle = 'md-restaurant';
+                        break;
+                    case 'AIRES ACONDICIONADOS':
+                        clasifications[i].iconStyle = 'md-sunny';
+                        break;
+                    case 'ENTRENAMIENTO DE PERROS':
+                        clasifications[i].iconStyle = 'md-paw';
+                        break;
+                    case 'CERVECERIAS':
+                        clasifications[i].iconStyle = 'md-beer';
+                        break;
+                    case 'CASAS DE CAMBIO':
+                        clasifications[i].iconStyle = 'md-cash';
+                        break;
+                    case 'TINTORERIAS':
+                        clasifications[i].iconStyle = 'md-shirt';
+                        break;
+                    case 'IMPRENTAS':
+                        clasifications[i].iconStyle = 'md-print';
+                        break;
+                    case 'REMANUFACTURA DE CARTUCHOS':
+                        clasifications[i].iconStyle = 'md-print';
+                        break;
+                    case 'GASERAS':
+                        clasifications[i].iconStyle = 'ios-flame';
+                        clasifications[i].icon = 'gas-station';
+                        break;
+                    case 'FUNERARIAS':
+                        clasifications[i].iconStyle = 'ios-leaf';
+                        break;
+                    case 'FARMACIAS':
+                        clasifications[i].iconStyle = 'md-medkit';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'ELECTRONICAS':
+                        clasifications[i].iconStyle = 'ios-outlet';
+                        break;
+                    case 'COMPAÑIAS DE TELEFONOS':
+                        clasifications[i].iconStyle = 'call';
+                        break;
+                    case 'TAQUERIAS':
+                        clasifications[i].iconStyle = 'ios-restaurant';
+                        break;
+                    case 'LAVANDERIAS':
+                        clasifications[i].iconStyle = 'md-shirt';
+                        break;
+                    case 'COMERCIALIZADORAS':
+                        clasifications[i].iconStyle = 'logo-usd';
+                        break;
+                    case 'ABARROTES':
+                        clasifications[i].iconStyle = 'ios-cart';
+                        break;
+                    case 'ARQUITECTOS':
+                        clasifications[i].iconStyle = 'ios-home';
+                        break;
+                    case 'CARPINTERIAS':
+                        clasifications[i].iconStyle = 'ios-hammer';
+                        break;
+                    case 'CINES':
+                        clasifications[i].iconStyle = 'ios-film';
+                        break;
+                    case 'CONTADORES':
+                        clasifications[i].iconStyle = 'ios-briefcase';
+                        break;
+                    case 'ACADEMIAS DE BAILE':
+                        clasifications[i].iconStyle = 'ios-musical-notes';
+                        break;
+                    case 'LABORATORIOS':
+                        clasifications[i].iconStyle = 'ios-flask';
+                        break;
+                    case 'AGENCIAS DE VIAJES':
+                        clasifications[i].iconStyle = 'ios-plane';
+                        break;
+                    case 'PRODUCTOS DE BELLEZA':
+                        clasifications[i].iconStyle = 'ios-bowtie';
+                        break;
+                    case 'AUTOTRANSPORTES':
+                        clasifications[i].iconStyle = 'md-bus';
+                        break;
+                    case 'CENTRAL DE AUTOBUSES':
+                        clasifications[i].iconStyle = 'md-bus';
+                        break;
+                    case 'GOBIERNO ESTATAL':
+                        clasifications[i].iconStyle = 'ios-globe-outline';
+                        clasifications[i].icon = 'museum.png';
+                        break;
+                    case 'SONIDOS':
+                        clasifications[i].iconStyle = 'md-volume-up';
+                        break;
+                    case 'RADIODIFUSORAS':
+                        clasifications[i].iconStyle = 'ios-radio-outline';
+                        break;
+                    case 'AEROLINEAS':
+                        clasifications[i].iconStyle = 'ios-plane';
+                        break;
+                    case 'AEROPUERTOS':
+                        clasifications[i].iconStyle = 'ios-plane';
+                        break;
+                    case 'AUTOMOVILES':
+                        clasifications[i].iconStyle = 'md-car';
+                        clasifications[i].icon = '';
+                        break;
+                    case 'CENTROS CULTURALES':
+                        clasifications[i].iconStyle = 'md-color-palette';
+                        clasifications[i].icon = 'museum.png';
+                        break;
+                    case 'FIESTAS':
+                        clasifications[i].iconStyle = 'ios-musical-notes';
+                        break;
+                    case 'CENTROS COMERCIALES':
+                        clasifications[i].iconStyle = 'md-cart';
+                        break;
+                    case 'ESTETICAS':
+                        clasifications[i].iconStyle = 'ios-cut';
+                        break;
+                    case 'TALLER MECANICO':
+                        clasifications[i].iconStyle = 'ios-build';
+                        break;
+                    case 'ESCUELAS DE MUSICA':
+                        clasifications[i].iconStyle = 'ios-musical-notes';
+                        break;
+                    case 'CLUB DEPORTIVO':
+                        clasifications[i].iconStyle = 'ios-football';
+                        break;
+                    case 'GOBIERNO FEDERAL':
+                        clasifications[i].iconStyle = 'ios-globe-outline';
+                        clasifications[i].icon = 'museum.png';
+                        break;
+                    case 'TIENDAS DE ACCESORIOS PARA DAMA':
+                        clasifications[i].iconStyle = 'ios-bowtie';
+                        break;
+                    case 'TALLERES':
+                        clasifications[i].iconStyle = 'ios-build';
+                        break;
+                    case 'TALLER ELECTRICO':
+                        clasifications[i].iconStyle = 'ios-outlet';
+                        break;
+                    case 'TABLAROCA':
+                        clasifications[i].iconStyle = 'ios-hammer';
+                        break;
+                    case 'FABRICA DE ALIMENTOS':
+                        clasifications[i].iconStyle = 'ios-nutrition';
+                        break;
+                    case 'FORRAJERAS':
+                        clasifications[i].iconStyle = 'ios-key';
+                        break;
+                    case 'CASAS DE EMPEÑO':
+                        clasifications[i].iconStyle = 'md-cash';
+                        break;
+                    case 'AUTOPARTES':
+                        clasifications[i].iconStyle = 'md-car';
+                        break;
+                    case 'MATERIALES PARA CONSTRUCCION':
+                        clasifications[i].iconStyle = 'ios-construct';
+                        clasifications[i].icon = '';
+                        break;
+                    case 'VIDEOCENTRO':
+                        clasifications[i].iconStyle = 'ios-videocam';
+                        clasifications[i].icon = '';
+                        break;
+                    case 'TRANSPORTES DE VALORES':
+                        clasifications[i].iconStyle = 'md-cash';
+                        break;
+                    case 'CLINICAS DE BELLEZA':
+                        clasifications[i].iconStyle = 'ios-color-wand';
+                        break;
+                    case 'MAQUINARIA PARA CONSTRUCCION':
+                        clasifications[i].iconStyle = 'ios-construct';
+                        break;
+                    case 'INSTALACIONES ELECTRICAS':
+                        clasifications[i].iconStyle = 'ios-outlet';
+                        break;
+                    case 'TELEFONIA':
+                        clasifications[i].iconStyle = 'call';
+                        break;
+                    case 'INMOBILIARIAS':
+                        clasifications[i].iconStyle = 'ios-home';
+                        break;
+                    case 'BIENES RAICES':
+                        clasifications[i].iconStyle = 'ios-home';
+                        break;
+                    case 'RADIOCOMUNICACIONES':
+                        clasifications[i].iconStyle = 'ios-radio-outline';
+                        clasifications[i].icon = '';
+                        break;
+                    case 'PLOMERIA':
+                        clasifications[i].iconStyle = 'ios-construct';
+                        clasifications[i].icon = '';
+                        break;
+                    case 'CERRAJERIAS':
+                        clasifications[i].iconStyle = 'ios-key';
+                        break;
+                    case 'BOUTIQUES':
+                        clasifications[i].iconStyle = 'ios-bowtie';
+                        break;
+                    case 'INSTRUMENTOS MUSICALES':
+                        clasifications[i].iconStyle = 'ios-musical-notes';
+                        break;
+                    case 'HOJALATERIA Y PINTURA':
+                        clasifications[i].iconStyle = 'md-color-fill';
+                        break;
+                    case 'ELECTRICISTAS':
+                        clasifications[i].iconStyle = 'ios-outlet';
+                        break;
+                    case 'MOTOCICLETAS':
+                        clasifications[i].iconStyle = 'md-bicycle';
+                        break;
+                    case 'LLANTERAS':
+                        clasifications[i].iconStyle = 'ios-disc';
+                        break;
+                    case 'BANQUETES':
+                        clasifications[i].iconStyle = 'ios-restaurant';
+                        clasifications[i].icon = 'restaurant.png';
+                        break;
+                    case 'DISCOS-BAR':
+                        clasifications[i].iconStyle = 'md-beer';
+                        break;
+                    case 'CIRUJANOS PLASTICOS':
+                        clasifications[i].iconStyle = 'ios-pulse';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'creditos':
+                        clasifications[i].iconStyle = 'md-cash';
+                        clasifications[i].icon = 'banks.png';
+                        break;
+                    case 'CELULARES':
+                        clasifications[i].iconStyle = 'ios-phone-portrait';
+                        break;
+                    case 'SISTEMAS DE ALARMAS':
+                        clasifications[i].iconStyle = 'ios-radio-outline';
+                        break;
+                    case 'AMBULANCIAS':
+                        clasifications[i].iconStyle = 'md-medkit';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'BICICLETAS':
+                        clasifications[i].iconStyle = 'md-bicycle';
+                        break;
+                    case 'CAFE Y MOLINOS':
+                        clasifications[i].iconStyle = 'ios-cafe';
+                        break;
+                    case 'TIENDAS DE REGALOS':
+                        clasifications[i].iconStyle = 'ios-bowtie';
+                        break;
+                    case 'COPIADORAS':
+                        clasifications[i].iconStyle = 'md-print';
+                        clasifications[i].icon = 'school.png';
+                        break;
+                    case 'PINTURAS':
+                        clasifications[i].iconStyle = 'md-color-fill';
+                        break;
+                    case 'TIENDAS DEPORTIVAS':
+                        clasifications[i].iconStyle = 'ios-football';
+                        break;
+                    case 'CLINICAS':
+                        clasifications[i].iconStyle = 'ios-pulse';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'FOTOGRAFIA':
+                        clasifications[i].iconStyle = 'ios-camera';
+                        break;
+                    case 'TURISMO':
+                        clasifications[i].iconStyle = 'ios-plane';
+                        break;
+                    case 'MOTEL':
+                        clasifications[i].iconStyle = 'ios-briefcase';
+                        clasifications[i].icon = 'hotel.png';
+                        break;
+                    case 'PRODUCTOS NUTRICIONALES':
+                        clasifications[i].iconStyle = 'ios-leaf';
+                        break;
+                    case 'INGENIERIA AMBIENTAL':
+                        clasifications[i].iconStyle = 'ios-globe';
+                        break;
+                    case 'CHATS':
+                        clasifications[i].iconStyle = 'md-chatbubbles';
+                        break;
+                    case 'LIBRERIAS':
+                        clasifications[i].iconStyle = 'ios-book-outline';
+                        break;
+                    case 'MADERERIAS':
+                        clasifications[i].iconStyle = 'ios-construct';
+                        break;
+                    case 'MATERIALES ELECTRICOS':
+                        clasifications[i].iconStyle = 'ios-outlet';
+                        break;
+                    case 'AGENCIAS DE MOTOCICLETAS':
+                        clasifications[i].iconStyle = 'md-bicycle';
+                        break;
+                    case 'MATERIAL DIDACTICO':
+                        clasifications[i].iconStyle = 'ios-book-outline';
+                        break;
+                    case 'MATERIAL PARA CURACIONES':
+                        clasifications[i].iconStyle = 'md-medkit';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'EQUIPO MEDICO Y QUIRURGICO':
+                        clasifications[i].iconStyle = 'md-medkit';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'PORTALES DE INTERNET':
+                        clasifications[i].iconStyle = 'ios-wifi';
+                        break;
+                    case 'MATERIAL QUIRURGICO':
+                        clasifications[i].iconStyle = 'md-medkit';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'TALLER':
+                        clasifications[i].iconStyle = 'ios-construct';
+                        break;
+                    case 'CLUBES DEPORTIVOS':
+                        clasifications[i].iconStyle = 'ios-football';
+                        break;
+                    case 'SISTEMAS CONTRA INCENDIO':
+                        clasifications[i].iconStyle = 'ios-flame';
+                        break;
+                    case 'COMIDA RAPIDA':
+                        clasifications[i].iconStyle = 'md-pizza';
+                        clasifications[i].icon = 'restaurant.png';
+                        break;
+                    case 'SNACKS':
+                        clasifications[i].iconStyle = 'md-pizza';
+                        clasifications[i].icon = 'restaurant.png';
+                        break;
+                    case 'LAVADO DE AUTOS':
+                        clasifications[i].iconStyle = 'md-car';
+                        break;
+                    case 'REFACCIONARIA':
+                        clasifications[i].iconStyle = 'ios-construct';
+                        break;
+                    case 'DESCARGAS':
+                        clasifications[i].iconStyle = 'md-arrow-down';
+                        break;
+                    case 'INFORMACION':
+                        clasifications[i].iconStyle = 'ios-information-circle';
+                        break;
+                    case 'POLLOS':
+                        clasifications[i].iconStyle = 'md-restaurant';
+                        clasifications[i].icon = 'restaurant.png';
+                        break;
+                    case 'ARTICULOS DE BELLEZA':
+                        clasifications[i].iconStyle = 'ios-color-wand';
+                        break;
+                    case 'ESTETICAS INFANTILES':
+                        clasifications[i].iconStyle = 'ios-cut';
+                        break;
+                    case 'COMUNICACIONES':
+                        clasifications[i].iconStyle = 'ios-megaphone';
+                        break;
+                    case 'PROFESORES':
+                        clasifications[i].iconStyle = 'ios-book-outline';
+                        clasifications[i].icon = 'school.png';
+                        break;
+                    case 'EXTINGUIDORES':
+                        clasifications[i].iconStyle = 'ios-flame';
+                        break;
+                    case 'PORTALS DE INTERNET':
+                        clasifications[i].iconStyle = 'ios-globe';
+                        break;
+                    case 'TALLERES MECANICOS INDUSTRIALES':
+                        clasifications[i].iconStyle = 'ios-construct';
+                        break;
+                    case 'CAFETERIAS':
+                        clasifications[i].iconStyle = 'ios-cafe';
+                        clasifications[i].icon = 'restaurant.png';
+                        break;
+                    case 'TELEVISION':
+                        clasifications[i].iconStyle = 'ios-desktop-outline';
+                        break;
+                    case 'TIENDA NATURISTA':
+                        clasifications[i].iconStyle = 'ios-leaf';
+                        break;
+                    case 'PLOMERIAS, FERRETERIAS Y ELECTRICIDAD':
+                        clasifications[i].iconStyle = 'ios-construct';
+                        break;
+                    case 'RESTAURANTES COCINA CHINA':
+                        clasifications[i].iconStyle = 'md-restaurant';
+                        clasifications[i].icon = 'restaurant.png';
+                        break;
+                    case 'CLINICA':
+                        clasifications[i].iconStyle = 'ios-pulse';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'RENTA DE AUTOS':
+                        clasifications[i].iconStyle = 'md-car';
+                        break;
+                    case 'INSTITUCIONES DE CREDITO':
+                        clasifications[i].iconStyle = 'md-cash';
+                        clasifications[i].icon = 'banks.png';
+                        break;
+                    case 'CLINICAS DENTALES':
+                        clasifications[i].iconStyle = 'ios-pulse';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'VINOS Y LICORES':
+                        clasifications[i].iconStyle = 'ios-wine';
+                        break;
+                    case 'VIDEOFILMACIONES':
+                        clasifications[i].iconStyle = 'ios-videocam';
+                        break;
+                    case 'CAMARAS NACIONALES':
+                        clasifications[i].iconStyle = 'ios-videocam';
+                        break;
+                    case 'COMIDAS':
+                        clasifications[i].iconStyle = 'md-restaurant';
+                        clasifications[i].icon = 'restaurant.png';
+                        break;
+                    case 'DESARROLLO DE SOFTWARE':
+                        clasifications[i].iconStyle = 'ios-wifi';
+                        break;
+                    case 'CLINICAS NATURISTAS':
+                        clasifications[i].iconStyle = 'ios-leaf';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'TALLERE MECANICO':
+                        clasifications[i].iconStyle = 'ios-build';
+                        break;
+                    case 'PARQUES':
+                        clasifications[i].iconStyle = 'ios-leaf';
+                        break;
+                    case 'ZOOLOGICOS':
+                        clasifications[i].iconStyle = 'md-paw';
+                        break;
+                    case 'PERIODICOS ELECTRONICOS':
+                        clasifications[i].iconStyle = 'md-wifi';
+                        break;
+                    case 'TIENDAS NATURISTAS':
+                        clasifications[i].iconStyle = 'ios-leaf';
+                        break;
+                    case 'COPIAS':
+                        clasifications[i].iconStyle = 'md-print';
+                        break;
+                    case 'ENERGIA SOLAR':
+                        clasifications[i].iconStyle = 'md-sunny';
+                        break;
+                    case 'EXTINTORES':
+                        clasifications[i].iconStyle = 'ios-flame';
+                        break;
+                    case 'GOBIERNO FEDRAL':
+                        clasifications[i].iconStyle = 'ios-globe';
+                        clasifications[i].icon = 'museum.png';
+                        break;
+                    case 'NEVERIAS':
+                        clasifications[i].iconStyle = 'md-ice-cream';
+                        clasifications[i].icon = 'restaurant.png';
+                        break;
+                    case 'HIERBERIAS':
+                        clasifications[i].iconStyle = 'ios-leaf';
+                        break;
+                    case 'PRODUCTOS ALIMENTICIOS':
+                        clasifications[i].iconStyle = 'md-pint';
+                        break;
+                    case 'PRODUCTOS QUIMICOS':
+                        clasifications[i].iconStyle = 'ios-beaker-outline';
+                        break;
+                    case 'TALLER DE ELECTRONICA':
+                        clasifications[i].iconStyle = 'ios-outlet';
+                        break;
+                    case 'BARES Y DISCOS':
+                        clasifications[i].iconStyle = 'ios-radio-outline';
+                        break;
+                    case 'BIBLIOTECAS':
+                        clasifications[i].iconStyle = 'ios-book-outline';
+                        clasifications[i].icon = 'school.png';
+                        break;
+                    case 'TIENDAS DE ACCESORIOS PARA DAMAS':
+                        clasifications[i].iconStyle = 'ios-bowtie';
+                        break;
+                    case 'ANIMALES':
+                        clasifications[i].iconStyle = 'md-paw';
+                        break;
+                    case 'CAFETERIA':
+                        clasifications[i].iconStyle = 'ios-cafe';
+                        clasifications[i].icon = 'restaurant.png';
+                        break;
+                    case 'VIDEO JUEGOS-PS3':
+                        clasifications[i].iconStyle = 'logo-playstation';
+                        break;
+                    case 'EQUIPOS DE SONIDOS':
+                        clasifications[i].iconStyle = 'md-mic';
+                        break;
+                    case 'SONIDO':
+                        clasifications[i].iconStyle = 'md-mic';
+                        break;
+                    case 'COSMETICOS':
+                        clasifications[i].iconStyle = 'ios-color-wand';
+                        break;
+                    case 'GASOLINERA':
+                        clasifications[i].iconStyle = 'ios-water';
+                        clasifications[i].icon = 'gas-station.png';
+                        break;
+                    case 'ELECTRONICOS':
+                        clasifications[i].iconStyle = 'ios-phone-portrait';
+                        break;
+                    case 'FINANCIERAS':
+                        clasifications[i].iconStyle = 'logo-usd';
+                        clasifications[i].icon = 'banks.png';
+                        break;
+                    case 'ACCESORIOS':
+                        clasifications[i].iconStyle = 'ios-bowtie';
+                        break;
+                    case 'DONADORES DE SANGRE':
+                        clasifications[i].iconStyle = 'md-medkit';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'PRODUCTOS NATURALES':
+                        clasifications[i].iconStyle = 'ios-leaf';
+                        break;
+                    case 'PALAPAS':
+                        clasifications[i].iconStyle = 'ios-partly-sunny';
+                        break;
+                    case 'Ebanisteria y/o Carpinteria':
+                        clasifications[i].iconStyle = 'ios-construct';
+                        break;
+                    case 'AUTOS':
+                        clasifications[i].iconStyle = 'md-car';
+                        break;
+                    case 'SALONES DE BELLEZA':
+                        clasifications[i].iconStyle = 'ios-color-wand';
+                        break;
+                    case 'VINOS':
+                        clasifications[i].iconStyle = 'ios-wine';
+                        break;
+                    case 'UNIVERSIDADES':
+                        clasifications[i].iconStyle = 'ios-school';
+                        clasifications[i].icon = 'school.png';
+                        break;
+                    case 'SALONES DE EVENTOS':
+                        clasifications[i].iconStyle = 'ios-musical-notes';
+                        break;
+                    case 'REGALOS':
+                        clasifications[i].iconStyle = 'logo-dropbox';
+                        break;
+                    case 'KARAOKE':
+                        clasifications[i].iconStyle = 'md-microphone';
+                        break;
+                    case 'PRODUCTOS DE LIMPIEZA':
+                        clasifications[i].iconStyle = 'ios-flask-outline';
+                        break;
+                    case 'TIENDAS DE ROPA':
+                        clasifications[i].iconStyle = 'md-shirt';
+                        break;
+                    case 'DISTRIBUIDORA DE REFRESCOS':
+                        clasifications[i].iconStyle = 'ios-pint';
+                        break;
+                    case 'ACCESORIOS PARA AUTOMOVILES':
+                        clasifications[i].iconStyle = 'md-car';
+                        break;
+                    case 'NOTARIAS':
+                        clasifications[i].iconStyle = 'ios-briefcase';
+                        break;
+                    case 'AUTOLAVADOS':
+                        clasifications[i].iconStyle = 'md-car';
+                        break;
+                    case 'PINTACARITAS':
+                        clasifications[i].iconStyle = 'ios-brush';
+                        break;
+                    case 'EQUIPO DE SONIDO, KARAOKE Y SHOW DE LUCES.':
+                        clasifications[i].iconStyle = 'md-mic';
+                        break;
+                    case 'FIESTAS  INFANTILES':
+                        clasifications[i].iconStyle = 'ios-musical-notes';
+                        break;
+                    case 'acuario':
+                        clasifications[i].iconStyle = 'ios-water';
+                        break;
+                    case 'AGUA PURIFICADA':
+                        clasifications[i].iconStyle = 'ios-water';
+                        break;
+                    case 'Computo':
+                        clasifications[i].iconStyle = 'ios-desktop-outline';
+                        break;
+                    case 'MEDICINA Y PSICOLOGIA':
+                        clasifications[i].iconStyle = 'ios-pulse';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'RENTA DE SONIDOS':
+                        clasifications[i].iconStyle = 'md-mic';
+                        break;
+                    case 'REPARACION DE COMPUTADORAS':
+                        clasifications[i].iconStyle = 'md-settings';
+                        break;
+                    case 'AGENCIAS DE PUBLICIDAD':
+                        clasifications[i].iconStyle = '';
+                        clasifications[i].icon = '';
+                        break;
+                    case 'RADIOLOGIAS':
+                        clasifications[i].iconStyle = 'ios-pulse';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'EQUIPOS Y MATERIALES CLINICOS':
+                        clasifications[i].iconStyle = 'md-medkit';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'MATERIAL DIDACTICO  EDUCATIVO':
+                        clasifications[i].iconStyle = 'ios-bookmarks-outline';
+                        clasifications[i].icon = 'school.png';
+                        break;
+                    case 'JARDINEROS':
+                        clasifications[i].iconStyle = 'ios-leaf';
+                        break;
+                    case 'FOTOGRAFIAS':
+                        clasifications[i].iconStyle = 'ios-camera';
+                        break;
+                    case 'VENTA Y RENTA DE EQUIPO MEDICO':
+                        clasifications[i].iconStyle = 'md-medkit';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'AGENCIA DE VIAJES':
+                        clasifications[i].iconStyle = 'ios-plane';
+                        break;
+                    case 'VIDEOS FILMACIONES':
+                        clasifications[i].iconStyle = 'ios-videocam';
+                        break;
+                    case 'VENTA DE PLANTAS':
+                        clasifications[i].iconStyle = 'ios-videocam';
+                        break;
+                    case 'BARES':
+                        clasifications[i].iconStyle = 'ios-videocam';
+                        break;
+                    case 'SUPERMERCADOS':
+                        clasifications[i].iconStyle = 'md-cart';
+                        break;
+                    case 'ENDODONCISTAS':
+                        clasifications[i].iconStyle = 'ios-pulse';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'PAPELERIA':
+                        clasifications[i].iconStyle = 'md-paper';
+                        break;
+                    case 'AAA':
+                        clasifications[i].iconStyle = 'ios-help-buoy';
+                        break;
+                    case 'TRANSPORTES':
+                        clasifications[i].iconStyle = 'md-bus';
+                        break;
+                    case 'CONTABILIDAD, DEFENSA FISCAL, ADMINISTRACION Y FINANZAS':
+                        clasifications[i].iconStyle = 'ios-briefcase';
+                        break;
+                    case 'HAMBURGUESAS':
+                        clasifications[i].iconStyle = 'md-restaurant';
+                        clasifications[i].icon = 'restaurant.png';
+                        break;
+                    case 'CONSULTORIOS NUTRIOLOGO':
+                        clasifications[i].iconStyle = 'ios-pulse';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'TELEFONOS DE EMERGENCIA ADMINISTRACION POSTAL':
+                        clasifications[i].iconStyle = 'md-help';
+                        break;
+                    case 'TELEFONOS DE EMERGENCIA POLICIA MINISTERIAL':
+                        clasifications[i].iconStyle = 'md-help';
+                        break;
+                    case 'TELEFONOS DE EMERGENCIA CENTRO DE EMERGENCIAS':
+                        clasifications[i].iconStyle = 'md-help';
+                        break;
+                    case 'TELEFONOS DE EMERGENCIA CENTRO ESTATAL DE TRANSFUSION SANGUINEA':
+                        clasifications[i].iconStyle = 'md-help';
+                        break;
+                    case 'TELEFONOS DE EMERGENCIA COMISION FEDERAL DE ELECTRICIDAD':
+                        clasifications[i].iconStyle = 'md-help';
+                        break;
+                    case 'CORREOS':
+                        clasifications[i].iconStyle = 'md-mail';
+                        break;
+                    case 'ESTACION DE BOMBEROS':
+                        clasifications[i].iconStyle = 'md-flame';
+                        break;
+                    case 'TELEFONOS DE EMERGENCIA':
+                        clasifications[i].iconStyle = 'md-help';
+                        break;
+                    case 'TELEFONOS DE EMERGENCIA CENTROS DE INTEGRACION':
+                        clasifications[i].iconStyle = 'md-help';
+                        break;
+                    case 'TELEFONOS DE EMERGENCIA NEUROTICOS ANONIMOS':
+                        clasifications[i].iconStyle = 'md-help';
+                        break;
+                    case 'TELEFONOS DE EMERGENCIA INCENDIOS FORESTALES':
+                        clasifications[i].iconStyle = 'md-help';
+                        break;
+                    case 'TELEFONOS EMERGENCIAS LOCATEL':
+                        clasifications[i].iconStyle = 'md-help';
+                        break;
+                    case 'TELEFONOS EMERGENCIAS IMSS ORIENTACION':
+                        clasifications[i].iconStyle = 'md-help';
+                        break;
+                    case 'TELEFONOS EMERGENCIAS IMSS':
+                        clasifications[i].iconStyle = 'md-help';
+                        break;
+                    case 'TELEFONOS EMERGENCIAS POLICIA FEDERAL':
+                        clasifications[i].iconStyle = 'md-help';
+                        break;
+                    case 'PROCURADURIA FEDERAL DEL CONSUMIDOR':
+                        clasifications[i].iconStyle = 'ios-globe-outline';
+                        break;
+                    case 'TELEFONOS DE EMERGENCIA SECRETARIA DE MARINA ARMADA DE MEXICO':
+                        clasifications[i].iconStyle = 'md-help';
+                        break;
+                    case 'TELEFONOS DE EMERGENCIA SECRETARIA DE SEGURIDAD Y VIALIDAD':
+                        clasifications[i].iconStyle = 'md-help';
+                        break;
+                    case 'PREPARATORIA':
+                        clasifications[i].iconStyle = 'ios-school';
+                        clasifications[i].icon = 'school.png';
+                        break;
+                    case 'RETA DE KARAOKE':
+                        clasifications[i].iconStyle = 'md-mic';
+                        break;
+                    case 'DEPARTAMENTOS':
+                        clasifications[i].iconStyle = 'ios-home';
+                        break;
+                    case 'PREPARATORIAS':
+                        clasifications[i].iconStyle = 'ios-school';
+                        clasifications[i].icon = 'school.png';
+                        break;
+                    case 'SECRETARIAS':
+                        clasifications[i].iconStyle = 'ios-briefcase';
+                        clasifications[i].icon = 'museum.png';
+                        break;
+                    case 'MANTENIMIENTO':
+                        clasifications[i].iconStyle = 'ios-construct';
+                        break;
+                    case 'ESCUELAS DE INGLES':
+                        clasifications[i].iconStyle = 'ios-school';
+                        clasifications[i].icon = 'school.png';
+                        break;
+                    case 'MEDICOS ALERGOLOGOS':
+                        clasifications[i].iconStyle = 'ios-pulse';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'CENTRO MEDICO':
+                        clasifications[i].iconStyle = 'ios-pulse';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'DOCTORES HOMEOPATAS':
+                        clasifications[i].iconStyle = 'ios-pulse';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'DOCTORES INTERNISTAS':
+                        clasifications[i].iconStyle = 'ios-pulse';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'DOCTORES ESPECIALISTAS NEUMOLOGOS':
+                        clasifications[i].iconStyle = 'ios-pulse';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'MEDICOS VETERINARIOS':
+                        clasifications[i].iconStyle = 'md-paw';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'CENTROS DE SALUD':
+                        clasifications[i].iconStyle = 'ios-pulse';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'LENTES':
+                        clasifications[i].iconStyle = 'md-glasses';
+                        break;
+                    case 'Radio por internet y Paginas Web':
+                        clasifications[i].iconStyle = 'md-wifi';
+                        break;
+                    case 'MEDICOS VETERINARIOS ZOOTERNISTAS':
+                        clasifications[i].iconStyle = 'md-paw';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'COMEDIANTES':
+                        clasifications[i].iconStyle = 'md-happy';
+                        break;
+                    case 'HOSPITALES SANATORIOS Y CLINICAS':
+                        clasifications[i].iconStyle = 'ios-pulse';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'COMIDA':
+                        clasifications[i].iconStyle = 'md-restaurant';
+                        clasifications[i].icon = 'restaurant.png';
+                        break;
+                    case 'telefonia celular':
+                        clasifications[i].iconStyle = 'call';
+                        break;
+                    case 'SERVICIOS PARA HOSPITALES':
+                        clasifications[i].iconStyle = 'md-medkit';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'Restaurante':
+                        clasifications[i].iconStyle = 'md-restaurant';
+                        clasifications[i].icon = 'restaurant.png';
+                        break;
+                    case 'Pasteleria':
+                        clasifications[i].iconStyle = 'md-restaurant';
+                        clasifications[i].icon = 'restaurant.png';
+                        break;
+                    case 'CRUZ ROJA':
+                        clasifications[i].iconStyle = 'md-medkit';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'regalos y novedades':
+                        clasifications[i].iconStyle = 'ios-bowtie';
+                        break;
+                    case 'fiestas y eventos':
+                        clasifications[i].iconStyle = 'ios-musical-notes';
+                        break;
+                    case 'RENTA DE CUBOS':
+                        clasifications[i].iconStyle = 'md-cube';
+                        break;
+                    case 'informatica':
+                        clasifications[i].iconStyle = 'ios-globe-outline';
+                        break;
+                    case 'ALQUILER DE AUTOS':
+                        clasifications[i].iconStyle = 'md-car';
+                        break;
+                    case 'VEHICULOS Y ACCESORIOS':
+                        clasifications[i].iconStyle = 'md-car';
+                        break;
+                    case 'ROPA INFANTIL':
+                        clasifications[i].iconStyle = 'md-shirt';
+                        break;
+                    case 'cubos':
+                        clasifications[i].iconStyle = 'md-cube';
+                        break;
+                    case 'SALONES DE FIESTAS':
+                        clasifications[i].iconStyle = 'ios-musical-notes';
+                        break;
+                    case 'TIENDAS':
+                        clasifications[i].iconStyle = 'md-cart';
+                        clasifications[i].icon = '';
+                        break;
+                    case 'SONIDO Y AUDIO':
+                        clasifications[i].iconStyle = 'md-mic';
+                        break;
+                    case 'financiera prestamos dinero':
+                        clasifications[i].iconStyle = 'md-cash';
+                        clasifications[i].icon = 'banks.png';
+                        break;
+                    case 'TELEGRAFOS':
+                        clasifications[i].iconStyle = 'md-mail';
+                        break;
+                    case 'comida fresca':
+                        clasifications[i].iconStyle = 'md-restaurant';
+                        clasifications[i].icon = 'restaurant.png';
+                        break;
+                    case 'Naturista':
+                        clasifications[i].iconStyle = 'ios-leaf';
+                        break;
+                    case 'COMUNIDADES RELIGIOSAS':
+                        clasifications[i].iconStyle = 'ios-flower';
+                        clasifications[i].icon = 'church.png';
+                        break;
+                    case 'AUTOFINANCIAMIENTOS':
+                        clasifications[i].iconStyle = 'md-cash';
+                        break;
+                    case 'CLIMA':
+                        clasifications[i].iconStyle = 'ios-partly-sunny';
+                        break;
+                    case 'CONSULADOS':
+                        clasifications[i].iconStyle = 'ios-globe';
+                        clasifications[i].icon = 'museum.png';
+                        break;
+                    case 'GUIAS TURISTICOS':
+                        clasifications[i].iconStyle = 'ios-plane';
+                        break;
+                    case 'ROPA':
+                        clasifications[i].iconStyle = 'md-shirt';
+                        break;
+                    case 'FABRICAS DE CAMISAS':
+                        clasifications[i].iconStyle = 'md-shirt';
+                        break;
+                    case 'COSTURERIAS':
+                        clasifications[i].iconStyle = 'md-shirt';
+                        break;
+                    case 'DESPACHOS CONTABLES':
+                        clasifications[i].iconStyle = 'ios-briefcase';
+                        break;
+                    case 'TERAPIAS':
+                        clasifications[i].iconStyle = 'ios-pulse';
+                        break;
+                    case 'SERVICIOS DE LIMPIEZA':
+                        clasifications[i].iconStyle = 'ios-flask-outline';
+                        break;
+                    case 'VIDEOCLUBS':
+                        clasifications[i].iconStyle = 'ios-film';
+                        break;
+                    case 'EQUIPO DE SEGURIDAD':
+                        clasifications[i].iconStyle = 'md-lock';
+                        break;
+                    case 'DENTISTAS':
+                        clasifications[i].iconStyle = 'ios-pulse';
+                        clasifications[i].icon = 'hospital.png';
+                        break;
+                    case 'PELUQUERIAS':
+                        clasifications[i].iconStyle = 'ios-cut';
+                        break;
+                    case 'MOTELES':
+                        clasifications[i].iconStyle = 'ios-briefcase';
+                        clasifications[i].icon = 'hotel.png';
+                        break;
+                    default:
+                        clasifications[i].iconStyle = 'ios-information-circle';
+                        break;
+                }
+            }
+            return clasifications;
+        };
+    }
+    PlaceClasification = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [])
+    ], PlaceClasification);
+    return PlaceClasification;
+}());
+
+//# sourceMappingURL=place-clasification.js.map
+
+/***/ }),
+
+/***/ 216:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OrderByPipe; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/*
+ * Example use
+ *		Basic Array of single type: *ngFor="#todo of todoService.todos | orderBy : '-'"
+ *		Multidimensional Array Sort on single column: *ngFor="#todo of todoService.todos | orderBy : ['-status']"
+ *		Multidimensional Array Sort on multiple columns: *ngFor="#todo of todoService.todos | orderBy : ['status', '-title']"
+ */
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var OrderByPipe = /** @class */ (function () {
+    function OrderByPipe() {
+    }
+    // static _orderByComparator(a:any, b:any):number{
+    //
+    //     if((isNaN(parseFloat(a)) || !isFinite(a)) || (isNaN(parseFloat(b)) || !isFinite(b))){
+    //         //Isn't a number so lowercase the string to properly compare
+    //         if(a.toLowerCase() < b.toLowerCase()) return -1;
+    //         if(a.toLowerCase() > b.toLowerCase()) return 1;
+    //     }
+    //     else{
+    //         //Parse strings as numbers to compare properly
+    //         if(parseFloat(a) < parseFloat(b)) return -1;
+    //         if(parseFloat(a) > parseFloat(b)) return 1;
+    //     }
+    //
+    //     return 0; //equal each other
+    // }
+    //
+    // transform(input:any, [config = '+']): any{
+    //
+    //     if(!Array.isArray(input)) return input;
+    //
+    //     if(!Array.isArray(config) || (Array.isArray(config) && config.length == 1)){
+    //         let  propertyToCheck:string = !Array.isArray(config) ? config : config[0];
+    //         let  desc = propertyToCheck.substr(0, 1) == '-';
+    //
+    //         //Basic array
+    //         if(!propertyToCheck || propertyToCheck == '-' || propertyToCheck == '+'){
+    //             return !desc ? input.sort() : input.sort().reverse();
+    //         }
+    //         else {
+    //             let  property:string = propertyToCheck.substr(0, 1) == '+' || propertyToCheck.substr(0, 1) == '-'
+    //                 ? propertyToCheck.substr(1)
+    //                 : propertyToCheck;
+    //
+    //             return input.sort(function(a:any,b:any){
+    //                 return !desc
+    //                     ? this.OrderBy._orderByComparator(a[property], b[property])
+    //                     : -this.OrderBy._orderByComparator(a[property], b[property]);
+    //             });
+    //         }
+    //     }
+    //     else {
+    //         //Loop over property of the array in order and sort
+    //         return input.sort(function(a:any,b:any){
+    //             for(let  i:number = 0; i < config.length; i++){
+    //                 let  desc = config[i].substr(0, 1) == '-';
+    //                 let  property = config[i].substr(0, 1) == '+' || config[i].substr(0, 1) == '-'
+    //                     ? config[i].substr(1)
+    //                     : config[i];
+    //
+    //                 let  comparison = !desc
+    //                     ? this.OrderBy._orderByComparator(a[property], b[property])
+    //                     : -this.OrderBy._orderByComparator(a[property], b[property]);
+    //
+    //                 //Don't return 0 yet in case of needing to sort by next property
+    //                 if(comparison != 0) return comparison;
+    //             }
+    //
+    //             return 0; //equal each other
+    //         });
+    //     }
+    // }
+    OrderByPipe.prototype.transform = function (array, orderBy, asc) {
+        var _this = this;
+        if (asc === void 0) { asc = true; }
+        if (!orderBy || orderBy.trim() == "") {
+            return array;
+        }
+        //ascending
+        if (asc) {
+            return Array.from(array).sort(function (item1, item2) {
+                return _this.orderByComparator(item1[orderBy], item2[orderBy]);
+            });
+        }
+        else {
+            //not asc
+            return Array.from(array).sort(function (item1, item2) {
+                return _this.orderByComparator(item2[orderBy], item1[orderBy]);
+            });
+        }
+    };
+    OrderByPipe.prototype.orderByComparator = function (a, b) {
+        if ((isNaN(parseFloat(a)) || !isFinite(a)) || (isNaN(parseFloat(b)) || !isFinite(b))) {
+            //Isn't a number so lowercase the string to properly compare
+            if (a.toLowerCase() < b.toLowerCase())
+                return -1;
+            if (a.toLowerCase() > b.toLowerCase())
+                return 1;
+        }
+        else {
+            //Parse strings as numbers to compare properly
+            if (parseFloat(a) < parseFloat(b))
+                return -1;
+            if (parseFloat(a) > parseFloat(b))
+                return 1;
+        }
+        return 0; //equal each other
+    };
+    OrderByPipe = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["S" /* Pipe */])({
+            name: 'orderBy',
+        })
+    ], OrderByPipe);
+    return OrderByPipe;
+}());
+
+//# sourceMappingURL=order-by.js.map
+
+/***/ }),
+
+/***/ 235:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_module__ = __webpack_require__(243);
+
+
+
+Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_14" /* enableProdMode */])();
+Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_module__["a" /* AppModule */]);
+//# sourceMappingURL=main.js.map
+
+/***/ }),
+
+/***/ 243:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_geolocation__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_speech_recognition__ = __webpack_require__(230);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_launch_navigator__ = __webpack_require__(234);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_component__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_tabs_tabs__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_services__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_place_clasification__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__general_general__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__general_global_variables__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pipes_order_by_order_by__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_social_sharing__ = __webpack_require__(231);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_facebook__ = __webpack_require__(227);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_native_geocoder__ = __webpack_require__(232);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_native_diagnostic__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__ionic_native_open_native_settings__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ionic_native_keyboard__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ionic_native_text_to_speech__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ionic_native_photo_viewer__ = __webpack_require__(228);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_native_network__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__ionic_native_network_interface__ = __webpack_require__(114);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var AppModule = /** @class */ (function () {
+    function AppModule() {
+    }
+    AppModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["I" /* NgModule */])({
+            declarations: [
+                __WEBPACK_IMPORTED_MODULE_10__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_tabs_tabs__["a" /* TabsPage */],
+            ],
+            imports: [
+                __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* HttpModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* JsonpModule */],
+                __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["m" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_10__app_component__["a" /* MyApp */], {
+                    tabsHideOnSubPages: false,
+                    statusbarPadding: false
+                }, {
+                    links: [
+                        { loadChildren: '../pages/home/home.module#HomeModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/modals/dishes-modal/dishes-modal.module#DishesModalPageModule', name: 'DishesModalPage', segment: 'dishes-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/modals/incorrect-modal/incorrect-modal.module#IncorrectModalPageModule', name: 'IncorrectModalPage', segment: 'incorrect-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/modals/search-place/search-place.module#SearchPlacePageModule', name: 'SearchPlacePage', segment: 'search-place', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/modals/speech-modal/speech-modal.module#SpeechModalPageModule', name: 'SpeechModalPage', segment: 'speech-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/search/search.module#SearchPageModule', name: 'SearchPage', segment: 'search', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/nearby/nearby.module#NearbyPageModule', name: 'NearbyPage', segment: 'nearby', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/place/place.module#PlacePageModule', name: 'PlacePage', segment: 'place', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/modals/gps-modal/gps-modal.module#GpsModalPageModule', name: 'GpsModalPage', segment: 'gps-modal', priority: 'low', defaultHistory: [] }
+                    ]
+                }),
+                __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["a" /* IonicStorageModule */].forRoot()
+            ],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["k" /* IonicApp */]],
+            entryComponents: [
+                __WEBPACK_IMPORTED_MODULE_10__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_tabs_tabs__["a" /* TabsPage */]
+            ],
+            providers: [
+                __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__["a" /* StatusBar */],
+                __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__["a" /* SplashScreen */],
+                __WEBPACK_IMPORTED_MODULE_7__ionic_native_geolocation__["a" /* Geolocation */],
+                __WEBPACK_IMPORTED_MODULE_12__services_services__["a" /* AppService */],
+                __WEBPACK_IMPORTED_MODULE_13__services_place_clasification__["a" /* PlaceClasification */],
+                __WEBPACK_IMPORTED_MODULE_14__general_general__["a" /* General */],
+                __WEBPACK_IMPORTED_MODULE_15__general_global_variables__["a" /* GlobalVariables */],
+                __WEBPACK_IMPORTED_MODULE_8__ionic_native_speech_recognition__["a" /* SpeechRecognition */],
+                __WEBPACK_IMPORTED_MODULE_17__ionic_native_social_sharing__["a" /* SocialSharing */],
+                __WEBPACK_IMPORTED_MODULE_18__ionic_native_facebook__["a" /* Facebook */],
+                __WEBPACK_IMPORTED_MODULE_19__ionic_native_native_geocoder__["a" /* NativeGeocoder */],
+                __WEBPACK_IMPORTED_MODULE_20__ionic_native_diagnostic__["a" /* Diagnostic */],
+                __WEBPACK_IMPORTED_MODULE_21__ionic_native_open_native_settings__["a" /* OpenNativeSettings */],
+                __WEBPACK_IMPORTED_MODULE_16__pipes_order_by_order_by__["a" /* OrderByPipe */],
+                __WEBPACK_IMPORTED_MODULE_22__ionic_native_keyboard__["a" /* Keyboard */],
+                __WEBPACK_IMPORTED_MODULE_23__ionic_native_text_to_speech__["a" /* TextToSpeech */],
+                __WEBPACK_IMPORTED_MODULE_9__ionic_native_launch_navigator__["a" /* LaunchNavigator */],
+                __WEBPACK_IMPORTED_MODULE_25__ionic_native_network__["a" /* Network */],
+                __WEBPACK_IMPORTED_MODULE_24__ionic_native_photo_viewer__["a" /* PhotoViewer */],
+                __WEBPACK_IMPORTED_MODULE_26__ionic_native_network_interface__["a" /* NetworkInterface */],
+                { provide: __WEBPACK_IMPORTED_MODULE_2__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["l" /* IonicErrorHandler */] }
+            ]
+        })
+    ], AppModule);
+    return AppModule;
+}());
+
+//# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ 293:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__general_global_variables__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_keyboard__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_network__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__general_general__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_network_interface__ = __webpack_require__(114);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+
+
+var MyApp = /** @class */ (function () {
+    function MyApp(platform, statusBar, splashScreen, config, globalVariables, network, general, networkInterface, storage, keyboard) {
+        var _this = this;
+        this.globalVariables = globalVariables;
+        this.network = network;
+        this.general = general;
+        this.networkInterface = networkInterface;
+        this.storage = storage;
+        this.keyboard = keyboard;
+        platform.ready().then(function () {
+            // Okay, so the platform is ready and our plugins are available.
+            // Here you can do any higher level native things you might need.
+            statusBar.overlaysWebView(false);
+            statusBar.backgroundColorByHexString('#ff6000');
+            config.set('ios', 'backButtonText', 'Atrás');
+            _this.keyboard.hideKeyboardAccessoryBar(false);
+            storage.get('hasSeenTut').then(function (hasSeenTut) {
+                if (!hasSeenTut) {
+                    globalVariables.showNearbyTut = true;
+                    setTimeout(function () {
+                        globalVariables.showNearbyTut = false;
+                        storage.set('hasSeenTut', true);
+                    }, 15000);
+                }
+            });
+            //Get connection status on change
+            _this.network.onConnect().subscribe(function (data) {
+                console.log(data);
+                _this.general.displayNetworkUpdate(data.type);
+                _this.globalVariables.isConnected = true;
+            }, function (error) { return console.error(error); });
+            _this.network.onDisconnect().subscribe(function (data) {
+                console.log(data);
+                _this.general.displayNetworkUpdate(data.type);
+                _this.globalVariables.isConnected = false;
+            }, function (error) { return console.error(error); });
+            _this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__["a" /* TabsPage */];
+            splashScreen.hide();
+        });
+    }
+    MyApp = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/ed/Projects/enzorromovil/infox-v3/src/app/app.html"*/'<div id="tutorial-nearby" [ngClass]="{\'animate-fade\': globalVariables.showNearbyTut, \'fadeOut\': !globalVariables.showNearbyTut}" [style.bottom]="globalVariables.nearbyTabActive ? \'110px\': \'62px\'">\n    Ubica los Negocios Más Cercanos a Ti\n    <ion-icon name="md-arrow-dropdown" id="tut-down-arrow"></ion-icon>\n</div>\n<ion-nav [root]="rootPage"></ion-nav>'/*ion-inline-end:"/Users/ed/Projects/enzorromovil/infox-v3/src/app/app.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["u" /* Platform */],
+            __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */],
+            __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Config */],
+            __WEBPACK_IMPORTED_MODULE_5__general_global_variables__["a" /* GlobalVariables */],
+            __WEBPACK_IMPORTED_MODULE_8__ionic_native_network__["a" /* Network */],
+            __WEBPACK_IMPORTED_MODULE_9__general_general__["a" /* General */],
+            __WEBPACK_IMPORTED_MODULE_10__ionic_native_network_interface__["a" /* NetworkInterface */],
+            __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */],
+            __WEBPACK_IMPORTED_MODULE_7__ionic_native_keyboard__["a" /* Keyboard */]])
+    ], MyApp);
+    return MyApp;
+}());
+
+//# sourceMappingURL=app.component.js.map
+
+/***/ }),
+
+/***/ 41:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GlobalVariables; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var GlobalVariables = /** @class */ (function () {
+    function GlobalVariables() {
+        this.recentSearchResults = [];
+        this.recentNearbySearchResults = [];
+        this.nearbyTabActive = false;
+        this.showNearbyTut = false;
+        this.showTakeMeThereTut = false;
+        this.goBackToNearby = false;
+        this.isConnected = true;
+        this.searchParams = '';
+        this.placeId = null;
+    }
+    GlobalVariables.prototype.getDay = function () {
+        var day = new Date().getDay();
+        switch (day) {
+            case 0:
+                this.day = 'Domingo';
+                break;
+            case 1:
+                this.day = 'Lunes';
+                break;
+            case 2:
+                this.day = 'Martes';
+                break;
+            case 3:
+                this.day = 'Miercoles';
+                break;
+            case 4:
+                this.day = 'Jueves';
+                break;
+            case 5:
+                this.day = 'Viernes';
+                break;
+            case 6:
+                this.day = 'Sabado';
+                break;
+        }
+        return this.day;
+    };
+    GlobalVariables = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [])
+    ], GlobalVariables);
+    return GlobalVariables;
+}());
+
+//# sourceMappingURL=global-variables.js.map
+
+/***/ })
+
+},[235]);
+//# sourceMappingURL=main.js.map

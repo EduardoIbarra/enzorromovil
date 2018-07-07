@@ -93,8 +93,8 @@
     },
     "is_top_level": true,
     "variables": {
-      "APP_ID": "361034541018618",
-      "APP_NAME": "Infox"
+      "APP_ID": "805201646226832",
+      "APP_NAME": "InfoxLogin"
     }
   },
   "cordova-plugin-inappbrowser": {
@@ -217,6 +217,22 @@
     "source": {
       "type": "registry",
       "id": "cordova-plugin-ionic-keyboard@^2.0.5"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-dialogs": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-dialogs@*"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "com.googlemaps.ios": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/mapsplugin/cordova-plugin-googlemaps-sdk"
     },
     "is_top_level": true,
     "variables": {}

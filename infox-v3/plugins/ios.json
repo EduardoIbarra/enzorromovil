@@ -10,18 +10,30 @@
     "com-sarriaroman-photoviewer": {
       "PACKAGE_NAME": "infox.buscador"
     },
-    "com.googlemaps.ios": {
+    "cordova-open-native-settings": {
       "PACKAGE_NAME": "infox.buscador"
     },
-    "cordova-open-native-settings": {
+    "cordova-plugin-facebook4": {
+      "APP_ID": "805201646226832",
+      "APP_NAME": "InfoxLogin",
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "cordova-plugin-tts": {
       "PACKAGE_NAME": "infox.buscador"
     },
     "cordova-plugin-device": {
       "PACKAGE_NAME": "infox.buscador"
     },
-    "cordova-plugin-facebook4": {
-      "APP_ID": "361034541018618",
-      "APP_NAME": "Infox",
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "infox.buscador"
     },
     "cordova-plugin-geolocation": {
@@ -31,29 +43,7 @@
     "cordova-plugin-inappbrowser": {
       "PACKAGE_NAME": "infox.buscador"
     },
-    "cordova-plugin-nativegeocoder": {
-      "LOCATION_WHEN_IN_USE_DESCRIPTION": "Use geocoder service",
-      "PACKAGE_NAME": "infox.buscador"
-    },
-    "cordova-plugin-network-information": {
-      "PACKAGE_NAME": "infox.buscador"
-    },
-    "cordova-plugin-networkinterface": {
-      "PACKAGE_NAME": "infox.buscador"
-    },
     "cordova-plugin-speechrecognition": {
-      "PACKAGE_NAME": "infox.buscador"
-    },
-    "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "infox.buscador"
-    },
-    "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "infox.buscador"
-    },
-    "cordova-plugin-tts": {
-      "PACKAGE_NAME": "infox.buscador"
-    },
-    "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "infox.buscador"
     },
     "cordova-plugin-x-socialsharing": {
@@ -62,25 +52,35 @@
     "cordova.plugins.diagnostic": {
       "PACKAGE_NAME": "infox.buscador"
     },
-    "ionic-plugin-keyboard": {
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "cordova-plugin-networkinterface": {
       "PACKAGE_NAME": "infox.buscador"
     },
     "uk.co.workingedge.phonegap.plugin.launchnavigator": {
       "LOCATION_USAGE_DESCRIPTION": "This app requires access to your location for navigation purposes",
       "PACKAGE_NAME": "infox.buscador"
+    },
+    "com.googlemaps.ios": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "cordova-plugin-nativegeocoder": {
+      "LOCATION_WHEN_IN_USE_DESCRIPTION": "Use geocoder service",
+      "PACKAGE_NAME": "infox.buscador"
     }
   },
   "dependent_plugins": {
-    "cordova-plugin-compat": {
+    "cordova-plugin-actionsheet": {
       "PACKAGE_NAME": "infox.buscador"
     },
     "cordova-plugin-add-swift-support": {
       "PACKAGE_NAME": "infox.buscador"
     },
-    "es6-promise-plugin": {
+    "cordova-plugin-compat": {
       "PACKAGE_NAME": "infox.buscador"
     },
-    "cordova-plugin-actionsheet": {
+    "es6-promise-plugin": {
       "PACKAGE_NAME": "infox.buscador"
     },
     "cordova-plugin-dialogs": {

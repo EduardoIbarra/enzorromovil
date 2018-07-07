@@ -17,6 +17,7 @@ export class TabsPage {
     tab1Root = 'HomePage';
     tab2Root = 'NearbyPage';
     tab3Root = 'SearchPage';
+    tab4Root = 'LoginPage';
 
     constructor(public navParams: NavParams,
                 public navCtrl: NavController,
