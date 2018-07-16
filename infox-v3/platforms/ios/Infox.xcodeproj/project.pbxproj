@@ -463,6 +463,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 510;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = M9L7YBWRVV;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Infox" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -591,6 +596,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = M9L7YBWRVV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"Infox/Plugins/cordova-plugin-facebook4\"",
@@ -626,6 +632,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = M9L7YBWRVV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"Infox/Plugins/cordova-plugin-facebook4\"",

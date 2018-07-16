@@ -29,7 +29,8 @@ export class HomePage {
         this.networkInterface.getIPAddress().then((ip)=>{
             this.globalVariables.isConnected = true;
         },(error)=>{
-            this.globalVariables.isConnected = false;
+            //this.globalVariables.isConnected = false;
+            this.globalVariables.isConnected = true;
         });
 
 

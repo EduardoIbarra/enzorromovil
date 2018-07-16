@@ -48,6 +48,10 @@
                 <ion-icon name="ios-globe"></ion-icon>
                 <span class="mid-item-text">Sitio Web</span>
             </a>
+            <a class="mid-item" (click)="favorite()">
+                <ion-icon name="ios-star-outline"></ion-icon>
+                <span class="mid-item-text">Favorito</span>
+            </a>
         </div>
 
         <div *ngIf="place.data.otrosdatos">

@@ -1,6 +1,7 @@
 <ion-tabs #tabs [ngClass]="{'central-icon' : tabNearbyInactive === true}" (ionChange)="getCurrentPage()" [selectedIndex]="tabIndex">
     <ion-tab [root]="tab1Root" (click)="selectHome()" tabTitle="Inicio" tabIcon="home"></ion-tab>
+    <ion-tab [root]="tab5Root"  tabTitle="Favoritos" tabIcon="star"></ion-tab>
     <ion-tab [root]="tab2Root"  tabTitle="Cercano" tabIcon="md-pin"></ion-tab>
     <ion-tab [root]="tab3Root"  tabTitle="Buscar" tabIcon="search"></ion-tab>
-    <ion-tab [root]="tab4Root"  tabTitle="Login" tabIcon="search"></ion-tab>
+    <ion-tab [root]="tab4Root"  tabTitle="Login" tabIcon="cog"></ion-tab>
 </ion-tabs>

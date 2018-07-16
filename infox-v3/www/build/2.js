@@ -1,14 +1,14 @@
 webpackJsonp([2],{
 
-/***/ 303:
+/***/ 310:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GpsModalPageModule", function() { return GpsModalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gps_modal__ = __webpack_require__(459);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gps_modal__ = __webpack_require__(464);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -41,7 +41,7 @@ var GpsModalPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 336:
+/***/ 341:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10413,23 +10413,23 @@ return jQuery;
 
 /***/ }),
 
-/***/ 459:
+/***/ 464:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GpsModalPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_geocoder__ = __webpack_require__(232);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__ = __webpack_require__(217);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__general_general__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_marker_animate_unobtrusive__ = __webpack_require__(460);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_geocoder__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_geolocation__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__general_general__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_marker_animate_unobtrusive__ = __webpack_require__(465);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_marker_animate_unobtrusive___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_marker_animate_unobtrusive__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_services__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_text_to_speech__ = __webpack_require__(233);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__general_global_variables__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_storage__ = __webpack_require__(115);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_launch_navigator__ = __webpack_require__(234);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_services__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_text_to_speech__ = __webpack_require__(237);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__general_global_variables__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_storage__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_launch_navigator__ = __webpack_require__(238);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -10895,7 +10895,7 @@ var GpsModalPage = /** @class */ (function () {
     };
     GpsModalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-gps-modal',template:/*ion-inline-start:"/Users/ed/Projects/enzorromovil/infox-v3/src/pages/modals/gps-modal/gps-modal.html"*/'<ion-header>\n\n    <ion-navbar color="primary">\n        <ion-title>Llévame Ahí</ion-title>\n        <ion-buttons start>\n            <button ion-button (click)="closeModal()">\n                Regresar\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n\n    <div no-lines text-center text-wrap padding-top class="simple-message" *ngIf="dataError"> Ha ocurrido al mostrar la informacion, por favor intenta mas tarde.</div>\n\n    <div [ngClass]="{\'animate-fade\': showData, \'hide\': !showData}">\n        <p text-center text-wrap class="textCapitalize gpsTitle">Llévame a {{place.nombre | lowercase}}</p>\n    </div>\n    <div id="gpsMap" #gpsMap></div>\n\n    <div [ngClass]="{\'animate-fade\': showData, \'hide\': !showData}">\n        <ion-list>\n            <ion-item text-wrap>\n                <ion-icon name="ios-pin" item-start color="primary"></ion-icon>\n                Ubicación del negocio\n                <h3 [innerHtml]="placeAddress"></h3>\n            </ion-item>\n            <ion-item text-wrap>\n                <ion-icon name="ios-navigate" item-start color="danger"></ion-icon>\n                Tu ubicación actual\n                <h3 [ngClass]="{\'animate-fade\': showUserAddress, \'hide\': !showUserAddress}">{{userAddress}} &nbsp;</h3>\n            </ion-item>\n            <ion-item text-wrap class="directions-item" [ngClass]="{\'animate-fade\': startDirection, \'hide\': !startDirection}">\n                <ion-icon name="md-compass" item-start></ion-icon>\n                Direcciones\n                <h3 [innerHtml]="directions"></h3>\n            </ion-item>\n            <ion-item text-wrap>\n                <ion-icon name="{{selectedTransportation.icon}}" item-start color="sec"></ion-icon>\n                <ion-label floating>Medio de Transporte</ion-label>\n                <ion-select interface="popover" [(ngModel)]="selectedTransportation">\n                    <ion-option *ngFor="let t of transportation" [value]="t" (ionSelect)="changeTransportation($event)">{{t.name}}</ion-option>\n                </ion-select>\n            </ion-item>\n            <ion-item text-wrap>\n                <ion-icon name="md-map" item-start></ion-icon>\n                Distancia\n                <h3>Aprox. {{distance}}</h3>\n            </ion-item>\n            <ion-item text-wrap>\n                <ion-icon name="md-time" item-start color="secondary"></ion-icon>\n                Duración\n                <h3>Aprox. {{duration}}</h3>\n            </ion-item>\n            <ion-item text-center no-lines>\n                <button ion-button large color="primary" (tap)="openNavigator()">\n                    <ion-icon name="md-navigate"></ion-icon>\n                    &nbsp;Ir Ahí\n                </button>\n            </ion-item>\n        </ion-list>\n    </div>\n\n    <ion-fab right bottom #fab [ngClass]="{\'animate-fade\': showData, \'hide\': !showData}">\n        <div id="tutorial-take-me-there" [ngClass]="{\'animate-fade\': globalVariables.showTakeMeThereTut, \'fadeOut\': !globalVariables.showTakeMeThereTut}">\n            ¡Llega más rapido!\n            <div id="take-me-there-arrow"></div>\n        </div>\n        <button ion-fab color="infox" (click)="directionsInfoAlert()" [class.direction-animation]="!startDirection">\n            <ion-icon name="md-navigate"></ion-icon>\n        </button>\n        <ion-fab-list side="top" class="fab-list-text">\n            <button ion-fab color="infox" (click)="stopDirections(fab)" *ngIf="startDirection">\n                <ion-icon name="ios-hand"></ion-icon>\n                <ion-label>He llegado</ion-label>\n            </button>\n            <button ion-fab color="infox" (click)="startMutedDirections(fab)" *ngIf="mutedDirections === false || showOptions">\n                <ion-icon name="md-volume-off"></ion-icon>\n                <ion-label>Solo texto</ion-label>\n            </button>\n            <button ion-fab color="infox" (click)="startSoundDirections(fab)" *ngIf="mutedDirections  || showOptions">\n                <ion-icon name="md-volume-up"></ion-icon>\n                <ion-label>Navegación por voz</ion-label>\n            </button>\n        </ion-fab-list>\n    </ion-fab>\n</ion-content>\n'/*ion-inline-end:"/Users/ed/Projects/enzorromovil/infox-v3/src/pages/modals/gps-modal/gps-modal.html"*/,
+            selector: 'page-gps-modal',template:/*ion-inline-start:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/pages/modals/gps-modal/gps-modal.html"*/'<ion-header>\n\n    <ion-navbar color="primary">\n        <ion-title>Llévame Ahí</ion-title>\n        <ion-buttons start>\n            <button ion-button (click)="closeModal()">\n                Regresar\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content padding>\n\n    <div no-lines text-center text-wrap padding-top class="simple-message" *ngIf="dataError"> Ha ocurrido al mostrar la informacion, por favor intenta mas tarde.</div>\n\n    <div [ngClass]="{\'animate-fade\': showData, \'hide\': !showData}">\n        <p text-center text-wrap class="textCapitalize gpsTitle">Llévame a {{place.nombre | lowercase}}</p>\n    </div>\n    <div id="gpsMap" #gpsMap></div>\n\n    <div [ngClass]="{\'animate-fade\': showData, \'hide\': !showData}">\n        <ion-list>\n            <ion-item text-wrap>\n                <ion-icon name="ios-pin" item-start color="primary"></ion-icon>\n                Ubicación del negocio\n                <h3 [innerHtml]="placeAddress"></h3>\n            </ion-item>\n            <ion-item text-wrap>\n                <ion-icon name="ios-navigate" item-start color="danger"></ion-icon>\n                Tu ubicación actual\n                <h3 [ngClass]="{\'animate-fade\': showUserAddress, \'hide\': !showUserAddress}">{{userAddress}} &nbsp;</h3>\n            </ion-item>\n            <ion-item text-wrap class="directions-item" [ngClass]="{\'animate-fade\': startDirection, \'hide\': !startDirection}">\n                <ion-icon name="md-compass" item-start></ion-icon>\n                Direcciones\n                <h3 [innerHtml]="directions"></h3>\n            </ion-item>\n            <ion-item text-wrap>\n                <ion-icon name="{{selectedTransportation.icon}}" item-start color="sec"></ion-icon>\n                <ion-label floating>Medio de Transporte</ion-label>\n                <ion-select interface="popover" [(ngModel)]="selectedTransportation">\n                    <ion-option *ngFor="let t of transportation" [value]="t" (ionSelect)="changeTransportation($event)">{{t.name}}</ion-option>\n                </ion-select>\n            </ion-item>\n            <ion-item text-wrap>\n                <ion-icon name="md-map" item-start></ion-icon>\n                Distancia\n                <h3>Aprox. {{distance}}</h3>\n            </ion-item>\n            <ion-item text-wrap>\n                <ion-icon name="md-time" item-start color="secondary"></ion-icon>\n                Duración\n                <h3>Aprox. {{duration}}</h3>\n            </ion-item>\n            <ion-item text-center no-lines>\n                <button ion-button large color="primary" (tap)="openNavigator()">\n                    <ion-icon name="md-navigate"></ion-icon>\n                    &nbsp;Ir Ahí\n                </button>\n            </ion-item>\n        </ion-list>\n    </div>\n\n    <ion-fab right bottom #fab [ngClass]="{\'animate-fade\': showData, \'hide\': !showData}">\n        <div id="tutorial-take-me-there" [ngClass]="{\'animate-fade\': globalVariables.showTakeMeThereTut, \'fadeOut\': !globalVariables.showTakeMeThereTut}">\n            ¡Llega más rapido!\n            <div id="take-me-there-arrow"></div>\n        </div>\n        <button ion-fab color="infox" (click)="directionsInfoAlert()" [class.direction-animation]="!startDirection">\n            <ion-icon name="md-navigate"></ion-icon>\n        </button>\n        <ion-fab-list side="top" class="fab-list-text">\n            <button ion-fab color="infox" (click)="stopDirections(fab)" *ngIf="startDirection">\n                <ion-icon name="ios-hand"></ion-icon>\n                <ion-label>He llegado</ion-label>\n            </button>\n            <button ion-fab color="infox" (click)="startMutedDirections(fab)" *ngIf="mutedDirections === false || showOptions">\n                <ion-icon name="md-volume-off"></ion-icon>\n                <ion-label>Solo texto</ion-label>\n            </button>\n            <button ion-fab color="infox" (click)="startSoundDirections(fab)" *ngIf="mutedDirections  || showOptions">\n                <ion-icon name="md-volume-up"></ion-icon>\n                <ion-label>Navegación por voz</ion-label>\n            </button>\n        </ion-fab-list>\n    </ion-fab>\n</ion-content>\n'/*ion-inline-end:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/pages/modals/gps-modal/gps-modal.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* NavParams */],
@@ -10920,7 +10920,7 @@ var GpsModalPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 460:
+/***/ 465:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;﻿/* global define,module,require,google */
@@ -10929,7 +10929,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     'use strict';
     if (true) {
         // AMD. Register as an anonymous module.
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(336), __webpack_require__(461)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory.bind(null, root)),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(341), __webpack_require__(466)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory.bind(null, root)),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -11193,13 +11193,13 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 /***/ }),
 
-/***/ 461:
+/***/ 466:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (root, factory) {
   if (true) {
     // AMD. Register as an anonymous module unless amdModuleId is set
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(462)], __WEBPACK_AMD_DEFINE_RESULT__ = function (a0) {
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(467)], __WEBPACK_AMD_DEFINE_RESULT__ = function (a0) {
       return (factory(a0));
     }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -11351,13 +11351,13 @@ google.maps.Marker.prototype.stopAnimation = function (jumpToEnd) {
 
 /***/ }),
 
-/***/ 462:
+/***/ 467:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (root, factory) {
   if (true) {
     // AMD. Register as an anonymous module unless amdModuleId is set
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(336)], __WEBPACK_AMD_DEFINE_RESULT__ = function (a0) {
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(341)], __WEBPACK_AMD_DEFINE_RESULT__ = function (a0) {
       return (root['jQuery'] = factory(a0));
     }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));

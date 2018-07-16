@@ -18,6 +18,7 @@ export class TabsPage {
     tab2Root = 'NearbyPage';
     tab3Root = 'SearchPage';
     tab4Root = 'LoginPage';
+    tab5Root = 'FavoritesPage';
 
     constructor(public navParams: NavParams,
                 public navCtrl: NavController,
@@ -29,8 +30,8 @@ export class TabsPage {
     }
 
     getCurrentPage() {
-        this.tabNearbyInactive = this.tabRef.getSelected().index != 1;
-        this.globalVariables.nearbyTabActive = this.tabRef.getSelected().index != 1;
+        this.tabNearbyInactive = this.tabRef.getSelected().index != 2;
+        this.globalVariables.nearbyTabActive = this.tabRef.getSelected().index != 2;
     }
 
 

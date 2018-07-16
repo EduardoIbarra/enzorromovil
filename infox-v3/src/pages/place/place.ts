@@ -9,6 +9,7 @@ import {SafeResourceUrl} from '@angular/platform-browser';
 import {DomSanitizer} from '@angular/platform-browser';
 import {TabsPage} from "../tabs/tabs";
 import {Event} from "@angular/router";
+import {HttpClient, HttpParams} from "@angular/common/http";
 
 declare var google: any;
 
@@ -30,7 +31,7 @@ export class PlacePage {
     show_full_phones: boolean = false;
     correctData: boolean = false;
     map: any;
-
+    api_url = 'http://infoxsoft.com/app/';
     constructor(public navCtrl: NavController,
                 public navParams: NavParams,
                 public globalVariables: GlobalVariables,
@@ -40,7 +41,8 @@ export class PlacePage {
                 public socialSharing: SocialSharing,
                 public modalCtrl: ModalController,
                 public sanitizer: DomSanitizer,
-                public appService: AppService,) {
+                public appService: AppService,
+                public httpClient: HttpClient) {
     }
 
     ionViewDidLoad() {
@@ -259,5 +261,23 @@ export class PlacePage {
 
         modal.present();
         this.general.dismissLoadingMask();
+    }
+
+    favorite() {
+        const favorito = {
+            id_usuario: '3017',
+            id_directorio: '3',
+            nota_personal: 'Esta es mi nota personal :D'
+        };
+        const params = new HttpParams({
+            fromObject: favorito
+        });
+        this.httpClient.get(this.api_url+'agregar_favoritos.php', {params: params}).subscribe((data: any) => {
+            if(data.error) {
+                alert(data.error);
+            }
+        }, (error) => {
+            console.log(error);
+        });
     }
 }

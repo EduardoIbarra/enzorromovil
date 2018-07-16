@@ -26,6 +26,7 @@ import {TextToSpeech} from '@ionic-native/text-to-speech';
 import {PhotoViewer} from "@ionic-native/photo-viewer";
 import {Network} from '@ionic-native/network';
 import {NetworkInterface} from '@ionic-native/network-interface';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
     declarations: [
@@ -40,7 +41,8 @@ import {NetworkInterface} from '@ionic-native/network-interface';
             tabsHideOnSubPages: false,
             statusbarPadding: false
         }),
-        IonicStorageModule.forRoot()
+        IonicStorageModule.forRoot(),
+        HttpClientModule
     ],
     bootstrap: [IonicApp],
     entryComponents: [
