@@ -15,10 +15,10 @@ export class TabsPage {
     goToPlace = this.navParams.get('goToPlace');
 
     tab1Root = 'HomePage';
-    tab2Root = 'NearbyPage';
-    tab3Root = 'SearchPage';
-    tab4Root = 'LoginPage';
-    tab5Root = 'FavoritesPage';
+    tab2Root = 'FavoritesPage';
+    tab3Root = 'NearbyPage';
+    tab4Root = 'SearchPage';
+    tab5Root = 'LoginPage';
 
     constructor(public navParams: NavParams,
                 public navCtrl: NavController,
@@ -31,7 +31,7 @@ export class TabsPage {
 
     getCurrentPage() {
         this.tabNearbyInactive = this.tabRef.getSelected().index != 2;
-        this.globalVariables.nearbyTabActive = this.tabRef.getSelected().index != 2;
+        this.globalVariables.nearbyTabActive = this.tabRef.getSelected().index == 2;
     }
 
 

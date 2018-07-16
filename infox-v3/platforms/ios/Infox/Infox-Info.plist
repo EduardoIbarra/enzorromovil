@@ -51,6 +51,11 @@
     <dict>
       <key>NSExceptionDomains</key>
       <dict>
+        <key>localhost</key>
+        <dict>
+          <key>NSExceptionAllowsInsecureHTTPLoads</key>
+          <true/>
+        </dict>
         <key>facebook.com/*</key>
         <dict>
           <key>NSIncludesSubdomains</key>
@@ -101,6 +106,16 @@
           <string>fb805201646226832</string>
         </array>
       </dict>
+      <dict>
+        <key>CFBundleTypeRole</key>
+        <string>Editor</string>
+        <key>CFBundleURLName</key>
+        <string>infox.buscador</string>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>infox.buscador</string>
+        </array>
+      </dict>
     </array>
     <key>FacebookAppID</key>
     <string>805201646226832</string>
@@ -112,8 +127,9 @@
       <string>fb-messenger-api</string>
       <string>fbauth2</string>
       <string>fbshareextension</string>
-      <string>citymapper</string>
+      <string>googlechromes</string>
       <string>comgooglemaps</string>
+      <string>citymapper</string>
       <string>navigon</string>
       <string>transit</string>
       <string>waze</string>
@@ -131,7 +147,11 @@
       <string>iosamap</string>
     </array>
     <key>NSLocationWhenInUseUsageDescription</key>
-    <string>Use geocoder service</string>
+    <string>This app requires access to your location for navigation purposes</string>
+    <key>Google Maps API Key</key>
+    <string>AIzaSyC8XRq5g7SHVIpYIrEDAJg8dyHvMNSIfeA</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>This app requires constant access to your location in order to track your position, even when the screen is off or the app is in the background.</string>
     <key>NSMicrophoneUsageDescription</key>
     <string>This app requires microphone access to function properly.</string>
     <key>NSSpeechRecognitionUsageDescription</key>
@@ -141,8 +161,6 @@
     <key>NSPhotoLibraryUsageDescription</key>
     <string>This app requires photo library access to function properly.</string>
     <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-    <string>This app requires constant access to your location in order to track your position, even when the screen is off or the app is in the background.</string>
-    <key>NSLocationAlwaysUsageDescription</key>
     <string>This app requires constant access to your location in order to track your position, even when the screen is off or the app is in the background.</string>
     <key>NSCalendarsUsageDescription</key>
     <string>This app requires calendar access to function properly.</string>

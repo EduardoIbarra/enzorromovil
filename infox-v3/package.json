@@ -46,6 +46,7 @@
     "com-sarriaroman-photoviewer": "^1.1.16",
     "com.googlemaps.ios": "https://github.com/mapsplugin/cordova-plugin-googlemaps-sdk",
     "cordova-android": "6.3.0",
+    "cordova-ios": "4.5.4",
     "cordova-open-native-settings": "^1.5.0",
     "cordova-plugin-actionsheet": "^2.3.3",
     "cordova-plugin-add-swift-support": "^1.7.1",
@@ -82,8 +83,7 @@
     "rxjs": "5.5.7",
     "sw-toolbox": "3.6.0",
     "uk.co.workingedge.phonegap.plugin.launchnavigator": "^4.2.1",
-    "zone.js": "0.8.20",
-    "cordova-ios": "~4.5.4"
+    "zone.js": "0.8.20"
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.1.8",

@@ -88,7 +88,9 @@ export class LoginPage {
         console.log('ionViewDidLoad LoginPage');
     }
     isLoggedIn() {
-        this.user = JSON.parse(localStorage.getItem('infox_user')).user;
+        if(JSON.parse(localStorage.getItem('infox_user'))) {
+            this.user = JSON.parse(localStorage.getItem('infox_user')).user;
+        }
         return (JSON.parse(localStorage.getItem('infox_user')));
     }
     logout() {
