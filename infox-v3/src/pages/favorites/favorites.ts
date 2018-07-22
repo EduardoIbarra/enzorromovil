@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {HttpClient, HttpParams} from "@angular/common/http";
+import {GlobalVariables} from "../../general/global-variables";
 
 /**
  * Generated class for the FavoritesPage page.
@@ -17,22 +18,26 @@ import {HttpClient, HttpParams} from "@angular/common/http";
 export class FavoritesPage {
     favorites: any[];
     api_url = 'http://infoxsoft.com/app/';
-    constructor(public navCtrl: NavController, public navParams: NavParams, public httpClient: HttpClient) {
-        const favoritos = {
-            id_usuario: '3017'
-        };
-        const params = new HttpParams({
-            fromObject: favoritos
-        });
-        this.httpClient.get(this.api_url+'consulta_favoritos.php', {params: params}).subscribe((data: any) => {
-            this.favorites = data.favoritos_info;
-            console.log(this.favorites);
-            if(data.error) {
-                alert(data.error);
-            }
-        }, (error) => {
-            console.log(error);
-        });
+    user: any;
+    constructor(public navCtrl: NavController, public navParams: NavParams, public httpClient: HttpClient, public globalVariables: GlobalVariables,) {
+        if(globalVariables.loggedIn()) {
+            this.user = JSON.parse(localStorage.getItem('infox_user')).user;
+            const favoritos = {
+                id_usuario: this.user.id
+            };
+            const params = new HttpParams({
+                fromObject: favoritos
+            });
+            this.httpClient.get(this.api_url+'consulta_favoritos.php', {params: params}).subscribe((data: any) => {
+                this.favorites = data.favoritos_info;
+                console.log(this.favorites);
+                if(data.error) {
+                    alert(data.error);
+                }
+            }, (error) => {
+                console.log(error);
+            });
+        }
     }
 
     ionViewDidLoad() {

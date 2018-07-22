@@ -1842,6 +1842,7 @@ var GlobalVariables = /** @class */ (function () {
         this.showTakeMeThereTut = false;
         this.goBackToNearby = false;
         this.isConnected = true;
+        this.isLoggedIn = this.loggedIn();
         this.searchParams = '';
         this.placeId = null;
     }
@@ -1871,6 +1872,10 @@ var GlobalVariables = /** @class */ (function () {
                 break;
         }
         return this.day;
+    };
+    GlobalVariables.prototype.loggedIn = function () {
+        var user = localStorage.getItem('infox_user');
+        return !!(user);
     };
     GlobalVariables = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),

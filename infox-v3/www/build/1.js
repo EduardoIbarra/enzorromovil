@@ -381,32 +381,38 @@ var PlacePage = /** @class */ (function () {
     };
     PlacePage.prototype.saveFavorite = function (myComment) {
         var _this = this;
-        var loader = this.loadingCtrl.create({
-            content: "Por favor espere...",
-        });
-        var favorito = {
-            id_usuario: '3017',
-            id_directorio: this.placeId,
-            nota_personal: myComment
-        };
-        var params = new __WEBPACK_IMPORTED_MODULE_7__angular_common_http__["c" /* HttpParams */]({
-            fromObject: favorito
-        });
-        this.httpClient.get(this.api_url + 'agregar_favoritos.php', { params: params }).subscribe(function (data) {
-            var toast = _this.toastCtrl.create({
-                message: data.ok,
-                duration: 3000,
-                position: 'top'
+        if (this.globalVariables.loggedIn()) {
+            this.user = JSON.parse(localStorage.getItem('infox_user')).user;
+            var loader_1 = this.loadingCtrl.create({
+                content: "Por favor espere...",
             });
-            toast.present();
-            if (data.error) {
-                alert(data.error);
-            }
-            loader.dismissAll();
-        }, function (error) {
-            console.log(error);
-            loader.dismissAll();
-        });
+            var favorito = {
+                id_usuario: this.user.id,
+                id_directorio: this.placeId,
+                nota_personal: myComment
+            };
+            var params = new __WEBPACK_IMPORTED_MODULE_7__angular_common_http__["c" /* HttpParams */]({
+                fromObject: favorito
+            });
+            this.httpClient.get(this.api_url + 'agregar_favoritos.php', { params: params }).subscribe(function (data) {
+                var toast = _this.toastCtrl.create({
+                    message: data.ok,
+                    duration: 3000,
+                    position: 'top'
+                });
+                toast.present();
+                if (data.error) {
+                    alert(data.error);
+                }
+                loader_1.dismissAll();
+            }, function (error) {
+                console.log(error);
+                loader_1.dismissAll();
+            });
+        }
+        else {
+            alert('Debes loggearte para acceder a esta característica');
+        }
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Content */]),

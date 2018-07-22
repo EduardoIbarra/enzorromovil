@@ -43,6 +43,7 @@ export class PlacePage {
     correctData: boolean = false;
     map: any;
     api_url = 'http://infoxsoft.com/app/';
+    user: any;
     constructor(public navCtrl: NavController,
                 public navParams: NavParams,
                 public globalVariables: GlobalVariables,
@@ -294,31 +295,37 @@ export class PlacePage {
         alert.present();
     }
     saveFavorite(myComment) {
-        const loader = this.loadingCtrl.create({
-            content: "Por favor espere...",
-        });
-        const favorito = {
-            id_usuario: '3017',
-            id_directorio: this.placeId,
-            nota_personal: myComment
-        };
-        const params = new HttpParams({
-            fromObject: favorito
-        });
-        this.httpClient.get(this.api_url+'agregar_favoritos.php', {params: params}).subscribe((data: any) => {
-            let toast = this.toastCtrl.create({
-                message: data.ok,
-                duration: 3000,
-                position: 'top'
+        if(this.globalVariables.loggedIn()) {
+            this.user = JSON.parse(localStorage.getItem('infox_user')).user;
+
+            const loader = this.loadingCtrl.create({
+                content: "Por favor espere...",
             });
-            toast.present();
-            if(data.error) {
-                alert(data.error);
-            }
-            loader.dismissAll();
-        }, (error) => {
-            console.log(error);
-            loader.dismissAll();
-        });
+            const favorito = {
+                id_usuario: this.user.id,
+                id_directorio: this.placeId,
+                nota_personal: myComment
+            };
+            const params = new HttpParams({
+                fromObject: favorito
+            });
+            this.httpClient.get(this.api_url+'agregar_favoritos.php', {params: params}).subscribe((data: any) => {
+                let toast = this.toastCtrl.create({
+                    message: data.ok,
+                    duration: 3000,
+                    position: 'top'
+                });
+                toast.present();
+                if(data.error) {
+                    alert(data.error);
+                }
+                loader.dismissAll();
+            }, (error) => {
+                console.log(error);
+                loader.dismissAll();
+            });
+        }else {
+            alert('Debes loggearte para acceder a esta característica');
+        }
     }
 }

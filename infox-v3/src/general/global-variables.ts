@@ -17,7 +17,7 @@ export class GlobalVariables {
     goToPlace: boolean;
     goBackToNearby: boolean = false;
     isConnected: boolean = true;
-
+    isLoggedIn: boolean = this.loggedIn();
     constructor() {
         this.searchParams = '';
         this.placeId = null;
@@ -50,6 +50,10 @@ export class GlobalVariables {
         }
 
         return this.day;
+    }
+    public loggedIn() {
+        const user = localStorage.getItem('infox_user');
+        return !!(user);
     }
 
 }
