@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {IonicPage, NavController, NavParams, ToastController} from 'ionic-angular';
+import {IonicPage, LoadingController, NavController, NavParams, ToastController} from 'ionic-angular';
 import { Facebook } from '@ionic-native/facebook';
 import {HttpClient, HttpParams} from "@angular/common/http";
 
@@ -20,9 +20,13 @@ export class LoginPage {
     user: any = {};
     api_url = 'http://infoxsoft.com/app/';
     operation: string = 'login';
-    constructor(public navCtrl: NavController, public navParams: NavParams, private fb: Facebook, public httpClient: HttpClient, private toastCtrl: ToastController) {
+    constructor(public navCtrl: NavController, public navParams: NavParams, private fb: Facebook, public httpClient: HttpClient, private toastCtrl: ToastController, public loadingCtrl: LoadingController) {
     }
     facebookLogin() {
+        const loader = this.loadingCtrl.create({
+            content: "Por favor espere...",
+            duration: 3000
+        });
         this.fb.login(['public_profile', 'email'])
             .then((res) => {
                 console.log('Logged into Facebook!', res);
@@ -36,13 +40,19 @@ export class LoginPage {
                         facebook_object: JSON.stringify(res),
                         facebook_photo: fbData.picture_large.data.url
                     };
-                    this.registerFromFacebook(userObject).subscribe( (user) => {
+                    this.registerFromFacebook(userObject).subscribe( (user: any) => {
                         alert('Ingresado con éxito');
-                        localStorage.setItem('infox_user', JSON.stringify(user));
+                        localStorage.setItem('infox_user', JSON.stringify(user.user));
+                        console.log(user);
+                        loader.dismissAll();
                     });
+                    loader.dismissAll();
                 });
             })
-            .catch(e => console.log('Error logging into Facebook', e));
+            .catch((e) => {
+                console.log('Error logging into Facebook', e);
+                loader.dismissAll();
+            });
     }
     registerFromFacebook(fbOject) {
         const params = new HttpParams({
@@ -52,6 +62,11 @@ export class LoginPage {
             {params: params});
     }
     emailLogin() {
+        const loader = this.loadingCtrl.create({
+            content: "Por favor espere...",
+            duration: 3000
+        });
+        loader.present();
         const params = new HttpParams({
             fromObject: this.user
         });
@@ -66,12 +81,19 @@ export class LoginPage {
                     position: 'top'
                 });
                 toast.present();
+                loader.dismissAll();
             }
         }, (error) => {
             console.log(error);
+            loader.dismissAll();
         });
     }
     emailRegister() {
+        const loader = this.loadingCtrl.create({
+            content: "Por favor espere...",
+            duration: 3000
+        });
+        loader.present();
         const params = new HttpParams({
             fromObject: this.user
         });
@@ -79,8 +101,17 @@ export class LoginPage {
             if(data.error) {
                 alert(data.error);
             }
+            let toast = this.toastCtrl.create({
+                message: 'Registrado con éxito',
+                duration: 3000,
+                position: 'top'
+            });
+            toast.present();
+            this.operation = 'login';
+            loader.dismissAll();
         }, (error) => {
             console.log(error);
+            loader.dismissAll();
         });
     }
 
@@ -98,5 +129,7 @@ export class LoginPage {
             localStorage.removeItem('infox_user');
         }
     }
-
+    updateProfile() {
+        //
+    }
 }

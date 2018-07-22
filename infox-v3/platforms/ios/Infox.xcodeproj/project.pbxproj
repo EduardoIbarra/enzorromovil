@@ -662,7 +662,7 @@
 				LastUpgradeCheck = 510;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = M9L7YBWRVV;
+						DevelopmentTeam = MY4W5PSH63;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -833,7 +833,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = M9L7YBWRVV;
+				DEVELOPMENT_TEAM = MY4W5PSH63;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"Infox/Plugins/com.googlemaps.ios\"",
@@ -853,6 +853,7 @@
 				INFOPLIST_FILE = "Infox/Infox-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = infox.buscador;
 				PRODUCT_NAME = Infox;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -872,7 +873,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
-				DEVELOPMENT_TEAM = M9L7YBWRVV;
+				DEVELOPMENT_TEAM = MY4W5PSH63;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"Infox/Plugins/com.googlemaps.ios\"",
@@ -890,6 +891,7 @@
 				INFOPLIST_FILE = "Infox/Infox-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = infox.buscador;
 				PRODUCT_NAME = Infox;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;

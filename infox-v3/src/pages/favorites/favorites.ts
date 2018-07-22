@@ -15,7 +15,7 @@ import {HttpClient, HttpParams} from "@angular/common/http";
     templateUrl: 'favorites.html',
 })
 export class FavoritesPage {
-    favorites: any;
+    favorites: any[];
     api_url = 'http://infoxsoft.com/app/';
     constructor(public navCtrl: NavController, public navParams: NavParams, public httpClient: HttpClient) {
         const favoritos = {
@@ -25,7 +25,7 @@ export class FavoritesPage {
             fromObject: favoritos
         });
         this.httpClient.get(this.api_url+'consulta_favoritos.php', {params: params}).subscribe((data: any) => {
-            this.favorites = data;
+            this.favorites = data.favoritos_info;
             console.log(this.favorites);
             if(data.error) {
                 alert(data.error);

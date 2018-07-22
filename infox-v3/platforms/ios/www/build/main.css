@@ -30701,7 +30701,7 @@ div#tutorial-take-me-there {
   position: static;
 }
 
-.ios .central-icon :nth-child(2) .tab-button-text, .md .central-icon :nth-child(2) .tab-button-text {
+.ios .central-icon :nth-child(3) .tab-button-text, .md .central-icon :nth-child(3) .tab-button-text {
   display: none !important;
 }
 

@@ -1,5 +1,16 @@
 import {Component, EventEmitter, ViewChild} from '@angular/core';
-import {App, Content, Events, IonicPage, ModalController, Navbar, NavController, NavParams} from 'ionic-angular';
+import {
+    AlertController,
+    App,
+    Content,
+    Events,
+    IonicPage, LoadingController,
+    ModalController,
+    Navbar,
+    NavController,
+    NavParams,
+    ToastController
+} from 'ionic-angular';
 import {GlobalVariables} from '../../general/global-variables';
 import {General} from '../../general/general';
 import {AppService} from '../../services/services';
@@ -42,24 +53,14 @@ export class PlacePage {
                 public modalCtrl: ModalController,
                 public sanitizer: DomSanitizer,
                 public appService: AppService,
-                public httpClient: HttpClient) {
+                public httpClient: HttpClient,
+                private toastCtrl: ToastController,
+                private alertCtrl: AlertController,
+                public loadingCtrl: LoadingController) {
     }
 
     ionViewDidLoad() {
         // let ev: Event;
-        // this.navBar.backButtonClick = (e: UIEvent) => {
-        //     let nav: any = this.app.getRootNavById('n4');
-        //     console.log(this.globalVariables.nearbyTabActive);
-        //     if(this.globalVariables.nearbyTabActive) {
-        //         nav.setRoot(TabsPage, {search: this.general.getLastSearch(), tabIndex: 2}, {animate: false});
-        //     }else{
-        //         nav.setRoot(TabsPage, {search: this.general.getLastNearbySearch(), tabIndex: 1}, {animate: false});
-        //     }
-        //
-        //     // this.navCtrl.pop();
-        //     // e.stopImmediatePropagation();
-        // };
-
         this.placeId = this.globalVariables.placeId;
         this.recentSearch = this.general.getLastSearch();
         this.getPlaceDetails();
@@ -264,20 +265,60 @@ export class PlacePage {
     }
 
     favorite() {
+        let alert = this.alertCtrl.create({
+            title: 'Agrega una nota personal',
+            inputs: [
+                {
+                    type: 'textarea',
+                    name: 'note',
+                    placeholder: 'Nota'
+                }
+            ],
+            buttons: [
+                {
+                    text: 'Cancel',
+                    role: 'cancel',
+                    handler: data => {
+                        console.log('Cancel clicked');
+                    }
+                },
+                {
+                    text: 'Guardar Favorito',
+                    handler: data => {
+                        console.log(data);
+                        this.saveFavorite(data.note);
+                    }
+                }
+            ]
+        });
+        alert.present();
+    }
+    saveFavorite(myComment) {
+        const loader = this.loadingCtrl.create({
+            content: "Por favor espere...",
+        });
         const favorito = {
             id_usuario: '3017',
-            id_directorio: '3',
-            nota_personal: 'Esta es mi nota personal :D'
+            id_directorio: this.placeId,
+            nota_personal: myComment
         };
         const params = new HttpParams({
             fromObject: favorito
         });
         this.httpClient.get(this.api_url+'agregar_favoritos.php', {params: params}).subscribe((data: any) => {
+            let toast = this.toastCtrl.create({
+                message: data.ok,
+                duration: 3000,
+                position: 'top'
+            });
+            toast.present();
             if(data.error) {
                 alert(data.error);
             }
+            loader.dismissAll();
         }, (error) => {
             console.log(error);
+            loader.dismissAll();
         });
     }
 }
