@@ -33,17 +33,19 @@ export class LoginPage {
                 this.fbResponse = res;
                 this.fb.api('me?fields=id,name,email,first_name,last_name,picture.width(720).height(720).as(picture_large)', []).then((fbData) => {
                     const userObject:any = {
-                        nombre: fbData.first_name,
+                        nombres: fbData.first_name,
                         apellidos: fbData.last_name,
                         email: fbData.email,
                         user_facebook_id: res.authResponse.userID,
                         facebook_object: JSON.stringify(res),
                         facebook_photo: fbData.picture_large.data.url
                     };
+                    console.log(userObject);
                     this.registerFromFacebook(userObject).subscribe( (user: any) => {
                         alert('Ingresado con éxito');
-                        localStorage.setItem('infox_user', JSON.stringify(user.user));
+                        localStorage.setItem('infox_user', JSON.stringify(user));
                         console.log(user);
+                        this.user = user.user;
                         loader.dismissAll();
                     });
                     loader.dismissAll();
@@ -63,8 +65,7 @@ export class LoginPage {
     }
     emailLogin() {
         const loader = this.loadingCtrl.create({
-            content: "Por favor espere...",
-            duration: 3000
+            content: "Por favor espere..."
         });
         loader.present();
         const params = new HttpParams({
@@ -74,6 +75,8 @@ export class LoginPage {
             if(data.error) {
                 alert(data.error);
             }else{
+                this.user.password = null;
+                this.user.password2 = null;
                 localStorage.setItem('infox_user', JSON.stringify(data));
                 let toast = this.toastCtrl.create({
                     message: 'Loggeado con éxito',
@@ -90,8 +93,7 @@ export class LoginPage {
     }
     emailRegister() {
         const loader = this.loadingCtrl.create({
-            content: "Por favor espere...",
-            duration: 3000
+            content: "Por favor espere..."
         });
         loader.present();
         const params = new HttpParams({
@@ -100,6 +102,8 @@ export class LoginPage {
         this.httpClient.get(this.api_url+'registro_facebook.php', {params: params}).subscribe((data: any) => {
             if(data.error) {
                 alert(data.error);
+                loader.dismissAll();
+                return;
             }
             let toast = this.toastCtrl.create({
                 message: 'Registrado con éxito',
@@ -127,9 +131,33 @@ export class LoginPage {
     logout() {
         if(confirm('Seguro que desea salir?')) {
             localStorage.removeItem('infox_user');
+            this.user.password = null;
+            this.user.password2 = null;
         }
     }
     updateProfile() {
-        //
+        const loader = this.loadingCtrl.create({
+            content: "Por favor espere...",
+            duration: 3000
+        });
+        loader.present();
+        const params = new HttpParams({
+            fromObject: this.user
+        });
+        this.httpClient.get(this.api_url+'editar_usuario.php', {params: params}).subscribe((data: any) => {
+            if(data.error) {
+                alert(data.error);
+            }
+            let toast = this.toastCtrl.create({
+                message: 'Guardado con éxito',
+                duration: 3000,
+                position: 'top'
+            });
+            toast.present();
+            loader.dismissAll();
+        }, (error) => {
+            console.log(error);
+            loader.dismissAll();
+        });
     }
 }

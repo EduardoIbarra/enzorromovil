@@ -78,7 +78,7 @@ export class HomePage {
             if (data) {
                 // console.log(data);
                 let nav: any = this.app.getRootNavById('n4');
-                nav.setRoot(TabsPage, {search: data, tabIndex: 2}, {animate: false});
+                nav.setRoot(TabsPage, {search: data, tabIndex: 3}, {animate: false});
             }
         })
     }

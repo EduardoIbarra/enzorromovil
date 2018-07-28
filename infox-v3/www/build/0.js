@@ -298,7 +298,7 @@ var ImageViewerController = (function () {
 "use strict";
 
 var isScheduler_1 = __webpack_require__(109);
-var of_1 = __webpack_require__(231);
+var of_1 = __webpack_require__(230);
 var from_1 = __webpack_require__(363);
 var concatAll_1 = __webpack_require__(331);
 /* tslint:enable:max-line-length */

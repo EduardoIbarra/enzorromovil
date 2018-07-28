@@ -24,7 +24,7 @@
 
     <offline *ngIf="!globalVariables.isConnected && !showData"></offline>
 
-    <div *ngIf="showData" class="animate-fade-item">
+    <div *ngIf="showData && place.data" class="animate-fade-item">
         <div class="placeHeader" [ngClass]="{'headerPadding': !place.data.latitud && !place.data.longitud}">
             <h1 class="textCapitalize">{{place.data.nombre | lowercase}}</h1>
             <h4 class="textCapitalize">{{place.data.clasificacion | lowercase}}</h4>

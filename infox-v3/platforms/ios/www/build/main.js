@@ -235,11 +235,11 @@ var map = {
 		2
 	],
 	"../pages/modals/incorrect-modal/incorrect-modal.module": [
-		305,
+		304,
 		8
 	],
 	"../pages/modals/search-place/search-place.module": [
-		304,
+		305,
 		7
 	],
 	"../pages/modals/speech-modal/speech-modal.module": [
@@ -247,11 +247,11 @@ var map = {
 		3
 	],
 	"../pages/nearby/nearby.module": [
-		309,
+		308,
 		5
 	],
 	"../pages/place/place.module": [
-		308,
+		309,
 		1
 	],
 	"../pages/search/search.module": [
@@ -1670,12 +1670,12 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/home/home.module#HomeModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modals/dishes-modal/dishes-modal.module#DishesModalPageModule', name: 'DishesModalPage', segment: 'dishes-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/modals/search-place/search-place.module#SearchPlacePageModule', name: 'SearchPlacePage', segment: 'search-place', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modals/incorrect-modal/incorrect-modal.module#IncorrectModalPageModule', name: 'IncorrectModalPage', segment: 'incorrect-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/modals/search-place/search-place.module#SearchPlacePageModule', name: 'SearchPlacePage', segment: 'search-place', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modals/speech-modal/speech-modal.module#SpeechModalPageModule', name: 'SpeechModalPage', segment: 'speech-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/search/search.module#SearchPageModule', name: 'SearchPage', segment: 'search', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/place/place.module#PlacePageModule', name: 'PlacePage', segment: 'place', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/nearby/nearby.module#NearbyPageModule', name: 'NearbyPage', segment: 'nearby', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/place/place.module#PlacePageModule', name: 'PlacePage', segment: 'place', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modals/gps-modal/gps-modal.module#GpsModalPageModule', name: 'GpsModalPage', segment: 'gps-modal', priority: 'low', defaultHistory: [] }
                     ]
                 }),
@@ -1789,8 +1789,7 @@ var MyApp = /** @class */ (function () {
             _this.network.onDisconnect().subscribe(function (data) {
                 console.log(data);
                 _this.general.displayNetworkUpdate(data.type);
-                // this.globalVariables.isConnected = false;
-                _this.globalVariables.isConnected = true;
+                _this.globalVariables.isConnected = false;
             }, function (error) { return console.error(error); });
             _this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_tabs_tabs__["a" /* TabsPage */];
             splashScreen.hide();
@@ -1842,6 +1841,7 @@ var GlobalVariables = /** @class */ (function () {
         this.showTakeMeThereTut = false;
         this.goBackToNearby = false;
         this.isConnected = true;
+        this.isLoggedIn = this.loggedIn();
         this.searchParams = '';
         this.placeId = null;
     }
@@ -1871,6 +1871,10 @@ var GlobalVariables = /** @class */ (function () {
                 break;
         }
         return this.day;
+    };
+    GlobalVariables.prototype.loggedIn = function () {
+        var user = localStorage.getItem('infox_user');
+        return !!(user);
     };
     GlobalVariables = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),

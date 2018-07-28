@@ -60,8 +60,7 @@ export class MyApp {
             this.network.onDisconnect().subscribe(data => {
                 console.log(data);
                 this.general.displayNetworkUpdate(data.type);
-                // this.globalVariables.isConnected = false;
-                this.globalVariables.isConnected = true;
+                this.globalVariables.isConnected = false;
             }, error => console.error(error));
 
             this.rootPage = TabsPage;

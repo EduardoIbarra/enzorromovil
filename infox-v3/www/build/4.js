@@ -198,7 +198,9 @@ var SearchPage = /** @class */ (function () {
                 _this.emptyMessage = "No hay resultados en este momento para ";
             }, function (error) {
                 console.log(error);
-                _this.refresher.complete();
+                if (_this.refresher) {
+                    _this.refresher.complete();
+                }
                 _this.places = [];
                 _this.showData = true;
             });

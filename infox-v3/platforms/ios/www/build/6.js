@@ -198,7 +198,7 @@ var HomePage = /** @class */ (function () {
             if (data) {
                 // console.log(data);
                 var nav = _this.app.getRootNavById('n4');
-                nav.setRoot(__WEBPACK_IMPORTED_MODULE_5__tabs_tabs__["a" /* TabsPage */], { search: data, tabIndex: 2 }, { animate: false });
+                nav.setRoot(__WEBPACK_IMPORTED_MODULE_5__tabs_tabs__["a" /* TabsPage */], { search: data, tabIndex: 3 }, { animate: false });
             }
         });
     };

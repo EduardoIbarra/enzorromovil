@@ -78,7 +78,9 @@ export class SearchPage {
                 this.emptyMessage = "No hay resultados en este momento para ";
             }, (error) => {
                 console.log(error);
-                this.refresher.complete();
+                if (this.refresher) {
+                    this.refresher.complete();
+                }
                 this.places = [];
                 this.showData = true;
             });
