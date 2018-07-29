@@ -25,16 +25,18 @@ export class LoginPage {
     states: any = [];
     cities: any = [];
     constructor(public navCtrl: NavController, public navParams: NavParams, private fb: Facebook, public httpClient: HttpClient, private toastCtrl: ToastController, public loadingCtrl: LoadingController, public appService: AppService) {
-        this.appService.getCountries().subscribe((data) => {
+        this.appService.getCountries().subscribe((data: any) => {
             this.countries = JSON.parse(data._body);
             console.log(this.countries);
         }, (error) => {
             console.log(error);
         });
-        this.user = JSON.parse(localStorage.getItem('infox_user')).user;
+        if(localStorage.getItem('infox_user')) {
+            this.user = JSON.parse(localStorage.getItem('infox_user')).user;
+        }
     }
     countryChanged() {
-        this.appService.getStates(this.user.pais).subscribe((data) => {
+        this.appService.getStates(this.user.pais).subscribe((data: any) => {
             this.states = JSON.parse(data._body);
             console.log(this.states);
         }, (error) => {
@@ -42,7 +44,7 @@ export class LoginPage {
         });
     }
     stateChanged() {
-        this.appService.getCities(this.user.estado).subscribe((data) => {
+        this.appService.getCities(this.user.estado).subscribe((data: any) => {
             this.cities = JSON.parse(data._body);
             console.log(this.cities);
         }, (error) => {
@@ -101,6 +103,7 @@ export class LoginPage {
         this.httpClient.get(this.api_url+'login.php', {params: params}).subscribe((data: any) => {
             if(data.error) {
                 alert(data.error);
+                loader.dismissAll();
             }else{
                 this.user.password = null;
                 this.user.password2 = null;

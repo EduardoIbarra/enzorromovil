@@ -301,6 +301,7 @@ var AppService = /** @class */ (function () {
         var _this = this;
         this.http = http;
         this.jsonp = jsonp;
+        this.api_url = 'http://infoxsoft.com/app/';
         this.getAdvertisement = function () {
             return _this.jsonp.get('http://www.infox.mx/apps/consulta_anunciopor.php?&jsoncallback=JSONP_CALLBACK');
         };
@@ -323,6 +324,15 @@ var AppService = /** @class */ (function () {
         };
         this.getGpsData = function (userLat, userLng, placeLat, placeLng, mode) {
             return _this.http.get('https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&origins=' + userLat + ',' + userLng + '&destinations=' + placeLat + ',' + placeLng + '&mode=' + mode + '&language=es&key=AIzaSyDhHyggzzMjFmbrFXj-edhwN-xOJmuaT6g');
+        };
+        this.getCountries = function () {
+            return _this.http.get(_this.api_url + 'manual_location.php?operation=countries');
+        };
+        this.getStates = function (country) {
+            return _this.http.get(_this.api_url + 'manual_location.php?operation=states&country=' + country);
+        };
+        this.getCities = function (state) {
+            return _this.http.get(_this.api_url + 'manual_location.php?operation=cities&state=' + state);
         };
     }
     AppService = __decorate([
