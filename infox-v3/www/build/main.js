@@ -301,6 +301,7 @@ var AppService = /** @class */ (function () {
         var _this = this;
         this.http = http;
         this.jsonp = jsonp;
+        this.api_url = 'http://infoxsoft.com/app/';
         this.getAdvertisement = function () {
             return _this.jsonp.get('http://www.infox.mx/apps/consulta_anunciopor.php?&jsoncallback=JSONP_CALLBACK');
         };
@@ -324,12 +325,22 @@ var AppService = /** @class */ (function () {
         this.getGpsData = function (userLat, userLng, placeLat, placeLng, mode) {
             return _this.http.get('https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&origins=' + userLat + ',' + userLng + '&destinations=' + placeLat + ',' + placeLng + '&mode=' + mode + '&language=es&key=AIzaSyDhHyggzzMjFmbrFXj-edhwN-xOJmuaT6g');
         };
+        this.getCountries = function () {
+            return _this.http.get(_this.api_url + 'manual_location.php?operation=countries');
+        };
+        this.getStates = function (country) {
+            return _this.http.get(_this.api_url + 'manual_location.php?operation=states&country=' + country);
+        };
+        this.getCities = function (state) {
+            return _this.http.get(_this.api_url + 'manual_location.php?operation=cities&state=' + state);
+        };
     }
     AppService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */], __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Jsonp */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Jsonp */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Jsonp */]) === "function" && _b || Object])
     ], AppService);
     return AppService;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=services.js.map

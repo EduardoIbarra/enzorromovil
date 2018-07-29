@@ -47,6 +47,7 @@ var LoginPageModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__ = __webpack_require__(231);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common_http__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_services__ = __webpack_require__(208);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -60,6 +61,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 /**
  * Generated class for the LoginPage page.
  *
@@ -67,18 +69,48 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var LoginPage = /** @class */ (function () {
-    function LoginPage(navCtrl, navParams, fb, httpClient, toastCtrl, loadingCtrl) {
+    function LoginPage(navCtrl, navParams, fb, httpClient, toastCtrl, loadingCtrl, appService) {
+        var _this = this;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.fb = fb;
         this.httpClient = httpClient;
         this.toastCtrl = toastCtrl;
         this.loadingCtrl = loadingCtrl;
+        this.appService = appService;
         this.fbResponse = {};
         this.user = {};
         this.api_url = 'http://infoxsoft.com/app/';
         this.operation = 'login';
+        this.countries = [];
+        this.states = [];
+        this.cities = [];
+        this.appService.getCountries().subscribe(function (data) {
+            _this.countries = JSON.parse(data._body);
+            console.log(_this.countries);
+        }, function (error) {
+            console.log(error);
+        });
+        this.user = JSON.parse(localStorage.getItem('infox_user')).user;
     }
+    LoginPage.prototype.countryChanged = function () {
+        var _this = this;
+        this.appService.getStates(this.user.pais).subscribe(function (data) {
+            _this.states = JSON.parse(data._body);
+            console.log(_this.states);
+        }, function (error) {
+            console.log(error);
+        });
+    };
+    LoginPage.prototype.stateChanged = function () {
+        var _this = this;
+        this.appService.getCities(this.user.estado).subscribe(function (data) {
+            _this.cities = JSON.parse(data._body);
+            console.log(_this.cities);
+        }, function (error) {
+            console.log(error);
+        });
+    };
     LoginPage.prototype.facebookLogin = function () {
         var _this = this;
         var loader = this.loadingCtrl.create({
@@ -182,9 +214,6 @@ var LoginPage = /** @class */ (function () {
         console.log('ionViewDidLoad LoginPage');
     };
     LoginPage.prototype.isLoggedIn = function () {
-        if (JSON.parse(localStorage.getItem('infox_user'))) {
-            this.user = JSON.parse(localStorage.getItem('infox_user')).user;
-        }
         return (JSON.parse(localStorage.getItem('infox_user')));
     };
     LoginPage.prototype.logout = function () {
@@ -222,11 +251,12 @@ var LoginPage = /** @class */ (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/pages/login/login.html"*/'<ion-header>\n\n    <ion-navbar color="primary">\n        <ion-title *ngIf="!isLoggedIn()">Ingresar</ion-title>\n        <ion-title *ngIf="isLoggedIn()">Perfil</ion-title>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <div *ngIf="!isLoggedIn()">\n        <ion-list>\n            <ion-item *ngIf="operation === \'register\'">\n                <ion-label floating>Nombre</ion-label>\n                <ion-input type="text" [(ngModel)]="user.nombres"></ion-input>\n            </ion-item>\n            <ion-item *ngIf="operation === \'register\'">\n                <ion-label floating>Apellido(s)</ion-label>\n                <ion-input type="text" [(ngModel)]="user.apellidos"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label floating>Email</ion-label>\n                <ion-input type="text" [(ngModel)]="user.email"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label floating>Contraseña</ion-label>\n                <ion-input type="password" [(ngModel)]="user.password"></ion-input>\n            </ion-item>\n            <ion-item *ngIf="operation === \'register\'">\n                <ion-label floating>Confirmar</ion-label>\n                <ion-input type="password" [(ngModel)]="user.password2"></ion-input>\n            </ion-item>\n        </ion-list>\n        <p>\n            <small *ngIf="operation === \'register\'">Ya tienes cuenta? <b><a (click)="operation = \'login\'">Ingresa</a></b></small>\n            <small *ngIf="operation === \'login\'">Aún no tienes cuenta? <b><a (click)="operation = \'register\'">Regístrate</a></b></small>\n        </p>\n        <hr />\n        <button *ngIf="operation === \'register\'" ion-button full (click)="emailRegister()" icon-start color="light"><ion-icon name="mail"></ion-icon> Registro con Email</button>\n        <button *ngIf="operation === \'login\'" ion-button full (click)="emailLogin()" icon-start color="light"><ion-icon name="mail"></ion-icon> Login con Email</button>\n        <div align-items-center>\n            <hr />\n        </div>\n        <button ion-button full (click)="facebookLogin()" icon-start><ion-icon name="logo-facebook"></ion-icon> Login con Facebook</button>\n    </div>\n    <div *ngIf="isLoggedIn()">\n        <div *ngIf="user">\n            <h2>¡Bienvenido {{user.nombres}}!</h2>\n\n            <ion-list>\n                <ion-item>\n                    <ion-label floating>Nombre</ion-label>\n                    <ion-input type="text" [(ngModel)]="user.nombres"></ion-input>\n                </ion-item>\n                <ion-item>\n                    <ion-label floating>Apellido(s)</ion-label>\n                    <ion-input type="text" [(ngModel)]="user.apellidos"></ion-input>\n                </ion-item>\n                <ion-item>\n                    <ion-label floating>Email</ion-label>\n                    <ion-input type="text" [(ngModel)]="user.email"></ion-input>\n                </ion-item>\n                <ion-item>\n                    <ion-label floating>Contraseña</ion-label>\n                    <ion-input type="password" [(ngModel)]="user.password"></ion-input>\n                </ion-item>\n                <ion-item>\n                    <ion-label floating>Confirmar</ion-label>\n                    <ion-input type="password" [(ngModel)]="user.password2"></ion-input>\n                </ion-item>\n                <ion-item>\n                    <ion-label>País</ion-label>\n                    <ion-select [(ngModel)]="user.pais">\n                        <ion-option value="nes">México</ion-option>\n                        <ion-option value="n64">USA</ion-option>\n                    </ion-select>\n                </ion-item>\n                <ion-item>\n                    <ion-label>Estado</ion-label>\n                    <ion-select [(ngModel)]="user.estado">\n                        <ion-option value="nes">Tamaulipas</ion-option>\n                        <ion-option value="n64">Nuevo León</ion-option>\n                    </ion-select>\n                </ion-item>\n                <ion-item>\n                    <ion-label>Municipio</ion-label>\n                    <ion-select [(ngModel)]="user.municipio">\n                        <ion-option value="nes">Victoria</ion-option>\n                        <ion-option value="n64">Monterrey</ion-option>\n                    </ion-select>\n                </ion-item>\n                <ion-item>\n                    <ion-label>Sexo</ion-label>\n                    <ion-select [(ngModel)]="user.sexo">\n                        <ion-option value="hombre">Hombre</ion-option>\n                        <ion-option value="mujer">Mujer</ion-option>\n                        <ion-option value="otro">Otro</ion-option>\n                    </ion-select>\n                </ion-item>\n                <ion-item>\n                    <ion-label floating>Teléfono</ion-label>\n                    <ion-input type="number" [(ngModel)]="user.telefono"></ion-input>\n                </ion-item>\n            </ion-list>\n            <button ion-button full (click)="updateProfile()" icon-start><ion-icon name="exit"></ion-icon> Actualizar Perfil</button>\n        </div>\n        <button ion-button full (click)="logout()" icon-start color="danger"><ion-icon name="exit"></ion-icon> Cerrar Sesión</button>\n    </div>\n</ion-content>\n'/*ion-inline-end:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/pages/login/login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/pages/login/login.html"*/'<ion-header>\n\n    <ion-navbar color="primary">\n        <ion-title *ngIf="!isLoggedIn()">Ingresar</ion-title>\n        <ion-title *ngIf="isLoggedIn()">Perfil</ion-title>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <div *ngIf="!isLoggedIn()">\n        <ion-list>\n            <ion-item *ngIf="operation === \'register\'">\n                <ion-label floating>Nombre</ion-label>\n                <ion-input type="text" [(ngModel)]="user.nombres"></ion-input>\n            </ion-item>\n            <ion-item *ngIf="operation === \'register\'">\n                <ion-label floating>Apellido(s)</ion-label>\n                <ion-input type="text" [(ngModel)]="user.apellidos"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label floating>Email</ion-label>\n                <ion-input type="text" [(ngModel)]="user.email"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label floating>Contraseña</ion-label>\n                <ion-input type="password" [(ngModel)]="user.password"></ion-input>\n            </ion-item>\n            <ion-item *ngIf="operation === \'register\'">\n                <ion-label floating>Confirmar</ion-label>\n                <ion-input type="password" [(ngModel)]="user.password2"></ion-input>\n            </ion-item>\n        </ion-list>\n        <p>\n            <small *ngIf="operation === \'register\'">Ya tienes cuenta? <b><a (click)="operation = \'login\'">Ingresa</a></b></small>\n            <small *ngIf="operation === \'login\'">Aún no tienes cuenta? <b><a (click)="operation = \'register\'">Regístrate</a></b></small>\n        </p>\n        <hr />\n        <button *ngIf="operation === \'register\'" ion-button full (click)="emailRegister()" icon-start color="light"><ion-icon name="mail"></ion-icon> Registro con Email</button>\n        <button *ngIf="operation === \'login\'" ion-button full (click)="emailLogin()" icon-start color="light"><ion-icon name="mail"></ion-icon> Login con Email</button>\n        <div align-items-center>\n            <hr />\n        </div>\n        <button ion-button full (click)="facebookLogin()" icon-start><ion-icon name="logo-facebook"></ion-icon> Login con Facebook</button>\n    </div>\n    <div *ngIf="isLoggedIn()">\n        <div *ngIf="user">\n            <h2>¡Bienvenido {{user.nombres}}!</h2>\n\n            <ion-list>\n                <ion-item>\n                    <ion-label floating>Nombre</ion-label>\n                    <ion-input type="text" [(ngModel)]="user.nombres"></ion-input>\n                </ion-item>\n                <ion-item>\n                    <ion-label floating>Apellido(s)</ion-label>\n                    <ion-input type="text" [(ngModel)]="user.apellidos"></ion-input>\n                </ion-item>\n                <ion-item>\n                    <ion-label floating>Email</ion-label>\n                    <ion-input type="text" [(ngModel)]="user.email"></ion-input>\n                </ion-item>\n                <ion-item>\n                    <ion-label floating>Contraseña</ion-label>\n                    <ion-input type="password" [(ngModel)]="user.password"></ion-input>\n                </ion-item>\n                <ion-item>\n                    <ion-label floating>Confirmar</ion-label>\n                    <ion-input type="password" [(ngModel)]="user.password2"></ion-input>\n                </ion-item>\n                <ion-item>\n                    <ion-label>País</ion-label>\n                    <ion-select [(ngModel)]="user.pais" (ionChange)="countryChanged()">\n                        <ion-option value="{{c.idpais}}" *ngFor="let c of countries">{{c.pais}}</ion-option>\n                    </ion-select>\n                </ion-item>\n                <ion-item>\n                    <ion-label>Estado</ion-label>\n                    <ion-select [(ngModel)]="user.estado" (ionChange)="stateChanged()">\n                        <ion-option value="{{c.idestado}}" *ngFor="let c of states">{{c.estado}}</ion-option>\n                    </ion-select>\n                </ion-item>\n                <ion-item>\n                    <ion-label>Municipio</ion-label>\n                    <ion-select [(ngModel)]="user.municipio">\n                        <ion-option value="{{c.idciudad}}" *ngFor="let c of cities">{{c.ciudad}}</ion-option>\n                    </ion-select>\n                </ion-item>\n                <ion-item>\n                    <ion-label>Sexo</ion-label>\n                    <ion-select [(ngModel)]="user.sexo">\n                        <ion-option value="hombre">Hombre</ion-option>\n                        <ion-option value="mujer">Mujer</ion-option>\n                        <ion-option value="otro">Otro</ion-option>\n                    </ion-select>\n                </ion-item>\n                <ion-item>\n                    <ion-label floating>Teléfono</ion-label>\n                    <ion-input type="number" [(ngModel)]="user.telefono"></ion-input>\n                </ion-item>\n            </ion-list>\n            <button ion-button full (click)="updateProfile()" icon-start><ion-icon name="exit"></ion-icon> Actualizar Perfil</button>\n        </div>\n        <button ion-button full (click)="logout()" icon-start color="danger"><ion-icon name="exit"></ion-icon> Cerrar Sesión</button>\n    </div>\n</ion-content>\n'/*ion-inline-end:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/pages/login/login.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__["a" /* Facebook */], __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["y" /* ToastController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* LoadingController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__["a" /* Facebook */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__["a" /* Facebook */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["y" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["y" /* ToastController */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* LoadingController */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_4__services_services__["a" /* AppService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_services__["a" /* AppService */]) === "function" && _g || Object])
     ], LoginPage);
     return LoginPage;
+    var _a, _b, _c, _d, _e, _f, _g;
 }());
 
 //# sourceMappingURL=login.js.map

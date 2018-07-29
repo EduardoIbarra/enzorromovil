@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {IonicPage, LoadingController, NavController, NavParams, ToastController} from 'ionic-angular';
 import { Facebook } from '@ionic-native/facebook';
 import {HttpClient, HttpParams} from "@angular/common/http";
+import {AppService} from "../../services/services";
 
 /**
  * Generated class for the LoginPage page.
@@ -20,7 +21,33 @@ export class LoginPage {
     user: any = {};
     api_url = 'http://infoxsoft.com/app/';
     operation: string = 'login';
-    constructor(public navCtrl: NavController, public navParams: NavParams, private fb: Facebook, public httpClient: HttpClient, private toastCtrl: ToastController, public loadingCtrl: LoadingController) {
+    countries: any = [];
+    states: any = [];
+    cities: any = [];
+    constructor(public navCtrl: NavController, public navParams: NavParams, private fb: Facebook, public httpClient: HttpClient, private toastCtrl: ToastController, public loadingCtrl: LoadingController, public appService: AppService) {
+        this.appService.getCountries().subscribe((data) => {
+            this.countries = JSON.parse(data._body);
+            console.log(this.countries);
+        }, (error) => {
+            console.log(error);
+        });
+        this.user = JSON.parse(localStorage.getItem('infox_user')).user;
+    }
+    countryChanged() {
+        this.appService.getStates(this.user.pais).subscribe((data) => {
+            this.states = JSON.parse(data._body);
+            console.log(this.states);
+        }, (error) => {
+            console.log(error);
+        });
+    }
+    stateChanged() {
+        this.appService.getCities(this.user.estado).subscribe((data) => {
+            this.cities = JSON.parse(data._body);
+            console.log(this.cities);
+        }, (error) => {
+            console.log(error);
+        });
     }
     facebookLogin() {
         const loader = this.loadingCtrl.create({
@@ -123,9 +150,6 @@ export class LoginPage {
         console.log('ionViewDidLoad LoginPage');
     }
     isLoggedIn() {
-        if(JSON.parse(localStorage.getItem('infox_user'))) {
-            this.user = JSON.parse(localStorage.getItem('infox_user')).user;
-        }
         return (JSON.parse(localStorage.getItem('infox_user')));
     }
     logout() {

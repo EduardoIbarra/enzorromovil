@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class AppService {
 
-
+    api_url = 'http://infoxsoft.com/app/';
     constructor(public http: Http, public jsonp: Jsonp) {
     }
 
@@ -40,4 +40,15 @@ export class AppService {
         return this.http.get('https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&origins=' + userLat + ',' + userLng + '&destinations=' + placeLat + ',' + placeLng + '&mode=' + mode + '&language=es&key=AIzaSyDhHyggzzMjFmbrFXj-edhwN-xOJmuaT6g');
     };
 
+    public getCountries = () => {
+        return this.http.get(this.api_url + 'manual_location.php?operation=countries');
+    };
+
+    public getStates = (country) => {
+        return this.http.get(this.api_url + 'manual_location.php?operation=states&country=' + country);
+    };
+
+    public getCities = (state) => {
+        return this.http.get(this.api_url + 'manual_location.php?operation=cities&state=' + state);
+    };
 }

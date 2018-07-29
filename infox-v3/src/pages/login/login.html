@@ -71,23 +71,20 @@
                 </ion-item>
                 <ion-item>
                     <ion-label>País</ion-label>
-                    <ion-select [(ngModel)]="user.pais">
-                        <ion-option value="nes">México</ion-option>
-                        <ion-option value="n64">USA</ion-option>
+                    <ion-select [(ngModel)]="user.pais" (ionChange)="countryChanged()">
+                        <ion-option value="{{c.idpais}}" *ngFor="let c of countries">{{c.pais}}</ion-option>
                     </ion-select>
                 </ion-item>
                 <ion-item>
                     <ion-label>Estado</ion-label>
-                    <ion-select [(ngModel)]="user.estado">
-                        <ion-option value="nes">Tamaulipas</ion-option>
-                        <ion-option value="n64">Nuevo León</ion-option>
+                    <ion-select [(ngModel)]="user.estado" (ionChange)="stateChanged()">
+                        <ion-option value="{{c.idestado}}" *ngFor="let c of states">{{c.estado}}</ion-option>
                     </ion-select>
                 </ion-item>
                 <ion-item>
                     <ion-label>Municipio</ion-label>
                     <ion-select [(ngModel)]="user.municipio">
-                        <ion-option value="nes">Victoria</ion-option>
-                        <ion-option value="n64">Monterrey</ion-option>
+                        <ion-option value="{{c.idciudad}}" *ngFor="let c of cities">{{c.ciudad}}</ion-option>
                     </ion-select>
                 </ion-item>
                 <ion-item>
