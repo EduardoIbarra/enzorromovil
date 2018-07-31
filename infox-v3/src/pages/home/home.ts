@@ -5,6 +5,7 @@ import {GlobalVariables} from '../../general/global-variables';
 import {General} from '../../general/general';
 import {TabsPage} from "../tabs/tabs";
 import {NetworkInterface} from "@ionic-native/network-interface";
+import {LoginPage} from "../login/login";
 
 @IonicPage()
 @Component({
@@ -14,7 +15,6 @@ import {NetworkInterface} from "@ionic-native/network-interface";
 export class HomePage {
 
     advertisement: any;
-
     constructor(public navCtrl: NavController,
                 public appService: AppService,
                 public globalVariables: GlobalVariables,
@@ -111,5 +111,17 @@ export class HomePage {
         this.navCtrl.push('SpeechModalPage')
     }
 
+    isLoggedIn() {
+        return (JSON.parse(localStorage.getItem('infox_user')));
+    }
+
+    getUserName() {
+        const user = JSON.parse(localStorage.getItem('infox_user')).user;
+        return user.nombres + ' ' + user.apellidos;
+    }
+
+    goToLogin() {
+        this.navCtrl.setRoot(LoginPage);
+    }
 }
 

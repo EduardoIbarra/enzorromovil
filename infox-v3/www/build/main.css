@@ -31045,6 +31045,14 @@ page-home .advertisement img {
   width: 80%;
 }
 
+page-home #loggedUserName {
+  color: #ff6000;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 5px 0 0 10px;
+  display: block;
+}
+
 page-dishes-modal .titleSize {
   font-size: 2em;
   text-align: center;

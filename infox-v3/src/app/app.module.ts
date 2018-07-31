@@ -27,11 +27,13 @@ import {PhotoViewer} from "@ionic-native/photo-viewer";
 import {Network} from '@ionic-native/network';
 import {NetworkInterface} from '@ionic-native/network-interface';
 import {HttpClientModule} from "@angular/common/http";
+import {LoginPage} from "../pages/login/login";
 
 @NgModule({
     declarations: [
         MyApp,
         TabsPage,
+        LoginPage
     ],
     imports: [
         BrowserModule,
@@ -47,7 +49,8 @@ import {HttpClientModule} from "@angular/common/http";
     bootstrap: [IonicApp],
     entryComponents: [
         MyApp,
-        TabsPage
+        TabsPage,
+        LoginPage
     ],
     providers: [
         StatusBar,
