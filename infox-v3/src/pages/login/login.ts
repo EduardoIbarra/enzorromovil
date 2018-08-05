@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {IonicPage, LoadingController, NavController, NavParams, ToastController} from 'ionic-angular';
+import {LoadingController, NavController, NavParams, ToastController} from 'ionic-angular';
 import { Facebook } from '@ionic-native/facebook';
 import {HttpClient, HttpParams} from "@angular/common/http";
 import {AppService} from "../../services/services";
@@ -11,7 +11,6 @@ import {AppService} from "../../services/services";
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
     selector: 'page-login',
     templateUrl: 'login.html',
@@ -33,6 +32,14 @@ export class LoginPage {
         });
         if(localStorage.getItem('infox_user')) {
             this.user = JSON.parse(localStorage.getItem('infox_user')).user;
+            if(this.user.pais) {
+                this.countryChanged();
+            }
+            if(this.user.estado) {
+                this.stateChanged();
+            }
+            this.user.password = null;
+            this.user.password2 = null;
         }
     }
     countryChanged() {
@@ -113,6 +120,12 @@ export class LoginPage {
                     duration: 3000,
                     position: 'top'
                 });
+                if(this.user.pais) {
+                    this.countryChanged();
+                }
+                if(this.user.estado) {
+                    this.stateChanged();
+                }
                 toast.present();
                 loader.dismissAll();
             }

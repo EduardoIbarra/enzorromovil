@@ -168,7 +168,7 @@ export class SpeechModalPage {
                 this.viewCtrl.dismiss();
                 setTimeout(() => {
                     let nav = this.app.getRootNav();
-                    nav.setRoot(TabsPage, {search: search, tabIndex: 2});
+                    nav.setRoot(TabsPage, {search: search, tabIndex: 3});
                 }, 400);
             }
         }

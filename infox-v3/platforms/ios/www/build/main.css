@@ -30972,6 +30972,11 @@ ion-refresher {
   top: 85px !important;
 }
 
+.white-color {
+  color: white;
+  font-size: 2em;
+}
+
 offline {
   z-index: -10 !important;
   position: relative;
@@ -31043,6 +31048,14 @@ page-home .advertisement {
 
 page-home .advertisement img {
   width: 80%;
+}
+
+page-home #loggedUserName {
+  color: #ff6000;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 5px 0 0 10px;
+  display: block;
 }
 
 page-dishes-modal .titleSize {

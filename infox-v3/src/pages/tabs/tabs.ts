@@ -1,6 +1,7 @@
 import {Component, ViewChild} from '@angular/core';
 import {Tabs, NavParams, NavController, App} from 'ionic-angular';
 import {GlobalVariables} from "../../general/global-variables";
+import {LoginPage} from "../login/login";
 
 @Component({
     templateUrl: 'tabs.html'
@@ -18,7 +19,7 @@ export class TabsPage {
     tab2Root = 'FavoritesPage';
     tab3Root = 'NearbyPage';
     tab4Root = 'SearchPage';
-    tab5Root = 'LoginPage';
+    tab5Root = LoginPage;
 
     constructor(public navParams: NavParams,
                 public navCtrl: NavController,

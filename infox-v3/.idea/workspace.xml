@@ -4,24 +4,58 @@
     <list default="true" id="ccc37a11-414b-4a1e-b654-c67dbe9041ee" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.sourcemaps/0.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.sourcemaps/0.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sourcemaps/2.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.sourcemaps/2.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sourcemaps/6.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.sourcemaps/6.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.sourcemaps/9.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.sourcemaps/9.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.sourcemaps/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.sourcemaps/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ionic.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/ionic.config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/CordovaLib.xcodeproj/xcuserdata/ed.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/CordovaLib.xcodeproj/xcuserdata/ed.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/ios/Infox.xcodeproj/project.xcworkspace/xcuserdata/ed.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Infox.xcodeproj/project.xcworkspace/xcuserdata/ed.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/ios/Infox.xcodeproj/xcuserdata/ed.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Infox.xcodeproj/xcuserdata/ed.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/ios/Infox/Infox-Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Infox/Infox-Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/Infox/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Infox/config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platforms/ios/build/emulator/libCordova.a" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/build/emulator/libCordova.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/build/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/build/0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/build/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/build/1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/build/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/build/2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/build/3.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/build/3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/build/4.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/build/4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/build/5.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/build/5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/build/6.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/build/6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/build/7.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/build/7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/build/8.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/build/8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/build/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/build/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/build/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/build/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/build/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/build/vendor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/favorites/favorites.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/favorites/favorites.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/favorites/favorites.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/favorites/favorites.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/home.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/login.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/login.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/login.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/modals/speech-modal/speech-modal.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/modals/speech-modal/speech-modal.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/nearby/nearby.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/nearby/nearby.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/nearby/nearby.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/nearby/nearby.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/place/place.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/place/place.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/place/place.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/place/place.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/search/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/search/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/search/search.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/search/search.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/tabs/tabs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/tabs/tabs.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/build/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/0.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/build/0.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/0.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/build/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/build/10.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/10.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/10.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/10.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/2.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/2.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/build/3.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/4.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/4.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/build/5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/5.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/build/6.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/6.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/6.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/build/7.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/7.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/build/8.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/8.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/build/9.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/9.js" afterDir="false" />
@@ -44,42 +78,47 @@
     <session id="157066588">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="1" />
-          <entry key="scss" value="2" />
-          <entry key="ts" value="2" />
+          <entry key="html" value="7" />
+          <entry key="scss" value="3" />
+          <entry key="ts" value="10" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="1" />
-          <entry key="SCSS" value="2" />
-          <entry key="TypeScript" value="2" />
+          <entry key="HTML" value="7" />
+          <entry key="SCSS" value="3" />
+          <entry key="TypeScript" value="10" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="84" />
-          <entry key="scss" value="2" />
-          <entry key="ts" value="172" />
+          <entry key="html" value="142" />
+          <entry key="scss" value="22" />
+          <entry key="ts" value="253" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="84" />
-          <entry key="SCSS" value="2" />
-          <entry key="TypeScript" value="172" />
+          <entry key="HTML" value="142" />
+          <entry key="SCSS" value="22" />
+          <entry key="TypeScript" value="253" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="TypeScriptServerServiceImpl" value="1" />
+          <entry key="TypeScriptServerServiceImpl" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -89,8 +128,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/login/login.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="154" column="4" lean-forward="true" selection-start-line="154" selection-start-column="4" selection-end-line="156" selection-end-column="5" />
+            <state relative-caret-position="339">
+              <caret line="167" column="4" lean-forward="true" selection-start-line="167" selection-start-column="4" selection-end-line="169" selection-end-column="5" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -98,11 +137,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="108" selection-start-line="1" selection-start-column="108" selection-end-line="1" selection-end-column="108" />
+            <state relative-caret-position="24">
+              <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/place/place.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="553">
+              <caret line="332" column="5" selection-start-line="332" selection-start-column="5" selection-end-line="332" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -110,8 +158,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/login/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="87" column="33" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="33" />
+            <state relative-caret-position="216">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
               <folding>
                 <element signature="n#div#0;n#ion-content#0;n#!!top" />
               </folding>
@@ -120,19 +168,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/services/services.ts">
+        <entry file="file://$PROJECT_DIR$/src/pages/place/place.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
+            <state relative-caret-position="264">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/home/home.html">
+        <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="66" lean-forward="true" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
+            <state relative-caret-position="159">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="14" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/nearby/nearby.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="12" column="22" selection-end-line="115" />
             </state>
           </provider>
         </entry>
@@ -140,35 +197,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/home/home.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="123" column="38" selection-start-line="123" selection-start-column="29" selection-end-line="123" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+            <state relative-caret-position="224">
+              <caret line="113" column="4" selection-start-line="113" selection-start-column="4" selection-end-line="115" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/home/home.scss">
+        <entry file="file://$PROJECT_DIR$/src/pages/search/search.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+            <state relative-caret-position="553">
+              <caret line="152" column="5" selection-start-line="152" selection-start-column="5" selection-end-line="152" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/app.scss">
+        <entry file="file://$PROJECT_DIR$/src/pages/nearby/nearby.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="43" column="27" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="27" />
+            <state relative-caret-position="553">
+              <caret line="387" column="5" selection-start-line="387" selection-start-column="5" selection-end-line="387" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#70#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -177,9 +228,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>OfflineComponent</find>
-      <find>user</find>
-      <find>No se ha det</find>
       <find>showNetworkConnectionAlert</find>
       <find>isConnected = false</find>
       <find>Compartir</find>
@@ -207,6 +255,9 @@
       <find>user.pais</find>
       <find>user.</find>
       <find>this.user</find>
+      <find>ciudades</find>
+      <find>tabIndex</find>
+      <find>Ingresa el</find>
     </findStrings>
     <replaceStrings>
       <replace>isLoggedIn</replace>
@@ -228,23 +279,27 @@
         <option value="$PROJECT_DIR$/infoxkey.md" />
         <option value="$PROJECT_DIR$/src/app/app.html" />
         <option value="$PROJECT_DIR$/src/pages/tabs/tabs.html" />
-        <option value="$PROJECT_DIR$/src/pages/tabs/tabs.ts" />
-        <option value="$PROJECT_DIR$/src/app/app.scss" />
-        <option value="$PROJECT_DIR$/src/pages/favorites/favorites.html" />
         <option value="$PROJECT_DIR$/src/general/global-variables.ts" />
-        <option value="$PROJECT_DIR$/src/pages/favorites/favorites.ts" />
-        <option value="$PROJECT_DIR$/src/pages/place/place.ts" />
-        <option value="$PROJECT_DIR$/src/pages/search/search.ts" />
-        <option value="$PROJECT_DIR$/src/pages/place/place.html" />
         <option value="$PROJECT_DIR$/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/src/services/services.ts" />
-        <option value="$PROJECT_DIR$/src/pages/login/login.html" />
-        <option value="$PROJECT_DIR$/src/pages/login/login.ts" />
-        <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/src/pages/home/home.scss" />
+        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/src/pages/tabs/tabs.ts" />
         <option value="$PROJECT_DIR$/src/pages/home/home.ts" />
         <option value="$PROJECT_DIR$/src/pages/home/home.html" />
-        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/src/pages/login/login.ts" />
+        <option value="$PROJECT_DIR$/src/pages/modals/speech-modal/speech-modal.ts" />
+        <option value="$PROJECT_DIR$/src/pages/favorites/favorites.ts" />
+        <option value="$PROJECT_DIR$/src/app/app.scss" />
+        <option value="$PROJECT_DIR$/src/pages/favorites/favorites.html" />
+        <option value="$PROJECT_DIR$/src/pages/search/search.html" />
+        <option value="$PROJECT_DIR$/src/pages/search/search.ts" />
+        <option value="$PROJECT_DIR$/src/pages/nearby/nearby.ts" />
+        <option value="$PROJECT_DIR$/src/pages/nearby/nearby.html" />
+        <option value="$PROJECT_DIR$/src/pages/login/login.html" />
+        <option value="$PROJECT_DIR$/src/pages/place/place.html" />
+        <option value="$PROJECT_DIR$/src/pages/place/place.ts" />
+        <option value="$PROJECT_DIR$/config.xml" />
       </list>
     </option>
   </component>
@@ -313,6 +368,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -335,19 +391,6 @@
               <item name="infox-v3" type="b2602c69:ProjectViewProjectNode" />
               <item name="infox-v3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="infox-v3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="infox-v3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="infox-v3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="infox-v3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -355,7 +398,7 @@
               <item name="infox-v3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="favorites" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="infox-v3" type="b2602c69:ProjectViewProjectNode" />
@@ -363,6 +406,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="infox-v3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="infox-v3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="nearby" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="infox-v3" type="b2602c69:ProjectViewProjectNode" />
@@ -382,7 +432,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -427,15 +476,16 @@
       <workItem from="1532710460785" duration="3993000" />
       <workItem from="1532789442436" duration="7785000" />
       <workItem from="1532963442879" duration="244000" />
-      <workItem from="1532998183544" duration="1127000" />
+      <workItem from="1532998183544" duration="4801000" />
+      <workItem from="1533426446069" duration="1844000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54583000" />
+    <option name="totallyTimeSpent" value="60101000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="1028" extended-state="6" />
+    <frame x="1" y="22" width="1680" height="1028" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.875" visible="true" weight="0.15370706" />
@@ -535,13 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/tabs/tabs.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/ionic-angular/components/alert/alert-options.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -549,45 +592,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/search/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/general/global-variables.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
           <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="23" column="76" selection-start-line="22" selection-start-column="8" selection-end-line="23" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/place/place.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1545">
-          <caret line="304" column="41" selection-start-line="304" selection-start-column="41" selection-end-line="304" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/place/place.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -615,79 +623,148 @@
     <entry file="file://$PROJECT_DIR$/src/assets/img/offline.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/search/search.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/services/services.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
+        <state relative-caret-position="1368">
           <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
+    <entry file="file://$PROJECT_DIR$/src/pages/tabs/tabs.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="108" selection-start-line="1" selection-start-column="108" selection-end-line="1" selection-end-column="108" />
+        <state relative-caret-position="432">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="888">
+          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/modals/speech-modal/speech-modal.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="170" column="70" selection-start-line="170" selection-start-column="70" selection-end-line="170" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="395" column="17" selection-start-line="395" selection-start-column="17" selection-end-line="395" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/search/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/home.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="113" column="4" selection-start-line="113" selection-start-column="4" selection-end-line="115" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/search/search.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="152" column="5" selection-start-line="152" selection-start-column="5" selection-end-line="152" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/nearby/nearby.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="387" column="5" selection-start-line="387" selection-start-column="5" selection-end-line="387" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/nearby/nearby.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="22" selection-end-line="115" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/login/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="87" column="33" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="33" />
+        <state relative-caret-position="216">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
           <folding>
             <element signature="n#div#0;n#ion-content#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/place/place.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/login/login.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="154" column="4" lean-forward="true" selection-start-line="154" selection-start-column="4" selection-end-line="156" selection-end-column="5" />
+        <state relative-caret-position="339">
+          <caret line="167" column="4" lean-forward="true" selection-start-line="167" selection-start-column="4" selection-end-line="169" selection-end-column="5" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.scss">
+    <entry file="file://$PROJECT_DIR$/src/pages/place/place.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="43" column="27" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="27" />
+        <state relative-caret-position="553">
+          <caret line="332" column="5" selection-start-line="332" selection-start-column="5" selection-end-line="332" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/home/home.scss">
+    <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/home/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="66" lean-forward="true" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/home/home.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="123" column="38" selection-start-line="123" selection-start-column="29" selection-end-line="123" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+        <state relative-caret-position="24">
+          <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
         </state>
       </provider>
     </entry>

@@ -43,5 +43,16 @@ export class FavoritesPage {
     ionViewDidLoad() {
         console.log('ionViewDidLoad FavoritesPage');
     }
+    isLoggedIn() {
+        return (JSON.parse(localStorage.getItem('infox_user')));
+    }
 
+    getUserName() {
+        const user = JSON.parse(localStorage.getItem('infox_user')).user;
+        return user.nombres + ' ' + user.apellidos;
+    }
+
+    goToLogin() {
+        this.navCtrl.parent.select(4);
+    }
 }

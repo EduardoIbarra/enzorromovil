@@ -1,13 +1,13 @@
 webpackJsonp([6],{
 
-/***/ 301:
+/***/ 302:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeModule", function() { return HomeModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home__ = __webpack_require__(343);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_offline_offline_module__ = __webpack_require__(312);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -50,7 +50,7 @@ var HomeModule = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OfflineComponentModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__offline__ = __webpack_require__(313);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -122,12 +122,12 @@ var OfflineComponent = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_services__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_services__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__general_global_variables__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__general_general__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__tabs_tabs__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_network_interface__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__tabs_tabs__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_network_interface__ = __webpack_require__(119);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -225,9 +225,19 @@ var HomePage = /** @class */ (function () {
     HomePage.prototype.go = function () {
         this.navCtrl.push('SpeechModalPage');
     };
+    HomePage.prototype.isLoggedIn = function () {
+        return (JSON.parse(localStorage.getItem('infox_user')));
+    };
+    HomePage.prototype.getUserName = function () {
+        var user = JSON.parse(localStorage.getItem('infox_user')).user;
+        return user.nombres + ' ' + user.apellidos;
+    };
+    HomePage.prototype.goToLogin = function () {
+        this.navCtrl.parent.select(4);
+    };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/pages/home/home.html"*/'<ion-header>\n    <ion-toolbar color="primary">\n        <ion-title *ngIf="advertisement.img || !globalVariables.isConnected">\n            <div text-center>\n                <img src="assets/img/logo_infox_white.png" class="mainLogo"/>\n            </div>\n        </ion-title>\n    </ion-toolbar>\n    <ion-navbar color="primary" *ngIf="advertisement.img">\n        <ion-input mode="ios" placeholder="Buscar..." (focus)="openSearchModal()" readonly>\n            <ion-icon name="md-mic"></ion-icon>\n        </ion-input>\n        <ion-buttons end>\n            <button item-right ion-button color="light" class="mic-button" (click)="openSpeechModal()">\n                <ion-icon name="md-mic"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n    <offline *ngIf="!globalVariables.isConnected"></offline>\n\n    <div *ngIf="globalVariables.isConnected">\n\n        <div class="big-search-container animate-fade" *ngIf="!advertisement.img">\n            <img src="assets/img/logo_infox_big.png"/>\n            <form class="searchInput">\n                <ion-item no-lines>\n                    <ion-input type="text" placeholder="Ingresa el Negocio que buscas" (ionFocus)="openSearchModal()" readonly></ion-input>\n                    <button item-right ion-button color="primary" class="mic-button" (click)="openSpeechModal()">\n                        <ion-icon name="md-mic"></ion-icon>\n                    </button>\n                </ion-item>\n            </form>\n        </div>\n\n        <div *ngIf="advertisement.img" class="advertisement animate-fade">\n            <a (click)="goToPlaceDetails(advertisement.idnegocio)" *ngIf="advertisement.enlace == \'1\'">\n                <!--<a (click)="goToPlaceDetails(\'55760\')" *ngIf="advertisement.enlace == \'1\'">-->\n                <img src="{{advertisement.url + advertisement.img}}">\n            </a>\n            <a href="{{advertisement.url}}" onclick="window.open(this.href, \'_blank\'); return false;" *ngIf="advertisement.enlace == \'2\'">\n                <img src="{{advertisement.url + advertisement.img}}">\n            </a>\n            <a *ngIf="advertisement.enlace != \'1\' && advertisement.enlace != \'2\'">\n                <img src="{{advertisement.url + advertisement.img}}">\n            </a>\n        </div>\n\n    </div>\n\n    <!--<button ion-button (click)="goToPlaceDetails(\'55760\')"> Negocio</button>-->\n    <!--<button ion-button (click)="get()"> PERMISOSSSS</button>-->\n    <!--<button ion-button (click)="go()"> MAP</button>-->\n</ion-content>\n'/*ion-inline-end:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/pages/home/home.html"*/'<ion-header>\n    <ion-toolbar color="primary">\n        <ion-title *ngIf="advertisement.img || !globalVariables.isConnected">\n            <div text-center>\n                <img src="assets/img/logo_infox_white.png" class="mainLogo"/>\n            </div>\n        </ion-title>\n    </ion-toolbar>\n    <ion-navbar color="primary" *ngIf="advertisement.img">\n        <ion-input mode="ios" placeholder="Buscar..." (focus)="openSearchModal()" readonly>\n            <ion-icon name="md-mic"></ion-icon>\n        </ion-input>\n        <ion-buttons end>\n            <button item-right ion-button color="light" class="mic-button" (click)="openSpeechModal()">\n                <ion-icon name="md-mic"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n    <offline *ngIf="!globalVariables.isConnected"></offline>\n\n    <div *ngIf="globalVariables.isConnected">\n        <span id="loggedUserName" *ngIf="isLoggedIn()" (click)="goToLogin()"><ion-icon name="contact"></ion-icon> {{getUserName()}}</span>\n        <div class="big-search-container animate-fade" *ngIf="!advertisement.img">\n            <img src="assets/img/logo_infox_big.png"/>\n            <form class="searchInput">\n                <ion-item no-lines>\n                    <ion-input type="text" placeholder="Ingresa el Negocio que buscas" (ionFocus)="openSearchModal()" readonly></ion-input>\n                    <button item-right ion-button color="primary" class="mic-button" (click)="openSpeechModal()">\n                        <ion-icon name="md-mic"></ion-icon>\n                    </button>\n                </ion-item>\n            </form>\n        </div>\n\n        <div *ngIf="advertisement.img" class="advertisement animate-fade">\n            <a (click)="goToPlaceDetails(advertisement.idnegocio)" *ngIf="advertisement.enlace == \'1\'">\n                <!--<a (click)="goToPlaceDetails(\'55760\')" *ngIf="advertisement.enlace == \'1\'">-->\n                <img src="{{advertisement.url + advertisement.img}}">\n            </a>\n            <a href="{{advertisement.url}}" onclick="window.open(this.href, \'_blank\'); return false;" *ngIf="advertisement.enlace == \'2\'">\n                <img src="{{advertisement.url + advertisement.img}}">\n            </a>\n            <a *ngIf="advertisement.enlace != \'1\' && advertisement.enlace != \'2\'">\n                <img src="{{advertisement.url + advertisement.img}}">\n            </a>\n        </div>\n\n    </div>\n\n    <!--<button ion-button (click)="goToPlaceDetails(\'55760\')"> Negocio</button>-->\n    <!--<button ion-button (click)="get()"> PERMISOSSSS</button>-->\n    <!--<button ion-button (click)="go()"> MAP</button>-->\n</ion-content>\n'/*ion-inline-end:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2__services_services__["a" /* AppService */],

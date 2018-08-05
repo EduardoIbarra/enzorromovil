@@ -328,4 +328,7 @@ export class PlacePage {
             alert('Debes loggearte para acceder a esta característica');
         }
     }
+    isLoggedIn() {
+        return (JSON.parse(localStorage.getItem('infox_user')));
+    }
 }

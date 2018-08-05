@@ -6,6 +6,11 @@
                 <img src="assets/img/logo_infox_white.png" class="mainLogo"/>
             </div>
         </ion-title>
+        <ion-buttons end>
+      <span id="loggedUserName" *ngIf="isLoggedIn()">
+        <ion-icon name="contact" class="white-color"></ion-icon>
+      </span>
+        </ion-buttons>
     </ion-toolbar>
     <ion-navbar color="primary">
         <ion-input mode="ios" placeholder="Busca cerca de ti..." value="{{recentSearch}}" (ionFocus)="openSearchModal()" readonly>

@@ -30972,6 +30972,11 @@ ion-refresher {
   top: 85px !important;
 }
 
+.white-color {
+  color: white;
+  font-size: 2em;
+}
+
 offline {
   z-index: -10 !important;
   position: relative;

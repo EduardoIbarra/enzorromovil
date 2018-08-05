@@ -383,4 +383,7 @@ export class NearbyPage {
             }
         })
     }
+    isLoggedIn() {
+        return (JSON.parse(localStorage.getItem('infox_user')));
+    }
 }

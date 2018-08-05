@@ -22,7 +22,7 @@
     <offline *ngIf="!globalVariables.isConnected"></offline>
 
     <div *ngIf="globalVariables.isConnected">
-        <span id="loggedUserName" *ngIf="isLoggedIn()" (click)="goToLogin()">{{getUserName()}}</span>
+        <span id="loggedUserName" *ngIf="isLoggedIn()" (click)="goToLogin()"><ion-icon name="contact"></ion-icon> {{getUserName()}}</span>
         <div class="big-search-container animate-fade" *ngIf="!advertisement.img">
             <img src="assets/img/logo_infox_big.png"/>
             <form class="searchInput">

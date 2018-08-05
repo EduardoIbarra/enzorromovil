@@ -3,6 +3,11 @@
     <ion-navbar color="primary">
         <ion-title *ngIf="!isLoggedIn()">Ingresar</ion-title>
         <ion-title *ngIf="isLoggedIn()">Perfil</ion-title>
+        <ion-buttons end>
+      <span id="loggedUserName" *ngIf="isLoggedIn()">
+        <ion-icon name="contact" class="white-color"></ion-icon>
+      </span>
+        </ion-buttons>
     </ion-navbar>
 
 </ion-header>
@@ -83,7 +88,7 @@
                 </ion-item>
                 <ion-item>
                     <ion-label>Municipio</ion-label>
-                    <ion-select [(ngModel)]="user.municipio">
+                    <ion-select [(ngModel)]="user.ciudad">
                         <ion-option value="{{c.idciudad}}" *ngFor="let c of cities">{{c.ciudad}}</ion-option>
                     </ion-select>
                 </ion-item>

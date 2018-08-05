@@ -121,7 +121,7 @@ export class HomePage {
     }
 
     goToLogin() {
-        this.navCtrl.setRoot(LoginPage);
+        this.navCtrl.parent.select(4);
     }
 }
 
