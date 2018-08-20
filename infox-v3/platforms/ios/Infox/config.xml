@@ -25,14 +25,8 @@
     <feature name="NativeSettings">
         <param name="ios-package" value="NativeSettings" />
     </feature>
-    <feature name="ActionSheet">
-        <param name="ios-package" value="ActionSheet" />
-    </feature>
     <feature name="Device">
         <param name="ios-package" value="CDVDevice" />
-    </feature>
-    <feature name="Notification">
-        <param name="ios-package" value="CDVNotification" />
     </feature>
     <feature name="FacebookConnectPlugin">
         <param name="ios-package" value="FacebookConnectPlugin" />
@@ -128,6 +122,12 @@
     </feature>
     <feature name="LaunchNavigator">
         <param name="ios-package" value="LaunchNavigator" />
+    </feature>
+    <feature name="ActionSheet">
+        <param name="ios-package" value="ActionSheet" />
+    </feature>
+    <feature name="Notification">
+        <param name="ios-package" value="CDVNotification" />
     </feature>
     <name>Infox</name>
     <description>Descubre servicios, lugares, negocios y más...</description>

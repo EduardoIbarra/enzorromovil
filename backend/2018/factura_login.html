@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infox 2018</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" crossorigin="anonymous">
+</head>
+<body>
+<div id="topBarContainer">
+    <div class="row">
+        <div class="col">
+            <img src="assets/img/logo_infox.png" id="main_logo" />
+        </div>
+        <div class="col-8">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Qué estás buscando?" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Facturación Electrónica</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                InfoxTools
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Mapa de tu Ciudad</a>
+                                <a class="dropdown-item" href="#">Buscar Domicilio</a>
+                                <a class="dropdown-item" href="#">Viajas, traza tus rutas</a>
+                                <a class="dropdown-item" href="#">Claves LADA</a>
+                                <a class="dropdown-item" href="#">Imprimir mi CURP</a>
+                                <a class="dropdown-item" href="#">Mi Agenda</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tu Negocio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Registrarse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Clasificados</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+        </div>
+        <div class="col aliRight">
+            <a id="logoutButton" href="#">Iniciar Sesión</a>
+        </div>
+    </div>
+</div>
+
+<div id="contentContainer">
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="alert alert-warning" role="alert">
+                    <h4 class="alert-heading">Aviso Importante</h4>
+                    <p>El servicio de facturación que se muestra, es unicamente para clientes de infox que facturan electrónicamente a sus propios clientes.
+                        Si lo que buscas es facturar un ticket te recomendamos contactes a la empresa en donde consumiste, telefónicamente. En este buscador podrás encontrar sus números.</p>
+                </div>
+                <form class="card pad20">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Usuario</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu información.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Ingresar</label>
+                    </div>
+                    <hr />
+                    <button type="submit" class="btn btn-secondary">Submit</button>
+                </form>
+                <hr />
+                <form class="card pad20">
+                    Si tienes dudas o comentarios sobre la facturación, es importante dejes tu nombre y correo electrónico, para ponernos en contacto contigo.
+                    <hr />
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Nombre</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Email</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Comentario</label>
+                        <textarea type="password" class="form-control" id="exampleInputPassword1"></textarea>
+                    </div>
+                    <hr />
+                    <button type="submit" class="btn btn-secondary">Enviar Comentario</button>
+                </form>
+            </div>
+            <div class="col">
+                <div class="center">
+                    <button class="btn btn-primary btn-block">¿Cuánto Cuesta?</button>
+                </div>
+                <hr />
+                <h4>FAQ's <i class="fas fa-question-circle"></i></h4>
+                <ul class="list-group">
+                    <li class="list-group-item">¿Qué es la Factura Electrónica?</li>
+                    <li class="list-group-item">¿Qué necesito para facturar electrónicamente?</li>
+                    <li class="list-group-item">¿Estoy obligado a facturar electrónicamente?</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>

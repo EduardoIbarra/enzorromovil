@@ -252,7 +252,7 @@ var TabsPage = /** @class */ (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["x" /* Tabs */])
     ], TabsPage.prototype, "tabRef", void 0);
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/pages/tabs/tabs.html"*/'<ion-tabs #tabs [ngClass]="{\'central-icon\' : tabNearbyInactive === true}" (ionChange)="getCurrentPage()" [selectedIndex]="tabIndex">\n    <ion-tab [root]="tab1Root" (click)="selectHome()" tabTitle="Inicio" tabIcon="home"></ion-tab>\n    <ion-tab [root]="tab2Root"  tabTitle="Favoritos" tabIcon="star"></ion-tab>\n    <ion-tab [root]="tab3Root"  tabTitle="Cercano" tabIcon="md-pin"></ion-tab>\n    <ion-tab [root]="tab4Root"  tabTitle="Buscar" tabIcon="search"></ion-tab>\n    <ion-tab [root]="tab5Root"  tabTitle="Login" tabIcon="cog"></ion-tab>\n</ion-tabs>'/*ion-inline-end:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/pages/tabs/tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/rafaelramirez/Documents/sites/enzorromovil/infox-v3/src/pages/tabs/tabs.html"*/'<ion-tabs #tabs [ngClass]="{\'central-icon\' : tabNearbyInactive === true}" (ionChange)="getCurrentPage()" [selectedIndex]="tabIndex">\n    <ion-tab [root]="tab1Root" (click)="selectHome()" tabTitle="Inicio" tabIcon="home"></ion-tab>\n    <ion-tab [root]="tab2Root"  tabTitle="Favoritos" tabIcon="star"></ion-tab>\n    <ion-tab [root]="tab3Root"  tabTitle="Cercano" tabIcon="md-pin"></ion-tab>\n    <ion-tab [root]="tab4Root"  tabTitle="Buscar" tabIcon="search"></ion-tab>\n    <ion-tab [root]="tab5Root"  tabTitle="Login" tabIcon="cog"></ion-tab>\n</ion-tabs>'/*ion-inline-end:"/Users/rafaelramirez/Documents/sites/enzorromovil/infox-v3/src/pages/tabs/tabs.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* NavController */],
@@ -300,15 +300,15 @@ var map = {
 		0
 	],
 	"../pages/modals/gps-modal/gps-modal.module": [
-		310,
+		304,
 		2
 	],
 	"../pages/modals/incorrect-modal/incorrect-modal.module": [
-		304,
+		305,
 		8
 	],
 	"../pages/modals/search-place/search-place.module": [
-		305,
+		307,
 		7
 	],
 	"../pages/modals/speech-modal/speech-modal.module": [
@@ -316,15 +316,15 @@ var map = {
 		3
 	],
 	"../pages/nearby/nearby.module": [
-		309,
+		308,
 		5
 	],
 	"../pages/place/place.module": [
-		308,
+		309,
 		1
 	],
 	"../pages/search/search.module": [
-		307,
+		310,
 		4
 	]
 };
@@ -574,7 +574,7 @@ var LoginPage = /** @class */ (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/pages/login/login.html"*/'<ion-header>\n\n    <ion-navbar color="primary">\n        <ion-title *ngIf="!isLoggedIn()">Ingresar</ion-title>\n        <ion-title *ngIf="isLoggedIn()">Perfil</ion-title>\n        <ion-buttons end>\n      <span id="loggedUserName" *ngIf="isLoggedIn()">\n        <ion-icon name="contact" class="white-color"></ion-icon>\n      </span>\n        </ion-buttons>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <div *ngIf="!isLoggedIn()">\n        <ion-list>\n            <ion-item *ngIf="operation === \'register\'">\n                <ion-label floating>Nombre</ion-label>\n                <ion-input type="text" [(ngModel)]="user.nombres"></ion-input>\n            </ion-item>\n            <ion-item *ngIf="operation === \'register\'">\n                <ion-label floating>Apellido(s)</ion-label>\n                <ion-input type="text" [(ngModel)]="user.apellidos"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label floating>Email</ion-label>\n                <ion-input type="text" [(ngModel)]="user.email"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label floating>Contraseña</ion-label>\n                <ion-input type="password" [(ngModel)]="user.password"></ion-input>\n            </ion-item>\n            <ion-item *ngIf="operation === \'register\'">\n                <ion-label floating>Confirmar</ion-label>\n                <ion-input type="password" [(ngModel)]="user.password2"></ion-input>\n            </ion-item>\n        </ion-list>\n        <p>\n            <small *ngIf="operation === \'register\'">Ya tienes cuenta? <b><a (click)="operation = \'login\'">Ingresa</a></b></small>\n            <small *ngIf="operation === \'login\'">Aún no tienes cuenta? <b><a (click)="operation = \'register\'">Regístrate</a></b></small>\n        </p>\n        <hr />\n        <button *ngIf="operation === \'register\'" ion-button full (click)="emailRegister()" icon-start color="light"><ion-icon name="mail"></ion-icon> Registro con Email</button>\n        <button *ngIf="operation === \'login\'" ion-button full (click)="emailLogin()" icon-start color="light"><ion-icon name="mail"></ion-icon> Login con Email</button>\n        <div align-items-center>\n            <hr />\n        </div>\n        <button ion-button full (click)="facebookLogin()" icon-start><ion-icon name="logo-facebook"></ion-icon> Login con Facebook</button>\n    </div>\n    <div *ngIf="isLoggedIn()">\n        <div *ngIf="user">\n            <h2>¡Bienvenido {{user.nombres}}!</h2>\n\n            <ion-list>\n                <ion-item>\n                    <ion-label floating>Nombre</ion-label>\n                    <ion-input type="text" [(ngModel)]="user.nombres"></ion-input>\n                </ion-item>\n                <ion-item>\n                    <ion-label floating>Apellido(s)</ion-label>\n                    <ion-input type="text" [(ngModel)]="user.apellidos"></ion-input>\n                </ion-item>\n                <ion-item>\n                    <ion-label floating>Email</ion-label>\n                    <ion-input type="text" [(ngModel)]="user.email"></ion-input>\n                </ion-item>\n                <ion-item>\n                    <ion-label floating>Contraseña</ion-label>\n                    <ion-input type="password" [(ngModel)]="user.password"></ion-input>\n                </ion-item>\n                <ion-item>\n                    <ion-label floating>Confirmar</ion-label>\n                    <ion-input type="password" [(ngModel)]="user.password2"></ion-input>\n                </ion-item>\n                <ion-item>\n                    <ion-label>País</ion-label>\n                    <ion-select [(ngModel)]="user.pais" (ionChange)="countryChanged()">\n                        <ion-option value="{{c.idpais}}" *ngFor="let c of countries">{{c.pais}}</ion-option>\n                    </ion-select>\n                </ion-item>\n                <ion-item>\n                    <ion-label>Estado</ion-label>\n                    <ion-select [(ngModel)]="user.estado" (ionChange)="stateChanged()">\n                        <ion-option value="{{c.idestado}}" *ngFor="let c of states">{{c.estado}}</ion-option>\n                    </ion-select>\n                </ion-item>\n                <ion-item>\n                    <ion-label>Municipio</ion-label>\n                    <ion-select [(ngModel)]="user.ciudad">\n                        <ion-option value="{{c.idciudad}}" *ngFor="let c of cities">{{c.ciudad}}</ion-option>\n                    </ion-select>\n                </ion-item>\n                <ion-item>\n                    <ion-label>Sexo</ion-label>\n                    <ion-select [(ngModel)]="user.sexo">\n                        <ion-option value="hombre">Hombre</ion-option>\n                        <ion-option value="mujer">Mujer</ion-option>\n                        <ion-option value="otro">Otro</ion-option>\n                    </ion-select>\n                </ion-item>\n                <ion-item>\n                    <ion-label floating>Teléfono</ion-label>\n                    <ion-input type="number" [(ngModel)]="user.telefono"></ion-input>\n                </ion-item>\n            </ion-list>\n            <button ion-button full (click)="updateProfile()" icon-start><ion-icon name="exit"></ion-icon> Actualizar Perfil</button>\n        </div>\n        <button ion-button full (click)="logout()" icon-start color="danger"><ion-icon name="exit"></ion-icon> Cerrar Sesión</button>\n    </div>\n</ion-content>\n'/*ion-inline-end:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/pages/login/login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"/Users/rafaelramirez/Documents/sites/enzorromovil/infox-v3/src/pages/login/login.html"*/'<ion-header>\n\n    <ion-navbar color="primary">\n        <ion-title *ngIf="!isLoggedIn()">Ingresar</ion-title>\n        <ion-title *ngIf="isLoggedIn()">Perfil</ion-title>\n        <ion-buttons end>\n      <span id="loggedUserName" *ngIf="isLoggedIn()">\n        <ion-icon name="contact" class="white-color"></ion-icon>\n      </span>\n        </ion-buttons>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <div *ngIf="!isLoggedIn()">\n        <ion-list>\n            <ion-item *ngIf="operation === \'register\'">\n                <ion-label floating>Nombre</ion-label>\n                <ion-input type="text" [(ngModel)]="user.nombres"></ion-input>\n            </ion-item>\n            <ion-item *ngIf="operation === \'register\'">\n                <ion-label floating>Apellido(s)</ion-label>\n                <ion-input type="text" [(ngModel)]="user.apellidos"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label floating>Email</ion-label>\n                <ion-input type="text" [(ngModel)]="user.email"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label floating>Contraseña</ion-label>\n                <ion-input type="password" [(ngModel)]="user.password"></ion-input>\n            </ion-item>\n            <ion-item *ngIf="operation === \'register\'">\n                <ion-label floating>Confirmar</ion-label>\n                <ion-input type="password" [(ngModel)]="user.password2"></ion-input>\n            </ion-item>\n        </ion-list>\n        <p>\n            <small *ngIf="operation === \'register\'">Ya tienes cuenta? <b><a (click)="operation = \'login\'">Ingresa</a></b></small>\n            <small *ngIf="operation === \'login\'">Aún no tienes cuenta? <b><a (click)="operation = \'register\'">Regístrate</a></b></small>\n        </p>\n        <hr />\n        <button *ngIf="operation === \'register\'" ion-button full (click)="emailRegister()" icon-start color="light"><ion-icon name="mail"></ion-icon> Registro con Email</button>\n        <button *ngIf="operation === \'login\'" ion-button full (click)="emailLogin()" icon-start color="light"><ion-icon name="mail"></ion-icon> Login con Email</button>\n        <div align-items-center>\n            <hr />\n        </div>\n        <button ion-button full (click)="facebookLogin()" icon-start><ion-icon name="logo-facebook"></ion-icon> Login con Facebook</button>\n    </div>\n    <div *ngIf="isLoggedIn()">\n        <div *ngIf="user">\n            <h2>¡Bienvenido {{user.nombres}}!</h2>\n\n            <ion-list>\n                <ion-item>\n                    <ion-label floating>Nombre</ion-label>\n                    <ion-input type="text" [(ngModel)]="user.nombres"></ion-input>\n                </ion-item>\n                <ion-item>\n                    <ion-label floating>Apellido(s)</ion-label>\n                    <ion-input type="text" [(ngModel)]="user.apellidos"></ion-input>\n                </ion-item>\n                <ion-item>\n                    <ion-label floating>Email</ion-label>\n                    <ion-input type="text" [(ngModel)]="user.email"></ion-input>\n                </ion-item>\n                <ion-item>\n                    <ion-label floating>Contraseña</ion-label>\n                    <ion-input type="password" [(ngModel)]="user.password"></ion-input>\n                </ion-item>\n                <ion-item>\n                    <ion-label floating>Confirmar</ion-label>\n                    <ion-input type="password" [(ngModel)]="user.password2"></ion-input>\n                </ion-item>\n                <ion-item>\n                    <ion-label>País</ion-label>\n                    <ion-select [(ngModel)]="user.pais" (ionChange)="countryChanged()">\n                        <ion-option value="{{c.idpais}}" *ngFor="let c of countries">{{c.pais}}</ion-option>\n                    </ion-select>\n                </ion-item>\n                <ion-item>\n                    <ion-label>Estado</ion-label>\n                    <ion-select [(ngModel)]="user.estado" (ionChange)="stateChanged()">\n                        <ion-option value="{{c.idestado}}" *ngFor="let c of states">{{c.estado}}</ion-option>\n                    </ion-select>\n                </ion-item>\n                <ion-item>\n                    <ion-label>Municipio</ion-label>\n                    <ion-select [(ngModel)]="user.ciudad">\n                        <ion-option value="{{c.idciudad}}" *ngFor="let c of cities">{{c.ciudad}}</ion-option>\n                    </ion-select>\n                </ion-item>\n                <ion-item>\n                    <ion-label>Sexo</ion-label>\n                    <ion-select [(ngModel)]="user.sexo">\n                        <ion-option value="hombre">Hombre</ion-option>\n                        <ion-option value="mujer">Mujer</ion-option>\n                        <ion-option value="otro">Otro</ion-option>\n                    </ion-select>\n                </ion-item>\n                <ion-item>\n                    <ion-label floating>Teléfono</ion-label>\n                    <ion-input type="number" [(ngModel)]="user.telefono"></ion-input>\n                </ion-item>\n            </ion-list>\n            <button ion-button full (click)="updateProfile()" icon-start><ion-icon name="exit"></ion-icon> Actualizar Perfil</button>\n        </div>\n        <button ion-button full (click)="logout()" icon-start color="danger"><ion-icon name="exit"></ion-icon> Cerrar Sesión</button>\n    </div>\n</ion-content>\n'/*ion-inline-end:"/Users/rafaelramirez/Documents/sites/enzorromovil/infox-v3/src/pages/login/login.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__["a" /* Facebook */], __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["y" /* ToastController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_4__services_services__["a" /* AppService */]])
     ], LoginPage);
@@ -585,7 +585,7 @@ var LoginPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 220:
+/***/ 221:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1682,7 +1682,7 @@ var PlaceClasification = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 221:
+/***/ 222:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1842,23 +1842,23 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__ = __webpack_require__(209);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__ = __webpack_require__(210);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_geolocation__ = __webpack_require__(222);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_speech_recognition__ = __webpack_require__(235);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_launch_navigator__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_geolocation__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_speech_recognition__ = __webpack_require__(238);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_launch_navigator__ = __webpack_require__(237);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_component__ = __webpack_require__(300);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_tabs_tabs__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_services__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_place_clasification__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_place_clasification__ = __webpack_require__(221);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__general_general__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__general_global_variables__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pipes_order_by_order_by__ = __webpack_require__(221);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_social_sharing__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pipes_order_by_order_by__ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_social_sharing__ = __webpack_require__(239);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_facebook__ = __webpack_require__(169);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_native_geocoder__ = __webpack_require__(237);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_native_geocoder__ = __webpack_require__(235);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_native_diagnostic__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__ionic_native_open_native_settings__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ionic_native_keyboard__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ionic_native_text_to_speech__ = __webpack_require__(238);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ionic_native_text_to_speech__ = __webpack_require__(236);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ionic_native_photo_viewer__ = __webpack_require__(233);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_native_network__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__ionic_native_network_interface__ = __webpack_require__(119);
@@ -1921,13 +1921,13 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/favorites/favorites.module#FavoritesPageModule', name: 'FavoritesPage', segment: 'favorites', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home/home.module#HomeModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modals/dishes-modal/dishes-modal.module#DishesModalPageModule', name: 'DishesModalPage', segment: 'dishes-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/modals/gps-modal/gps-modal.module#GpsModalPageModule', name: 'GpsModalPage', segment: 'gps-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modals/incorrect-modal/incorrect-modal.module#IncorrectModalPageModule', name: 'IncorrectModalPage', segment: 'incorrect-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/modals/search-place/search-place.module#SearchPlacePageModule', name: 'SearchPlacePage', segment: 'search-place', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modals/speech-modal/speech-modal.module#SpeechModalPageModule', name: 'SpeechModalPage', segment: 'speech-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/search/search.module#SearchPageModule', name: 'SearchPage', segment: 'search', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/place/place.module#PlacePageModule', name: 'PlacePage', segment: 'place', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/modals/search-place/search-place.module#SearchPlacePageModule', name: 'SearchPlacePage', segment: 'search-place', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/nearby/nearby.module#NearbyPageModule', name: 'NearbyPage', segment: 'nearby', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/modals/gps-modal/gps-modal.module#GpsModalPageModule', name: 'GpsModalPage', segment: 'gps-modal', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/place/place.module#PlacePageModule', name: 'PlacePage', segment: 'place', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/search/search.module#SearchPageModule', name: 'SearchPage', segment: 'search', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["a" /* IonicStorageModule */].forRoot(),
@@ -2048,7 +2048,7 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/app/app.html"*/'<div id="tutorial-nearby" [ngClass]="{\'animate-fade\': globalVariables.showNearbyTut, \'fadeOut\': !globalVariables.showNearbyTut}" [style.bottom]="globalVariables.nearbyTabActive ? \'110px\': \'62px\'">\n    Ubica los Negocios Más Cercanos a Ti\n    <ion-icon name="md-arrow-dropdown" id="tut-down-arrow"></ion-icon>\n</div>\n<ion-nav [root]="rootPage"></ion-nav>'/*ion-inline-end:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/rafaelramirez/Documents/sites/enzorromovil/infox-v3/src/app/app.html"*/'<div id="tutorial-nearby" [ngClass]="{\'animate-fade\': globalVariables.showNearbyTut, \'fadeOut\': !globalVariables.showNearbyTut}" [style.bottom]="globalVariables.nearbyTabActive ? \'110px\': \'62px\'">\n    Ubica los Negocios Más Cercanos a Ti\n    <ion-icon name="md-arrow-dropdown" id="tut-down-arrow"></ion-icon>\n</div>\n<ion-nav [root]="rootPage"></ion-nav>'/*ion-inline-end:"/Users/rafaelramirez/Documents/sites/enzorromovil/infox-v3/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["u" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */],
