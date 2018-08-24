@@ -17,27 +17,11 @@ module.exports = [
     ]
   },
   {
-    "id": "cordova-plugin-actionsheet.ActionSheet",
-    "file": "plugins/cordova-plugin-actionsheet/www/ActionSheet.js",
-    "pluginId": "cordova-plugin-actionsheet",
-    "clobbers": [
-      "window.plugins.actionsheet"
-    ]
-  },
-  {
     "id": "cordova-plugin-device.device",
     "file": "plugins/cordova-plugin-device/www/device.js",
     "pluginId": "cordova-plugin-device",
     "clobbers": [
       "device"
-    ]
-  },
-  {
-    "id": "cordova-plugin-dialogs.notification",
-    "file": "plugins/cordova-plugin-dialogs/www/notification.js",
-    "pluginId": "cordova-plugin-dialogs",
-    "merges": [
-      "navigator.notification"
     ]
   },
   {
@@ -179,12 +163,6 @@ module.exports = [
     ]
   },
   {
-    "id": "es6-promise-plugin.Promise",
-    "file": "plugins/es6-promise-plugin/www/promise.js",
-    "pluginId": "es6-promise-plugin",
-    "runs": true
-  },
-  {
     "id": "cordova-plugin-x-socialsharing.SocialSharing",
     "file": "plugins/cordova-plugin-x-socialsharing/www/SocialSharing.js",
     "pluginId": "cordova-plugin-x-socialsharing",
@@ -232,6 +210,28 @@ module.exports = [
     "merges": [
       "launchnavigator"
     ]
+  },
+  {
+    "id": "cordova-plugin-actionsheet.ActionSheet",
+    "file": "plugins/cordova-plugin-actionsheet/www/ActionSheet.js",
+    "pluginId": "cordova-plugin-actionsheet",
+    "clobbers": [
+      "window.plugins.actionsheet"
+    ]
+  },
+  {
+    "id": "cordova-plugin-dialogs.notification",
+    "file": "plugins/cordova-plugin-dialogs/www/notification.js",
+    "pluginId": "cordova-plugin-dialogs",
+    "merges": [
+      "navigator.notification"
+    ]
+  },
+  {
+    "id": "es6-promise-plugin.Promise",
+    "file": "plugins/es6-promise-plugin/www/promise.js",
+    "pluginId": "es6-promise-plugin",
+    "runs": true
   }
 ];
 module.exports.metadata = 
@@ -240,11 +240,7 @@ module.exports.metadata =
   "com-sarriaroman-photoviewer": "1.1.16",
   "com.googlemaps.ios": "2.7.0",
   "cordova-open-native-settings": "1.4.1",
-  "cordova-plugin-actionsheet": "2.3.3",
-  "cordova-plugin-add-swift-support": "1.7.1",
-  "cordova-plugin-compat": "1.2.0",
   "cordova-plugin-device": "1.1.7",
-  "cordova-plugin-dialogs": "2.0.1",
   "cordova-plugin-facebook4": "1.10.1",
   "cordova-plugin-geolocation": "2.4.3",
   "cordova-plugin-googlemaps": "1.4.5",
@@ -259,11 +255,15 @@ module.exports.metadata =
   "cordova-plugin-statusbar": "2.4.2",
   "cordova-plugin-tts": "0.2.3",
   "cordova-plugin-whitelist": "1.3.3",
-  "es6-promise-plugin": "4.2.2",
   "cordova-plugin-x-socialsharing": "5.4.1",
   "cordova.plugins.diagnostic": "3.9.2",
   "ionic-plugin-keyboard": "2.2.1",
-  "uk.co.workingedge.phonegap.plugin.launchnavigator": "4.2.1"
+  "uk.co.workingedge.phonegap.plugin.launchnavigator": "4.2.1",
+  "cordova-plugin-actionsheet": "2.3.3",
+  "cordova-plugin-add-swift-support": "1.7.1",
+  "cordova-plugin-compat": "1.2.0",
+  "cordova-plugin-dialogs": "2.0.1",
+  "es6-promise-plugin": "4.2.2"
 };
 // BOTTOM OF METADATA
 });

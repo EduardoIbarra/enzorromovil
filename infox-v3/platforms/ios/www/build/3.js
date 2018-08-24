@@ -8,8 +8,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SpeechModalPageModule", function() { return SpeechModalPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__speech_modal__ = __webpack_require__(452);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_progress_bar_progress_bar_module__ = __webpack_require__(453);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__speech_modal__ = __webpack_require__(455);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_progress_bar_progress_bar_module__ = __webpack_require__(456);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,14 +44,14 @@ var SpeechModalPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 452:
+/***/ 455:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SpeechModalPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_speech_recognition__ = __webpack_require__(235);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_speech_recognition__ = __webpack_require__(238);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__general_general__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__tabs_tabs__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_diagnostic__ = __webpack_require__(118);
@@ -220,7 +220,7 @@ var SpeechModalPage = /** @class */ (function () {
     };
     SpeechModalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-speech-modal',template:/*ion-inline-start:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/pages/modals/speech-modal/speech-modal.html"*/'<ion-content class="main-view" no-bounce>\n    <div class="overlay"></div>\n    <div class="modal_content">\n        <progress-bar class="progress" [ngClass]="{\'animate-fade\': hasResults && doneRecording, \'fadeOutProgress\': hideProgress}" *ngIf="timer !== 0" [progress]="timer"></progress-bar>\n\n        <div class="speechTitle">\n            <p>Busca negocios</p>\n            <div class="subtitle">\n                <p *ngIf="doneRecording">Presiona el microfono para empezar</p>\n                <p *ngIf="isRecording">Escuchando...</p>\n            </div>\n        </div>\n\n        <div class="mic" (tap)="isRecording? stopListening(): startListening()">\n            <span class="mic-button">\n                <div class="ring" [class.ringAnimation]="isRecording"></div>\n                <ion-icon *ngIf="!isRecording" name="md-mic" class="record-mic"></ion-icon>\n                <ion-icon *ngIf="isRecording" name="md-square" class="record-stop"></ion-icon>\n            </span>\n        </div>\n        <div text-center text-wrap class="transcript-text">&nbsp;{{ match }}&nbsp;</div>\n\n        <div class="buttonGroupSpeech">\n            <button ion-button block clear color="primary" class="cancelButton" (click)="cancel()">Cancelar</button>\n            <button ion-button block clear color="primary" (click)="hasResults ? searchPlace(): \'\'" [disabled]="(!doneRecording && !hasResults) || !hasResults">Buscar</button>\n        </div>\n    </div>\n</ion-content>\n'/*ion-inline-end:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/pages/modals/speech-modal/speech-modal.html"*/,
+            selector: 'page-speech-modal',template:/*ion-inline-start:"/Users/rafaelramirez/Documents/sites/enzorromovil/infox-v3/src/pages/modals/speech-modal/speech-modal.html"*/'<ion-content class="main-view" no-bounce>\n    <div class="overlay"></div>\n    <div class="modal_content">\n        <progress-bar class="progress" [ngClass]="{\'animate-fade\': hasResults && doneRecording, \'fadeOutProgress\': hideProgress}" *ngIf="timer !== 0" [progress]="timer"></progress-bar>\n\n        <div class="speechTitle">\n            <p>Busca negocios</p>\n            <div class="subtitle">\n                <p *ngIf="doneRecording">Presiona el microfono para empezar</p>\n                <p *ngIf="isRecording">Escuchando...</p>\n            </div>\n        </div>\n\n        <div class="mic" (tap)="isRecording? stopListening(): startListening()">\n            <span class="mic-button">\n                <div class="ring" [class.ringAnimation]="isRecording"></div>\n                <ion-icon *ngIf="!isRecording" name="md-mic" class="record-mic"></ion-icon>\n                <ion-icon *ngIf="isRecording" name="md-square" class="record-stop"></ion-icon>\n            </span>\n        </div>\n        <div text-center text-wrap class="transcript-text">&nbsp;{{ match }}&nbsp;</div>\n\n        <div class="buttonGroupSpeech">\n            <button ion-button block clear color="primary" class="cancelButton" (click)="cancel()">Cancelar</button>\n            <button ion-button block clear color="primary" (click)="hasResults ? searchPlace(): \'\'" [disabled]="(!doneRecording && !hasResults) || !hasResults">Buscar</button>\n        </div>\n    </div>\n</ion-content>\n'/*ion-inline-end:"/Users/rafaelramirez/Documents/sites/enzorromovil/infox-v3/src/pages/modals/speech-modal/speech-modal.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_5__ionic_native_diagnostic__["a" /* Diagnostic */],
@@ -240,14 +240,14 @@ var SpeechModalPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 453:
+/***/ 456:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProgressBarComponentModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__progress_bar__ = __webpack_require__(454);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__progress_bar__ = __webpack_require__(457);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -280,7 +280,7 @@ var ProgressBarComponentModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 454:
+/***/ 457:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -305,7 +305,7 @@ var ProgressBarComponent = /** @class */ (function () {
     ], ProgressBarComponent.prototype, "progress", void 0);
     ProgressBarComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'progress-bar',template:/*ion-inline-start:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/components/progress-bar/progress-bar.html"*/'<div class="progress-outer">\n  <div class="progress-inner" [style.width]="progress + \'%\'"></div>\n</div>'/*ion-inline-end:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/components/progress-bar/progress-bar.html"*/
+            selector: 'progress-bar',template:/*ion-inline-start:"/Users/rafaelramirez/Documents/sites/enzorromovil/infox-v3/src/components/progress-bar/progress-bar.html"*/'<div class="progress-outer">\n  <div class="progress-inner" [style.width]="progress + \'%\'"></div>\n</div>'/*ion-inline-end:"/Users/rafaelramirez/Documents/sites/enzorromovil/infox-v3/src/components/progress-bar/progress-bar.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], ProgressBarComponent);
