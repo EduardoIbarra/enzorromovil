@@ -31615,6 +31615,11 @@ page-place #map_canvas {
   background-color: transparent;
 }
 
+.rate-stars > .ion-md-star, .rate-stars > .ion-md-star-outline {
+  font-size: 2.4em;
+  color: #ffcc00;
+}
+
 page-search .itemPadding {
   padding-top: 5px;
 }

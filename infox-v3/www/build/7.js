@@ -1,6 +1,6 @@
 webpackJsonp([7],{
 
-/***/ 306:
+/***/ 305:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchPlacePageModule", function() { return SearchPlacePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__search_place__ = __webpack_require__(455);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__search_place__ = __webpack_require__(451);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -41,7 +41,7 @@ var SearchPlacePageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 455:
+/***/ 451:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -152,7 +152,7 @@ var SearchPlacePage = /** @class */ (function () {
     ], SearchPlacePage.prototype, "searchbar", void 0);
     SearchPlacePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-search-place',template:/*ion-inline-start:"/Users/rafaelramirez/Documents/sites/enzorromovil/infox-v3/src/pages/modals/search-place/search-place.html"*/'<ion-header>\n\n    <ion-navbar color="primary">\n        <ion-searchbar #searchbar mode="md" (keypress)="searchOnEnter($event.keyCode, searchbar.value)" (ionInput)="searchResult($event)" placeholder="{{placeholder}}"></ion-searchbar>\n        <ion-buttons end>\n            <button ion-button icon-only (click)="closeModal()">\n                <ion-icon name="md-close-circle"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n\n\n<ion-content>\n    <ion-list>\n        <ion-item *ngIf="items.length > 0 && recentSearch" class="itemColor">\n            <b>Búsqueda reciente...</b>\n        </ion-item>\n        <ion-item *ngIf="items.length > 0 && !recentSearch" class="itemColor">\n            <b>Hacer búsqueda...</b>\n        </ion-item>\n        <ion-item *ngIf="items.length == 0 && didSearch" class="itemColor">\n            <b>No hay resultados</b>\n        </ion-item>\n        <ion-item *ngIf="errorMessage" class="itemColor" text-center text-wrap>\n            <b>Ha ocurrido un error, intenta de nuevo más tarde.</b>\n        </ion-item>\n\n        <button ion-item detail-none *ngFor="let item of items" (click)="viewPlacesList(item.cadena)">\n            {{ item.cadena }}\n        </button>\n    </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/rafaelramirez/Documents/sites/enzorromovil/infox-v3/src/pages/modals/search-place/search-place.html"*/,
+            selector: 'page-search-place',template:/*ion-inline-start:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/pages/modals/search-place/search-place.html"*/'<ion-header>\n\n    <ion-navbar color="primary">\n        <ion-searchbar #searchbar mode="md" (keypress)="searchOnEnter($event.keyCode, searchbar.value)" (ionInput)="searchResult($event)" placeholder="{{placeholder}}"></ion-searchbar>\n        <ion-buttons end>\n            <button ion-button icon-only (click)="closeModal()">\n                <ion-icon name="md-close-circle"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n</ion-header>\n\n\n<ion-content>\n    <ion-list>\n        <ion-item *ngIf="items.length > 0 && recentSearch" class="itemColor">\n            <b>Búsqueda reciente...</b>\n        </ion-item>\n        <ion-item *ngIf="items.length > 0 && !recentSearch" class="itemColor">\n            <b>Hacer búsqueda...</b>\n        </ion-item>\n        <ion-item *ngIf="items.length == 0 && didSearch" class="itemColor">\n            <b>No hay resultados</b>\n        </ion-item>\n        <ion-item *ngIf="errorMessage" class="itemColor" text-center text-wrap>\n            <b>Ha ocurrido un error, intenta de nuevo más tarde.</b>\n        </ion-item>\n\n        <button ion-item detail-none *ngFor="let item of items" (click)="viewPlacesList(item.cadena)">\n            {{ item.cadena }}\n        </button>\n    </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/pages/modals/search-place/search-place.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* NavParams */],

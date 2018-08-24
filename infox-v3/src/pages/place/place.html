@@ -124,10 +124,17 @@
             </div>
 
         </div>
-        <div padding>
+        <div>
+            <h3 padding>Calificar este Lugar</h3>
+            <div text-center class="rate-stars">
+                <ion-icon (click)="review.calificacion = 1" name="{{getStarName(1)}}"></ion-icon>
+                <ion-icon (click)="review.calificacion = 2" name="{{getStarName(2)}}"></ion-icon>
+                <ion-icon (click)="review.calificacion = 3" name="{{getStarName(3)}}"></ion-icon>
+                <ion-icon (click)="review.calificacion = 4" name="{{getStarName(4)}}"></ion-icon>
+                <ion-icon (click)="review.calificacion = 5" name="{{getStarName(5)}}"></ion-icon>
+            </div>
             <ion-item>
-                <ion-label>{{review.calificacion}}</ion-label>
-                <ion-range min="0" max="5" step="1" snaps="true" color="secondary" [(ngModel)]="review.calificacion"></ion-range>
+                <ion-range min="0" max="5" step="1" snaps="true" color="infox" [(ngModel)]="review.calificacion"></ion-range>
             </ion-item>
             <ion-item>
                 <ion-textarea placeholder="Escribe una reseña" [(ngModel)]="review.comentario"></ion-textarea>
@@ -136,9 +143,9 @@
                 <ion-label>Privado</ion-label>
                 <ion-checkbox [(ngModel)]="review.privado"></ion-checkbox>
             </ion-item>
-            <div text-center>
-                <button ion-button color="primary" (click)="saveReview()">
-                    Guardar
+            <div text-center padding>
+                <button ion-button color="primary" full (click)="saveReview()">
+                    Guardar Reseña
                 </button>
             </div>
         </div>
@@ -176,12 +183,17 @@
                 </ion-slide>
             </ion-slides>
         </div>
-        <div padding>
-            <div *ngFor="let r of reviewArr">
-                <p>{{r.nombres}} {{r.apellidos}}</p><span>{{r.stars}}</span>
-                <p>{{r.creado}}</p>
-                <p>{{r.comentario}}</p>
-            </div>
+        <div>
+            <ion-card *ngFor="let r of reviewArr" class="placeReview">
+                <ion-card-header>
+                    <b>{{r.nombres}} {{r.apellidos}}
+                    <span>{{r.calificacion}}</span> <ion-icon name="star"></ion-icon></b>
+                </ion-card-header>
+                <ion-card-content>
+                    <small>{{r.creado | date: 'medium'}}</small>
+                    <p>{{r.comentario}}</p>
+                </ion-card-content>
+            </ion-card>
         </div>
         <div text-center padding class="visits">
             <span>{{place.data.visitas}} VISITAS</span>

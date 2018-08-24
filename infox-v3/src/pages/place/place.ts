@@ -46,6 +46,7 @@ export class PlacePage {
     map: any;
     api_url = 'http://infoxsoft.com/app/';
     user: any;
+    myRate = 5;
     constructor(public navCtrl: NavController,
                 public navParams: NavParams,
                 public globalVariables: GlobalVariables,
@@ -347,32 +348,33 @@ export class PlacePage {
     }
 
     saveReview() {
-        //this.user = JSON.parse(localStorage.getItem('infox_user')).user;
+        this.user = JSON.parse(localStorage.getItem('infox_user')).user;
 
         const loader = this.loadingCtrl.create({
             content: "Por favor espere...",
         });
 
-        this.review.id_usuario = 3040;
+        this.review.id_usuario = this.user.id;
         this.review.id_directorio = this.placeId;
         const params = new HttpParams({
             fromObject: this.review
         });
-
-        this.httpClient.get(this.api_url+'califica_negocio.php', {params: params}).subscribe((data: any) => {
+        this.httpClient.get(this.api_url+'califica_negocio.php', {params: params}).subscribe((data) => {
             let toast = this.toastCtrl.create({
-                message: data.ok,
+                message: 'Reseña guardada',
                 duration: 3000,
                 position: 'top'
             });
             toast.present();
-            if(data.error) {
-                alert(data.error);
-            }
+            console.log(data);
             loader.dismissAll();
+            this.getPlaceDetails();
         }, (error) => {
             console.log(error);
             loader.dismissAll();
         });
+    }
+    getStarName(starN) {
+        return (starN <= this.review.calificacion) ? 'star' : 'star-outline';
     }
 }

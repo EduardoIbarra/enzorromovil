@@ -21,27 +21,34 @@ export class FavoritesPage {
     user: any;
     constructor(public navCtrl: NavController, public navParams: NavParams, public httpClient: HttpClient, public globalVariables: GlobalVariables,) {
         if(globalVariables.loggedIn()) {
-            this.user = JSON.parse(localStorage.getItem('infox_user')).user;
-            const favoritos = {
-                id_usuario: this.user.id
-            };
-            const params = new HttpParams({
-                fromObject: favoritos
-            });
-            this.httpClient.get(this.api_url+'consulta_favoritos.php', {params: params}).subscribe((data: any) => {
-                this.favorites = data.favoritos_info;
-                console.log(this.favorites);
-                if(data.error) {
-                    alert(data.error);
-                }
-            }, (error) => {
-                console.log(error);
-            });
+            this.getFavorites();
         }
     }
-
+    getFavorites() {
+        this.user = JSON.parse(localStorage.getItem('infox_user')).user;
+        const favoritos = {
+            id_usuario: this.user.id
+        };
+        const params = new HttpParams({
+            fromObject: favoritos
+        });
+        this.httpClient.get(this.api_url+'consulta_favoritos.php', {params: params}).subscribe((data: any) => {
+            this.favorites = data.favoritos_info;
+            console.log(this.favorites);
+            if(data.error) {
+                alert(data.error);
+            }
+        }, (error) => {
+            console.log(error);
+        });
+    }
     ionViewDidLoad() {
         console.log('ionViewDidLoad FavoritesPage');
+    }
+    ionViewDidEnter() {
+        if(this.globalVariables.loggedIn()) {
+            this.getFavorites();
+        }
     }
     isLoggedIn() {
         return (JSON.parse(localStorage.getItem('infox_user')));

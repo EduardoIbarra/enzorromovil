@@ -33,7 +33,7 @@ import {LoginPage} from "../pages/login/login";
     declarations: [
         MyApp,
         TabsPage,
-        LoginPage
+        LoginPage,
     ],
     imports: [
         BrowserModule,
