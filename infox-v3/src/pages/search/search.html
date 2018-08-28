@@ -49,7 +49,19 @@
                     <!--<img style="background-image: url(assets/img/logo_infox_big.png); background-size: contain;">-->
                 </ion-avatar>
                 <div class="itemPadding">
-                    <h2 class="search-list-place-name">{{place.nombre | lowercase}} <span *ngIf="place.num_resenas !== 0">{{place.promedio_calificacion}}<ion-icon name="star"></ion-icon></span></h2>
+                    <h2 class="search-list-place-name">{{place.nombre | lowercase}}</h2>
+
+                    <div class="rate-stars" *ngIf="place.num_resenas !== 0">
+                        <span color="infox">{{place.promedio_calificacion | number: '1.0-2'}}</span>
+                        <ion-icon style="font-size: 1.2em" name="{{getStarName2(1, place.promedio_calificacion)}}"></ion-icon>
+                        <ion-icon style="font-size: 1.2em" name="{{getStarName2(2, place.promedio_calificacion)}}"></ion-icon>
+                        <ion-icon style="font-size: 1.2em" name="{{getStarName2(3, place.promedio_calificacion)}}"></ion-icon>
+                        <ion-icon style="font-size: 1.2em" name="{{getStarName2(4, place.promedio_calificacion)}}"></ion-icon>
+                        <ion-icon style="font-size: 1.2em" name="{{getStarName2(5, place.promedio_calificacion)}}"></ion-icon>
+                        <span>({{place.num_resenas}})</span>
+                    </div>
+
+
                     <span class="category">
                     <ion-icon name="{{place.iconStyle}}"></ion-icon>
                     {{place.clasificacion | lowercase}}

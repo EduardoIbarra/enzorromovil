@@ -33,8 +33,8 @@ page-place {
       font-size: 2em;
     }
     :nth-child(2) {
-      font-size: 18px;
-      padding-top: 15px;
+      /*font-size: 18px;
+      padding-top: 15px;*/
     }
   }
 
@@ -163,7 +163,7 @@ page-place {
 //  background-color: transparent !important;
 //}
 
-.rate-stars > .ion-md-star, .rate-stars > .ion-md-star-outline {
+.rate-stars > .ion-md-star, .rate-stars > .ion-md-star-outline, .rate-stars > .ion-ios-star, .rate-stars > .ion-ios-star-outline {
   font-size: 2.4em;
-  color: #ffcc00;
+  color: #ff6000;
 }

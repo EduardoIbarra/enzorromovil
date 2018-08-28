@@ -151,4 +151,7 @@ export class SearchPage {
     isLoggedIn() {
         return (JSON.parse(localStorage.getItem('infox_user')));
     }
+    getStarName2(starN, rate) {
+        return (starN <= rate) ? 'star' : 'star-outline';
+    }
 }

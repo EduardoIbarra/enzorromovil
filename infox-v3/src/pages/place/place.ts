@@ -348,8 +348,17 @@ export class PlacePage {
     }
 
     saveReview() {
-        this.user = JSON.parse(localStorage.getItem('infox_user')).user;
-
+        this.user = JSON.parse(localStorage.getItem('infox_user'));
+        if(!this.user || !this.user.user || !this.user.user.id) {
+            let toast = this.toastCtrl.create({
+                message: 'No puedes calificar este negocio porque no has iniciado sesión',
+                duration: 3500,
+                position: 'top'
+            });
+            toast.present();
+            return;
+        }
+        this.user = this.user.user;
         const loader = this.loadingCtrl.create({
             content: "Por favor espere...",
         });
@@ -376,5 +385,8 @@ export class PlacePage {
     }
     getStarName(starN) {
         return (starN <= this.review.calificacion) ? 'star' : 'star-outline';
+    }
+    getStarName2(starN, rate) {
+        return (starN <= rate) ? 'star' : 'star-outline';
     }
 }

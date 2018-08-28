@@ -31492,8 +31492,8 @@ page-place .placeHeader :nth-child(1) {
 }
 
 page-place .placeHeader :nth-child(2) {
-  font-size: 18px;
-  padding-top: 15px;
+  /*font-size: 18px;
+      padding-top: 15px;*/
 }
 
 page-place .takeMeThere {
@@ -31615,9 +31615,9 @@ page-place #map_canvas {
   background-color: transparent;
 }
 
-.rate-stars > .ion-md-star, .rate-stars > .ion-md-star-outline {
+.rate-stars > .ion-md-star, .rate-stars > .ion-md-star-outline, .rate-stars > .ion-ios-star, .rate-stars > .ion-ios-star-outline {
   font-size: 2.4em;
-  color: #ffcc00;
+  color: #ff6000;
 }
 
 page-search .itemPadding {

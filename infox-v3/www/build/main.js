@@ -290,15 +290,15 @@ webpackEmptyAsyncContext.id = 123;
 
 var map = {
 	"../pages/favorites/favorites.module": [
-		303,
+		301,
 		9
 	],
 	"../pages/home/home.module": [
-		301,
+		302,
 		6
 	],
 	"../pages/modals/dishes-modal/dishes-modal.module": [
-		302,
+		303,
 		0
 	],
 	"../pages/modals/gps-modal/gps-modal.module": [
@@ -306,11 +306,11 @@ var map = {
 		2
 	],
 	"../pages/modals/incorrect-modal/incorrect-modal.module": [
-		304,
+		305,
 		8
 	],
 	"../pages/modals/search-place/search-place.module": [
-		305,
+		304,
 		7
 	],
 	"../pages/modals/speech-modal/speech-modal.module": [
@@ -1920,11 +1920,11 @@ var AppModule = /** @class */ (function () {
                     statusbarPadding: false
                 }, {
                     links: [
+                        { loadChildren: '../pages/favorites/favorites.module#FavoritesPageModule', name: 'FavoritesPage', segment: 'favorites', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home/home.module#HomeModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modals/dishes-modal/dishes-modal.module#DishesModalPageModule', name: 'DishesModalPage', segment: 'dishes-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/favorites/favorites.module#FavoritesPageModule', name: 'FavoritesPage', segment: 'favorites', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/modals/incorrect-modal/incorrect-modal.module#IncorrectModalPageModule', name: 'IncorrectModalPage', segment: 'incorrect-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modals/search-place/search-place.module#SearchPlacePageModule', name: 'SearchPlacePage', segment: 'search-place', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/modals/incorrect-modal/incorrect-modal.module#IncorrectModalPageModule', name: 'IncorrectModalPage', segment: 'incorrect-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modals/speech-modal/speech-modal.module#SpeechModalPageModule', name: 'SpeechModalPage', segment: 'speech-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/search/search.module#SearchPageModule', name: 'SearchPage', segment: 'search', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/nearby/nearby.module#NearbyPageModule', name: 'NearbyPage', segment: 'nearby', priority: 'low', defaultHistory: [] },

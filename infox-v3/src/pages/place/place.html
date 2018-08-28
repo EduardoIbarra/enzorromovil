@@ -33,7 +33,15 @@
         <div class="placeHeader" [ngClass]="{'headerPadding': !place.data.latitud && !place.data.longitud}">
             <h1 class="textCapitalize">{{place.data.nombre | lowercase}}</h1>
             <h4 class="textCapitalize">{{place.data.clasificacion | lowercase}}</h4>
-            <p *ngIf="place.data.promedio_calificacion">{{place.data.promedio_calificacion}} <ion-icon name="star"></ion-icon></p>
+            <div text-center class="rate-stars">
+                <small color="infox" style="font-size: 1.3em; vertical-align: super;">{{place.data.promedio_calificacion | number: '1.0-2'}}</small>
+                <ion-icon name="{{getStarName2(1, place.data.promedio_calificacion)}}"></ion-icon>
+                <ion-icon name="{{getStarName2(2, place.data.promedio_calificacion)}}"></ion-icon>
+                <ion-icon name="{{getStarName2(3, place.data.promedio_calificacion)}}"></ion-icon>
+                <ion-icon name="{{getStarName2(4, place.data.promedio_calificacion)}}"></ion-icon>
+                <ion-icon name="{{getStarName2(5, place.data.promedio_calificacion)}}"></ion-icon>
+                <span style="font-size: 1.3em; vertical-align: super;">({{place.data.num_resenas}})</span>
+            </div>
         </div>
         <div class="takeMeThere" text-center *ngIf="place.data.latitud && place.data.longitud">
             <button ion-button icon-left color="primary" (click)="openGpsModal()">
@@ -125,7 +133,7 @@
 
         </div>
         <div>
-            <h3 padding>Calificar este Lugar</h3>
+            <h3 padding text-center>Calificar este Lugar</h3>
             <div text-center class="rate-stars">
                 <ion-icon (click)="review.calificacion = 1" name="{{getStarName(1)}}"></ion-icon>
                 <ion-icon (click)="review.calificacion = 2" name="{{getStarName(2)}}"></ion-icon>
