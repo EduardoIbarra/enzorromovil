@@ -5,6 +5,7 @@ import {GlobalVariables} from '../../general/global-variables';
 import {General} from '../../general/general';
 import {PlaceClasification} from '../../services/place-clasification';
 import {OrderByPipe} from "../../pipes/order-by/order-by";
+import {HttpClient, HttpParams} from "@angular/common/http";
 
 @IonicPage()
 @Component({
@@ -24,7 +25,10 @@ export class SearchPage {
     emptyMessage: String;
     recentSearch: String;
     order: string = 'plan';
-
+    user: any;
+    favorites: any;
+    api_url = 'http://infoxsoft.com/app/';
+    myFavorites: any[] = [];
   constructor(
       public navCtrl: NavController,
       public navParams: NavParams,
@@ -33,7 +37,8 @@ export class SearchPage {
       public general: General,
       public placeClasification: PlaceClasification,
       public appService: AppService,
-      public orderBy: OrderByPipe
+      public orderBy: OrderByPipe,
+      public httpClient: HttpClient
   ) {
       this.searchQuery = globalVariables.searchParams || null;
       this.getPlaces(false);
@@ -41,6 +46,7 @@ export class SearchPage {
       if (this.globalVariables.goToPlace) {
           this.navCtrl.push('PlacePage', {}, {animate: false});
       }
+      this.getFavorites();
   }
 
     viewWillEnter() {
@@ -153,5 +159,28 @@ export class SearchPage {
     }
     getStarName2(starN, rate) {
         return (starN <= rate) ? 'star' : 'star-outline';
+    }
+    getFavorites() {
+        this.user = JSON.parse(localStorage.getItem('infox_user')).user;
+        if(!JSON.parse(localStorage.getItem('infox_user'))) {
+            return;
+        }
+        const favoritos = {
+            id_usuario: this.user.id
+        };
+        const params = new HttpParams({
+            fromObject: favoritos
+        });
+        this.httpClient.get(this.api_url+'consulta_favoritos.php', {params: params}).subscribe((data: any) => {
+            this.favorites = data.favoritos_info;
+            this.myFavorites = data.negociosFav;
+            localStorage.setItem('my_favorites', JSON.stringify(data.negociosFav));
+            console.log(data.negociosFav);
+            if(data.error) {
+                alert(data.error);
+            }
+        }, (error) => {
+            console.log(error);
+        });
     }
 }

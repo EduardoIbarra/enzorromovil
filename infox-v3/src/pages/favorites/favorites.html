@@ -31,6 +31,15 @@
       </ion-avatar>
       <div class="itemPadding">
         <h2 class="search-list-place-name">{{place.data[0].nombre | lowercase}}</h2>
+        <div class="rate-stars" *ngIf="place.data[0].num_resenas !== 0">
+          <span color="infox">{{place.data[0].promedio_calificacion | number: '1.0-2'}}</span>
+          <ion-icon style="font-size: 1.2em" name="{{getStarName2(1, place.data[0].promedio_calificacion)}}"></ion-icon>
+          <ion-icon style="font-size: 1.2em" name="{{getStarName2(2, place.data[0].promedio_calificacion)}}"></ion-icon>
+          <ion-icon style="font-size: 1.2em" name="{{getStarName2(3, place.data[0].promedio_calificacion)}}"></ion-icon>
+          <ion-icon style="font-size: 1.2em" name="{{getStarName2(4, place.data[0].promedio_calificacion)}}"></ion-icon>
+          <ion-icon style="font-size: 1.2em" name="{{getStarName2(5, place.data[0].promedio_calificacion)}}"></ion-icon>
+          <span>({{place.data[0].num_resenas}})</span>
+        </div>
         <span class="category">
                     <ion-icon name="{{place.data[0].iconStyle}}"></ion-icon>
                     {{place.data[0].clasificacion | lowercase}}

@@ -315,6 +315,11 @@ div#tutorial-take-me-there{
     border-right: 5px solid #ff6000;
     font-size: 1.1em;
   }
+  .item-starred {
+    background-color: #fff8f2 !important;
+    border-right: 5px solid #d6b300;
+    font-size: 1.1em;
+  }
 
   .textCapitalize {
     text-transform: capitalize;
@@ -394,4 +399,9 @@ ion-refresher {
 .white-color {
   color: white;
   font-size: 2em;
+}
+.addedAsFavorite {
+  font-size: 1.7em;
+  float: right;
+  color: #d6b300;
 }
