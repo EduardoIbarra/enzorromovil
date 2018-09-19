@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 308:
+/***/ 310:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,8 +8,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlacePageModule", function() { return PlacePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__place__ = __webpack_require__(456);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pipes_pipe_module__ = __webpack_require__(457);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__place__ = __webpack_require__(461);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pipes_pipe_module__ = __webpack_require__(462);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_offline_offline_module__ = __webpack_require__(312);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -119,7 +119,7 @@ var OfflineComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 456:
+/***/ 461:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -129,9 +129,9 @@ var OfflineComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__general_global_variables__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__general_general__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_services__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_social_sharing__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_social_sharing__ = __webpack_require__(239);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_common_http__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_common_http__ = __webpack_require__(111);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -433,7 +433,17 @@ var PlacePage = /** @class */ (function () {
     };
     PlacePage.prototype.saveReview = function () {
         var _this = this;
-        this.user = JSON.parse(localStorage.getItem('infox_user')).user;
+        this.user = JSON.parse(localStorage.getItem('infox_user'));
+        if (!this.user || !this.user.user || !this.user.user.id) {
+            var toast = this.toastCtrl.create({
+                message: 'No puedes calificar este negocio porque no has iniciado sesión',
+                duration: 3500,
+                position: 'top'
+            });
+            toast.present();
+            return;
+        }
+        this.user = this.user.user;
         var loader = this.loadingCtrl.create({
             content: "Por favor espere...",
         });
@@ -460,6 +470,9 @@ var PlacePage = /** @class */ (function () {
     PlacePage.prototype.getStarName = function (starN) {
         return (starN <= this.review.calificacion) ? 'star' : 'star-outline';
     };
+    PlacePage.prototype.getStarName2 = function (starN, rate) {
+        return (starN <= rate) ? 'star' : 'star-outline';
+    };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Content */]),
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Content */])
@@ -470,7 +483,7 @@ var PlacePage = /** @class */ (function () {
     ], PlacePage.prototype, "navBar", void 0);
     PlacePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-place',template:/*ion-inline-start:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/pages/place/place.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>\n            <div text-center>\n                <img src="assets/img/logo_infox_white.png" class="mainLogo"/>\n            </div>\n        </ion-title>\n        <ion-buttons end>\n      <span id="loggedUserName" *ngIf="isLoggedIn()">\n        <ion-icon name="contact" class="white-color"></ion-icon>\n      </span>\n        </ion-buttons>\n    </ion-navbar>\n    <ion-toolbar color="primary">\n        <ion-input mode="ios" placeholder="Buscar..." value="{{recentSearch}}" (ionFocus)="openSearchModal()" readonly>\n            <ion-icon name="md-mic"></ion-icon>\n        </ion-input>\n\n        <ion-buttons end>\n            <button item-right ion-button color="light" class="mic-button" (click)="openSpeechModal()">\n                <ion-icon name="md-mic"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-toolbar>\n\n</ion-header>\n\n<ion-content>\n\n    <offline *ngIf="!globalVariables.isConnected && !showData"></offline>\n\n    <div *ngIf="showData && place.data" class="animate-fade-item">\n        <div class="placeHeader" [ngClass]="{\'headerPadding\': !place.data.latitud && !place.data.longitud}">\n            <h1 class="textCapitalize">{{place.data.nombre | lowercase}}</h1>\n            <h4 class="textCapitalize">{{place.data.clasificacion | lowercase}}</h4>\n            <p *ngIf="place.data.promedio_calificacion">{{place.data.promedio_calificacion}} <ion-icon name="star"></ion-icon></p>\n        </div>\n        <div class="takeMeThere" text-center *ngIf="place.data.latitud && place.data.longitud">\n            <button ion-button icon-left color="primary" (click)="openGpsModal()">\n                <ion-icon name="ios-navigate"></ion-icon>\n                ¡Llévame Ahí!\n            </button>\n        </div>\n        <div class="middle-menu" [ngClass]="{\'middleMenuPadding\': !place.data.latitud && !place.data.longitud}">\n            <a class="mid-item" (click)="share()">\n                <ion-icon ios="ios-share-outline" md="md-share"></ion-icon>\n                <span class="mid-item-text">Compartir</span>\n            </a>\n            <a class="mid-item" *ngIf="place.dishes.length > 0" (click)="showDishes()">\n                <ion-icon name="ios-restaurant"></ion-icon>\n                <span class="mid-item-text">Ver Menú</span>\n            </a>\n            <a class="mid-item" *ngIf="place.data.web" href="{{place.data.web}}" onclick="window.open(this.href, \'_blank\'); return false;">\n                <ion-icon name="ios-globe"></ion-icon>\n                <span class="mid-item-text">Sitio Web</span>\n            </a>\n            <a class="mid-item" (click)="favorite()">\n                <ion-icon name="ios-star-outline"></ion-icon>\n                <span class="mid-item-text">Favorito</span>\n            </a>\n        </div>\n\n        <div *ngIf="place.data.otrosdatos">\n            <ion-card-content class="noPaddingBot">\n                <ion-icon name="information-circle"></ion-icon>\n                <span [innerHtml]="place.data.otrosdatos | capitalize"></span>\n            </ion-card-content>\n        </div>\n\n        <div *ngIf="place.data.informacion" class="infoCard">\n            <ion-card>\n                <ion-card-content [ngClass]="{\'read-more\': !showInfo}">\n                    <ion-icon name="information-circle"></ion-icon>\n                    <span *ngIf="!showInfo" [innerHtml]="place.data.informacion | capitalize"></span>\n                    <span *ngIf="showInfo" [innerHtml]="place.data.informacion | capitalize | newline"></span>\n                </ion-card-content>\n\n                <div (click)="showInfo = !showInfo" class="read-message">\n                    <span *ngIf="showInfo" (click)="scrollTop()">Leer menos </span>\n                    <span *ngIf="!showInfo && place.data.informacion.length > 40">Leer más </span>\n                </div>\n\n            </ion-card>\n        </div>\n\n        <div padding>\n            <p>\n                <ion-icon name="ios-pin"></ion-icon>\n                {{place.data.domicilio}}<br/>{{place.data.ciudad}}, {{place.data.estado}}\n            </p>\n            <hr/>\n\n            <div *ngIf="place.data.telefonos" class="phoneSection">\n                <div *ngIf="!show_full_phones" class="bigger_phones">\n                    <ion-icon name="ios-call"></ion-icon>\n                    Matriz: <a>(834) 16...</a>\n                </div>\n                <a (click)="show_full_phones = !show_full_phones" class="bigger_phones"><i *ngIf="!show_full_phones">Ver\n                    Teléfonos</i></a>\n                <div *ngIf="show_full_phones" class="bigger_phones">\n                    <ion-icon name="ios-call"></ion-icon>\n                    <span [innerHtml]="linkify(place.data.telefonos)">{{linkify(place.data.telefonos)}}</span><br/>\n                </div>\n            </div>\n            <hr/>\n            <div *ngIf="place.data.horarios">\n                <ion-icon name="md-time"></ion-icon>\n                {{place.data.horarios}}<br/>\n                <hr/>\n            </div>\n        </div>\n\n        <div class="incorrect-info-ribbon" text-center text-wrap [ngClass]="{\'animate-fade\': !correctData, \'fadeOut\': correctData}" *ngIf="!correctData">\n            ¿Los datos son correctos?\n            <div class="button-section">\n                <button ion-button small clear color="light" icon-left (click)="openIncorrect()">\n                    <ion-icon name="md-close-circle"></ion-icon>\n                    No\n                </button>\n                <button ion-button small clear color="light" icon-left (click)="isCorrectData()">\n                    <ion-icon name="md-checkmark-circle"></ion-icon>\n                    Sí\n                </button>\n            </div>\n\n        </div>\n        <div>\n            <h3 padding>Calificar este Lugar</h3>\n            <div text-center class="rate-stars">\n                <ion-icon (click)="review.calificacion = 1" name="{{getStarName(1)}}"></ion-icon>\n                <ion-icon (click)="review.calificacion = 2" name="{{getStarName(2)}}"></ion-icon>\n                <ion-icon (click)="review.calificacion = 3" name="{{getStarName(3)}}"></ion-icon>\n                <ion-icon (click)="review.calificacion = 4" name="{{getStarName(4)}}"></ion-icon>\n                <ion-icon (click)="review.calificacion = 5" name="{{getStarName(5)}}"></ion-icon>\n            </div>\n            <ion-item>\n                <ion-range min="0" max="5" step="1" snaps="true" color="infox" [(ngModel)]="review.calificacion"></ion-range>\n            </ion-item>\n            <ion-item>\n                <ion-textarea placeholder="Escribe una reseña" [(ngModel)]="review.comentario"></ion-textarea>\n            </ion-item>\n            <ion-item>\n                <ion-label>Privado</ion-label>\n                <ion-checkbox [(ngModel)]="review.privado"></ion-checkbox>\n            </ion-item>\n            <div text-center padding>\n                <button ion-button color="primary" full (click)="saveReview()">\n                    Guardar Reseña\n                </button>\n            </div>\n        </div>\n\n        <div *ngIf="place.data.latitud && place.data.longitud">\n            <div class="placeMap" #placeMap id="placeMap"></div>\n        </div>\n\n\n        <div class="facebook" *ngIf="place.data.linkfb && (place.data.plan == \'2\' || place.data.plan == \'3\' || place.data.plan == \'4\')" text-center>\n            <ion-card>\n                <ion-card-content>\n                    <iframe [src]="facebookLink" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>\n                </ion-card-content>\n            </ion-card>\n        </div>\n\n\n        <div class="banner" *ngIf="place.data.banner">\n            <ion-card>\n                <ion-card-content>\n                    <img style="width: 100%" src="http://infox.mx/publicidad/{{place.data.banner}}"/>\n                </ion-card-content>\n            </ion-card>\n        </div>\n        <div class="gallery" *ngIf="place.gallery.length > 0">\n            <h1 text-center>Galería</h1>\n            <ion-slides pager="true" effect="fade" loop="true">\n                <ion-slide *ngFor="let slide of place.gallery">\n                    <ion-card>\n                        <ion-card-content>\n                            <img src="http://www.infox.mx/galeria/{{slide.nombreimg}}">\n                        </ion-card-content>\n                    </ion-card>\n                </ion-slide>\n            </ion-slides>\n        </div>\n        <div>\n            <ion-card *ngFor="let r of reviewArr" class="placeReview">\n                <ion-card-header>\n                    <b>{{r.nombres}} {{r.apellidos}}\n                    <span>{{r.calificacion}}</span> <ion-icon name="star"></ion-icon></b>\n                </ion-card-header>\n                <ion-card-content>\n                    <small>{{r.creado | date: \'medium\'}}</small>\n                    <p>{{r.comentario}}</p>\n                </ion-card-content>\n            </ion-card>\n        </div>\n        <div text-center padding class="visits">\n            <span>{{place.data.visitas}} VISITAS</span>\n        </div>\n    </div>\n</ion-content>\n'/*ion-inline-end:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/pages/place/place.html"*/
+            selector: 'page-place',template:/*ion-inline-start:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/pages/place/place.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>\n            <div text-center>\n                <img src="assets/img/logo_infox_white.png" class="mainLogo"/>\n            </div>\n        </ion-title>\n        <ion-buttons end>\n      <span id="loggedUserName" *ngIf="isLoggedIn()">\n        <ion-icon name="contact" class="white-color"></ion-icon>\n      </span>\n        </ion-buttons>\n    </ion-navbar>\n    <ion-toolbar color="primary">\n        <ion-input mode="ios" placeholder="Buscar..." value="{{recentSearch}}" (ionFocus)="openSearchModal()" readonly>\n            <ion-icon name="md-mic"></ion-icon>\n        </ion-input>\n\n        <ion-buttons end>\n            <button item-right ion-button color="light" class="mic-button" (click)="openSpeechModal()">\n                <ion-icon name="md-mic"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-toolbar>\n\n</ion-header>\n\n<ion-content>\n\n    <offline *ngIf="!globalVariables.isConnected && !showData"></offline>\n\n    <div *ngIf="showData && place.data" class="animate-fade-item">\n        <div class="placeHeader" [ngClass]="{\'headerPadding\': !place.data.latitud && !place.data.longitud}">\n            <h1 class="textCapitalize">{{place.data.nombre | lowercase}}</h1>\n            <h4 class="textCapitalize">{{place.data.clasificacion | lowercase}}</h4>\n            <div text-center class="rate-stars">\n                <small color="infox" style="font-size: 1.3em; vertical-align: super;">{{place.data.promedio_calificacion | number: \'1.0-2\'}}</small>\n                <ion-icon name="{{getStarName2(1, place.data.promedio_calificacion)}}"></ion-icon>\n                <ion-icon name="{{getStarName2(2, place.data.promedio_calificacion)}}"></ion-icon>\n                <ion-icon name="{{getStarName2(3, place.data.promedio_calificacion)}}"></ion-icon>\n                <ion-icon name="{{getStarName2(4, place.data.promedio_calificacion)}}"></ion-icon>\n                <ion-icon name="{{getStarName2(5, place.data.promedio_calificacion)}}"></ion-icon>\n                <span style="font-size: 1.3em; vertical-align: super;">({{place.data.num_resenas}})</span>\n            </div>\n        </div>\n        <div class="takeMeThere" text-center *ngIf="place.data.latitud && place.data.longitud">\n            <button ion-button icon-left color="primary" (click)="openGpsModal()">\n                <ion-icon name="ios-navigate"></ion-icon>\n                ¡Llévame Ahí!\n            </button>\n        </div>\n        <div class="middle-menu" [ngClass]="{\'middleMenuPadding\': !place.data.latitud && !place.data.longitud}">\n            <a class="mid-item" (click)="share()">\n                <ion-icon ios="ios-share-outline" md="md-share"></ion-icon>\n                <span class="mid-item-text">Compartir</span>\n            </a>\n            <a class="mid-item" *ngIf="place.dishes.length > 0" (click)="showDishes()">\n                <ion-icon name="ios-restaurant"></ion-icon>\n                <span class="mid-item-text">Ver Menú</span>\n            </a>\n            <a class="mid-item" *ngIf="place.data.web" href="{{place.data.web}}" onclick="window.open(this.href, \'_blank\'); return false;">\n                <ion-icon name="ios-globe"></ion-icon>\n                <span class="mid-item-text">Sitio Web</span>\n            </a>\n            <a class="mid-item" (click)="favorite()">\n                <ion-icon name="ios-star-outline"></ion-icon>\n                <span class="mid-item-text">Favorito</span>\n            </a>\n        </div>\n\n        <div *ngIf="place.data.otrosdatos">\n            <ion-card-content class="noPaddingBot">\n                <ion-icon name="information-circle"></ion-icon>\n                <span [innerHtml]="place.data.otrosdatos | capitalize"></span>\n            </ion-card-content>\n        </div>\n\n        <div *ngIf="place.data.informacion" class="infoCard">\n            <ion-card>\n                <ion-card-content [ngClass]="{\'read-more\': !showInfo}">\n                    <ion-icon name="information-circle"></ion-icon>\n                    <span *ngIf="!showInfo" [innerHtml]="place.data.informacion | capitalize"></span>\n                    <span *ngIf="showInfo" [innerHtml]="place.data.informacion | capitalize | newline"></span>\n                </ion-card-content>\n\n                <div (click)="showInfo = !showInfo" class="read-message">\n                    <span *ngIf="showInfo" (click)="scrollTop()">Leer menos </span>\n                    <span *ngIf="!showInfo && place.data.informacion.length > 40">Leer más </span>\n                </div>\n\n            </ion-card>\n        </div>\n\n        <div padding>\n            <p>\n                <ion-icon name="ios-pin"></ion-icon>\n                {{place.data.domicilio}}<br/>{{place.data.ciudad}}, {{place.data.estado}}\n            </p>\n            <hr/>\n\n            <div *ngIf="place.data.telefonos" class="phoneSection">\n                <div *ngIf="!show_full_phones" class="bigger_phones">\n                    <ion-icon name="ios-call"></ion-icon>\n                    Matriz: <a>(834) 16...</a>\n                </div>\n                <a (click)="show_full_phones = !show_full_phones" class="bigger_phones"><i *ngIf="!show_full_phones">Ver\n                    Teléfonos</i></a>\n                <div *ngIf="show_full_phones" class="bigger_phones">\n                    <ion-icon name="ios-call"></ion-icon>\n                    <span [innerHtml]="linkify(place.data.telefonos)">{{linkify(place.data.telefonos)}}</span><br/>\n                </div>\n            </div>\n            <hr/>\n            <div *ngIf="place.data.horarios">\n                <ion-icon name="md-time"></ion-icon>\n                {{place.data.horarios}}<br/>\n                <hr/>\n            </div>\n        </div>\n\n        <div class="incorrect-info-ribbon" text-center text-wrap [ngClass]="{\'animate-fade\': !correctData, \'fadeOut\': correctData}" *ngIf="!correctData">\n            ¿Los datos son correctos?\n            <div class="button-section">\n                <button ion-button small clear color="light" icon-left (click)="openIncorrect()">\n                    <ion-icon name="md-close-circle"></ion-icon>\n                    No\n                </button>\n                <button ion-button small clear color="light" icon-left (click)="isCorrectData()">\n                    <ion-icon name="md-checkmark-circle"></ion-icon>\n                    Sí\n                </button>\n            </div>\n\n        </div>\n        <div>\n            <h3 padding text-center>Calificar este Lugar</h3>\n            <div text-center class="rate-stars">\n                <ion-icon (click)="review.calificacion = 1" name="{{getStarName(1)}}"></ion-icon>\n                <ion-icon (click)="review.calificacion = 2" name="{{getStarName(2)}}"></ion-icon>\n                <ion-icon (click)="review.calificacion = 3" name="{{getStarName(3)}}"></ion-icon>\n                <ion-icon (click)="review.calificacion = 4" name="{{getStarName(4)}}"></ion-icon>\n                <ion-icon (click)="review.calificacion = 5" name="{{getStarName(5)}}"></ion-icon>\n            </div>\n            <ion-item>\n                <ion-range min="0" max="5" step="1" snaps="true" color="infox" [(ngModel)]="review.calificacion"></ion-range>\n            </ion-item>\n            <ion-item>\n                <ion-textarea placeholder="Escribe una reseña" [(ngModel)]="review.comentario"></ion-textarea>\n            </ion-item>\n            <ion-item>\n                <ion-label>Privado</ion-label>\n                <ion-checkbox [(ngModel)]="review.privado"></ion-checkbox>\n            </ion-item>\n            <div text-center padding>\n                <button ion-button color="primary" full (click)="saveReview()">\n                    Guardar Reseña\n                </button>\n            </div>\n        </div>\n\n        <div *ngIf="place.data.latitud && place.data.longitud">\n            <div class="placeMap" #placeMap id="placeMap"></div>\n        </div>\n\n\n        <div class="facebook" *ngIf="place.data.linkfb && (place.data.plan == \'2\' || place.data.plan == \'3\' || place.data.plan == \'4\')" text-center>\n            <ion-card>\n                <ion-card-content>\n                    <iframe [src]="facebookLink" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>\n                </ion-card-content>\n            </ion-card>\n        </div>\n\n\n        <div class="banner" *ngIf="place.data.banner">\n            <ion-card>\n                <ion-card-content>\n                    <img style="width: 100%" src="http://infox.mx/publicidad/{{place.data.banner}}"/>\n                </ion-card-content>\n            </ion-card>\n        </div>\n        <div class="gallery" *ngIf="place.gallery.length > 0">\n            <h1 text-center>Galería</h1>\n            <ion-slides pager="true" effect="fade" loop="true">\n                <ion-slide *ngFor="let slide of place.gallery">\n                    <ion-card>\n                        <ion-card-content>\n                            <img src="http://www.infox.mx/galeria/{{slide.nombreimg}}">\n                        </ion-card-content>\n                    </ion-card>\n                </ion-slide>\n            </ion-slides>\n        </div>\n        <div>\n            <ion-card *ngFor="let r of reviewArr" class="placeReview">\n                <ion-card-header>\n                    <b>{{r.nombres}} {{r.apellidos}}\n                    <span>{{r.calificacion}}</span> <ion-icon name="star"></ion-icon></b>\n                </ion-card-header>\n                <ion-card-content>\n                    <small>{{r.creado | date: \'medium\'}}</small>\n                    <p>{{r.comentario}}</p>\n                </ion-card-content>\n            </ion-card>\n        </div>\n        <div text-center padding class="visits">\n            <span>{{place.data.visitas}} VISITAS</span>\n        </div>\n    </div>\n</ion-content>\n'/*ion-inline-end:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/pages/place/place.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* NavParams */],
@@ -494,17 +507,17 @@ var PlacePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 457:
+/***/ 462:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PipeModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__capitalize_capitalize__ = __webpack_require__(458);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__newline_newline__ = __webpack_require__(459);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__order_by_order_by__ = __webpack_require__(221);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__remove_html_remove_html__ = __webpack_require__(460);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__safe_safe__ = __webpack_require__(461);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__capitalize_capitalize__ = __webpack_require__(463);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__newline_newline__ = __webpack_require__(464);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__order_by_order_by__ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__remove_html_remove_html__ = __webpack_require__(465);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__safe_safe__ = __webpack_require__(466);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -546,7 +559,7 @@ var PipeModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 458:
+/***/ 463:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -581,7 +594,7 @@ var CapitalizePipe = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 459:
+/***/ 464:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -619,7 +632,7 @@ var NewlinePipe = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 460:
+/***/ 465:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -655,7 +668,7 @@ var RemoveHtmlPipe = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 461:
+/***/ 466:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

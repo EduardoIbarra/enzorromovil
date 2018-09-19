@@ -6,192 +6,32 @@
       <change beforePath="$PROJECT_DIR$/.sourcemaps/1.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.sourcemaps/1.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.sourcemaps/2.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.sourcemaps/2.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.sourcemaps/4.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.sourcemaps/4.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sourcemaps/9.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.sourcemaps/9.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.sourcemaps/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.sourcemaps/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/abbrev/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/abbrev/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/ansi/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/ansi/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/balanced-match/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/balanced-match/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/base64-js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/base64-js/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/big-integer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/big-integer/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/bplist-creator/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/bplist-creator/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/bplist-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/bplist-parser/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/brace-expansion/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/brace-expansion/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/concat-map/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/concat-map/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/cordova-common/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/cordova-common/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/cordova-registry-mapper/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/cordova-registry-mapper/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/elementtree/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/elementtree/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/glob/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/glob/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/inflight/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/inflight/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/inherits/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/inherits/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/ios-sim/node_modules/bplist-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/ios-sim/node_modules/bplist-parser/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/ios-sim/node_modules/nopt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/ios-sim/node_modules/nopt/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/ios-sim/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/ios-sim/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/lodash/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/lodash/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/minimatch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/minimatch/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/nopt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/nopt/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/once/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/once/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/os-homedir/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/os-homedir/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/os-tmpdir/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/os-tmpdir/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/osenv/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/osenv/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/path-is-absolute/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/path-is-absolute/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/pegjs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/pegjs/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/plist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/plist/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/q/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/q/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/sax/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/sax/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/semver/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/semver/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/shelljs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/shelljs/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/simctl/node_modules/shelljs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/simctl/node_modules/shelljs/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/simctl/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/simctl/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/simple-plist/node_modules/base64-js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/simple-plist/node_modules/base64-js/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/simple-plist/node_modules/plist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/simple-plist/node_modules/plist/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/simple-plist/node_modules/xmlbuilder/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/simple-plist/node_modules/xmlbuilder/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/simple-plist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/simple-plist/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/stream-buffers/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/stream-buffers/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/tail/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/tail/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/underscore/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/underscore/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/unorm/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/unorm/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/util-deprecate/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/util-deprecate/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/uuid/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/uuid/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/wrappy/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/wrappy/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/xcode/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/xcode/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/xml-escape/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/xml-escape/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/xmlbuilder/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/xmlbuilder/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/xmldom/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-ios/node_modules/xmldom/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cordova-plugin-googlemaps-sdk/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cordova-plugin-googlemaps-sdk/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/binding.node.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/binding/src/binding.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/binding/src/create_string.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/binding/src/custom_function_bridge.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/binding/src/custom_importer_bridge.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/binding/src/sass_context_wrapper.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/binding/src/sass_types/boolean.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/binding/src/sass_types/color.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/binding/src/sass_types/error.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/binding/src/sass_types/factory.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/binding/src/sass_types/list.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/binding/src/sass_types/map.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/binding/src/sass_types/null.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/binding/src/sass_types/number.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/binding/src/sass_types/string.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/ast.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/ast_fwd_decl.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/base64vlq.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/bind.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/cencode.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/check_nesting.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/color_maps.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/constants.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/context.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/cssize.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/emitter.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/environment.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/error_handling.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/eval.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/expand.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/extend.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/file.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/functions.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/inspect.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/json.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/lexer.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/listize.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/memory/SharedPtr.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/node.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/output.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/parser.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/plugins.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/position.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/prelexer.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/remove_placeholders.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/sass.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/sass2scss.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/sass_context.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/sass_functions.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/sass_util.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/sass_values.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/source_map.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/subset_map.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/to_c.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/to_value.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/units.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/utf8_string.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/util.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/obj.target/libsass/src/libsass/src/values.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/.deps/Release/sass.a.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/binding/src/binding.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/binding/src/create_string.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/binding/src/custom_function_bridge.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/binding/src/custom_importer_bridge.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/binding/src/sass_context_wrapper.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/binding/src/sass_types/boolean.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/binding/src/sass_types/color.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/binding/src/sass_types/error.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/binding/src/sass_types/factory.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/binding/src/sass_types/list.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/binding/src/sass_types/map.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/binding/src/sass_types/null.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/binding/src/sass_types/number.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/binding/src/sass_types/string.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/ast.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/ast_fwd_decl.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/base64vlq.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/bind.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/cencode.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/check_nesting.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/color_maps.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/constants.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/context.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/cssize.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/emitter.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/environment.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/error_handling.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/eval.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/expand.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/extend.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/file.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/functions.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/inspect.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/json.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/lexer.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/listize.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/memory/SharedPtr.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/node.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/output.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/parser.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/plugins.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/position.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/prelexer.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/remove_placeholders.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/sass.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/sass2scss.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/sass_context.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/sass_functions.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/sass_util.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/sass_values.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/source_map.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/subset_map.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/to_c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/to_value.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/units.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/utf8_string.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/util.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/obj.target/libsass/src/libsass/src/values.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/Release/sass.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/binding.Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/binding.target.mk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/config.gypi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/gyp-mac-tool" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/src/libsass.Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/build/src/libsass.target.mk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/vendor/darwin-x64-64/binding.node" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/rollup/bin/rollup" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/bin/rollup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/CordovaLib/CordovaLib.xcodeproj/xcuserdata/ed.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/CordovaLib/CordovaLib.xcodeproj/xcuserdata/ed.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/Infox.xcodeproj/project.xcworkspace/xcuserdata/ed.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Infox.xcodeproj/project.xcworkspace/xcuserdata/ed.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/Infox.xcodeproj/xcuserdata/ed.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Infox.xcodeproj/xcuserdata/ed.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/Infox/Infox-Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Infox/Infox-Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/Infox/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/Infox/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/build/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/build/0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/build/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/build/1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/build/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/build/2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/build/3.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/build/3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/build/4.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/build/4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/build/5.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/build/5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/build/6.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/build/6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/build/7.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/build/7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/build/8.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/build/8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/build/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/build/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/build/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/build/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/ios/www/build/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/ios/www/build/vendor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/favorites/favorites.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/favorites/favorites.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/favorites/favorites.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/favorites/favorites.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/search/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/search/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/place/place.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/place/place.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/place/place.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/place/place.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/search/search.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/search/search.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/0.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/build/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/build/1.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/1.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/build/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/2.js" afterDir="false" />
@@ -200,11 +40,10 @@
       <change beforePath="$PROJECT_DIR$/www/build/4.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/4.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/build/4.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/4.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/build/5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/build/7.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/6.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/6.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/build/8.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/8.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/build/9.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/9.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/build/9.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/9.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/build/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/build/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/build/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/main.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/build/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/vendor.js" afterDir="false" />
@@ -223,13 +62,15 @@
     <session id="157066588">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -250,33 +91,33 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="545" />
+          <entry key="html" value="568" />
           <entry key="scss" value="127" />
-          <entry key="ts" value="756" />
-          <entry key="xml" value="3" />
+          <entry key="ts" value="823" />
+          <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="545" />
+          <entry key="HTML" value="568" />
           <entry key="SCSS" value="127" />
-          <entry key="TypeScript" value="756" />
-          <entry key="XML" value="3" />
+          <entry key="TypeScript" value="823" />
+          <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="TypeScriptServerServiceImpl" value="11" />
+          <entry key="TypeScriptServerServiceImpl" value="15" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
+            <state relative-caret-position="1170">
               <caret line="82" column="5" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
             </state>
           </provider>
@@ -285,8 +126,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/search/search.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="159" column="4" selection-start-line="159" selection-start-column="4" selection-end-line="161" selection-end-column="5" />
+            <state relative-caret-position="253">
+              <caret line="164" column="19" selection-end-line="189" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -297,8 +138,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/search/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="54" column="20" lean-forward="true" selection-start-line="54" selection-start-column="20" selection-end-line="62" selection-end-column="26" />
+            <state relative-caret-position="810">
+              <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="62" selection-end-column="26" />
               <folding>
                 <element signature="n#style#0;n#ion-icon#0;n#div#0;n#div#0;n#button#0;n#ion-list#0;n#div#1;n#ion-content#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ion-icon#1;n#div#0;n#div#0;n#button#0;n#ion-list#0;n#div#1;n#ion-content#0;n#!!top" expanded="true" />
@@ -313,8 +154,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="35" column="57" lean-forward="true" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
+            <state relative-caret-position="525">
+              <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
               <folding>
                 <element signature="n#style#0;n#ion-icon#0;n#div#0;n#div#0;n#button#0;n#ion-list#0;n#ion-content#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ion-icon#1;n#div#0;n#div#0;n#button#0;n#ion-list#0;n#ion-content#0;n#!!top" expanded="true" />
@@ -329,8 +170,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="318" column="29" selection-start-line="318" selection-start-column="29" selection-end-line="318" selection-end-column="29" />
+            <state relative-caret-position="543">
+              <caret line="407" column="11" selection-start-line="407" selection-start-column="11" selection-end-line="407" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -338,8 +179,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1012">
-              <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+            <state relative-caret-position="345">
+              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -347,17 +188,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/place/place.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
+            <state relative-caret-position="540">
               <caret line="36" column="26" selection-start-line="35" selection-start-column="6" selection-end-line="36" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/place/place.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="43" selection-end-column="18" />
+            <state relative-caret-position="215">
+              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
               <folding>
                 <element signature="n#style#0;n#small#0;n#div#0;n#div#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
@@ -369,8 +210,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/place/place.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="273" column="9" selection-start-line="273" selection-start-column="9" selection-end-line="273" selection-end-column="9" />
+            <state relative-caret-position="930">
+              <caret line="84" column="62" selection-start-line="84" selection-start-column="62" selection-end-line="84" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -379,8 +220,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>user.user</find>
-      <find>true</find>
       <find>isConnected</find>
       <find>states</find>
       <find>service</find>
@@ -409,6 +248,8 @@
       <find>place</find>
       <find>place.</find>
       <find>places =</find>
+      <find>reviews</find>
+      <find>addedAs</find>
     </findStrings>
     <replaceStrings>
       <replace>isLoggedIn</replace>
@@ -444,15 +285,15 @@
         <option value="$PROJECT_DIR$/src/pages/nearby/nearby.html" />
         <option value="$PROJECT_DIR$/src/pages/login/login.html" />
         <option value="$PROJECT_DIR$/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/src/pages/place/place.scss" />
-        <option value="$PROJECT_DIR$/src/pages/place/place.html" />
-        <option value="$PROJECT_DIR$/src/pages/place/place.ts" />
-        <option value="$PROJECT_DIR$/src/pages/search/search.ts" />
         <option value="$PROJECT_DIR$/src/pages/search/search.html" />
-        <option value="$PROJECT_DIR$/src/app/app.scss" />
         <option value="$PROJECT_DIR$/src/pages/favorites/favorites.html" />
         <option value="$PROJECT_DIR$/src/pages/favorites/favorites.ts" />
+        <option value="$PROJECT_DIR$/config.xml" />
+        <option value="$PROJECT_DIR$/src/pages/place/place.ts" />
+        <option value="$PROJECT_DIR$/src/pages/search/search.ts" />
+        <option value="$PROJECT_DIR$/src/app/app.scss" />
+        <option value="$PROJECT_DIR$/src/pages/place/place.html" />
       </list>
     </option>
   </component>
@@ -510,8 +351,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="16" />
     <option name="y" value="22" />
-    <option name="width" value="1680" />
+    <option name="width" value="1606" />
     <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -520,7 +362,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -582,6 +423,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -637,12 +479,16 @@
       <workItem from="1535422837701" duration="3409000" />
       <workItem from="1535468315125" duration="66000" />
       <workItem from="1535468406230" duration="11000" />
-      <workItem from="1535594743816" duration="4209000" />
+      <workItem from="1535594743816" duration="5058000" />
+      <workItem from="1535637771669" duration="1940000" />
+      <workItem from="1536632455006" duration="984000" />
+      <workItem from="1536778033093" duration="591000" />
+      <workItem from="1537396350249" duration="1012000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75561000" />
+    <option name="totallyTimeSpent" value="80937000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="1028" extended-state="6" />
@@ -868,31 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/place/place.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="36" column="26" selection-start-line="35" selection-start-column="6" selection-end-line="36" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/place/place.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="43" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#small#0;n#div#0;n#div#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/ionic-angular/components/alert/alert-controller.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -907,24 +728,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/place/place.ts">
+    <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="273" column="9" selection-start-line="273" selection-start-column="9" selection-end-line="273" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="318" column="29" selection-start-line="318" selection-start-column="29" selection-end-line="318" selection-end-column="29" />
+        <state relative-caret-position="1170">
+          <caret line="82" column="5" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/search/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="54" column="20" lean-forward="true" selection-start-line="54" selection-start-column="20" selection-end-line="62" selection-end-column="26" />
+        <state relative-caret-position="810">
+          <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="62" selection-end-column="26" />
           <folding>
             <element signature="n#style#0;n#ion-icon#0;n#div#0;n#div#0;n#button#0;n#ion-list#0;n#div#1;n#ion-content#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ion-icon#1;n#div#0;n#div#0;n#button#0;n#ion-list#0;n#div#1;n#ion-content#0;n#!!top" expanded="true" />
@@ -937,8 +751,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="35" column="57" lean-forward="true" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
+        <state relative-caret-position="525">
+          <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
           <folding>
             <element signature="n#style#0;n#ion-icon#0;n#div#0;n#div#0;n#button#0;n#ion-list#0;n#ion-content#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ion-icon#1;n#div#0;n#div#0;n#button#0;n#ion-list#0;n#ion-content#0;n#!!top" expanded="true" />
@@ -949,20 +763,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/place/place.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="26" selection-start-line="35" selection-start-column="6" selection-end-line="36" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/place/place.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="84" column="62" selection-start-line="84" selection-start-column="62" selection-end-line="84" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/search/search.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="159" column="4" selection-start-line="159" selection-start-column="4" selection-end-line="161" selection-end-column="5" />
+        <state relative-caret-position="253">
+          <caret line="164" column="19" selection-end-line="189" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.ts">
+    <entry file="file://$PROJECT_DIR$/src/app/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="82" column="5" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
+        <state relative-caret-position="543">
+          <caret line="407" column="11" selection-start-line="407" selection-start-column="11" selection-end-line="407" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/place/place.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

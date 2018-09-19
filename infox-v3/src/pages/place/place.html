@@ -34,7 +34,7 @@
             <h1 class="textCapitalize">{{place.data.nombre | lowercase}}</h1>
             <h4 class="textCapitalize">{{place.data.clasificacion | lowercase}}</h4>
             <div text-center class="rate-stars">
-                <small color="infox" style="font-size: 1.3em; vertical-align: super;">{{place.data.promedio_calificacion | number: '1.0-2'}}</small>
+                <small *ngIf="place && place.data && place.data.promedio_calificacion" color="infox" style="font-size: 1.3em; vertical-align: super;">{{place.data.promedio_calificacion | number: '1.0-2'}}</small>
                 <ion-icon name="{{getStarName2(1, place.data.promedio_calificacion)}}"></ion-icon>
                 <ion-icon name="{{getStarName2(2, place.data.promedio_calificacion)}}"></ion-icon>
                 <ion-icon name="{{getStarName2(3, place.data.promedio_calificacion)}}"></ion-icon>

@@ -9,8 +9,8 @@ import {HttpClient, HttpParams} from "@angular/common/http";
 
 @IonicPage()
 @Component({
-  selector: 'page-search',
-  templateUrl: 'search.html',
+    selector: 'page-search',
+    templateUrl: 'search.html',
 })
 export class SearchPage {
 
@@ -29,25 +29,25 @@ export class SearchPage {
     favorites: any;
     api_url = 'http://infoxsoft.com/app/';
     myFavorites: any[] = [];
-  constructor(
-      public navCtrl: NavController,
-      public navParams: NavParams,
-      public modalCtrl: ModalController,
-      public globalVariables: GlobalVariables,
-      public general: General,
-      public placeClasification: PlaceClasification,
-      public appService: AppService,
-      public orderBy: OrderByPipe,
-      public httpClient: HttpClient
-  ) {
-      this.searchQuery = globalVariables.searchParams || null;
-      this.getPlaces(false);
+    constructor(
+        public navCtrl: NavController,
+        public navParams: NavParams,
+        public modalCtrl: ModalController,
+        public globalVariables: GlobalVariables,
+        public general: General,
+        public placeClasification: PlaceClasification,
+        public appService: AppService,
+        public orderBy: OrderByPipe,
+        public httpClient: HttpClient
+    ) {
+        this.searchQuery = globalVariables.searchParams || null;
+        this.getPlaces(false);
 
-      if (this.globalVariables.goToPlace) {
-          this.navCtrl.push('PlacePage', {}, {animate: false});
-      }
-      this.getFavorites();
-  }
+        if (this.globalVariables.goToPlace) {
+            this.navCtrl.push('PlacePage', {}, {animate: false});
+        }
+        this.getFavorites();
+    }
 
     viewWillEnter() {
         this.recentSearch = this.general.getLastSearch();
@@ -161,6 +161,9 @@ export class SearchPage {
         return (starN <= rate) ? 'star' : 'star-outline';
     }
     getFavorites() {
+        if (!JSON.parse(localStorage.getItem('infox_user'))) {
+            return;
+        }
         this.user = JSON.parse(localStorage.getItem('infox_user')).user;
         if(!JSON.parse(localStorage.getItem('infox_user'))) {
             return;

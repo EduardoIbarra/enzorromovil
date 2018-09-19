@@ -79,15 +79,19 @@ export class PlacePage {
             this.place.data = response.json().data[0];
             this.place.dishes = response.json().platillos;
             this.place.gallery = response.json().galeria;
-            this.reviewArr = this.place.data.reviews;
-            var numReview = this.place.data.num_resenas;
-            for(var i=0 ; i < numReview; i++){
-                var cal = this.reviewArr[i].calificacion;
-                var stars = '';
-                for(var j=0; j < cal; j++){
-                    stars += '<ion-icon name="star"></ion-icon>';
+            if (this.place.data && this.place.data.reviews) {
+                this.reviewArr = this.place.data.reviews;
+            }
+            if (this.reviewArr && this.reviewArr.length > 0) {
+                var numReview = this.place.data.num_resenas;
+                for(var i=0 ; i < numReview; i++){
+                    var cal = this.reviewArr[i].calificacion;
+                    var stars = '';
+                    for(var j=0; j < cal; j++){
+                        stars += '<ion-icon name="star"></ion-icon>';
+                    }
+                    this.reviewArr[i].stars = stars;
                 }
-                this.reviewArr[i].stars = stars;
             }
             this.getFbLink();
             setTimeout(() => {

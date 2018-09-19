@@ -1,6 +1,6 @@
 webpackJsonp([4],{
 
-/***/ 309:
+/***/ 310:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchPageModule", function() { return SearchPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__search__ = __webpack_require__(460);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__search__ = __webpack_require__(466);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_offline_offline_module__ = __webpack_require__(312);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -116,7 +116,7 @@ var OfflineComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 460:
+/***/ 466:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -128,7 +128,7 @@ var OfflineComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__general_general__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_place_clasification__ = __webpack_require__(221);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pipes_order_by_order_by__ = __webpack_require__(222);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_common_http__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_common_http__ = __webpack_require__(112);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -273,6 +273,9 @@ var SearchPage = /** @class */ (function () {
     };
     SearchPage.prototype.getFavorites = function () {
         var _this = this;
+        if (!JSON.parse(localStorage.getItem('infox_user'))) {
+            return;
+        }
         this.user = JSON.parse(localStorage.getItem('infox_user')).user;
         if (!JSON.parse(localStorage.getItem('infox_user'))) {
             return;
@@ -297,16 +300,23 @@ var SearchPage = /** @class */ (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Content */]),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Content */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Content */]) === "function" && _a || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Content */])
     ], SearchPage.prototype, "content", void 0);
     SearchPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-search',template:/*ion-inline-start:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/pages/search/search.html"*/'<ion-header>\n\n    <ion-toolbar color="primary">\n        <ion-title>\n            <div text-center>\n                <img src="assets/img/logo_infox_white.png" class="mainLogo"/>\n            </div>\n        </ion-title>\n        <ion-buttons end>\n          <span id="loggedUserName" *ngIf="isLoggedIn()">\n            <ion-icon name="contact" class="white-color"></ion-icon>\n          </span>\n        </ion-buttons>\n    </ion-toolbar>\n    <ion-navbar color="primary">\n        <ion-input mode="ios" placeholder="Buscar..." value="{{recentSearch}}" (ionFocus)="openSearchModal()" readonly>\n            <ion-icon name="md-mic"></ion-icon>\n        </ion-input>\n        <ion-buttons end>\n            <button item-right ion-button color="light" class="mic-button" (click)="openSpeechModal()">\n                <ion-icon name="md-mic"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content no-padding>\n    <ion-refresher (ionRefresh)="refresh($event)" *ngIf="searchQuery && globalVariables.isConnected">\n        <ion-refresher-content\n                pullingIcon="md-arrow-down"\n                pullingText="Estira Para Actualizar...">\n        </ion-refresher-content>\n    </ion-refresher>\n\n    <offline *ngIf="!globalVariables.isConnected && places.length === 0"></offline>\n\n    <div no-lines text-center text-wrap padding-top class="simple-message" *ngIf="places.length <= 0 && globalVariables.isConnected">{{emptyMessage}} <b>{{searchQuery}}</b></div>\n    <div [ngClass]="{\'animate-fade-item\': showData, \'fadeOut\': !showData}" *ngIf="globalVariables.isConnected || places.length > 0">\n        <ion-list>\n            <button ion-item detail-none *ngFor="let place of places" [ngClass]="{\'item-featured\': place.plan == 4, \'item-starred\': myFavorites.includes(place.idnum)}" (click)="getPlaceDetails(place.idnum)">\n                <ion-icon class="addedAsFavorite" *ngIf="myFavorites.includes(place.idnum)" name="star"></ion-icon>\n                <ion-avatar item-start *ngIf="place.banner && place.plan !== \'\'" class="list-place-img">\n                    <img [src]="\'http://infox.mx/\' + place.banner">\n                    <!--<img style="background-image: url(http://infox.mx/{{place.banner}})">-->\n                </ion-avatar>\n                <ion-avatar item-start *ngIf="!place.banner || place.plan === \'\'" class="list-place-img">\n                    <img src="assets/img/logo_infox_big.png">\n                    <!--<img style="background-image: url(assets/img/logo_infox_big.png); background-size: contain;">-->\n                </ion-avatar>\n                <div class="itemPadding">\n                    <h2 class="search-list-place-name">{{place.nombre | lowercase}}</h2>\n\n                    <div class="rate-stars" *ngIf="place.num_resenas !== 0">\n                        <span color="infox">{{place.promedio_calificacion | number: \'1.0-2\'}}</span>\n                        <ion-icon style="font-size: 1.2em" name="{{getStarName2(1, place.promedio_calificacion)}}"></ion-icon>\n                        <ion-icon style="font-size: 1.2em" name="{{getStarName2(2, place.promedio_calificacion)}}"></ion-icon>\n                        <ion-icon style="font-size: 1.2em" name="{{getStarName2(3, place.promedio_calificacion)}}"></ion-icon>\n                        <ion-icon style="font-size: 1.2em" name="{{getStarName2(4, place.promedio_calificacion)}}"></ion-icon>\n                        <ion-icon style="font-size: 1.2em" name="{{getStarName2(5, place.promedio_calificacion)}}"></ion-icon>\n                        <span>({{place.num_resenas}})</span>\n                    </div>\n\n\n                    <span class="category">\n                    <ion-icon name="{{place.iconStyle}}"></ion-icon>\n                    {{place.clasificacion | lowercase}}\n                 </span>\n                    <p *ngIf="place.casa || place.otrosdatos">\n                        <ion-icon name="md-information-circle"></ion-icon>\n                        {{place.casa || place.otrosdatos}}\n                    </p>\n                    <p class="textCapitalize bigIcon">\n                        <b>\n                            <ion-icon name="ios-pin" *ngIf="place.latitud && place.longitud"></ion-icon>\n                            {{place.ciudad}}, {{place.estado}}\n                        </b>\n                    </p>\n                    <p *ngIf="place.horarios" class="textCapitalize hours-text">\n                        <ion-icon name="md-time"></ion-icon>\n                        {{place.horarios}}\n                    </p>\n                    <br *ngIf="place.promos.length > 0"/>\n                    <div *ngIf="place.promos.length > 0" class="promo-ribbon">\n                        <ion-icon name="md-pricetag"></ion-icon>\n                        {{place.promos[0].descripcion}}\n                    </div>\n                </div>\n            </button>\n        </ion-list>\n        <div *ngIf="places.length > 0" text-center padding>\n            <span *ngIf="calculatePages() > 0">Página\n                <strong>{{form.page}}</strong> de\n                <strong> {{calculatePages()}}</strong> |\n            </span><span><strong>{{records}}</strong>\n            <span *ngIf="records == 1"> Resultado</span>\n            <span *ngIf="records > 1">Resultados</span>\n\n        </span>\n        </div>\n        <div text-center *ngIf="places.length > 0 && (places.length > 14 || form.page !== 1) " class="buttonGroup" no-padding>\n            <button ion-button full icon-left (click)="form.page = 1 ; getPlaces(true)" [disabled]="form.page == 1" color="light">\n                <ion-icon name="home"></ion-icon>\n                Primera\n            </button>\n            <button ion-button full icon-left (click)="globalVariables.isConnected ? form.page = form.page - 1: \'\' ; getPlaces(true)" [disabled]="form.page <= 1" color="light">\n                <ion-icon name="ios-arrow-back"></ion-icon>\n                Atrás\n            </button>\n            <button ion-button full icon-right (click)="globalVariables.isConnected ?form.page = form.page + 1:\'\' ; getPlaces(true)" [disabled]="places.length < 14" color="primary">\n                Siguiente\n                <ion-icon name="ios-arrow-forward"></ion-icon>\n            </button>\n        </div>\n\n    </div>\n\n</ion-content>\n\n'/*ion-inline-end:"/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/src/pages/search/search.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* NavParams */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ModalController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__general_global_variables__["a" /* GlobalVariables */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__general_global_variables__["a" /* GlobalVariables */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_4__general_general__["a" /* General */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__general_general__["a" /* General */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_5__services_place_clasification__["a" /* PlaceClasification */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__services_place_clasification__["a" /* PlaceClasification */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_2__services_services__["a" /* AppService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_services__["a" /* AppService */]) === "function" && _h || Object, typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_6__pipes_order_by_order_by__["a" /* OrderByPipe */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__pipes_order_by_order_by__["a" /* OrderByPipe */]) === "function" && _j || Object, typeof (_k = typeof __WEBPACK_IMPORTED_MODULE_7__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_7__angular_common_http__["a" /* HttpClient */]) === "function" && _k || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["r" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_3__general_global_variables__["a" /* GlobalVariables */],
+            __WEBPACK_IMPORTED_MODULE_4__general_general__["a" /* General */],
+            __WEBPACK_IMPORTED_MODULE_5__services_place_clasification__["a" /* PlaceClasification */],
+            __WEBPACK_IMPORTED_MODULE_2__services_services__["a" /* AppService */],
+            __WEBPACK_IMPORTED_MODULE_6__pipes_order_by_order_by__["a" /* OrderByPipe */],
+            __WEBPACK_IMPORTED_MODULE_7__angular_common_http__["a" /* HttpClient */]])
     ], SearchPage);
     return SearchPage;
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k;
 }());
 
 //# sourceMappingURL=search.js.map

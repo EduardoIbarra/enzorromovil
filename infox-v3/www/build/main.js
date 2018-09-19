@@ -290,11 +290,11 @@ webpackEmptyAsyncContext.id = 123;
 
 var map = {
 	"../pages/favorites/favorites.module": [
-		301,
+		302,
 		9
 	],
 	"../pages/home/home.module": [
-		302,
+		301,
 		6
 	],
 	"../pages/modals/dishes-modal/dishes-modal.module": [
@@ -302,11 +302,11 @@ var map = {
 		0
 	],
 	"../pages/modals/gps-modal/gps-modal.module": [
-		305,
+		304,
 		2
 	],
 	"../pages/modals/incorrect-modal/incorrect-modal.module": [
-		304,
+		305,
 		8
 	],
 	"../pages/modals/search-place/search-place.module": [
@@ -314,19 +314,19 @@ var map = {
 		7
 	],
 	"../pages/modals/speech-modal/speech-modal.module": [
-		307,
+		308,
 		3
 	],
 	"../pages/nearby/nearby.module": [
-		308,
+		307,
 		5
 	],
 	"../pages/place/place.module": [
-		310,
+		309,
 		1
 	],
 	"../pages/search/search.module": [
-		309,
+		310,
 		4
 	]
 };
@@ -354,7 +354,7 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_facebook__ = __webpack_require__(169);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common_http__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common_http__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_services__ = __webpack_require__(107);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1864,7 +1864,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ionic_native_photo_viewer__ = __webpack_require__(233);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_native_network__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__ionic_native_network_interface__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__angular_common_http__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__angular_common_http__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_login_login__ = __webpack_require__(168);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1920,16 +1920,16 @@ var AppModule = /** @class */ (function () {
                     statusbarPadding: false
                 }, {
                     links: [
-                        { loadChildren: '../pages/favorites/favorites.module#FavoritesPageModule', name: 'FavoritesPage', segment: 'favorites', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home/home.module#HomeModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/favorites/favorites.module#FavoritesPageModule', name: 'FavoritesPage', segment: 'favorites', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modals/dishes-modal/dishes-modal.module#DishesModalPageModule', name: 'DishesModalPage', segment: 'dishes-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/modals/incorrect-modal/incorrect-modal.module#IncorrectModalPageModule', name: 'IncorrectModalPage', segment: 'incorrect-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modals/gps-modal/gps-modal.module#GpsModalPageModule', name: 'GpsModalPage', segment: 'gps-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/modals/incorrect-modal/incorrect-modal.module#IncorrectModalPageModule', name: 'IncorrectModalPage', segment: 'incorrect-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modals/search-place/search-place.module#SearchPlacePageModule', name: 'SearchPlacePage', segment: 'search-place', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/modals/speech-modal/speech-modal.module#SpeechModalPageModule', name: 'SpeechModalPage', segment: 'speech-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/nearby/nearby.module#NearbyPageModule', name: 'NearbyPage', segment: 'nearby', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/search/search.module#SearchPageModule', name: 'SearchPage', segment: 'search', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/place/place.module#PlacePageModule', name: 'PlacePage', segment: 'place', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/modals/speech-modal/speech-modal.module#SpeechModalPageModule', name: 'SpeechModalPage', segment: 'speech-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/place/place.module#PlacePageModule', name: 'PlacePage', segment: 'place', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/search/search.module#SearchPageModule', name: 'SearchPage', segment: 'search', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["a" /* IonicStorageModule */].forRoot(),
