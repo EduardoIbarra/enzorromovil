@@ -30985,8 +30985,10 @@ ion-refresher {
 
 .addedAsFavorite {
   font-size: 1.7em;
-  float: right;
+  position: absolute;
   color: #d6b300;
+  left: 2px;
+  top: 3px;
 }
 
 offline {

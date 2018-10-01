@@ -81,4 +81,26 @@ export class FavoritesPage {
     getStarName2(starN, rate) {
         return (starN <= rate) ? 'star' : 'star-outline';
     }
+    delete(id_favorito) {
+        if (!confirm('Seguro que deseas eliminar este favorito?')) {
+            return;
+        }
+        const favoritos = {
+            id_favorito: id_favorito
+        };
+        const params = new HttpParams({
+            fromObject: favoritos
+        });
+        this.httpClient.get(this.api_url+'eliminar_favoritos.php', {params: params}).subscribe((data: any) => {
+            this.getFavorites();
+            alert('Eliminado con éxito');
+            if(data.error) {
+                alert(data.error);
+            }
+        }, (error) => {
+            this.getFavorites();
+            alert('Eliminado con éxito');
+            console.log(error);
+        });
+    }
 }

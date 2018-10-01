@@ -131,7 +131,7 @@ var OfflineComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_services__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_social_sharing__ = __webpack_require__(239);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_common_http__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_common_http__ = __webpack_require__(111);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -437,6 +437,10 @@ var PlacePage = /** @class */ (function () {
     };
     PlacePage.prototype.saveReview = function () {
         var _this = this;
+        if (!this.review.comentario || !this.review.calificacion) {
+            alert('Debe ingresar su calificación y comentario');
+            return;
+        }
         this.user = JSON.parse(localStorage.getItem('infox_user'));
         if (!this.user || !this.user.user || !this.user.user.id) {
             var toast = this.toastCtrl.create({

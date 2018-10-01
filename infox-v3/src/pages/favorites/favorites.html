@@ -20,45 +20,57 @@
 
 <ion-content no-padding>
   <ion-list>
-    <button ion-item detail-none *ngFor="let place of favorites" [ngClass]="(place.data[0].plan == 4) ? 'item-featured' : ''" (click)="getPlaceDetails(place.data[0].idnum)">
-      <ion-avatar item-start *ngIf="place.data[0].banner && place.data[0].plan !== ''" class="list-place-img">
-        <img [src]="'http://infox.mx/' + place.data[0].banner">
-        <!--<img style="background-image: url(http://infox.mx/{{place.data[0].banner}})">-->
-      </ion-avatar>
-      <ion-avatar item-start *ngIf="!place.data[0].banner || place.data[0].plan === ''" class="list-place-img">
-        <img src="assets/img/logo_infox_big.png">
-        <!--<img style="background-image: url(assets/img/logo_infox_big.png); background-size: contain;">-->
-      </ion-avatar>
-      <div class="itemPadding">
-        <h2 class="search-list-place-name">{{place.data[0].nombre | lowercase}}</h2>
-        <div class="rate-stars" *ngIf="place.data[0].num_resenas !== 0">
-          <span color="infox">{{place.data[0].promedio_calificacion | number: '1.0-2'}}</span>
-          <ion-icon style="font-size: 1.2em" name="{{getStarName2(1, place.data[0].promedio_calificacion)}}"></ion-icon>
-          <ion-icon style="font-size: 1.2em" name="{{getStarName2(2, place.data[0].promedio_calificacion)}}"></ion-icon>
-          <ion-icon style="font-size: 1.2em" name="{{getStarName2(3, place.data[0].promedio_calificacion)}}"></ion-icon>
-          <ion-icon style="font-size: 1.2em" name="{{getStarName2(4, place.data[0].promedio_calificacion)}}"></ion-icon>
-          <ion-icon style="font-size: 1.2em" name="{{getStarName2(5, place.data[0].promedio_calificacion)}}"></ion-icon>
-          <span>({{place.data[0].num_resenas}})</span>
-        </div>
-        <span class="category">
+    <ion-item-sliding *ngFor="let place of favorites">
+      <ion-item ion-item detail-none [ngClass]="(place.data[0].plan == 4) ? 'item-featured' : ''" (click)="getPlaceDetails(place.data[0].idnum)">
+        <ion-avatar item-start *ngIf="place.data[0].banner && place.data[0].plan !== ''" class="list-place-img">
+          <img [src]="'http://infox.mx/' + place.data[0].banner">
+          <!--<img style="background-image: url(http://infox.mx/{{place.data[0].banner}})">-->
+        </ion-avatar>
+        <ion-avatar item-start *ngIf="!place.data[0].banner || place.data[0].plan === ''" class="list-place-img">
+          <img src="assets/img/logo_infox_big.png">
+          <!--<img style="background-image: url(assets/img/logo_infox_big.png); background-size: contain;">-->
+        </ion-avatar>
+        <div class="itemPadding">
+          <h2 class="search-list-place-name">{{place.data[0].nombre | lowercase}}</h2>
+          <div class="rate-stars" *ngIf="place.data[0].num_resenas !== 0">
+            <span color="infox">{{place.data[0].promedio_calificacion | number: '1.0-2'}}</span>
+            <ion-icon style="font-size: 1.2em" name="{{getStarName2(1, place.data[0].promedio_calificacion)}}"></ion-icon>
+            <ion-icon style="font-size: 1.2em" name="{{getStarName2(2, place.data[0].promedio_calificacion)}}"></ion-icon>
+            <ion-icon style="font-size: 1.2em" name="{{getStarName2(3, place.data[0].promedio_calificacion)}}"></ion-icon>
+            <ion-icon style="font-size: 1.2em" name="{{getStarName2(4, place.data[0].promedio_calificacion)}}"></ion-icon>
+            <ion-icon style="font-size: 1.2em" name="{{getStarName2(5, place.data[0].promedio_calificacion)}}"></ion-icon>
+            <span>({{place.data[0].num_resenas}})</span>
+          </div>
+          <span class="category">
                     <ion-icon name="{{place.data[0].iconStyle}}"></ion-icon>
                     {{place.data[0].clasificacion | lowercase}}
                  </span>
-        <p *ngIf="place.data[0].casa || place.data[0].otrosdatos">
-          <ion-icon name="md-information-circle"></ion-icon>
-          {{place.data[0].casa || place.data[0].otrosdatos}}
-        </p>
-        <p class="textCapitalize bigIcon">
-          <b>
-            <ion-icon name="ios-pin" *ngIf="place.data[0].latitud && place.data[0].longitud"></ion-icon>
-            {{place.data[0].ciudad}}, {{place.data[0].estado}}
-          </b>
-        </p>
-        <p *ngIf="place.data[0].horarios" class="textCapitalize hours-text">
-          <ion-icon name="md-time"></ion-icon>
-          {{place.data[0].horarios}}
-        </p>
-      </div>
-    </button>
+          <p *ngIf="place.data[0].casa || place.data[0].otrosdatos">
+            <ion-icon name="md-information-circle"></ion-icon>
+            {{place.data[0].casa || place.data[0].otrosdatos}}
+          </p>
+          <p class="textCapitalize bigIcon">
+            <b>
+              <ion-icon name="ios-pin" *ngIf="place.data[0].latitud && place.data[0].longitud"></ion-icon>
+              {{place.data[0].ciudad}}, {{place.data[0].estado}}
+            </b>
+          </p>
+          <p *ngIf="place.data[0].horarios" class="textCapitalize hours-text">
+            <ion-icon name="md-time"></ion-icon>
+            {{place.data[0].horarios}}
+          </p>
+          <p *ngIf="place.nota_personal" class="textCapitalize hours-text">
+            <ion-icon name="chatbubbles"></ion-icon>
+            {{place.nota_personal}}
+          </p>
+        </div>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger" (click)="delete(place.id_favorito)">
+          <ion-icon name="trash"></ion-icon>
+          Eliminar
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
   </ion-list>
 </ion-content>

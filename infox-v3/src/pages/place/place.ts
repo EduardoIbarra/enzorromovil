@@ -352,6 +352,10 @@ export class PlacePage {
     }
 
     saveReview() {
+        if (!this.review.comentario || !this.review.calificacion) {
+            alert('Debe ingresar su calificación y comentario');
+            return;
+        }
         this.user = JSON.parse(localStorage.getItem('infox_user'));
         if(!this.user || !this.user.user || !this.user.user.id) {
             let toast = this.toastCtrl.create({
