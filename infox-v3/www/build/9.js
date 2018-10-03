@@ -76,9 +76,6 @@ var FavoritesPage = /** @class */ (function () {
         this.globalVariables = globalVariables;
         this.general = general;
         this.api_url = 'http://infoxsoft.com/app/';
-        if (globalVariables.loggedIn()) {
-            this.getFavorites();
-        }
     }
     FavoritesPage.prototype.getFavorites = function () {
         var _this = this;
@@ -103,12 +100,13 @@ var FavoritesPage = /** @class */ (function () {
             console.log(error);
         });
     };
-    FavoritesPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad FavoritesPage');
-    };
-    FavoritesPage.prototype.ionViewDidEnter = function () {
+    FavoritesPage.prototype.ionViewWillEnter = function () {
+        console.log('ionViewWillEnter FavoritesPage');
         if (this.globalVariables.loggedIn()) {
             this.getFavorites();
+        }
+        else {
+            this.favorites = [];
         }
     };
     FavoritesPage.prototype.isLoggedIn = function () {

@@ -21,9 +21,6 @@ export class FavoritesPage {
     api_url = 'http://infoxsoft.com/app/';
     user: any;
     constructor(public navCtrl: NavController, public navParams: NavParams, public httpClient: HttpClient, public globalVariables: GlobalVariables, public general: General) {
-        if(globalVariables.loggedIn()) {
-            this.getFavorites();
-        }
     }
     getFavorites() {
         this.user = JSON.parse(localStorage.getItem('infox_user')).user;
@@ -47,12 +44,12 @@ export class FavoritesPage {
             console.log(error);
         });
     }
-    ionViewDidLoad() {
-        console.log('ionViewDidLoad FavoritesPage');
-    }
-    ionViewDidEnter() {
+    ionViewWillEnter() {
+        console.log('ionViewWillEnter FavoritesPage');
         if(this.globalVariables.loggedIn()) {
             this.getFavorites();
+        } else {
+            this.favorites = [];
         }
     }
     isLoggedIn() {
