@@ -19,7 +19,24 @@
 
 
 <ion-content no-padding>
-  <ion-list>
+  <ion-card *ngIf="!this.user">
+    <ion-card-header>
+      Ingresa
+    </ion-card-header>
+    <ion-card-content>
+      Inicia sesión para poder agregar negocios a tus favoritos
+    </ion-card-content>
+  </ion-card>
+  <ion-card *ngIf="this.user && (!favorites || favorites.length === 0)">
+    <ion-card-header>
+      No tienes favoritos
+    </ion-card-header>
+    <ion-card-content>
+      Tu lista de favoritos esta vacía
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list *ngIf="favorites && favorites.length > 0">
     <ion-item-sliding *ngFor="let place of favorites">
       <ion-item ion-item detail-none [ngClass]="(place.data[0].plan == 4) ? 'item-featured' : ''" (click)="getPlaceDetails(place.data[0].idnum)">
         <ion-avatar item-start *ngIf="place.data[0].banner && place.data[0].plan !== ''" class="list-place-img">

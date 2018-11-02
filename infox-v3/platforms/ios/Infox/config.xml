@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="infox.buscador" version="1.0.22" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="buscador" version="1.0.27" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
@@ -25,8 +25,14 @@
     <feature name="NativeSettings">
         <param name="ios-package" value="NativeSettings" />
     </feature>
+    <feature name="ActionSheet">
+        <param name="ios-package" value="ActionSheet" />
+    </feature>
     <feature name="Device">
         <param name="ios-package" value="CDVDevice" />
+    </feature>
+    <feature name="Notification">
+        <param name="ios-package" value="CDVNotification" />
     </feature>
     <feature name="FacebookConnectPlugin">
         <param name="ios-package" value="FacebookConnectPlugin" />
@@ -122,12 +128,6 @@
     </feature>
     <feature name="LaunchNavigator">
         <param name="ios-package" value="LaunchNavigator" />
-    </feature>
-    <feature name="ActionSheet">
-        <param name="ios-package" value="ActionSheet" />
-    </feature>
-    <feature name="Notification">
-        <param name="ios-package" value="CDVNotification" />
     </feature>
     <name>Infox</name>
     <description>Descubre servicios, lugares, negocios y más...</description>

@@ -310,11 +310,11 @@ var map = {
 		8
 	],
 	"../pages/modals/search-place/search-place.module": [
-		310,
+		307,
 		7
 	],
 	"../pages/modals/speech-modal/speech-modal.module": [
-		307,
+		306,
 		3
 	],
 	"../pages/nearby/nearby.module": [
@@ -322,11 +322,11 @@ var map = {
 		5
 	],
 	"../pages/place/place.module": [
-		306,
+		309,
 		1
 	],
 	"../pages/search/search.module": [
-		309,
+		310,
 		4
 	]
 };
@@ -588,137 +588,6 @@ var LoginPage = /** @class */ (function () {
 /***/ }),
 
 /***/ 221:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OrderByPipe; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/*
- * Example use
- *		Basic Array of single type: *ngFor="#todo of todoService.todos | orderBy : '-'"
- *		Multidimensional Array Sort on single column: *ngFor="#todo of todoService.todos | orderBy : ['-status']"
- *		Multidimensional Array Sort on multiple columns: *ngFor="#todo of todoService.todos | orderBy : ['status', '-title']"
- */
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-var OrderByPipe = /** @class */ (function () {
-    function OrderByPipe() {
-    }
-    // static _orderByComparator(a:any, b:any):number{
-    //
-    //     if((isNaN(parseFloat(a)) || !isFinite(a)) || (isNaN(parseFloat(b)) || !isFinite(b))){
-    //         //Isn't a number so lowercase the string to properly compare
-    //         if(a.toLowerCase() < b.toLowerCase()) return -1;
-    //         if(a.toLowerCase() > b.toLowerCase()) return 1;
-    //     }
-    //     else{
-    //         //Parse strings as numbers to compare properly
-    //         if(parseFloat(a) < parseFloat(b)) return -1;
-    //         if(parseFloat(a) > parseFloat(b)) return 1;
-    //     }
-    //
-    //     return 0; //equal each other
-    // }
-    //
-    // transform(input:any, [config = '+']): any{
-    //
-    //     if(!Array.isArray(input)) return input;
-    //
-    //     if(!Array.isArray(config) || (Array.isArray(config) && config.length == 1)){
-    //         let  propertyToCheck:string = !Array.isArray(config) ? config : config[0];
-    //         let  desc = propertyToCheck.substr(0, 1) == '-';
-    //
-    //         //Basic array
-    //         if(!propertyToCheck || propertyToCheck == '-' || propertyToCheck == '+'){
-    //             return !desc ? input.sort() : input.sort().reverse();
-    //         }
-    //         else {
-    //             let  property:string = propertyToCheck.substr(0, 1) == '+' || propertyToCheck.substr(0, 1) == '-'
-    //                 ? propertyToCheck.substr(1)
-    //                 : propertyToCheck;
-    //
-    //             return input.sort(function(a:any,b:any){
-    //                 return !desc
-    //                     ? this.OrderBy._orderByComparator(a[property], b[property])
-    //                     : -this.OrderBy._orderByComparator(a[property], b[property]);
-    //             });
-    //         }
-    //     }
-    //     else {
-    //         //Loop over property of the array in order and sort
-    //         return input.sort(function(a:any,b:any){
-    //             for(let  i:number = 0; i < config.length; i++){
-    //                 let  desc = config[i].substr(0, 1) == '-';
-    //                 let  property = config[i].substr(0, 1) == '+' || config[i].substr(0, 1) == '-'
-    //                     ? config[i].substr(1)
-    //                     : config[i];
-    //
-    //                 let  comparison = !desc
-    //                     ? this.OrderBy._orderByComparator(a[property], b[property])
-    //                     : -this.OrderBy._orderByComparator(a[property], b[property]);
-    //
-    //                 //Don't return 0 yet in case of needing to sort by next property
-    //                 if(comparison != 0) return comparison;
-    //             }
-    //
-    //             return 0; //equal each other
-    //         });
-    //     }
-    // }
-    OrderByPipe.prototype.transform = function (array, orderBy, asc) {
-        var _this = this;
-        if (asc === void 0) { asc = true; }
-        if (!orderBy || orderBy.trim() == "") {
-            return array;
-        }
-        //ascending
-        if (asc) {
-            return Array.from(array).sort(function (item1, item2) {
-                return _this.orderByComparator(item1[orderBy], item2[orderBy]);
-            });
-        }
-        else {
-            //not asc
-            return Array.from(array).sort(function (item1, item2) {
-                return _this.orderByComparator(item2[orderBy], item1[orderBy]);
-            });
-        }
-    };
-    OrderByPipe.prototype.orderByComparator = function (a, b) {
-        if ((isNaN(parseFloat(a)) || !isFinite(a)) || (isNaN(parseFloat(b)) || !isFinite(b))) {
-            //Isn't a number so lowercase the string to properly compare
-            if (a.toLowerCase() < b.toLowerCase())
-                return -1;
-            if (a.toLowerCase() > b.toLowerCase())
-                return 1;
-        }
-        else {
-            //Parse strings as numbers to compare properly
-            if (parseFloat(a) < parseFloat(b))
-                return -1;
-            if (parseFloat(a) > parseFloat(b))
-                return 1;
-        }
-        return 0; //equal each other
-    };
-    OrderByPipe = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["S" /* Pipe */])({
-            name: 'orderBy',
-        })
-    ], OrderByPipe);
-    return OrderByPipe;
-}());
-
-//# sourceMappingURL=order-by.js.map
-
-/***/ }),
-
-/***/ 222:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1815,6 +1684,137 @@ var PlaceClasification = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 222:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OrderByPipe; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/*
+ * Example use
+ *		Basic Array of single type: *ngFor="#todo of todoService.todos | orderBy : '-'"
+ *		Multidimensional Array Sort on single column: *ngFor="#todo of todoService.todos | orderBy : ['-status']"
+ *		Multidimensional Array Sort on multiple columns: *ngFor="#todo of todoService.todos | orderBy : ['status', '-title']"
+ */
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var OrderByPipe = /** @class */ (function () {
+    function OrderByPipe() {
+    }
+    // static _orderByComparator(a:any, b:any):number{
+    //
+    //     if((isNaN(parseFloat(a)) || !isFinite(a)) || (isNaN(parseFloat(b)) || !isFinite(b))){
+    //         //Isn't a number so lowercase the string to properly compare
+    //         if(a.toLowerCase() < b.toLowerCase()) return -1;
+    //         if(a.toLowerCase() > b.toLowerCase()) return 1;
+    //     }
+    //     else{
+    //         //Parse strings as numbers to compare properly
+    //         if(parseFloat(a) < parseFloat(b)) return -1;
+    //         if(parseFloat(a) > parseFloat(b)) return 1;
+    //     }
+    //
+    //     return 0; //equal each other
+    // }
+    //
+    // transform(input:any, [config = '+']): any{
+    //
+    //     if(!Array.isArray(input)) return input;
+    //
+    //     if(!Array.isArray(config) || (Array.isArray(config) && config.length == 1)){
+    //         let  propertyToCheck:string = !Array.isArray(config) ? config : config[0];
+    //         let  desc = propertyToCheck.substr(0, 1) == '-';
+    //
+    //         //Basic array
+    //         if(!propertyToCheck || propertyToCheck == '-' || propertyToCheck == '+'){
+    //             return !desc ? input.sort() : input.sort().reverse();
+    //         }
+    //         else {
+    //             let  property:string = propertyToCheck.substr(0, 1) == '+' || propertyToCheck.substr(0, 1) == '-'
+    //                 ? propertyToCheck.substr(1)
+    //                 : propertyToCheck;
+    //
+    //             return input.sort(function(a:any,b:any){
+    //                 return !desc
+    //                     ? this.OrderBy._orderByComparator(a[property], b[property])
+    //                     : -this.OrderBy._orderByComparator(a[property], b[property]);
+    //             });
+    //         }
+    //     }
+    //     else {
+    //         //Loop over property of the array in order and sort
+    //         return input.sort(function(a:any,b:any){
+    //             for(let  i:number = 0; i < config.length; i++){
+    //                 let  desc = config[i].substr(0, 1) == '-';
+    //                 let  property = config[i].substr(0, 1) == '+' || config[i].substr(0, 1) == '-'
+    //                     ? config[i].substr(1)
+    //                     : config[i];
+    //
+    //                 let  comparison = !desc
+    //                     ? this.OrderBy._orderByComparator(a[property], b[property])
+    //                     : -this.OrderBy._orderByComparator(a[property], b[property]);
+    //
+    //                 //Don't return 0 yet in case of needing to sort by next property
+    //                 if(comparison != 0) return comparison;
+    //             }
+    //
+    //             return 0; //equal each other
+    //         });
+    //     }
+    // }
+    OrderByPipe.prototype.transform = function (array, orderBy, asc) {
+        var _this = this;
+        if (asc === void 0) { asc = true; }
+        if (!orderBy || orderBy.trim() == "") {
+            return array;
+        }
+        //ascending
+        if (asc) {
+            return Array.from(array).sort(function (item1, item2) {
+                return _this.orderByComparator(item1[orderBy], item2[orderBy]);
+            });
+        }
+        else {
+            //not asc
+            return Array.from(array).sort(function (item1, item2) {
+                return _this.orderByComparator(item2[orderBy], item1[orderBy]);
+            });
+        }
+    };
+    OrderByPipe.prototype.orderByComparator = function (a, b) {
+        if ((isNaN(parseFloat(a)) || !isFinite(a)) || (isNaN(parseFloat(b)) || !isFinite(b))) {
+            //Isn't a number so lowercase the string to properly compare
+            if (a.toLowerCase() < b.toLowerCase())
+                return -1;
+            if (a.toLowerCase() > b.toLowerCase())
+                return 1;
+        }
+        else {
+            //Parse strings as numbers to compare properly
+            if (parseFloat(a) < parseFloat(b))
+                return -1;
+            if (parseFloat(a) > parseFloat(b))
+                return 1;
+        }
+        return 0; //equal each other
+    };
+    OrderByPipe = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["S" /* Pipe */])({
+            name: 'orderBy',
+        })
+    ], OrderByPipe);
+    return OrderByPipe;
+}());
+
+//# sourceMappingURL=order-by.js.map
+
+/***/ }),
+
 /***/ 240:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1845,16 +1845,16 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__ = __webpack_require__(209);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__ = __webpack_require__(210);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_geolocation__ = __webpack_require__(220);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_speech_recognition__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_speech_recognition__ = __webpack_require__(238);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_launch_navigator__ = __webpack_require__(237);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_component__ = __webpack_require__(300);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_tabs_tabs__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_services__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_place_clasification__ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_place_clasification__ = __webpack_require__(221);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__general_general__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__general_global_variables__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pipes_order_by_order_by__ = __webpack_require__(221);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_social_sharing__ = __webpack_require__(238);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pipes_order_by_order_by__ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_social_sharing__ = __webpack_require__(239);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_facebook__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_native_geocoder__ = __webpack_require__(235);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_native_diagnostic__ = __webpack_require__(118);
@@ -1925,11 +1925,11 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/modals/dishes-modal/dishes-modal.module#DishesModalPageModule', name: 'DishesModalPage', segment: 'dishes-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modals/incorrect-modal/incorrect-modal.module#IncorrectModalPageModule', name: 'IncorrectModalPage', segment: 'incorrect-modal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modals/gps-modal/gps-modal.module#GpsModalPageModule', name: 'GpsModalPage', segment: 'gps-modal', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/place/place.module#PlacePageModule', name: 'PlacePage', segment: 'place', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/modals/speech-modal/speech-modal.module#SpeechModalPageModule', name: 'SpeechModalPage', segment: 'speech-modal', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/modals/search-place/search-place.module#SearchPlacePageModule', name: 'SearchPlacePage', segment: 'search-place', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/nearby/nearby.module#NearbyPageModule', name: 'NearbyPage', segment: 'nearby', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/search/search.module#SearchPageModule', name: 'SearchPage', segment: 'search', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/modals/search-place/search-place.module#SearchPlacePageModule', name: 'SearchPlacePage', segment: 'search-place', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/place/place.module#PlacePageModule', name: 'PlacePage', segment: 'place', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/search/search.module#SearchPageModule', name: 'SearchPage', segment: 'search', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["a" /* IonicStorageModule */].forRoot(),
