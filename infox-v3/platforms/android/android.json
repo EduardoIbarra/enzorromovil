@@ -264,6 +264,20 @@
             }
           ]
         }
+      },
+      "./res/values/strings.xml": {
+        "parents": {
+          "/resources": [
+            {
+              "xml": "<string name=\"fb_app_id\">1234</string>",
+              "count": 2
+            },
+            {
+              "xml": "<string name=\"fb_app_name\">foobar</string>",
+              "count": 2
+            }
+          ]
+        }
       }
     }
   },
