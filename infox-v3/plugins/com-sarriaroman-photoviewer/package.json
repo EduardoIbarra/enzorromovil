@@ -1,8 +1,8 @@
 {
   "_from": "com-sarriaroman-photoviewer@^1.1.16",
-  "_id": "com-sarriaroman-photoviewer@1.1.16",
+  "_id": "com-sarriaroman-photoviewer@1.1.18",
   "_inBundle": false,
-  "_integrity": "sha512-Yuq4oNn5+jwKH9iD1Ybaj4a1GpsyscrgB1nJCmwFafTIXKdFW6gHc3l8i0ywTc1FGej4hKeqWT4XJsupMfOdNQ==",
+  "_integrity": "sha512-ExogN6XpvsX+uthA7ll3jpNNts/rb3qksT9yRrYFkFTvg9w7PzoLkRw0RGU+B+q19qBlN7Fs7crUT9lNtGrueA==",
   "_location": "/com-sarriaroman-photoviewer",
   "_phantomChildren": {},
   "_requested": {
@@ -19,10 +19,10 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/com-sarriaroman-photoviewer/-/com-sarriaroman-photoviewer-1.1.16.tgz",
-  "_shasum": "94514d3cefcea90bbbe502a9868d275a87d47eed",
+  "_resolved": "https://registry.npmjs.org/com-sarriaroman-photoviewer/-/com-sarriaroman-photoviewer-1.1.18.tgz",
+  "_shasum": "ed2f37aa1e67679ed6fc0bb738a5e0df6e0b06f3",
   "_spec": "com-sarriaroman-photoviewer@^1.1.16",
-  "_where": "/Users/gobae/PhpstormProjects/INFOX-TEST/infox",
+  "_where": "/Users/miguel/WebstormProjects/enzorromovil/infox-v3",
   "author": {
     "name": "Román A. Sarria"
   },
@@ -53,5 +53,5 @@
     "type": "git",
     "url": "git+https://github.com/sarriaroman/photoviewer.git"
   },
-  "version": "1.1.16"
+  "version": "1.1.18"
 }

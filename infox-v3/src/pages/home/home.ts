@@ -26,7 +26,7 @@ export class HomePage {
 
 
         // //Get initial network state checking for an ip address
-        this.networkInterface.getIPAddress().then((ip)=>{
+        this.networkInterface.getCarrierIPAddress().then((ip)=>{
             this.globalVariables.isConnected = true;
         },(error)=>{
             //this.globalVariables.isConnected = false;

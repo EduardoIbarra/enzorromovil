@@ -37,7 +37,7 @@ export class MyApp {
             statusBar.backgroundColorByHexString('#ff6000');
             config.set('ios', 'backButtonText', 'Atrás');
 
-            this.keyboard.hideKeyboardAccessoryBar(false);
+            // this.keyboard.hideKeyboardAccessoryBar(false);
 
             storage.get('hasSeenTut').then((hasSeenTut) => {
                 if (!hasSeenTut) {

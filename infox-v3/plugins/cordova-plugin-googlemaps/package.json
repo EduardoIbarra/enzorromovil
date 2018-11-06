@@ -22,7 +22,7 @@
   "_resolved": "https://registry.npmjs.org/cordova-plugin-googlemaps/-/cordova-plugin-googlemaps-1.4.5.tgz",
   "_shasum": "fa9ea3e29d39492ecf80d2c3811e40e0bc7e4b78",
   "_spec": "cordova-plugin-googlemaps@^1.4.5",
-  "_where": "/Users/ed/Projects/enzorromovil/infox-v3",
+  "_where": "/Users/miguel/WebstormProjects/enzorromovil/infox-v3",
   "author": {
     "name": "Masashi Katsumata, Hirbod Mirjavadi"
   },

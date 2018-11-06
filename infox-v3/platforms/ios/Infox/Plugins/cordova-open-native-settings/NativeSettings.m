@@ -21,6 +21,10 @@
 		prefix = @"prefs:";
 	}
 	
+	if (@available(iOS 11.0, *)) {
+        	prefix = @"app-settings:";
+    	}
+	
     if ([key isEqualToString:@"application_details"]) {
         result = [self do_open:UIApplicationOpenSettingsURLString];
     }

@@ -1,20 +1,6 @@
 {
-    "Accelerate.framework": 1,
-    "CoreData.framework": 1,
-    "CoreLocation.framework": 5,
-    "CoreTelephony.framework": 2,
-    "CoreText.framework": 1,
-    "CoreImage.framework": 1,
-    "GLKit.framework": 1,
-    "ImageIO.framework": 1,
-    "libc++.tbd": 1,
-    "libz.tbd": 3,
-    "OpenGLES.framework": 1,
-    "QuartzCore.framework": 1,
-    "SystemConfiguration.framework": 3,
-    "UIKit.framework": 1,
-    "AudioToolbox.framework": 1,
-    "WebKit.framework": 1,
+    "libz.tbd": 2,
+    "CoreLocation.framework": 4,
     "Speech.framework": 1,
     "Social.framework": 1,
     "MessageUI.framework": 1,
@@ -26,5 +12,9 @@
     "EventKit.framework": 1,
     "Contacts.framework": 1,
     "UserNotifications.framework": 1,
-    "MapKit.framework": 1
+    "SystemConfiguration.framework": 2,
+    "CoreTelephony.framework": 1,
+    "AudioToolbox.framework": 1,
+    "MapKit.framework": 1,
+    "WebKit.framework": 1
 }

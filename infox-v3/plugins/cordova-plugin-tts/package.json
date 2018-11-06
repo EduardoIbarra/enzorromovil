@@ -1,19 +1,19 @@
 {
-  "_from": "cordova-plugin-tts",
+  "_from": "cordova-plugin-tts@^0.2.3",
   "_id": "cordova-plugin-tts@0.2.3",
   "_inBundle": false,
   "_integrity": "sha1-xXQ/bG8lHoy0vEXdM9QamiKZcoc=",
   "_location": "/cordova-plugin-tts",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "range",
     "registry": true,
-    "raw": "cordova-plugin-tts",
+    "raw": "cordova-plugin-tts@^0.2.3",
     "name": "cordova-plugin-tts",
     "escapedName": "cordova-plugin-tts",
-    "rawSpec": "",
+    "rawSpec": "^0.2.3",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "^0.2.3"
   },
   "_requiredBy": [
     "#USER",
@@ -21,8 +21,8 @@
   ],
   "_resolved": "https://registry.npmjs.org/cordova-plugin-tts/-/cordova-plugin-tts-0.2.3.tgz",
   "_shasum": "c5743f6c6f251e8cb4bc45dd33d41a9a22997287",
-  "_spec": "cordova-plugin-tts",
-  "_where": "/Users/gobaeconsulting/PhpstormProjects/infox/infox-v3/node_modules",
+  "_spec": "cordova-plugin-tts@^0.2.3",
+  "_where": "/Users/miguel/WebstormProjects/enzorromovil/infox-v3",
   "author": {
     "name": "VILIC VANE"
   },

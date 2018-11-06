@@ -26,7 +26,7 @@
   "cordova-plugin-statusbar": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-statusbar@^2.4.1"
+      "id": "cordova-plugin-statusbar@^2.4.2"
     },
     "is_top_level": true,
     "variables": {}
@@ -65,19 +65,6 @@
     "is_top_level": false,
     "variables": {}
   },
-  "cordova-plugin-googlemaps": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-googlemaps@^1.4.5"
-    },
-    "is_top_level": true,
-    "variables": {
-      "API_KEY_FOR_ANDROID": "AIzaSyC8XRq5g7SHVIpYIrEDAJg8dyHvMNSIfeA",
-      "API_KEY_FOR_IOS": "AIzaSyC8XRq5g7SHVIpYIrEDAJg8dyHvMNSIfeA",
-      "NSLOCATIONWHENINUSEUSAGEDESCRIPTION": "Mostrar tu ubicación en el mapa",
-      "NSLOCATIONALWAYSUSAGEDESCRIPTION": "Dibujar una ruta en el mapa"
-    }
-  },
   "cordova-open-native-settings": {
     "source": {
       "type": "registry",
@@ -85,17 +72,6 @@
     },
     "is_top_level": true,
     "variables": {}
-  },
-  "cordova-plugin-facebook4": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-facebook4@^1.9.1"
-    },
-    "is_top_level": true,
-    "variables": {
-      "APP_ID": "805201646226832",
-      "APP_NAME": "InfoxLogin"
-    }
   },
   "cordova-plugin-inappbrowser": {
     "source": {
@@ -134,7 +110,7 @@
   "cordova-plugin-x-socialsharing": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-x-socialsharing@^5.3.2"
+      "id": "cordova-plugin-x-socialsharing@^5.4.1"
     },
     "is_top_level": true,
     "variables": {}
@@ -190,7 +166,7 @@
   "uk.co.workingedge.phonegap.plugin.launchnavigator": {
     "source": {
       "type": "registry",
-      "id": "uk.co.workingedge.phonegap.plugin.launchnavigator@^4.1.5"
+      "id": "uk.co.workingedge.phonegap.plugin.launchnavigator@^4.2.1"
     },
     "is_top_level": true,
     "variables": {
@@ -205,22 +181,6 @@
     "is_top_level": false,
     "variables": {}
   },
-  "cordova-plugin-ionic-webview": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-ionic-webview@^1.1.16"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "cordova-plugin-ionic-keyboard": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-ionic-keyboard@^2.0.5"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "cordova-plugin-dialogs": {
     "source": {
       "type": "registry",
@@ -229,12 +189,44 @@
     "is_top_level": false,
     "variables": {}
   },
-  "com.googlemaps.ios": {
+  "cordova-plugin-ionic-webview": {
     "source": {
       "type": "registry",
-      "id": "https://github.com/mapsplugin/cordova-plugin-googlemaps-sdk"
+      "id": "cordova-plugin-ionic-webview@^1.2.1"
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-plugin-ionic-keyboard": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-ionic-keyboard@^2.1.2"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-googlemaps": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-googlemaps@^1.4.5"
+    },
+    "is_top_level": true,
+    "variables": {
+      "API_KEY_FOR_ANDROID": "AIzaSyC8XRq5g7SHVIpYIrEDAJg8dyHvMNSIfeA",
+      "API_KEY_FOR_IOS": "AIzaSyC8XRq5g7SHVIpYIrEDAJg8dyHvMNSIfeA",
+      "NSLOCATIONWHENINUSEUSAGEDESCRIPTION": "Mostrar tu ubicación en el mapa",
+      "NSLOCATIONALWAYSUSAGEDESCRIPTION": "Dibujar una ruta en el mapa"
+    }
+  },
+  "cordova-plugin-facebook4": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-facebook4@^1.10.1"
+    },
+    "is_top_level": true,
+    "variables": {
+      "APP_ID": "805201646226832",
+      "APP_NAME": "InfoxLogin"
+    }
   }
 }
