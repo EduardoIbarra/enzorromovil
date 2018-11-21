@@ -1,4 +1,0 @@
-#Tue Nov 20 22:36:45 CST 2018
-base.0=/Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/build/intermediates/transforms/dex/release/0
-path.0=classes.dex
-renamed.0=classes.dex
