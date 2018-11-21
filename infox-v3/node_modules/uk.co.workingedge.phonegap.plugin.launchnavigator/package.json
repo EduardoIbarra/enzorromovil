@@ -1,5 +1,5 @@
 {
-  "_from": "uk.co.workingedge.phonegap.plugin.launchnavigator@^4.2.1",
+  "_from": "uk.co.workingedge.phonegap.plugin.launchnavigator@^4.2.2",
   "_id": "uk.co.workingedge.phonegap.plugin.launchnavigator@4.2.2",
   "_inBundle": false,
   "_integrity": "sha512-KpLGHrY3tX3Ysj39Q4whQawIleKomhsq48zBAqZXDxs/wxAnWcMvIxgix3AIB5CMdjetF6JNYZAGBOqsNkl+0g==",
@@ -8,12 +8,12 @@
   "_requested": {
     "type": "range",
     "registry": true,
-    "raw": "uk.co.workingedge.phonegap.plugin.launchnavigator@^4.2.1",
+    "raw": "uk.co.workingedge.phonegap.plugin.launchnavigator@^4.2.2",
     "name": "uk.co.workingedge.phonegap.plugin.launchnavigator",
     "escapedName": "uk.co.workingedge.phonegap.plugin.launchnavigator",
-    "rawSpec": "^4.2.1",
+    "rawSpec": "^4.2.2",
     "saveSpec": null,
-    "fetchSpec": "^4.2.1"
+    "fetchSpec": "^4.2.2"
   },
   "_requiredBy": [
     "#USER",
@@ -21,7 +21,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/uk.co.workingedge.phonegap.plugin.launchnavigator/-/uk.co.workingedge.phonegap.plugin.launchnavigator-4.2.2.tgz",
   "_shasum": "9a9e3027fc71c2f043b89d7128b3c0fa45944261",
-  "_spec": "uk.co.workingedge.phonegap.plugin.launchnavigator@^4.2.1",
+  "_spec": "uk.co.workingedge.phonegap.plugin.launchnavigator@^4.2.2",
   "_where": "/Users/miguel/WebstormProjects/enzorromovil/infox-v3",
   "author": {
     "name": "Dave Alden"

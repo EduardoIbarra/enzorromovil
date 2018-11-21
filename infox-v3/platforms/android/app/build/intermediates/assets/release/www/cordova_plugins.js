@@ -181,24 +181,47 @@ module.exports = [
     "clobbers": [
       "cordova.plugins.diagnostic"
     ]
+  },
+  {
+    "id": "uk.co.workingedge.phonegap.plugin.launchnavigator.Common",
+    "file": "plugins/uk.co.workingedge.phonegap.plugin.launchnavigator/www/common.js",
+    "pluginId": "uk.co.workingedge.phonegap.plugin.launchnavigator",
+    "clobbers": [
+      "launchnavigator"
+    ]
+  },
+  {
+    "id": "uk.co.workingedge.phonegap.plugin.launchnavigator.LocalForage",
+    "file": "plugins/uk.co.workingedge.phonegap.plugin.launchnavigator/www/localforage.v1.5.0.min.js",
+    "pluginId": "uk.co.workingedge.phonegap.plugin.launchnavigator",
+    "clobbers": [
+      "localforage"
+    ]
+  },
+  {
+    "id": "uk.co.workingedge.phonegap.plugin.launchnavigator.LaunchNavigator",
+    "file": "plugins/uk.co.workingedge.phonegap.plugin.launchnavigator/www/android/launchnavigator.js",
+    "pluginId": "uk.co.workingedge.phonegap.plugin.launchnavigator",
+    "merges": [
+      "launchnavigator"
+    ]
   }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-  "com-sarriaroman-photoviewer": "1.1.16",
+  "com-sarriaroman-photoviewer": "1.1.18",
   "com.googlemaps.ios": "2.7.0",
-  "cordova-open-native-settings": "1.4.1",
+  "cordova-open-native-settings": "1.5.1",
   "cordova-plugin-actionsheet": "2.3.3",
-  "cordova-plugin-add-swift-support": "1.7.1",
   "cordova-plugin-console": "1.1.0",
   "cordova-plugin-device": "1.1.7",
   "cordova-plugin-dialogs": "2.0.1",
-  "cordova-plugin-facebook4": "1.10.1",
+  "cordova-plugin-facebook4": "3.1.0",
   "cordova-plugin-geolocation": "2.4.3",
   "cordova-plugin-googlemaps": "1.4.5",
   "cordova-plugin-inappbrowser": "1.7.2",
-  "cordova-plugin-ionic-keyboard": "2.1.2",
+  "cordova-plugin-ionic-keyboard": "2.1.3",
   "cordova-plugin-ionic-webview": "1.2.1",
   "cordova-plugin-nativegeocoder": "2.0.5",
   "cordova-plugin-network-information": "2.0.1",
@@ -209,8 +232,9 @@ module.exports.metadata =
   "cordova-plugin-tts": "0.2.3",
   "cordova-plugin-whitelist": "1.3.3",
   "es6-promise-plugin": "4.2.2",
-  "cordova-plugin-x-socialsharing": "5.4.1",
-  "cordova.plugins.diagnostic": "3.9.2"
+  "cordova-plugin-x-socialsharing": "5.4.3",
+  "cordova.plugins.diagnostic": "3.9.2",
+  "uk.co.workingedge.phonegap.plugin.launchnavigator": "4.2.2"
 };
 // BOTTOM OF METADATA
 });

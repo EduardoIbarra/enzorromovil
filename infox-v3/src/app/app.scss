@@ -22,7 +22,7 @@
 div#tutorial-nearby {
   position: absolute;
   z-index: 99;
-  //bottom: 110px;
+  //bottom: 110px !important;
   display: inline-block;
   background-color: map_get($colors, primary);
   border: 1px solid map_get($colors, primary);

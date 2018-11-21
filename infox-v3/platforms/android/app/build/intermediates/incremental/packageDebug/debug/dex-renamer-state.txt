@@ -1,4 +1,4 @@
-#Sun Nov 04 21:06:10 CST 2018
-base.0=/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+#Wed Nov 21 10:53:48 CST 2018
+base.0=/Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
 renamed.0=classes.dex
-file.0=/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex

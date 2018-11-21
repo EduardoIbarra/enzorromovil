@@ -38,6 +38,20 @@ The Facebook plugin for [Apache Cordova](http://cordova.apache.org/) allows you 
 
 - [Troubleshooting Guide | F.A.Q.](docs/TROUBLESHOOTING.md)
 
+## Facebook SDK
+
+This plugin use the SDKs provided by Facebook. More information about these in their documentation for [iOS](https://developers.facebook.com/docs/ios/) or [Android](https://developers.facebook.com/docs/android/)
+
+### Facebook SDK version
+
+As of v3.0.0, this plugin will always be released for iOS and for Android with a synchronized usage of the Facebook SDKs
+
+For example: v3.0.0 include the Facebook SDK iOS v4.36.0 and reference per default the Facebook SDK Android v4.36.0 too
+
+### Graph API version
+
+Please note that this plugin itself does not specify which Graph API version is used. The Graph API version is set by the Facebook SDK for iOS and Android (see [Facebook documentation about versioning](https://developers.facebook.com/docs/apps/versions/))
+
 ## API
 
 ### Login
@@ -188,7 +202,6 @@ For more information see:
 - Graph Explorer - [https://developers.facebook.com/tools/explorer](https://developers.facebook.com/tools/explorer)
 - Graph API - [https://developers.facebook.com/docs/graph-api/](https://developers.facebook.com/docs/graph-api/)
 
-
 # Events
 
 App events allow you to understand the makeup of users engaging with your app, measure the performance of your Facebook mobile app ads, and reach specific sets of your users with Facebook mobile app ads.
@@ -218,45 +231,6 @@ Events are listed on the [insights page](https://www.facebook.com/insights/)
 ### Manually log activation events
 
 `activateApp(Function success, Function failure)`
-
-### App Invites
-
-`facebookConnectPlugin.appInvite(Object options, Function success, Function failure)`
-
-Please check out the [App Invites Overview](https://developers.facebook.com/docs/app-invites/overview) before using this. The URL is expected to be an [App Link](https://developers.facebook.com/docs/applinks).
-
-Example options:
-
-    {
-      url: "http://example.com",
-      picture: "http://example.com/image.png"
-    }
-
-## Sample Code
-
-```js
-facebookConnectPlugin.appInvite(
-    {
-        url: "http://example.com",
-        picture: "http://example.com/image.png"
-    },
-    function(obj){
-        if(obj) {
-            if(obj.completionGesture == "cancel") {
-                // user canceled, bad guy
-            } else {
-                // user really invited someone :)
-            }
-        } else {
-            // user just pressed done, bad guy
-        }
-    },
-    function(obj){
-        // error
-        console.log(obj);
-    }
-);
-```
 
 ### Login
 

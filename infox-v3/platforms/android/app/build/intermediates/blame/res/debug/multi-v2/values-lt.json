@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lt/values-lt.xml",
+            "outputFile": "/Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lt/values-lt.xml",
             "map": [
                 {
-                    "source": "/Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/3ddc13d5ab1d25d8b4b734b620e20f9e/res/values-lt/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "283",
-                        "endColumns": "217",
-                        "endOffsets": "500"
-                    },
-                    "to": {
-                        "startLines": "27",
-                        "startColumns": "4",
-                        "startOffsets": "3086",
-                        "endColumns": "217",
-                        "endOffsets": "3299"
-                    }
-                },
-                {
-                    "source": "/Users/ed/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/27e3fb3ab1d12789b54d448a50497b8f/res/values-lt/values-lt.xml",
+                    "source": "/private/var/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/9f0db4c1d176ecd526fd6ac5f81ddd15/res/values-lt/values-lt.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "/Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/750786f78353f1f7c0c2e3910d6b5cde/res/values-lt/values.xml",
+                    "source": "/private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/ef1c6aa0688fe00fffd298a3f428a13d/res/values-lt/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "283",
+                        "endColumns": "217",
+                        "endOffsets": "500"
+                    },
+                    "to": {
+                        "startLines": "27",
+                        "startColumns": "4",
+                        "startOffsets": "3086",
+                        "endColumns": "217",
+                        "endOffsets": "3299"
+                    }
+                },
+                {
+                    "source": "/private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/f82bac6235e81acabd7f96822f49a7a9/res/values-lt/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -55,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "/Users/ed/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/3d646ad00f795b8873a6d7d9bf3b33cb/res/values-lt/values-lt.xml",
+                    "source": "/private/var/root/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/aa99afa8778fa14de9e40c26a91dc1d4/res/values-lt/values-lt.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

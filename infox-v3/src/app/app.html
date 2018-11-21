@@ -1,4 +1,4 @@
-<div id="tutorial-nearby" [ngClass]="{'animate-fade': globalVariables.showNearbyTut, 'fadeOut': !globalVariables.showNearbyTut}" [style.bottom]="globalVariables.nearbyTabActive ? '110px': '62px'">
+<div id="tutorial-nearby" [ngClass]="{'animate-fade': globalVariables.showNearbyTut, 'fadeOut': !globalVariables.showNearbyTut}" [style.bottom]="!globalVariables.nearbyTabActive ? '110px': '62px'">
     Ubica los Negocios Más Cercanos a Ti
     <ion-icon name="md-arrow-dropdown" id="tut-down-arrow"></ion-icon>
 </div>

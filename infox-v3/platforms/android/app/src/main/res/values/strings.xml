@@ -3,6 +3,6 @@
     <string name="app_name">Infox</string>
     <string name="launcher_name">@string/app_name</string>
     <string name="activity_name">@string/launcher_name</string>
-    <string name="fb_app_id">1234</string>
-    <string name="fb_app_name">foobar</string>
+    <string name="fb_app_id">456869154839437</string>
+    <string name="fb_app_name">InfoxLogin</string>
 </resources>

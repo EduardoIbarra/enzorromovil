@@ -107,6 +107,10 @@
             {
               "xml": "<feature name=\"SocialSharing\"><param name=\"android-package\" value=\"nl.xservices.plugins.SocialSharing\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"LaunchNavigator\"><param name=\"android-package\" value=\"uk.co.workingedge.phonegap.plugin.LaunchNavigator\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -210,7 +214,7 @@
             },
             {
               "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
-              "count": 1
+              "count": 2
             },
             {
               "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
@@ -237,7 +241,7 @@
         "parents": {
           "/*": [
             {
-              "xml": "<string name=\"fb_app_id\">805201646226832</string>",
+              "xml": "<string name=\"fb_app_id\">456869154839437</string>",
               "count": 1
             },
             {
@@ -269,12 +273,12 @@
         "parents": {
           "/resources": [
             {
-              "xml": "<string name=\"fb_app_id\">1234</string>",
-              "count": 2
+              "xml": "<string name=\"fb_app_id\">456869154839437</string>",
+              "count": 9
             },
             {
-              "xml": "<string name=\"fb_app_name\">foobar</string>",
-              "count": 2
+              "xml": "<string name=\"fb_app_name\">InfoxLogin</string>",
+              "count": 9
             }
           ]
         }
@@ -294,9 +298,6 @@
     "cordova-plugin-actionsheet": {
       "PACKAGE_NAME": "infox.buscador"
     },
-    "cordova-plugin-add-swift-support": {
-      "PACKAGE_NAME": "infox.buscador"
-    },
     "cordova-plugin-console": {
       "PACKAGE_NAME": "infox.buscador"
     },
@@ -307,8 +308,9 @@
       "PACKAGE_NAME": "infox.buscador"
     },
     "cordova-plugin-facebook4": {
-      "APP_ID": "805201646226832",
+      "APP_ID": "456869154839437",
       "APP_NAME": "InfoxLogin",
+      "FACEBOOK_ANDROID_SDK_VERSION": "4.37.0",
       "PACKAGE_NAME": "infox.buscador"
     },
     "cordova-plugin-geolocation": {
@@ -355,9 +357,14 @@
       "PACKAGE_NAME": "infox.buscador"
     },
     "cordova-plugin-x-socialsharing": {
+      "ANDROID_SUPPORT_V4_VERSION": "24.1.1+",
       "PACKAGE_NAME": "infox.buscador"
     },
     "cordova.plugins.diagnostic": {
+      "PACKAGE_NAME": "infox.buscador"
+    },
+    "uk.co.workingedge.phonegap.plugin.launchnavigator": {
+      "OKHTTP_VERSION": "3.+",
       "PACKAGE_NAME": "infox.buscador"
     }
   },
@@ -544,22 +551,45 @@
       "clobbers": [
         "cordova.plugins.diagnostic"
       ]
+    },
+    {
+      "id": "uk.co.workingedge.phonegap.plugin.launchnavigator.Common",
+      "file": "plugins/uk.co.workingedge.phonegap.plugin.launchnavigator/www/common.js",
+      "pluginId": "uk.co.workingedge.phonegap.plugin.launchnavigator",
+      "clobbers": [
+        "launchnavigator"
+      ]
+    },
+    {
+      "id": "uk.co.workingedge.phonegap.plugin.launchnavigator.LocalForage",
+      "file": "plugins/uk.co.workingedge.phonegap.plugin.launchnavigator/www/localforage.v1.5.0.min.js",
+      "pluginId": "uk.co.workingedge.phonegap.plugin.launchnavigator",
+      "clobbers": [
+        "localforage"
+      ]
+    },
+    {
+      "id": "uk.co.workingedge.phonegap.plugin.launchnavigator.LaunchNavigator",
+      "file": "plugins/uk.co.workingedge.phonegap.plugin.launchnavigator/www/android/launchnavigator.js",
+      "pluginId": "uk.co.workingedge.phonegap.plugin.launchnavigator",
+      "merges": [
+        "launchnavigator"
+      ]
     }
   ],
   "plugin_metadata": {
-    "com-sarriaroman-photoviewer": "1.1.16",
+    "com-sarriaroman-photoviewer": "1.1.18",
     "com.googlemaps.ios": "2.7.0",
-    "cordova-open-native-settings": "1.4.1",
+    "cordova-open-native-settings": "1.5.1",
     "cordova-plugin-actionsheet": "2.3.3",
-    "cordova-plugin-add-swift-support": "1.7.1",
     "cordova-plugin-console": "1.1.0",
     "cordova-plugin-device": "1.1.7",
     "cordova-plugin-dialogs": "2.0.1",
-    "cordova-plugin-facebook4": "1.10.1",
+    "cordova-plugin-facebook4": "3.1.0",
     "cordova-plugin-geolocation": "2.4.3",
     "cordova-plugin-googlemaps": "1.4.5",
     "cordova-plugin-inappbrowser": "1.7.2",
-    "cordova-plugin-ionic-keyboard": "2.1.2",
+    "cordova-plugin-ionic-keyboard": "2.1.3",
     "cordova-plugin-ionic-webview": "1.2.1",
     "cordova-plugin-nativegeocoder": "2.0.5",
     "cordova-plugin-network-information": "2.0.1",
@@ -570,7 +600,8 @@
     "cordova-plugin-tts": "0.2.3",
     "cordova-plugin-whitelist": "1.3.3",
     "es6-promise-plugin": "4.2.2",
-    "cordova-plugin-x-socialsharing": "5.4.1",
-    "cordova.plugins.diagnostic": "3.9.2"
+    "cordova-plugin-x-socialsharing": "5.4.3",
+    "cordova.plugins.diagnostic": "3.9.2",
+    "uk.co.workingedge.phonegap.plugin.launchnavigator": "4.2.2"
   }
 }

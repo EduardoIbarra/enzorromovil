@@ -1,407 +1,407 @@
 -- Merging decision tree log ---
 provider#nl.xservices.plugins.FileProvider
-INJECTED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:23:9-25:20
+INJECTED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:23:9-25:20
 	android:grantUriPermissions
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:23:100-134
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:23:100-134
 	android:authorities
-		INJECTED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:23:19-74
+		INJECTED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:23:19-74
 	android:exported
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:23:75-99
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:23:75-99
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:23:135-183
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:23:135-183
 manifest
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:2:1-48:12
-INJECTED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:2:1-48:12
-INJECTED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:2:1-48:12
-INJECTED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:2:1-48:12
-MERGED from [com.commit451:PhotoView:1.2.4] /Users/ed/.gradle/caches/transforms-1/files-1.1/PhotoView-1.2.4.aar/27f87bab02995d1bb399bb926990c993/AndroidManifest.xml:2:1-12:12
-MERGED from [com.facebook.android:facebook-android-sdk:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.38.1.aar/24d46b42e5ec92248ea18a589ccccc25/AndroidManifest.xml:21:1-31:12
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/71c6b17bae2fe73b0843818f62978310/AndroidManifest.xml:17:1-32:12
-MERGED from [com.google.android.gms:play-services-location:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-location-11.8.0.aar/b7d6d7c820f92a22e7bf0f544348d061/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.android:facebook-login:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-login-4.38.1.aar/06934fe9094895141d880fd02f3f2c8c/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-share:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-share-4.38.1.aar/7a1a41b91ffb659a2cf3f1d87160b1f5/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-common:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-common-4.38.1.aar/10962067a9654c0e87c332793d0b36b0/AndroidManifest.xml:21:1-37:12
-MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/750786f78353f1f7c0c2e3910d6b5cde/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/04be173ad6a3900615160fb0076b3021/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/3ddc13d5ab1d25d8b4b734b620e20f9e/AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/94b2e1eec62264dcb43c673fcd19ebea/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/27e3fb3ab1d12789b54d448a50497b8f/AndroidManifest.xml:17:1-22:12
-MERGED from [:CordovaLib] /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/CordovaLib/build/intermediates/manifests/full/release/AndroidManifest.xml:20:1-27:12
-MERGED from [com.facebook.android:facebook-places:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-places-4.38.1.aar/270586c5b6a66b13b94c91b4e148d2b7/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-applinks:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.38.1.aar/b54c59da0ae6076ecd213e0feaebfa18/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-messenger:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.38.1.aar/06a17de4eb2da9208a9b0c480a62d44c/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-marketing:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.38.1.aar/feb436f19a148ce3be9a45333cdcbc1e/AndroidManifest.xml:21:1-35:12
-MERGED from [com.facebook.android:facebook-core:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/d6426359d1ddcfa061f8b09eada57cd4/AndroidManifest.xml:21:1-53:12
-MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.8.0.aar/15d281f76e38b014480f857b8c8a0ed4/AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-location-license:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-location-license-11.8.0.aar/9aa598c904dbe043aff4c3ace66f1e90/AndroidManifest.xml:2:1-6:12
-MERGED from [com.android.support:support-fragment:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/69b61a876feb853cda94d83c91bcab3f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/945247651e69e0d8f860c7f1876b8d2f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/83a74c8adc0e6396d9dc3e393b47480b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customtabs:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/42c7a477df174b870d03483ce148bd8c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/b11032603d31a3844dcd7eb6cbb1517c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/d2b534ddc5a808cad8d6b15e476ddb33/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/53fda9545205785b443295d59c834e74/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/9d1b709f7a8028f293abcc550a5cf2f7/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/3d646ad00f795b8873a6d7d9bf3b33cb/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/41ca4bf7a69c9bfba73548a5a9feb78c/AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/228cd72616a1eacc70969cc0f7cf027f/AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/e1344f6a7d504e9b522b02c343ca3e4a/AndroidManifest.xml:2:1-6:12
-MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/ed/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/8cbe99d7e59a3b976f7806c33ea7c44b/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:2:1-48:12
-INJECTED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:2:1-48:12
-INJECTED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:2:1-48:12
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:2:1-48:12
+MERGED from [com.commit451:PhotoView:1.2.4] /private/var/root/.gradle/caches/transforms-1/files-1.1/PhotoView-1.2.4.aar/45f2860bc7aabb96a01da6de06343e93/AndroidManifest.xml:2:1-12:12
+MERGED from [com.facebook.android:facebook-android-sdk:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.37.0.aar/2a8710d821ba3b0cb3a9f91bff21dcc4/AndroidManifest.xml:21:1-31:12
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/9ed5030de729520d4a8bfcd9876d7fb1/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-location:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-location-11.8.0.aar/1377c889639bdf6a11c5e23475effa79/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.android:facebook-login:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-login-4.37.0.aar/8f760ef42f69510f21e9c7a1e277b2ff/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-share:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-share-4.37.0.aar/71aa040917216aa342648cb3bf7c0f41/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-common:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-common-4.37.0.aar/26f8d38c7d6e69a277ff811b95520eff/AndroidManifest.xml:21:1-37:12
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/f82bac6235e81acabd7f96822f49a7a9/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/85280674fc56ea88c057f9cef85d10c9/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/ef1c6aa0688fe00fffd298a3f428a13d/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/ab08a774ce097462e0b6d659d5f788bb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/9f0db4c1d176ecd526fd6ac5f81ddd15/AndroidManifest.xml:17:1-22:12
+MERGED from [:CordovaLib] /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/CordovaLib/build/intermediates/manifests/full/release/AndroidManifest.xml:20:1-27:12
+MERGED from [com.facebook.android:facebook-places:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-places-4.37.0.aar/d67371ff24a4f2635f81ac0e69dd5bbf/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-applinks:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.37.0.aar/400e585d1de773dcfa380e3c6a3709af/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-messenger:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.37.0.aar/616c01aaedf3ab85ac026ba9deeab175/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-marketing:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.37.0.aar/0b9299303c704ff52a6288a9695375dd/AndroidManifest.xml:21:1-35:12
+MERGED from [com.facebook.android:facebook-core:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/36227186fca424935b57fac866dfb055/AndroidManifest.xml:21:1-53:12
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.8.0.aar/d919d10e7fb112d73a70ff6d40a66cb6/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-location-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-location-license-11.8.0.aar/651fc6714503aff3d81d4cb6ce373c60/AndroidManifest.xml:2:1-6:12
+MERGED from [com.android.support:support-fragment:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/253e169c37cc637c952049a25aa0c4c4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/b1749bc2868ddbe276078b08e60b38ec/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/cf41c7cf9917659eed5348d80c59551a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customtabs:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/3aa21ddb2a9998d354208ef9b72807e3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/e6522f4987ca02d51d09651118e40a82/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/f9d6998f8fd8e863205ab89abc28c2ba/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/0a7d5b9f3f0ed4f902d299375a6f3583/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/de8e20ae03c062fff535c0b821f1ac48/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/aa99afa8778fa14de9e40c26a91dc1d4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/95f6723cf009bc1a516da65a784558ed/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/f28606a519b633bd1e81c3fe0a1d47fb/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/b9c677d537ccea6f98f2912306476284/AndroidManifest.xml:2:1-6:12
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /private/var/root/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/ee5a8b0fcbd8a930e3ffeac76e59e6ba/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:2:1-48:12
 	package
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:2:100-124
-		INJECTED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:2:100-124
+		INJECTED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml
 	android:versionName
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:2:74-99
-		INJECTED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:2:74-99
+		INJECTED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml
 	android:hardwareAccelerated
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:2:11-45
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:2:11-45
 	xmlns:android
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:2:125-183
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:2:125-183
 	android:versionCode
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:2:46-73
-		INJECTED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:2:46-73
+		INJECTED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml
 supports-screens
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:3:5-191
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:3:5-191
 	android:largeScreens
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:3:49-76
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:3:49-76
 	android:smallScreens
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:3:132-159
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:3:132-159
 	android:normalScreens
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:3:77-105
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:3:77-105
 	android:xlargeScreens
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:3:160-188
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:3:160-188
 	android:resizeable
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:3:106-131
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:3:106-131
 	android:anyDensity
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:3:23-48
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:3:23-48
 uses-permission#android.permission.INTERNET
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:4:5-67
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/71c6b17bae2fe73b0843818f62978310/AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/71c6b17bae2fe73b0843818f62978310/AndroidManifest.xml:24:5-67
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/9ed5030de729520d4a8bfcd9876d7fb1/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/9ed5030de729520d4a8bfcd9876d7fb1/AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:4:22-64
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:4:22-64
 application
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:5:5-36:19
-MERGED from [com.facebook.android:facebook-android-sdk:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.38.1.aar/24d46b42e5ec92248ea18a589ccccc25/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-android-sdk:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.38.1.aar/24d46b42e5ec92248ea18a589ccccc25/AndroidManifest.xml:28:5-29:19
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/71c6b17bae2fe73b0843818f62978310/AndroidManifest.xml:30:5-20
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/71c6b17bae2fe73b0843818f62978310/AndroidManifest.xml:30:5-20
-MERGED from [com.google.android.gms:play-services-location:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-location-11.8.0.aar/b7d6d7c820f92a22e7bf0f544348d061/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-location:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-location-11.8.0.aar/b7d6d7c820f92a22e7bf0f544348d061/AndroidManifest.xml:7:5-20
-MERGED from [com.facebook.android:facebook-login:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-login-4.38.1.aar/06934fe9094895141d880fd02f3f2c8c/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-login:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-login-4.38.1.aar/06934fe9094895141d880fd02f3f2c8c/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-share-4.38.1.aar/7a1a41b91ffb659a2cf3f1d87160b1f5/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-share-4.38.1.aar/7a1a41b91ffb659a2cf3f1d87160b1f5/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-common:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-common-4.38.1.aar/10962067a9654c0e87c332793d0b36b0/AndroidManifest.xml:28:5-35:19
-MERGED from [com.facebook.android:facebook-common:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-common-4.38.1.aar/10962067a9654c0e87c332793d0b36b0/AndroidManifest.xml:28:5-35:19
-MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/750786f78353f1f7c0c2e3910d6b5cde/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/750786f78353f1f7c0c2e3910d6b5cde/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/04be173ad6a3900615160fb0076b3021/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/04be173ad6a3900615160fb0076b3021/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/3ddc13d5ab1d25d8b4b734b620e20f9e/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/3ddc13d5ab1d25d8b4b734b620e20f9e/AndroidManifest.xml:22:5-26:19
-MERGED from [com.facebook.android:facebook-places:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-places-4.38.1.aar/270586c5b6a66b13b94c91b4e148d2b7/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-places:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-places-4.38.1.aar/270586c5b6a66b13b94c91b4e148d2b7/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-applinks:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.38.1.aar/b54c59da0ae6076ecd213e0feaebfa18/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-applinks:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.38.1.aar/b54c59da0ae6076ecd213e0feaebfa18/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.38.1.aar/06a17de4eb2da9208a9b0c480a62d44c/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.38.1.aar/06a17de4eb2da9208a9b0c480a62d44c/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-marketing:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.38.1.aar/feb436f19a148ce3be9a45333cdcbc1e/AndroidManifest.xml:28:5-33:19
-MERGED from [com.facebook.android:facebook-marketing:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.38.1.aar/feb436f19a148ce3be9a45333cdcbc1e/AndroidManifest.xml:28:5-33:19
-MERGED from [com.facebook.android:facebook-core:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/d6426359d1ddcfa061f8b09eada57cd4/AndroidManifest.xml:28:5-51:19
-MERGED from [com.facebook.android:facebook-core:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/d6426359d1ddcfa061f8b09eada57cd4/AndroidManifest.xml:28:5-51:19
-MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.8.0.aar/15d281f76e38b014480f857b8c8a0ed4/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.8.0.aar/15d281f76e38b014480f857b8c8a0ed4/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-location-license:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-location-license-11.8.0.aar/9aa598c904dbe043aff4c3ace66f1e90/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-location-license:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-location-license-11.8.0.aar/9aa598c904dbe043aff4c3ace66f1e90/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/41ca4bf7a69c9bfba73548a5a9feb78c/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/41ca4bf7a69c9bfba73548a5a9feb78c/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/228cd72616a1eacc70969cc0f7cf027f/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/228cd72616a1eacc70969cc0f7cf027f/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/e1344f6a7d504e9b522b02c343ca3e4a/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/e1344f6a7d504e9b522b02c343ca3e4a/AndroidManifest.xml:5:5-20
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:5:5-36:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.37.0.aar/2a8710d821ba3b0cb3a9f91bff21dcc4/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.37.0.aar/2a8710d821ba3b0cb3a9f91bff21dcc4/AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/9ed5030de729520d4a8bfcd9876d7fb1/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/9ed5030de729520d4a8bfcd9876d7fb1/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-location:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-location-11.8.0.aar/1377c889639bdf6a11c5e23475effa79/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-location-11.8.0.aar/1377c889639bdf6a11c5e23475effa79/AndroidManifest.xml:7:5-20
+MERGED from [com.facebook.android:facebook-login:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-login-4.37.0.aar/8f760ef42f69510f21e9c7a1e277b2ff/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-login-4.37.0.aar/8f760ef42f69510f21e9c7a1e277b2ff/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-share-4.37.0.aar/71aa040917216aa342648cb3bf7c0f41/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-share-4.37.0.aar/71aa040917216aa342648cb3bf7c0f41/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-common:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-common-4.37.0.aar/26f8d38c7d6e69a277ff811b95520eff/AndroidManifest.xml:28:5-35:19
+MERGED from [com.facebook.android:facebook-common:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-common-4.37.0.aar/26f8d38c7d6e69a277ff811b95520eff/AndroidManifest.xml:28:5-35:19
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/f82bac6235e81acabd7f96822f49a7a9/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/f82bac6235e81acabd7f96822f49a7a9/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/85280674fc56ea88c057f9cef85d10c9/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/85280674fc56ea88c057f9cef85d10c9/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/ef1c6aa0688fe00fffd298a3f428a13d/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/ef1c6aa0688fe00fffd298a3f428a13d/AndroidManifest.xml:22:5-26:19
+MERGED from [com.facebook.android:facebook-places:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-places-4.37.0.aar/d67371ff24a4f2635f81ac0e69dd5bbf/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-places:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-places-4.37.0.aar/d67371ff24a4f2635f81ac0e69dd5bbf/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.37.0.aar/400e585d1de773dcfa380e3c6a3709af/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.37.0.aar/400e585d1de773dcfa380e3c6a3709af/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.37.0.aar/616c01aaedf3ab85ac026ba9deeab175/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.37.0.aar/616c01aaedf3ab85ac026ba9deeab175/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-marketing:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.37.0.aar/0b9299303c704ff52a6288a9695375dd/AndroidManifest.xml:28:5-33:19
+MERGED from [com.facebook.android:facebook-marketing:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.37.0.aar/0b9299303c704ff52a6288a9695375dd/AndroidManifest.xml:28:5-33:19
+MERGED from [com.facebook.android:facebook-core:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/36227186fca424935b57fac866dfb055/AndroidManifest.xml:28:5-51:19
+MERGED from [com.facebook.android:facebook-core:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/36227186fca424935b57fac866dfb055/AndroidManifest.xml:28:5-51:19
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.8.0.aar/d919d10e7fb112d73a70ff6d40a66cb6/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.8.0.aar/d919d10e7fb112d73a70ff6d40a66cb6/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-location-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-location-license-11.8.0.aar/651fc6714503aff3d81d4cb6ce373c60/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-location-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-location-license-11.8.0.aar/651fc6714503aff3d81d4cb6ce373c60/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/95f6723cf009bc1a516da65a784558ed/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/95f6723cf009bc1a516da65a784558ed/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/f28606a519b633bd1e81c3fe0a1d47fb/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/f28606a519b633bd1e81c3fe0a1d47fb/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/b9c677d537ccea6f98f2912306476284/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/b9c677d537ccea6f98f2912306476284/AndroidManifest.xml:5:5-20
 	android:supportsRtl
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:5:114-140
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:5:114-140
 	android:label
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:5:81-113
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:5:81-113
 	android:hardwareAccelerated
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:5:18-52
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:5:18-52
 	android:icon
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:5:53-80
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:5:53-80
 activity#infox.buscador.MainActivity
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:6:9-11:20
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:6:9-11:20
 	android:label
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:6:97-134
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:6:97-134
 	android:launchMode
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:6:135-165
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:6:135-165
 	android:windowSoftInputMode
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:6:257-299
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:6:257-299
 	android:configChanges
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:6:19-96
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:6:19-96
 	android:theme
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:6:194-256
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:6:194-256
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:6:166-193
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:6:166-193
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:7:13-10:29
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:7:13-10:29
 	android:label
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:7:28-65
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:7:28-65
 action#android.intent.action.MAIN
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:8:17-69
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:8:17-69
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:8:25-66
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:8:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:9:17-77
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:9:17-77
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:9:27-74
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:9:27-74
 activity#com.sarriaroman.PhotoViewer.PhotoActivity
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:12:9-143
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:12:9-143
 	android:theme
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:12:76-140
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:12:76-140
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:12:19-75
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:12:19-75
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:13:9-102
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:13:9-102
 	android:value
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:13:66-99
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:13:66-99
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:13:20-65
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:13:20-65
 meta-data#com.facebook.sdk.ApplicationName
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:14:9-106
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:14:9-106
 	android:value
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:14:68-103
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:14:68-103
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:14:20-67
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:14:20-67
 activity#com.facebook.FacebookActivity
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:15:9-186
-MERGED from [com.facebook.android:facebook-common:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-common-4.38.1.aar/10962067a9654c0e87c332793d0b36b0/AndroidManifest.xml:29:9-32:66
-MERGED from [com.facebook.android:facebook-common:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-common-4.38.1.aar/10962067a9654c0e87c332793d0b36b0/AndroidManifest.xml:29:9-32:66
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:15:9-186
+MERGED from [com.facebook.android:facebook-common:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-common-4.37.0.aar/26f8d38c7d6e69a277ff811b95520eff/AndroidManifest.xml:29:9-32:66
+MERGED from [com.facebook.android:facebook-common:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-common-4.37.0.aar/26f8d38c7d6e69a277ff811b95520eff/AndroidManifest.xml:29:9-32:66
 	android:label
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:15:103-138
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:15:103-138
 	android:configChanges
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:15:19-102
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:15:19-102
 	android:theme
-		ADDED from [com.facebook.android:facebook-common:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-common-4.38.1.aar/10962067a9654c0e87c332793d0b36b0/AndroidManifest.xml:32:13-63
+		ADDED from [com.facebook.android:facebook-common:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-common-4.37.0.aar/26f8d38c7d6e69a277ff811b95520eff/AndroidManifest.xml:32:13-63
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:15:139-183
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:15:139-183
 meta-data#com.google.android.geo.API_KEY
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:16:9-124
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:16:9-124
 	android:value
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:16:66-121
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:16:66-121
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:16:20-65
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:16:20-65
 meta-data#com.google.android.gms.version
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:17:9-122
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/3ddc13d5ab1d25d8b4b734b620e20f9e/AndroidManifest.xml:23:9-25:69
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/3ddc13d5ab1d25d8b4b734b620e20f9e/AndroidManifest.xml:23:9-25:69
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:17:9-122
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/ef1c6aa0688fe00fffd298a3f428a13d/AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/ef1c6aa0688fe00fffd298a3f428a13d/AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:17:66-119
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:17:66-119
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:17:20-65
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:17:20-65
 receiver#nl.xservices.plugins.ShareChooserPendingIntent
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:18:9-22:20
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:18:9-22:20
 	android:enabled
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:18:19-41
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:18:19-41
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:18:42-103
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:18:42-103
 intent-filter#android.intent.action.SEND
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:19:13-21:29
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:19:13-21:29
 action#android.intent.action.SEND
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:20:17-69
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:20:25-66
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:20:25-66
 receiver#cordova.plugins.Diagnostic$LocationProviderChangedReceiver
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:26:9-30:20
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:26:9-30:20
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:26:19-92
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:26:19-92
 intent-filter#android.location.PROVIDERS_CHANGED
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:27:13-29:29
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:27:13-29:29
 action#android.location.PROVIDERS_CHANGED
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:28:17-77
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:28:17-77
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:28:25-74
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:28:25-74
 receiver#cordova.plugins.Diagnostic$NFCStateChangedReceiver
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:31:9-35:20
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:31:9-35:20
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:31:19-84
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:31:19-84
 intent-filter#android.nfc.action.ADAPTER_STATE_CHANGED
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:32:13-34:29
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:32:13-34:29
 action#android.nfc.action.ADAPTER_STATE_CHANGED
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:33:17-83
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:33:17-83
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:33:25-80
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:33:25-80
 uses-sdk
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:37:5-74
-MERGED from [com.commit451:PhotoView:1.2.4] /Users/ed/.gradle/caches/transforms-1/files-1.1/PhotoView-1.2.4.aar/27f87bab02995d1bb399bb926990c993/AndroidManifest.xml:8:5-10:41
-MERGED from [com.commit451:PhotoView:1.2.4] /Users/ed/.gradle/caches/transforms-1/files-1.1/PhotoView-1.2.4.aar/27f87bab02995d1bb399bb926990c993/AndroidManifest.xml:8:5-10:41
-MERGED from [com.facebook.android:facebook-android-sdk:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.38.1.aar/24d46b42e5ec92248ea18a589ccccc25/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-android-sdk:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.38.1.aar/24d46b42e5ec92248ea18a589ccccc25/AndroidManifest.xml:24:5-26:41
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/71c6b17bae2fe73b0843818f62978310/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/71c6b17bae2fe73b0843818f62978310/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-location:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-location-11.8.0.aar/b7d6d7c820f92a22e7bf0f544348d061/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-location:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-location-11.8.0.aar/b7d6d7c820f92a22e7bf0f544348d061/AndroidManifest.xml:5:5-44
-MERGED from [com.facebook.android:facebook-login:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-login-4.38.1.aar/06934fe9094895141d880fd02f3f2c8c/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-login:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-login-4.38.1.aar/06934fe9094895141d880fd02f3f2c8c/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-share-4.38.1.aar/7a1a41b91ffb659a2cf3f1d87160b1f5/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-share-4.38.1.aar/7a1a41b91ffb659a2cf3f1d87160b1f5/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-common:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-common-4.38.1.aar/10962067a9654c0e87c332793d0b36b0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-common:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-common-4.38.1.aar/10962067a9654c0e87c332793d0b36b0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/750786f78353f1f7c0c2e3910d6b5cde/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/750786f78353f1f7c0c2e3910d6b5cde/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/04be173ad6a3900615160fb0076b3021/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/04be173ad6a3900615160fb0076b3021/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/3ddc13d5ab1d25d8b4b734b620e20f9e/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/3ddc13d5ab1d25d8b4b734b620e20f9e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/94b2e1eec62264dcb43c673fcd19ebea/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/94b2e1eec62264dcb43c673fcd19ebea/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/27e3fb3ab1d12789b54d448a50497b8f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/27e3fb3ab1d12789b54d448a50497b8f/AndroidManifest.xml:20:5-44
-MERGED from [:CordovaLib] /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/CordovaLib/build/intermediates/manifests/full/release/AndroidManifest.xml:25:5-44
-MERGED from [:CordovaLib] /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/CordovaLib/build/intermediates/manifests/full/release/AndroidManifest.xml:25:5-44
-MERGED from [com.facebook.android:facebook-places:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-places-4.38.1.aar/270586c5b6a66b13b94c91b4e148d2b7/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-places:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-places-4.38.1.aar/270586c5b6a66b13b94c91b4e148d2b7/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-applinks:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.38.1.aar/b54c59da0ae6076ecd213e0feaebfa18/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-applinks:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.38.1.aar/b54c59da0ae6076ecd213e0feaebfa18/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-messenger:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.38.1.aar/06a17de4eb2da9208a9b0c480a62d44c/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-messenger:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.38.1.aar/06a17de4eb2da9208a9b0c480a62d44c/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-marketing:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.38.1.aar/feb436f19a148ce3be9a45333cdcbc1e/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-marketing:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.38.1.aar/feb436f19a148ce3be9a45333cdcbc1e/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/d6426359d1ddcfa061f8b09eada57cd4/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/d6426359d1ddcfa061f8b09eada57cd4/AndroidManifest.xml:24:5-26:41
-MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.8.0.aar/15d281f76e38b014480f857b8c8a0ed4/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.8.0.aar/15d281f76e38b014480f857b8c8a0ed4/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-location-license:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-location-license-11.8.0.aar/9aa598c904dbe043aff4c3ace66f1e90/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-location-license:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-location-license-11.8.0.aar/9aa598c904dbe043aff4c3ace66f1e90/AndroidManifest.xml:4:5-43
-MERGED from [com.android.support:support-fragment:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/69b61a876feb853cda94d83c91bcab3f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/69b61a876feb853cda94d83c91bcab3f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/945247651e69e0d8f860c7f1876b8d2f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/945247651e69e0d8f860c7f1876b8d2f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/83a74c8adc0e6396d9dc3e393b47480b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/83a74c8adc0e6396d9dc3e393b47480b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customtabs:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/42c7a477df174b870d03483ce148bd8c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customtabs:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/42c7a477df174b870d03483ce148bd8c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/b11032603d31a3844dcd7eb6cbb1517c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/b11032603d31a3844dcd7eb6cbb1517c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/d2b534ddc5a808cad8d6b15e476ddb33/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/d2b534ddc5a808cad8d6b15e476ddb33/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/53fda9545205785b443295d59c834e74/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/53fda9545205785b443295d59c834e74/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/9d1b709f7a8028f293abcc550a5cf2f7/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/9d1b709f7a8028f293abcc550a5cf2f7/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/3d646ad00f795b8873a6d7d9bf3b33cb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.2] /Users/ed/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/3d646ad00f795b8873a6d7d9bf3b33cb/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/41ca4bf7a69c9bfba73548a5a9feb78c/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/41ca4bf7a69c9bfba73548a5a9feb78c/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/228cd72616a1eacc70969cc0f7cf027f/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/228cd72616a1eacc70969cc0f7cf027f/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/e1344f6a7d504e9b522b02c343ca3e4a/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/e1344f6a7d504e9b522b02c343ca3e4a/AndroidManifest.xml:4:5-43
-MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/ed/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/8cbe99d7e59a3b976f7806c33ea7c44b/AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/ed/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/8cbe99d7e59a3b976f7806c33ea7c44b/AndroidManifest.xml:20:5-22:41
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:37:5-74
+MERGED from [com.commit451:PhotoView:1.2.4] /private/var/root/.gradle/caches/transforms-1/files-1.1/PhotoView-1.2.4.aar/45f2860bc7aabb96a01da6de06343e93/AndroidManifest.xml:8:5-10:41
+MERGED from [com.commit451:PhotoView:1.2.4] /private/var/root/.gradle/caches/transforms-1/files-1.1/PhotoView-1.2.4.aar/45f2860bc7aabb96a01da6de06343e93/AndroidManifest.xml:8:5-10:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.37.0.aar/2a8710d821ba3b0cb3a9f91bff21dcc4/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.37.0.aar/2a8710d821ba3b0cb3a9f91bff21dcc4/AndroidManifest.xml:24:5-26:41
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/9ed5030de729520d4a8bfcd9876d7fb1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/9ed5030de729520d4a8bfcd9876d7fb1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-location-11.8.0.aar/1377c889639bdf6a11c5e23475effa79/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-location-11.8.0.aar/1377c889639bdf6a11c5e23475effa79/AndroidManifest.xml:5:5-44
+MERGED from [com.facebook.android:facebook-login:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-login-4.37.0.aar/8f760ef42f69510f21e9c7a1e277b2ff/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-login-4.37.0.aar/8f760ef42f69510f21e9c7a1e277b2ff/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-share-4.37.0.aar/71aa040917216aa342648cb3bf7c0f41/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-share-4.37.0.aar/71aa040917216aa342648cb3bf7c0f41/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-common-4.37.0.aar/26f8d38c7d6e69a277ff811b95520eff/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-common-4.37.0.aar/26f8d38c7d6e69a277ff811b95520eff/AndroidManifest.xml:24:5-26:41
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/f82bac6235e81acabd7f96822f49a7a9/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/f82bac6235e81acabd7f96822f49a7a9/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/85280674fc56ea88c057f9cef85d10c9/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/85280674fc56ea88c057f9cef85d10c9/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/ef1c6aa0688fe00fffd298a3f428a13d/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/ef1c6aa0688fe00fffd298a3f428a13d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/ab08a774ce097462e0b6d659d5f788bb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/ab08a774ce097462e0b6d659d5f788bb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/9f0db4c1d176ecd526fd6ac5f81ddd15/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/9f0db4c1d176ecd526fd6ac5f81ddd15/AndroidManifest.xml:20:5-44
+MERGED from [:CordovaLib] /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/CordovaLib/build/intermediates/manifests/full/release/AndroidManifest.xml:25:5-44
+MERGED from [:CordovaLib] /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/CordovaLib/build/intermediates/manifests/full/release/AndroidManifest.xml:25:5-44
+MERGED from [com.facebook.android:facebook-places:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-places-4.37.0.aar/d67371ff24a4f2635f81ac0e69dd5bbf/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-places:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-places-4.37.0.aar/d67371ff24a4f2635f81ac0e69dd5bbf/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.37.0.aar/400e585d1de773dcfa380e3c6a3709af/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.37.0.aar/400e585d1de773dcfa380e3c6a3709af/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.37.0.aar/616c01aaedf3ab85ac026ba9deeab175/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.37.0.aar/616c01aaedf3ab85ac026ba9deeab175/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-marketing:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.37.0.aar/0b9299303c704ff52a6288a9695375dd/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-marketing:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.37.0.aar/0b9299303c704ff52a6288a9695375dd/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/36227186fca424935b57fac866dfb055/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/36227186fca424935b57fac866dfb055/AndroidManifest.xml:24:5-26:41
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.8.0.aar/d919d10e7fb112d73a70ff6d40a66cb6/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-maps-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-11.8.0.aar/d919d10e7fb112d73a70ff6d40a66cb6/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-location-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-location-license-11.8.0.aar/651fc6714503aff3d81d4cb6ce373c60/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-location-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-location-license-11.8.0.aar/651fc6714503aff3d81d4cb6ce373c60/AndroidManifest.xml:4:5-43
+MERGED from [com.android.support:support-fragment:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/253e169c37cc637c952049a25aa0c4c4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/253e169c37cc637c952049a25aa0c4c4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/b1749bc2868ddbe276078b08e60b38ec/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/b1749bc2868ddbe276078b08e60b38ec/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/cf41c7cf9917659eed5348d80c59551a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/cf41c7cf9917659eed5348d80c59551a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/3aa21ddb2a9998d354208ef9b72807e3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/3aa21ddb2a9998d354208ef9b72807e3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/e6522f4987ca02d51d09651118e40a82/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/e6522f4987ca02d51d09651118e40a82/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/f9d6998f8fd8e863205ab89abc28c2ba/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/f9d6998f8fd8e863205ab89abc28c2ba/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/0a7d5b9f3f0ed4f902d299375a6f3583/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/0a7d5b9f3f0ed4f902d299375a6f3583/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/de8e20ae03c062fff535c0b821f1ac48/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/de8e20ae03c062fff535c0b821f1ac48/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/aa99afa8778fa14de9e40c26a91dc1d4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /private/var/root/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/aa99afa8778fa14de9e40c26a91dc1d4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/95f6723cf009bc1a516da65a784558ed/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/95f6723cf009bc1a516da65a784558ed/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/f28606a519b633bd1e81c3fe0a1d47fb/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/f28606a519b633bd1e81c3fe0a1d47fb/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/b9c677d537ccea6f98f2912306476284/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/b9c677d537ccea6f98f2912306476284/AndroidManifest.xml:4:5-43
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /private/var/root/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/ee5a8b0fcbd8a930e3ffeac76e59e6ba/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /private/var/root/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/ee5a8b0fcbd8a930e3ffeac76e59e6ba/AndroidManifest.xml:20:5-22:41
 	android:targetSdkVersion
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:37:42-71
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:37:42-71
 	android:minSdkVersion
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:37:15-41
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:37:15-41
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:38:5-81
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:38:5-81
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:38:22-78
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:38:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:39:5-80
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:39:5-80
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:39:22-77
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:39:22-77
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:40:5-81
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:40:5-81
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:40:22-78
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:40:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:41:5-79
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:41:5-79
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:41:22-76
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:41:22-76
 uses-feature#android.hardware.location.gps
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:42:5-66
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:42:5-66
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:42:19-63
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:42:19-63
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:43:5-79
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/71c6b17bae2fe73b0843818f62978310/AndroidManifest.xml:23:5-79
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/71c6b17bae2fe73b0843818f62978310/AndroidManifest.xml:23:5-79
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:43:5-79
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/9ed5030de729520d4a8bfcd9876d7fb1/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/9ed5030de729520d4a8bfcd9876d7fb1/AndroidManifest.xml:23:5-79
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:43:22-76
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:43:22-76
 uses-feature#0x00020000
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:44:5-78
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/71c6b17bae2fe73b0843818f62978310/AndroidManifest.xml:26:5-28:35
-MERGED from [com.google.android.gms:play-services-maps:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/71c6b17bae2fe73b0843818f62978310/AndroidManifest.xml:26:5-28:35
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:44:5-78
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/9ed5030de729520d4a8bfcd9876d7fb1/AndroidManifest.xml:26:5-28:35
+MERGED from [com.google.android.gms:play-services-maps:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.8.0.aar/9ed5030de729520d4a8bfcd9876d7fb1/AndroidManifest.xml:26:5-28:35
 	android:glEsVersion
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:44:19-51
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:44:19-51
 	android:required
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:44:52-75
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:44:52-75
 uses-feature#android.hardware.location
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:45:5-62
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:45:5-62
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:45:19-59
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:45:19-59
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:46:5-76
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:46:5-76
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:46:22-73
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:46:22-73
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:47:5-71
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:47:5-71
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:47:22-68
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:47:22-68
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:24:13-115
+ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:24:13-115
 	android:resource
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:24:75-112
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:24:75-112
 	android:name
-		ADDED from /Users/ed/Library/Mobile Documents/com~apple~CloudDocs/Projects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:24:24-74
+		ADDED from /Users/miguel/WebstormProjects/enzorromovil/infox-v3/platforms/android/app/src/main/AndroidManifest.xml:24:24-74
 activity#com.facebook.CustomTabMainActivity
-ADDED from [com.facebook.android:facebook-common:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-common-4.38.1.aar/10962067a9654c0e87c332793d0b36b0/AndroidManifest.xml:33:9-71
+ADDED from [com.facebook.android:facebook-common:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-common-4.37.0.aar/26f8d38c7d6e69a277ff811b95520eff/AndroidManifest.xml:33:9-71
 	android:name
-		ADDED from [com.facebook.android:facebook-common:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-common-4.38.1.aar/10962067a9654c0e87c332793d0b36b0/AndroidManifest.xml:33:19-68
+		ADDED from [com.facebook.android:facebook-common:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-common-4.37.0.aar/26f8d38c7d6e69a277ff811b95520eff/AndroidManifest.xml:33:19-68
 activity#com.facebook.CustomTabActivity
-ADDED from [com.facebook.android:facebook-common:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-common-4.38.1.aar/10962067a9654c0e87c332793d0b36b0/AndroidManifest.xml:34:9-67
+ADDED from [com.facebook.android:facebook-common:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-common-4.37.0.aar/26f8d38c7d6e69a277ff811b95520eff/AndroidManifest.xml:34:9-67
 	android:name
-		ADDED from [com.facebook.android:facebook-common:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-common-4.38.1.aar/10962067a9654c0e87c332793d0b36b0/AndroidManifest.xml:34:19-64
+		ADDED from [com.facebook.android:facebook-common:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-common-4.37.0.aar/26f8d38c7d6e69a277ff811b95520eff/AndroidManifest.xml:34:19-64
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/750786f78353f1f7c0c2e3910d6b5cde/AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/f82bac6235e81acabd7f96822f49a7a9/AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/750786f78353f1f7c0c2e3910d6b5cde/AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/f82bac6235e81acabd7f96822f49a7a9/AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/750786f78353f1f7c0c2e3910d6b5cde/AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/f82bac6235e81acabd7f96822f49a7a9/AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:11.8.0] /Users/ed/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/750786f78353f1f7c0c2e3910d6b5cde/AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/f82bac6235e81acabd7f96822f49a7a9/AndroidManifest.xml:24:13-79
 provider#com.facebook.marketing.internal.MarketingInitProvider
-ADDED from [com.facebook.android:facebook-marketing:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.38.1.aar/feb436f19a148ce3be9a45333cdcbc1e/AndroidManifest.xml:29:9-32:40
+ADDED from [com.facebook.android:facebook-marketing:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.37.0.aar/0b9299303c704ff52a6288a9695375dd/AndroidManifest.xml:29:9-32:40
 	android:authorities
-		ADDED from [com.facebook.android:facebook-marketing:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.38.1.aar/feb436f19a148ce3be9a45333cdcbc1e/AndroidManifest.xml:31:13-73
+		ADDED from [com.facebook.android:facebook-marketing:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.37.0.aar/0b9299303c704ff52a6288a9695375dd/AndroidManifest.xml:31:13-73
 	android:exported
-		ADDED from [com.facebook.android:facebook-marketing:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.38.1.aar/feb436f19a148ce3be9a45333cdcbc1e/AndroidManifest.xml:32:13-37
+		ADDED from [com.facebook.android:facebook-marketing:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.37.0.aar/0b9299303c704ff52a6288a9695375dd/AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-marketing:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.38.1.aar/feb436f19a148ce3be9a45333cdcbc1e/AndroidManifest.xml:30:13-81
+		ADDED from [com.facebook.android:facebook-marketing:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.37.0.aar/0b9299303c704ff52a6288a9695375dd/AndroidManifest.xml:30:13-81
 provider#com.facebook.internal.FacebookInitProvider
-ADDED from [com.facebook.android:facebook-core:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/d6426359d1ddcfa061f8b09eada57cd4/AndroidManifest.xml:39:9-42:40
+ADDED from [com.facebook.android:facebook-core:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/36227186fca424935b57fac866dfb055/AndroidManifest.xml:39:9-42:40
 	android:authorities
-		ADDED from [com.facebook.android:facebook-core:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/d6426359d1ddcfa061f8b09eada57cd4/AndroidManifest.xml:41:13-72
+		ADDED from [com.facebook.android:facebook-core:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/36227186fca424935b57fac866dfb055/AndroidManifest.xml:41:13-72
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/d6426359d1ddcfa061f8b09eada57cd4/AndroidManifest.xml:42:13-37
+		ADDED from [com.facebook.android:facebook-core:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/36227186fca424935b57fac866dfb055/AndroidManifest.xml:42:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-core:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/d6426359d1ddcfa061f8b09eada57cd4/AndroidManifest.xml:40:13-70
+		ADDED from [com.facebook.android:facebook-core:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/36227186fca424935b57fac866dfb055/AndroidManifest.xml:40:13-70
 receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
-ADDED from [com.facebook.android:facebook-core:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/d6426359d1ddcfa061f8b09eada57cd4/AndroidManifest.xml:44:9-50:20
+ADDED from [com.facebook.android:facebook-core:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/36227186fca424935b57fac866dfb055/AndroidManifest.xml:44:9-50:20
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/d6426359d1ddcfa061f8b09eada57cd4/AndroidManifest.xml:46:13-37
+		ADDED from [com.facebook.android:facebook-core:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/36227186fca424935b57fac866dfb055/AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-core:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/d6426359d1ddcfa061f8b09eada57cd4/AndroidManifest.xml:45:13-86
+		ADDED from [com.facebook.android:facebook-core:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/36227186fca424935b57fac866dfb055/AndroidManifest.xml:45:13-86
 intent-filter#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/d6426359d1ddcfa061f8b09eada57cd4/AndroidManifest.xml:47:13-49:29
+ADDED from [com.facebook.android:facebook-core:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/36227186fca424935b57fac866dfb055/AndroidManifest.xml:47:13-49:29
 action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/d6426359d1ddcfa061f8b09eada57cd4/AndroidManifest.xml:48:17-95
+ADDED from [com.facebook.android:facebook-core:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/36227186fca424935b57fac866dfb055/AndroidManifest.xml:48:17-95
 	android:name
-		ADDED from [com.facebook.android:facebook-core:4.38.1] /Users/ed/.gradle/caches/transforms-1/files-1.1/facebook-core-4.38.1.aar/d6426359d1ddcfa061f8b09eada57cd4/AndroidManifest.xml:48:25-92
+		ADDED from [com.facebook.android:facebook-core:4.37.0] /private/var/root/.gradle/caches/transforms-1/files-1.1/facebook-core-4.37.0.aar/36227186fca424935b57fac866dfb055/AndroidManifest.xml:48:25-92

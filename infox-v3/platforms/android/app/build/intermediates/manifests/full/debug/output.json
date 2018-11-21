@@ -1,1 +1,1 @@
-[{"outputType":{"type":"MERGED_MANIFESTS"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":30500},"path":"AndroidManifest.xml","properties":{"packageId":"infox.buscador","split":"","minSdkVersion":"16"}}]
+[{"outputType":{"type":"MERGED_MANIFESTS"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":30600},"path":"AndroidManifest.xml","properties":{"packageId":"infox.buscador","split":"","minSdkVersion":"19"}}]
