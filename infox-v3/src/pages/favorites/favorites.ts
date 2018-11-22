@@ -18,7 +18,7 @@ import {General} from "../../general/general";
 })
 export class FavoritesPage {
     favorites: any[];
-    api_url = 'http://infoxsoft.com/app/';
+    api_url = 'http://infox.mx/apps/';
     user: any;
     constructor(public navCtrl: NavController, public navParams: NavParams, public httpClient: HttpClient, public globalVariables: GlobalVariables, public general: General) {
     }
