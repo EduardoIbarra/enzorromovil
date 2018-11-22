@@ -113,7 +113,7 @@ export class GpsModalPage {
 
     getPlaceAddress() {
         //Get place coords to get address
-        this.nativeGeocoder.reverseGeocode(this.place.latitud, this.place.longitud).then((result: NativeGeocoderReverseResult) => {
+        this.nativeGeocoder.reverseGeocode(this.place.latitud, this.place.longitud).then((result: any) => {
             this.placeAddress = result.thoroughfare + ', ' + result.subLocality + ', ' + result.subAdministrativeArea;
         }).catch((error: any) => {
             console.log(error)
@@ -133,7 +133,7 @@ export class GpsModalPage {
     }
 
     getUserAddress(position: Geoposition) {
-        this.nativeGeocoder.reverseGeocode(position.coords.latitude, position.coords.longitude).then((result: NativeGeocoderReverseResult) => {
+        this.nativeGeocoder.reverseGeocode(position.coords.latitude, position.coords.longitude).then((result: any) => {
             this.showUserAddress = false;
             this.userAddress = result.thoroughfare + ', ' + result.subLocality + ', ' + result.subAdministrativeArea;
             this.showUserAddress = true;
@@ -516,7 +516,7 @@ export class GpsModalPage {
         };
 
         let launchNavigatorOptions: LaunchNavigatorOptions = {
-            destinationName: 'CANACO Quéretaro',
+            destinationName: this.place.nombre,
             appSelection: appSelectionOptions
         };
 

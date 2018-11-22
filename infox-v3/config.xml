@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="infox.buscador" version="3.5" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="infox.buscador" version="3.6" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Infox</name>
     <description>Descubre servicios, lugares, negocios y más...</description>
     <author email="appsadmin@ventamia.com" href="http://ventamia.com/">VentaMía, Inc</author>
@@ -13,7 +13,7 @@
     <allow-intent href="geo:*" />
     <allow-navigation href="*://*.facebook.com/*" />
     <preference name="ScrollEnabled" value="false" />
-    <preference name="android-minSdkVersion" value="16" />
+    <preference name="android-minSdkVersion" value="19" />
     <preference name="BackupWebStorage" value="none" />
     <preference name="SplashMaintainAspectRatio" value="true" />
     <preference name="FadeSplashScreenDuration" value="300" />
@@ -23,11 +23,12 @@
     <preference name="AutoHideSplashScreen" value="false" />
     <preference name="ShowSplashScreenSpinner" value="false" />
     <platform name="android">
-        <config-file parent="/resources" target="./res/values/strings.xml">
-            <string name="fb_app_id">1234</string>
-            <string name="fb_app_name">foobar</string>
-        </config-file>
+        <preference name="AndroidLaunchMode" value="singleTop" />
         <allow-intent href="market:*" />
+        <config-file parent="/resources" target="./res/values/strings.xml">
+            <string name="fb_app_id">456869154839437</string>
+            <string name="fb_app_name">InfoxLogin</string>
+        </config-file>
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
         <icon density="hdpi" src="resources/android/icon/drawable-hdpi-icon.png" />
@@ -104,9 +105,6 @@
     <plugin name="com-sarriaroman-photoviewer" spec="^1.1.16" />
     <plugin name="cordova-plugin-network-information" spec="^2.0.1" />
     <plugin name="cordova-plugin-networkinterface" spec="^1.2.0" />
-    <plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" spec="^4.1.5">
-        <variable name="LOCATION_USAGE_DESCRIPTION" value="This app requires access to your location for navigation purposes" />
-    </plugin>
     <plugin name="cordova-plugin-ionic-webview" spec="^1.1.16" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
     <plugin name="cordova-plugin-googlemaps" spec="^1.4.5">
@@ -116,11 +114,15 @@
         <variable name="NSLOCATIONALWAYSUSAGEDESCRIPTION" value="Dibujar una ruta en el mapa" />
     </plugin>
     <plugin name="com.googlemaps.ios" spec="https://github.com/mapsplugin/cordova-plugin-googlemaps-sdk" />
-    <plugin name="cordova-plugin-facebook4" spec="^1.10.1">
-        <variable name="APP_ID" value="805201646226832" />
-        <variable name="APP_NAME" value="InfoxLogin" />
-    </plugin>
     <allow-navigation href="http://10.0.0.24:8102" />
     <allow-navigation href="http://10.0.0.24:8100" />
-    <engine name="ios" spec="4.5.5" />
+    <plugin name="cordova-plugin-facebook4" spec="3.1.0">
+        <variable name="APP_ID" value="456869154839437" />
+        <variable name="APP_NAME" value="InfoxLogin" />
+        <variable name="FACEBOOK_ANDROID_SDK_VERSION" value="4.37.0" />
+    </plugin>
+    <plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" spec="^4.2.2">
+        <variable name="LOCATION_USAGE_DESCRIPTION" value="This app requires access to your location for navigation purposes" />
+        <variable name="OKHTTP_VERSION" value="3.+" />
+    </plugin>
 </widget>
