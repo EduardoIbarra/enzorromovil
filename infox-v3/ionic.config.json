@@ -1,0 +1,8 @@
+{
+  "name": "Infox",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "app_id": ""
+}
