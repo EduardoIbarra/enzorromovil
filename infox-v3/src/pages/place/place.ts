@@ -44,7 +44,7 @@ export class PlacePage {
     show_full_phones: boolean = false;
     correctData: boolean = false;
     map: any;
-    api_url = 'http://infox.mx/apps/';
+    api_url = 'http://infoxsoft.com/app/';
     user: any;
     myRate = 5;
     constructor(public navCtrl: NavController,

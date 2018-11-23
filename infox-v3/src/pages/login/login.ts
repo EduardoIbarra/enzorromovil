@@ -18,7 +18,7 @@ import {AppService} from "../../services/services";
 export class LoginPage {
     fbResponse: any = {};
     user: any = {};
-    api_url = 'http://infox.mx/apps/';
+    api_url = 'http://infoxsoft.com/app/';
     operation: string = 'login';
     countries: any = [];
     states: any = [];
