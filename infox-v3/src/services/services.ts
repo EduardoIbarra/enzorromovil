@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class AppService {
 
-    api_url = 'http://infoxsoft.com/app/';
+    api_url = 'http://infox.mx/apps/';
     constructor(public http: Http, public jsonp: Jsonp) {
     }
 
@@ -19,12 +19,12 @@ export class AppService {
     };
 
     public getPlaces = (query, page, day) => {
-        return this.jsonp.get('http://infoxsoft.com/app/consulta_datos.php?termino=' + query + '&page=' + page + '&ciudad=0&dia=' + day + '&jsoncallback=JSONP_CALLBACK');
+        return this.jsonp.get('http://infox.mx/apps/consulta_datos.php?termino=' + query + '&page=' + page + '&ciudad=0&dia=' + day + '&jsoncallback=JSONP_CALLBACK');
         //return this.jsonp.get('http://infox.mx/apps/consulta_datos.php?termino=' + query + '&page=' + page + '&ciudad=0&dia=' + day + '&jsoncallback=JSONP_CALLBACK');
     };
 
     public getPlaceDetails = (placeId) => {
-        return this.jsonp.get('http://infoxsoft.com/app/consulta_info.php?idnum=' + placeId + '&jsoncallback=JSONP_CALLBACK');
+        return this.jsonp.get('http://infox.mx/apps/consulta_info.php?idnum=' + placeId + '&jsoncallback=JSONP_CALLBACK');
         //return this.jsonp.get('http://infox.mx/apps/consulta_info.php?idnum=' + placeId + '&jsoncallback=JSONP_CALLBACK');
     };
 

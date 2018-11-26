@@ -27,7 +27,7 @@ export class SearchPage {
     order: string = 'plan';
     user: any;
     favorites: any;
-    api_url = 'http://infoxsoft.com/app/';
+    api_url = 'http://infox.mx/apps/';
     myFavorites: any[] = [];
     constructor(
         public navCtrl: NavController,
