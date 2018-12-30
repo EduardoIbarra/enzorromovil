@@ -6,6 +6,7 @@ import {General} from '../../general/general';
 import {AppService} from '../../services/services';
 import {PlaceClasification} from '../../services/place-clasification';
 import {Network} from "@ionic-native/network";
+import {HttpClient, HttpParams} from "@angular/common/http";
 
 declare var google: any;
 declare var MarkerWithLabel: any;
@@ -32,6 +33,10 @@ export class NearbyPage {
     recentSearch: string;
     enableRefresh = true;
     showReloadMessage:boolean = false;
+    user: any;
+    favorites: any;
+    api_url = 'http://infox.mx/apps/';
+    myFavorites: any[] = [];
 
     constructor(
         public navCtrl: NavController,
@@ -43,11 +48,13 @@ export class NearbyPage {
         public network: Network,
         public cd: ChangeDetectorRef,
         public appService: AppService,
+        public httpClient: HttpClient
     ) {
         //Get connection status on change
         this.network.onConnect().subscribe(data => {
             this.getPosition();
         }, error => console.error(error));
+        this.getFavorites();
 
     }
 
@@ -385,5 +392,34 @@ export class NearbyPage {
     }
     isLoggedIn() {
         return (JSON.parse(localStorage.getItem('infox_user')));
+    }
+    getStarName2(starN, rate) {
+        return (starN <= rate) ? 'star' : 'star-outline';
+    }
+    getFavorites() {
+        if (!JSON.parse(localStorage.getItem('infox_user'))) {
+            return;
+        }
+        this.user = JSON.parse(localStorage.getItem('infox_user')).user;
+        if(!JSON.parse(localStorage.getItem('infox_user'))) {
+            return;
+        }
+        const favoritos = {
+            id_usuario: this.user.id
+        };
+        const params = new HttpParams({
+            fromObject: favoritos
+        });
+        this.httpClient.get(this.api_url+'consulta_favoritos.php', {params: params}).subscribe((data: any) => {
+            this.favorites = data.favoritos_info;
+            this.myFavorites = data.negociosFav;
+            localStorage.setItem('my_favorites', JSON.stringify(data.negociosFav));
+            console.log(data.negociosFav);
+            if(data.error) {
+                alert(data.error);
+            }
+        }, (error) => {
+            console.log(error);
+        });
     }
 }

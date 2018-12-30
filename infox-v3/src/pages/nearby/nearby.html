@@ -49,6 +49,7 @@
         <ion-list *ngIf="showData">
 
             <button ion-item detail-none *ngFor="let place of places" [ngClass]="(place.plan == 4) ? 'item-featured' : ''" (click)="getPlaceDetails(place.id)">
+                <ion-icon class="addedAsFavorite" *ngIf="myFavorites.includes(place.id)" name="star"></ion-icon>
                 <ion-avatar item-start *ngIf="place.imagen && place.plan !== ''" class="list-place-img">
                     <img [src]="'http://infox.mx/' + place.imagen">
                 </ion-avatar>
@@ -57,6 +58,17 @@
                 </ion-avatar>
                 <div class="itemPadding">
                     <h2 class="search-list-place-name">{{place.itemPosition + '. '+ place.nombre | lowercase}}</h2>
+
+                    <div class="rate-stars" *ngIf="place.num_resenas !== 0">
+                        <span color="infox">{{place.promedio_calificacion | number: '1.0-2'}}</span>
+                        <ion-icon style="font-size: 1.2em" name="{{getStarName2(1, place.promedio_calificacion)}}"></ion-icon>
+                        <ion-icon style="font-size: 1.2em" name="{{getStarName2(2, place.promedio_calificacion)}}"></ion-icon>
+                        <ion-icon style="font-size: 1.2em" name="{{getStarName2(3, place.promedio_calificacion)}}"></ion-icon>
+                        <ion-icon style="font-size: 1.2em" name="{{getStarName2(4, place.promedio_calificacion)}}"></ion-icon>
+                        <ion-icon style="font-size: 1.2em" name="{{getStarName2(5, place.promedio_calificacion)}}"></ion-icon>
+                        <span>({{place.num_resenas}})</span>
+                    </div>
+
                     <span class="category">
                     <ion-icon name="{{place.iconStyle}}"></ion-icon>
                     {{place.clasificacion | lowercase}}

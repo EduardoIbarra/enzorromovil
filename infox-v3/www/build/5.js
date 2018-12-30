@@ -129,6 +129,7 @@ var OfflineComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_services__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_place_clasification__ = __webpack_require__(221);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_network__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_common_http__ = __webpack_require__(111);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -146,8 +147,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var NearbyPage = /** @class */ (function () {
-    function NearbyPage(navCtrl, geolocation, modalCtrl, globalVariables, general, placeClasification, network, cd, appService) {
+    function NearbyPage(navCtrl, geolocation, modalCtrl, globalVariables, general, placeClasification, network, cd, appService, httpClient) {
         var _this = this;
         this.navCtrl = navCtrl;
         this.geolocation = geolocation;
@@ -158,6 +160,7 @@ var NearbyPage = /** @class */ (function () {
         this.network = network;
         this.cd = cd;
         this.appService = appService;
+        this.httpClient = httpClient;
         this.form = { page: 1, listLabel: 0, item: null };
         this.userPosition = { latitude: null, longitude: null };
         this.markersArray = [];
@@ -167,10 +170,13 @@ var NearbyPage = /** @class */ (function () {
         this.dataError = false;
         this.enableRefresh = true;
         this.showReloadMessage = false;
+        this.api_url = 'http://infox.mx/apps/';
+        this.myFavorites = [];
         //Get connection status on change
         this.network.onConnect().subscribe(function (data) {
             _this.getPosition();
         }, function (error) { return console.error(error); });
+        this.getFavorites();
     }
     NearbyPage.prototype.ionViewDidEnter = function () {
         if (this.places.length === 0 && this.globalVariables.isConnected) {
@@ -472,6 +478,36 @@ var NearbyPage = /** @class */ (function () {
     NearbyPage.prototype.isLoggedIn = function () {
         return (JSON.parse(localStorage.getItem('infox_user')));
     };
+    NearbyPage.prototype.getStarName2 = function (starN, rate) {
+        return (starN <= rate) ? 'star' : 'star-outline';
+    };
+    NearbyPage.prototype.getFavorites = function () {
+        var _this = this;
+        if (!JSON.parse(localStorage.getItem('infox_user'))) {
+            return;
+        }
+        this.user = JSON.parse(localStorage.getItem('infox_user')).user;
+        if (!JSON.parse(localStorage.getItem('infox_user'))) {
+            return;
+        }
+        var favoritos = {
+            id_usuario: this.user.id
+        };
+        var params = new __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["c" /* HttpParams */]({
+            fromObject: favoritos
+        });
+        this.httpClient.get(this.api_url + 'consulta_favoritos.php', { params: params }).subscribe(function (data) {
+            _this.favorites = data.favoritos_info;
+            _this.myFavorites = data.negociosFav;
+            localStorage.setItem('my_favorites', JSON.stringify(data.negociosFav));
+            console.log(data.negociosFav);
+            if (data.error) {
+                alert(data.error);
+            }
+        }, function (error) {
+            console.log(error);
+        });
+    };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Content */]),
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Content */])
@@ -482,7 +518,7 @@ var NearbyPage = /** @class */ (function () {
     ], NearbyPage.prototype, "refresher", void 0);
     NearbyPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-nearby',template:/*ion-inline-start:"/Users/ed/Downloads/enzorromovil/infox-v3/src/pages/nearby/nearby.html"*/'<ion-header>\n\n    <ion-toolbar color="primary">\n        <ion-title>\n            <div text-center>\n                <img src="assets/img/logo_infox_white.png" class="mainLogo"/>\n            </div>\n        </ion-title>\n        <ion-buttons end>\n      <span id="loggedUserName" *ngIf="isLoggedIn()">\n        <ion-icon name="contact" class="white-color"></ion-icon>\n      </span>\n        </ion-buttons>\n    </ion-toolbar>\n    <ion-navbar color="primary">\n        <ion-input mode="ios" placeholder="Busca cerca de ti..." value="{{recentSearch}}" (ionFocus)="openSearchModal()" readonly>\n            <ion-icon name="md-mic"></ion-icon>\n        </ion-input>\n        <ion-buttons end>\n            <button item-right ion-button color="light" class="mic-button" (click)="openSpeechModal()">\n                <ion-icon name="md-mic"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n\n    <ion-refresher (ionRefresh)="refresh($event)" [enabled]="enableRefresh && globalVariables.isConnected">\n        <ion-refresher-content\n                pullingIcon="md-arrow-down"\n                pullingText="Estira Para Actualizar...">\n        </ion-refresher-content>\n    </ion-refresher>\n\n    <offline *ngIf="!globalVariables.isConnected && places.length <= 0"></offline>\n\n    <div no-lines text-center text-wrap padding class="simple-message" *ngIf="showReloadMessage">Busca de lugares cercanos. <br> tirando hacia abajo</div>\n    <div no-lines text-center text-wrap padding class="simple-message" *ngIf="dataError && globalVariables.isConnected">Ha ocurrido un error. <br> Intenta de nuevo tirando hacia abajo</div>\n\n    <div [ngClass]="{\'animate-fade-item\': showData, \'fadeOut\': !showData}" *ngIf="globalVariables.isConnected || places.length > 0">\n        <div padding>\n            <div id="map" class="nearbyMap"></div>\n        </div>\n        <div no-lines text-center text-wrap padding class="simple-message" *ngIf="places.length <= 0 && showData && searchQuery">No se han encontrado <b>{{searchQuery}}</b> cercanos a ti. <br> Intenta de nuevo</div>\n\n        <ion-list *ngIf="showData">\n\n            <button ion-item detail-none *ngFor="let place of places" [ngClass]="(place.plan == 4) ? \'item-featured\' : \'\'" (click)="getPlaceDetails(place.id)">\n                <ion-avatar item-start *ngIf="place.imagen && place.plan !== \'\'" class="list-place-img">\n                    <img [src]="\'http://infox.mx/\' + place.imagen">\n                </ion-avatar>\n                <ion-avatar item-start *ngIf="!place.imagen || place.plan === \'\'" class="list-place-img">\n                    <img src="assets/img/logo_infox_big.png">\n                </ion-avatar>\n                <div class="itemPadding">\n                    <h2 class="search-list-place-name">{{place.itemPosition + \'. \'+ place.nombre | lowercase}}</h2>\n                    <span class="category">\n                    <ion-icon name="{{place.iconStyle}}"></ion-icon>\n                    {{place.clasificacion | lowercase}}\n                 </span>\n                    <p *ngIf="place.otrosdatos">\n                        <ion-icon name="md-information-circle"></ion-icon>\n                        {{place.otrosdatos}}\n                    </p>\n                    <p *ngIf="place.distancia" class="textCapitalize">\n                        <ion-icon name="md-car"></ion-icon>\n                        <b> A {{place.distancia}} Km aprox.</b>\n                    </p>\n                </div>\n            </button>\n        </ion-list>\n\n        <div *ngIf="records > 20" text-center padding>\n            <span *ngIf="calculatePages() > 0">Página\n                <strong>{{form.page}}</strong> de\n                <strong> {{calculatePages()}}</strong> |\n            </span>\n            <span>\n                <strong>{{records}}</strong>\n                <span *ngIf="records == 1"> Resultado</span>\n                <span *ngIf="records > 1">Resultados</span>\n            </span>\n        </div>\n        <div text-center *ngIf="places.length > 0 && records > 20 " class="buttonGroupNearby" no-padding>\n            <button ion-button full icon-left (click)="changePage(\'home\')" [disabled]="form.page == 1" color="light" class="homeButton">\n                <ion-icon name="home"></ion-icon>\n                Inicio\n            </button>\n            <button ion-button full icon-left (click)="changePage(\'prev\')" [disabled]="form.page <= 1" color="light">\n                <ion-icon name="ios-arrow-back"></ion-icon>\n                Atrás\n            </button>\n            <button ion-button full icon-right (click)="changePage(\'next\')" [disabled]="places.length < 14" color="primary">\n                Siguiente\n                <ion-icon name="ios-arrow-forward"></ion-icon>\n            </button>\n        </div>\n\n        <div text-center *ngIf="searchQuery">\n            <div padding *ngIf="records >= 1 && records <= 20">\n                <strong>{{records}}</strong>\n                <span *ngIf="records == 1"> Resultado</span>\n                <span *ngIf="records > 1">Resultados</span>\n            </div>\n            <button ion-button icon-left color="primary" (click)="backToNearby()">\n                <ion-icon name="ios-home"></ion-icon>\n                Lugares Cercanos\n            </button>\n        </div>\n    </div>\n\n</ion-content>\n'/*ion-inline-end:"/Users/ed/Downloads/enzorromovil/infox-v3/src/pages/nearby/nearby.html"*/,
+            selector: 'page-nearby',template:/*ion-inline-start:"/Users/ed/Downloads/enzorromovil/infox-v3/src/pages/nearby/nearby.html"*/'<ion-header>\n\n    <ion-toolbar color="primary">\n        <ion-title>\n            <div text-center>\n                <img src="assets/img/logo_infox_white.png" class="mainLogo"/>\n            </div>\n        </ion-title>\n        <ion-buttons end>\n      <span id="loggedUserName" *ngIf="isLoggedIn()">\n        <ion-icon name="contact" class="white-color"></ion-icon>\n      </span>\n        </ion-buttons>\n    </ion-toolbar>\n    <ion-navbar color="primary">\n        <ion-input mode="ios" placeholder="Busca cerca de ti..." value="{{recentSearch}}" (ionFocus)="openSearchModal()" readonly>\n            <ion-icon name="md-mic"></ion-icon>\n        </ion-input>\n        <ion-buttons end>\n            <button item-right ion-button color="light" class="mic-button" (click)="openSpeechModal()">\n                <ion-icon name="md-mic"></ion-icon>\n            </button>\n        </ion-buttons>\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n\n    <ion-refresher (ionRefresh)="refresh($event)" [enabled]="enableRefresh && globalVariables.isConnected">\n        <ion-refresher-content\n                pullingIcon="md-arrow-down"\n                pullingText="Estira Para Actualizar...">\n        </ion-refresher-content>\n    </ion-refresher>\n\n    <offline *ngIf="!globalVariables.isConnected && places.length <= 0"></offline>\n\n    <div no-lines text-center text-wrap padding class="simple-message" *ngIf="showReloadMessage">Busca de lugares cercanos. <br> tirando hacia abajo</div>\n    <div no-lines text-center text-wrap padding class="simple-message" *ngIf="dataError && globalVariables.isConnected">Ha ocurrido un error. <br> Intenta de nuevo tirando hacia abajo</div>\n\n    <div [ngClass]="{\'animate-fade-item\': showData, \'fadeOut\': !showData}" *ngIf="globalVariables.isConnected || places.length > 0">\n        <div padding>\n            <div id="map" class="nearbyMap"></div>\n        </div>\n        <div no-lines text-center text-wrap padding class="simple-message" *ngIf="places.length <= 0 && showData && searchQuery">No se han encontrado <b>{{searchQuery}}</b> cercanos a ti. <br> Intenta de nuevo</div>\n\n        <ion-list *ngIf="showData">\n\n            <button ion-item detail-none *ngFor="let place of places" [ngClass]="(place.plan == 4) ? \'item-featured\' : \'\'" (click)="getPlaceDetails(place.id)">\n                <ion-icon class="addedAsFavorite" *ngIf="myFavorites.includes(place.id)" name="star"></ion-icon>\n                <ion-avatar item-start *ngIf="place.imagen && place.plan !== \'\'" class="list-place-img">\n                    <img [src]="\'http://infox.mx/\' + place.imagen">\n                </ion-avatar>\n                <ion-avatar item-start *ngIf="!place.imagen || place.plan === \'\'" class="list-place-img">\n                    <img src="assets/img/logo_infox_big.png">\n                </ion-avatar>\n                <div class="itemPadding">\n                    <h2 class="search-list-place-name">{{place.itemPosition + \'. \'+ place.nombre | lowercase}}</h2>\n\n                    <div class="rate-stars" *ngIf="place.num_resenas !== 0">\n                        <span color="infox">{{place.promedio_calificacion | number: \'1.0-2\'}}</span>\n                        <ion-icon style="font-size: 1.2em" name="{{getStarName2(1, place.promedio_calificacion)}}"></ion-icon>\n                        <ion-icon style="font-size: 1.2em" name="{{getStarName2(2, place.promedio_calificacion)}}"></ion-icon>\n                        <ion-icon style="font-size: 1.2em" name="{{getStarName2(3, place.promedio_calificacion)}}"></ion-icon>\n                        <ion-icon style="font-size: 1.2em" name="{{getStarName2(4, place.promedio_calificacion)}}"></ion-icon>\n                        <ion-icon style="font-size: 1.2em" name="{{getStarName2(5, place.promedio_calificacion)}}"></ion-icon>\n                        <span>({{place.num_resenas}})</span>\n                    </div>\n\n                    <span class="category">\n                    <ion-icon name="{{place.iconStyle}}"></ion-icon>\n                    {{place.clasificacion | lowercase}}\n                 </span>\n                    <p *ngIf="place.otrosdatos">\n                        <ion-icon name="md-information-circle"></ion-icon>\n                        {{place.otrosdatos}}\n                    </p>\n                    <p *ngIf="place.distancia" class="textCapitalize">\n                        <ion-icon name="md-car"></ion-icon>\n                        <b> A {{place.distancia}} Km aprox.</b>\n                    </p>\n                </div>\n            </button>\n        </ion-list>\n\n        <div *ngIf="records > 20" text-center padding>\n            <span *ngIf="calculatePages() > 0">Página\n                <strong>{{form.page}}</strong> de\n                <strong> {{calculatePages()}}</strong> |\n            </span>\n            <span>\n                <strong>{{records}}</strong>\n                <span *ngIf="records == 1"> Resultado</span>\n                <span *ngIf="records > 1">Resultados</span>\n            </span>\n        </div>\n        <div text-center *ngIf="places.length > 0 && records > 20 " class="buttonGroupNearby" no-padding>\n            <button ion-button full icon-left (click)="changePage(\'home\')" [disabled]="form.page == 1" color="light" class="homeButton">\n                <ion-icon name="home"></ion-icon>\n                Inicio\n            </button>\n            <button ion-button full icon-left (click)="changePage(\'prev\')" [disabled]="form.page <= 1" color="light">\n                <ion-icon name="ios-arrow-back"></ion-icon>\n                Atrás\n            </button>\n            <button ion-button full icon-right (click)="changePage(\'next\')" [disabled]="places.length < 14" color="primary">\n                Siguiente\n                <ion-icon name="ios-arrow-forward"></ion-icon>\n            </button>\n        </div>\n\n        <div text-center *ngIf="searchQuery">\n            <div padding *ngIf="records >= 1 && records <= 20">\n                <strong>{{records}}</strong>\n                <span *ngIf="records == 1"> Resultado</span>\n                <span *ngIf="records > 1">Resultados</span>\n            </div>\n            <button ion-button icon-left color="primary" (click)="backToNearby()">\n                <ion-icon name="ios-home"></ion-icon>\n                Lugares Cercanos\n            </button>\n        </div>\n    </div>\n\n</ion-content>\n'/*ion-inline-end:"/Users/ed/Downloads/enzorromovil/infox-v3/src/pages/nearby/nearby.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2__ionic_native_geolocation__["a" /* Geolocation */],
@@ -492,7 +528,8 @@ var NearbyPage = /** @class */ (function () {
             __WEBPACK_IMPORTED_MODULE_6__services_place_clasification__["a" /* PlaceClasification */],
             __WEBPACK_IMPORTED_MODULE_7__ionic_native_network__["a" /* Network */],
             __WEBPACK_IMPORTED_MODULE_0__angular_core__["j" /* ChangeDetectorRef */],
-            __WEBPACK_IMPORTED_MODULE_5__services_services__["a" /* AppService */]])
+            __WEBPACK_IMPORTED_MODULE_5__services_services__["a" /* AppService */],
+            __WEBPACK_IMPORTED_MODULE_8__angular_common_http__["a" /* HttpClient */]])
     ], NearbyPage);
     return NearbyPage;
 }());

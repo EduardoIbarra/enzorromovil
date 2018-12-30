@@ -3,40 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="ccc37a11-414b-4a1e-b654-c67dbe9041ee" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sourcemaps/0.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.sourcemaps/0.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sourcemaps/1.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.sourcemaps/1.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sourcemaps/10.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.sourcemaps/10.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sourcemaps/2.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.sourcemaps/2.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sourcemaps/3.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.sourcemaps/3.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sourcemaps/4.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.sourcemaps/4.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.sourcemaps/5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.sourcemaps/5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sourcemaps/6.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.sourcemaps/6.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sourcemaps/7.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.sourcemaps/7.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sourcemaps/8.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.sourcemaps/8.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sourcemaps/9.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.sourcemaps/9.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.sourcemaps/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.sourcemaps/main.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ionic.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/ionic.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/favorites/favorites.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/favorites/favorites.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/login.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/login.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/place/place.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/place/place.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/search/search.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/search/search.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/services.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/build/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/build/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/build/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/build/3.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/build/4.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/nearby/nearby.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/nearby/nearby.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/nearby/nearby.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/nearby/nearby.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/build/5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/build/6.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/5.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/build/7.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/7.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/build/8.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/8.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/build/9.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/9.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/build/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/build/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/build/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/vendor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/build/vendor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/build/vendor.js.map" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -112,56 +90,88 @@
     <session id="-388585624">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="7" />
+          <entry key="ts" value="4" />
+          <entry key="xml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="7" />
+          <entry key="TypeScript" value="4" />
+          <entry key="XML" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="3" />
+          <entry key="ts" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="3" />
+          <entry key="TypeScript" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="TypeScriptServerServiceImpl" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="62" lean-forward="true" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
+            <state relative-caret-position="15">
+              <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/nearby/nearby.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="51" column="86" selection-start-line="51" selection-start-column="86" selection-end-line="51" selection-end-column="86" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ionic.config.json">
+        <entry file="file://$PROJECT_DIR$/src/pages/nearby/nearby.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="464">
+              <caret line="416" column="42" selection-start-line="416" selection-start-column="42" selection-end-line="416" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/infoxkey.md">
+        <entry file="file://$PROJECT_DIR$/src/pages/search/search.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="13" selection-start-line="9" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="229">
+              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.html">
+        <entry file="file://$PROJECT_DIR$/src/pages/search/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/favorites/favorites.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="17" />
+            <state relative-caret-position="429">
+              <caret line="61" column="50" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -170,9 +180,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ciudades</find>
-      <find>tabIndex</find>
-      <find>Ingresa el</find>
       <find>@IonicPage</find>
       <find>Search</find>
       <find>infox</find>
@@ -194,12 +201,15 @@
       <find>Escribe</find>
       <find>click</find>
       <find>disabled</find>
-      <find>getFavorites</find>
       <find>favorites =</find>
       <find>jcenter()</find>
       <find>platform</find>
       <find>infoxsoft.com/app/</find>
       <find>infox.mx/app</find>
+      <find>infox.mx</find>
+      <find>calific</find>
+      <find>place.nombre</find>
+      <find>getFavorites</find>
     </findStrings>
     <replaceStrings>
       <replace>isLoggedIn</replace>
@@ -233,8 +243,6 @@
         <option value="$PROJECT_DIR$/src/pages/home/home.html" />
         <option value="$PROJECT_DIR$/src/pages/login/login.ts" />
         <option value="$PROJECT_DIR$/src/pages/modals/speech-modal/speech-modal.ts" />
-        <option value="$PROJECT_DIR$/src/pages/nearby/nearby.ts" />
-        <option value="$PROJECT_DIR$/src/pages/nearby/nearby.html" />
         <option value="$PROJECT_DIR$/src/pages/login/login.html" />
         <option value="$PROJECT_DIR$/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/src/pages/place/place.scss" />
@@ -246,6 +254,8 @@
         <option value="$PROJECT_DIR$/src/pages/favorites/favorites.ts" />
         <option value="$PROJECT_DIR$/src/pages/favorites/favorites.html" />
         <option value="$PROJECT_DIR$/config.xml" />
+        <option value="$PROJECT_DIR$/src/pages/nearby/nearby.ts" />
+        <option value="$PROJECT_DIR$/src/pages/nearby/nearby.html" />
       </list>
     </option>
   </component>
@@ -302,7 +312,7 @@
       <path value="$PROJECT_DIR$/plugins/uk.co.workingedge.phonegap.plugin.launchnavigator/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="1177" />
@@ -319,6 +329,37 @@
             <path>
               <item name="infox-v3" type="b2602c69:ProjectViewProjectNode" />
               <item name="infox-v3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="infox-v3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="infox-v3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="infox-v3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="infox-v3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="infox-v3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="infox-v3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="infox-v3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="infox-v3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="nearby" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="infox-v3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="infox-v3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -396,15 +437,16 @@
       <workItem from="1543012200023" duration="535000" />
       <workItem from="1543185475178" duration="259000" />
       <workItem from="1543185925938" duration="1092000" />
+      <workItem from="1545846874669" duration="669000" />
+      <workItem from="1546046695413" duration="4201000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103659000" />
+    <option name="totallyTimeSpent" value="108529000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1177" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1920" height="1177" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.875" visible="true" weight="0.13796735" />
       <window_info id="Structure" order="1" sideWeight="0.125" side_tool="true" weight="0.24954791" />
@@ -556,24 +598,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/nearby/nearby.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="22" selection-end-line="115" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/home/home.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1590">
           <caret line="113" column="4" selection-start-line="113" selection-start-column="4" selection-end-line="115" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/nearby/nearby.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5700">
-          <caret line="387" column="5" selection-start-line="387" selection-start-column="5" selection-end-line="387" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -615,20 +643,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/ionic-angular/components/alert/alert-controller.d.ts" />
     <entry file="file://$PROJECT_DIR$/node_modules/ionic-angular/components/alert/alert-options.d.ts" />
-    <entry file="file://$PROJECT_DIR$/src/pages/search/search.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2355">
-          <caret line="164" column="19" selection-end-line="189" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/search/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="62" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/place/place.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -659,8 +673,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="62" lean-forward="true" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
+        <state relative-caret-position="15">
+          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -689,6 +703,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/search/search.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/search/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="61" column="50" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/nearby/nearby.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="416" column="42" selection-start-line="416" selection-start-column="42" selection-end-line="416" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/nearby/nearby.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="51" column="86" selection-start-line="51" selection-start-column="86" selection-end-line="51" selection-end-column="86" />
         </state>
       </provider>
     </entry>
